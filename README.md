@@ -2,6 +2,13 @@
 
 Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Lists are available in JSON and SQL formats.
 
+## Usage
+
+Here you have ready to use both JSON for most web apps and SQL files for some backend stuff.
+Package is available via Bower: `bower install countries`.
+
+## Examples
+
 ```
 {
     "continents": {
