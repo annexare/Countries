@@ -46,3 +46,7 @@ Also, there's a minimal JSON file with only country by code object:
   ...
 }
 ```
+
+# Credits
+
+Prepared by [Annexare Studio](https://annexare.com/) from different public sources. Feel free to use it as you need in your apps or send updates into [this](https://github.com/annexare/Countries) public repository. It's under MIT license.
