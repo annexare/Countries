@@ -1,6 +1,6 @@
 {
     "name": "Countries",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "homepage": "https://github.com/annexare/Countries",
     "authors": [
         "Dmitry <z@annexare.com>"
@@ -10,6 +10,9 @@
         "country",
         "countries",
         "continent",
+        "languages",
+        "capital",
+        "currency",
         "data",
         "json",
         "sql",
