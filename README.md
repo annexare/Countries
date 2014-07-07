@@ -2,10 +2,17 @@
 
 Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Lists are available in JSON and SQL formats.
 
+**Note**: Languages, currencies, calling codes may be a comma-separated list.
+
 ## Usage
 
 Here you have ready to use both JSON for most web apps and SQL files for some backend stuff.
-Package is available via Bower: `bower install countries`.
+
+Package is available via **Bower**:
+
+```
+bower install countries
+```
 
 ## Examples
 
@@ -26,9 +33,19 @@ Package is available via Bower: `bower install countries`.
             "native": "Andorra",
             "phone": "376",
             "continent": "EU",
-            "capital": "EUR",
-            "currency": "And",
+            "capital": "Andorra la Vella",
+            "currency": "EUR",
             "languages": "ca"
+        },
+        ...
+        "CH": {
+            "name": "Switzerland",
+            "native": "Schweiz",
+            "phone": "41",
+            "continent": "EU",
+            "capital": "Bern",
+            "currency": "CHE,CHF,CHW",
+            "languages": "de,fr,it"
         },
         ...
     }
