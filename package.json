@@ -1,11 +1,12 @@
 {
-    "name": "Countries",
+    "name": "countries-list",
     "version": "1.0.3",
-    "homepage": "https://github.com/annexare/Countries",
-    "authors": [
-        "Dmytro <z@annexare.com>"
-    ],
     "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Available in JSON and SQL formats.",
+    "main": "countries.json",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/annexare/Countries.git"
+    },
     "keywords": [
         "country",
         "countries",
@@ -19,5 +20,12 @@
         "ISO 3166-1",
         "node"
     ],
-    "license": "MIT"
+    "authors": [
+        "Dmytro <z@annexare.com>"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/annexare/Countries/issues"
+    },
+    "homepage": "http://annexare.github.io/Countries/"
 }

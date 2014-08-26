@@ -8,11 +8,10 @@ Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and cu
 
 Here you have ready to use both JSON for most web apps and SQL files for some backend stuff.
 
-Package is available via **Bower**:
+Package is available via:
 
-```
-bower install countries
-```
+* **Bower** `bower install countries`
+* **NPM** `npm install countries-list`
 
 ## Examples
 
@@ -64,6 +63,6 @@ Also, there's a minimal JSON file with only country by code object:
 }
 ```
 
-# Credits
+## Credits
 
 Prepared by [Annexare Studio](https://annexare.com/) from different public sources. Feel free to use it as you need in your apps or send updates into [this](https://github.com/annexare/Countries) public repository. It's under MIT license.
