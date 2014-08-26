@@ -20,9 +20,11 @@
         "ISO 3166-1",
         "node"
     ],
-    "authors": [
-        "Dmytro <z@annexare.com>"
-    ],
+    "author": {
+        "name": "Dmytro",
+        "email": "z@annexare.com",
+        "url": "https://github.com/z-ax"
+    },
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/annexare/Countries/issues"
