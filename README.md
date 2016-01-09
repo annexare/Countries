@@ -11,6 +11,7 @@ Here you have ready to use both JSON for most web apps and SQL files for some ba
 Package is available via:
 
 * **Bower** `bower install countries`
+* **Composer** `composer require annexare/countries-list`
 * **NPM** `npm install countries-list`
 
 ## Examples
