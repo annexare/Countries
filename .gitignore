@@ -1,5 +1,7 @@
 # IDE
 .idea
 
+composer.phar
+
 # Dependency directory
 node_modules
