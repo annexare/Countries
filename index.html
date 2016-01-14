@@ -1,53 +1,33 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Countries by annexare</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta charset="UTF-8">
+    <title>Countries List by annexare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Countries List</h1>
+      <h2 class="project-tagline">Continents &amp; countries (with languages, capital and currency, native name, calling codes).</h2>
+      <a href="https://github.com/annexare/Countries" class="btn">View on GitHub</a>
+      <a href="https://github.com/annexare/Countries/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/annexare/Countries/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Countries</h1>
-        <p>Continents &amp; countries (with languages, capital and currency, native name, calling codes).</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/annexare/Countries" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/annexare/Countries/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/annexare/Countries/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a name="countries" class="anchor" href="#countries"><span class="octicon octicon-link"></span></a>Countries</h1>
+    <section class="main-content">
+      <h1>
+<a id="countries" class="anchor" href="#countries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Countries</h1>
 
 <p>Continents &amp; countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Lists are available in JSON and SQL formats.</p>
 
 <p><strong>Note</strong>: Languages, currencies, calling codes may be a comma-separated list.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>Here you have ready to use both JSON for most web apps and SQL files for some backend stuff.</p>
 
@@ -58,10 +38,15 @@
 <strong>Bower</strong> <code>bower install countries</code>
 </li>
 <li>
+<strong>Composer</strong> <code>composer require annexare/countries-list</code>
+</li>
+<li>
 <strong>NPM</strong> <code>npm install countries-list</code>
 </li>
-</ul><h2>
-<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
 
 <pre><code>{
     "continents": {
@@ -110,17 +95,19 @@
 </code></pre>
 
 <h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p>Prepared by <a href="https://annexare.com/">Annexare Studio</a> from different public sources. Feel free to use it as you need in your apps or send updates into <a href="https://github.com/annexare/Countries">this</a> public repository. It's under MIT license.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/annexare">annexare</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/annexare/Countries">Countries List</a> is maintained by <a href="https://github.com/annexare">annexare</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
