@@ -1,9 +1,9 @@
-CREATE TABLE IF NOT EXISTS `continents` (
+DROP TABLE IF EXISTS `continents`;
+CREATE TABLE `continents` (
   `code` VARCHAR(2)  NOT NULL DEFAULT '',
-  `name` VARCHAR(15) NOT NULL DEFAULT ''
-)
-  ENGINE =MyISAM
-  DEFAULT CHARSET =utf8;
+  `name` VARCHAR(15) NOT NULL DEFAULT '',
+  UNIQUE KEY `code` (`code`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `continents` (`code`, `name`) VALUES
   ('AF', 'Africa'),
@@ -14,21 +14,21 @@ INSERT INTO `continents` (`code`, `name`) VALUES
   ('OC', 'Oceania'),
   ('SA', 'South America');
 
-CREATE TABLE IF NOT EXISTS `countries` (
-  `code`      VARCHAR(2)  NOT NULL DEFAULT '',
-  `name`      VARCHAR(50) NOT NULL DEFAULT '',
-  `native`    VARCHAR(50) NOT NULL DEFAULT '',
-  `phone`     VARCHAR(15) NOT NULL DEFAULT '',
-  `continent` VARCHAR(2)  NOT NULL DEFAULT '',
-  `capital`   VARCHAR(50) NOT NULL DEFAULT '',
-  `currency`  VARCHAR(30) NOT NULL DEFAULT '',
-  `languages` VARCHAR(30) NOT NULL DEFAULT ''
-)
-  ENGINE =MyISAM
-  DEFAULT CHARSET =utf8;
+DROP TABLE IF EXISTS `countries`;
+CREATE TABLE `countries` (
+  `code` VARCHAR(2)  NOT NULL DEFAULT '',
+  `name` VARCHAR(50) NOT NULL DEFAULT '',
+  `native` VARCHAR(50) NOT NULL DEFAULT '',
+  `phone` VARCHAR(15) NOT NULL DEFAULT '',
+  `continent` VARCHAR(2) NOT NULL DEFAULT '',
+  `capital` VARCHAR(50) NOT NULL DEFAULT '',
+  `currency` VARCHAR(30) NOT NULL DEFAULT '',
+  `languages` VARCHAR(30) NOT NULL DEFAULT '',
+  UNIQUE KEY `code` (`code`),
+  KEY `continent` (`continent`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capital`, `currency`, `languages`)
-VALUES
+INSERT INTO `countries` (`code`, `name`) VALUES
   ('AD', 'Andorra', 'Andorra', '376', 'EU', 'Andorra la Vella', 'EUR', 'ca'),
   ('AE', 'United Arab Emirates', 'دولة الإمارات العربية المتحدة', '971', 'AS', 'Abu Dhabi', 'AED', 'ar'),
   ('AF', 'Afghanistan', 'افغانستان', '93', 'AS', 'Kabul', 'AFN', 'ps,uz,tk'),
@@ -276,14 +276,6 @@ VALUES
   ('XK', 'Kosovo', 'Republika e Kosovës', '377,381,386', 'EU', 'Pristina', 'EUR', 'sq,sr'),
   ('YE', 'Yemen', 'اليَمَن', '967', 'AS', 'Sana''a', 'YER', 'ar'),
   ('YT', 'Mayotte', 'Mayotte', '262', 'AF', 'Mamoudzou', 'EUR', 'fr'),
-  ('ZA', 'South Africa', 'South Africa', '27', 'AF', 'Pretoria', 'ZAR',
-   'af,en,nr,st,ss,tn,ts,ve,xh,zu'),
+  ('ZA', 'South Africa', 'South Africa', '27', 'AF', 'Pretoria', 'ZAR', 'af,en,nr,st,ss,tn,ts,ve,xh,zu'),
   ('ZM', 'Zambia', 'Zambia', '260', 'AF', 'Lusaka', 'ZMK', 'en'),
   ('ZW', 'Zimbabwe', 'Zimbabwe', '263', 'AF', 'Harare', 'ZWL', 'en,sn,nd');
-
-
-ALTER TABLE `continents`
-ADD UNIQUE KEY `code` (`code`);
-
-ALTER TABLE `countries`
-ADD UNIQUE KEY `code` (`code`), ADD KEY `continent` (`continent`);
