@@ -1,6 +1,7 @@
 # Countries
 
-Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Lists are available in JSON and SQL formats.
+Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes.
+Lists are available in JSON and SQL formats.
 
 **Note**: Languages, currencies, calling codes may be a comma-separated list.
 
@@ -63,6 +64,12 @@ Also, there's a minimal JSON file with only country by code object:
   ...
 }
 ```
+
+## Contributing
+
+Everything's generated from `countries.json`, including SQL file.
+But generated files are in repository, so in future please make changes to this file and
+run `gulp` default command.
 
 ## Credits
 
