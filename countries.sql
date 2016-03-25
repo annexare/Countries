@@ -136,7 +136,7 @@ VALUES
   ('IN', 'India', 'भारत', '91', 'AS', 'New Delhi', 'INR', 'hi,en'),
   ('IO', 'British Indian Ocean Territory', 'British Indian Ocean Territory', '246', 'AS', 'Diego Garcia', 'USD', 'en'),
   ('IQ', 'Iraq', 'العراق', '964', 'AS', 'Baghdad', 'IQD', 'ar,ku'),
-  ('IR', 'Iran', 'Irān', '98', 'AS', 'Tehran', 'IRR', 'fa'),
+  ('IR', 'Iran', 'ایران', '98', 'AS', 'Tehran', 'IRR', 'fa'),
   ('IS', 'Iceland', 'Ísland', '354', 'EU', 'Reykjavik', 'ISK', 'is'),
   ('IT', 'Italy', 'Italia', '39', 'EU', 'Rome', 'EUR', 'it'),
   ('JE', 'Jersey', 'Jersey', '44', 'EU', 'Saint Helier', 'GBP', 'en,fr'),
