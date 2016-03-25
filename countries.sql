@@ -222,7 +222,7 @@ VALUES
   ('RU', 'Russia', 'Россия', '7', 'EU', 'Moscow', 'RUB', 'ru'),
   ('RW', 'Rwanda', 'Rwanda', '250', 'AF', 'Kigali', 'RWF', 'rw,en,fr'),
   ('SA', 'Saudi Arabia', 'العربية السعودية', '966', 'AS', 'Riyadh', 'SAR', 'ar'),
-  ('SB', 'Solomon Islands', 'Solomon Islands', '677', 'OC', 'Honiara', 'SDB', 'en'),
+  ('SB', 'Solomon Islands', 'Solomon Islands', '677', 'OC', 'Honiara', 'SBD', 'en'),
   ('SC', 'Seychelles', 'Seychelles', '248', 'AF', 'Victoria', 'SCR', 'fr,en'),
   ('SD', 'Sudan', 'السودان', '249', 'AF', 'Khartoum', 'SDG', 'ar,en'),
   ('SE', 'Sweden', 'Sverige', '46', 'EU', 'Stockholm', 'SEK', 'sv'),
