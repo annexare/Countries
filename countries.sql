@@ -28,7 +28,7 @@ CREATE TABLE `countries` (
   KEY `continent` (`continent`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `countries` (`code`, `name`) VALUES
+INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capital`, `currency`, `languages`) VALUES
   ('AD', 'Andorra', 'Andorra', '376', 'EU', 'Andorra la Vella', 'EUR', 'ca'),
   ('AE', 'United Arab Emirates', 'دولة الإمارات العربية المتحدة', '971', 'AS', 'Abu Dhabi', 'AED', 'ar'),
   ('AF', 'Afghanistan', 'افغانستان', '93', 'AS', 'Kabul', 'AFN', 'ps,uz,tk'),
