@@ -85,7 +85,7 @@ gulp.task(DO_SQL, function (callback) {
         + LF + LF
         + sqlHeader('countries', countryFields)
         + LF + LF
-        + sqlValues('countries', continentFields, countryList);
+        + sqlValues('countries', countryFields, countryList);
 
     fs.writeFile(`./${NAME}.${DO_SQL}`, sql + LF, callback);
 });

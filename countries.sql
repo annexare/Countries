@@ -28,7 +28,7 @@ CREATE TABLE `countries` (
   KEY `continent` (`continent`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `countries` (`code`, `name`) VALUES
+INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capital`, `currency`, `languages`) VALUES
   ('AD', 'Andorra', 'Andorra', '376', 'EU', 'Andorra la Vella', 'EUR', 'ca'),
   ('AE', 'United Arab Emirates', 'دولة الإمارات العربية المتحدة', '971', 'AS', 'Abu Dhabi', 'AED', 'ar'),
   ('AF', 'Afghanistan', 'افغانستان', '93', 'AS', 'Kabul', 'AFN', 'ps,uz,tk'),
@@ -37,7 +37,7 @@ INSERT INTO `countries` (`code`, `name`) VALUES
   ('AL', 'Albania', 'Shqipëria', '355', 'EU', 'Tirana', 'ALL', 'sq'),
   ('AM', 'Armenia', 'Հայաստան', '374', 'AS', 'Yerevan', 'AMD', 'hy,ru'),
   ('AO', 'Angola', 'Angola', '244', 'AF', 'Luanda', 'AOA', 'pt'),
-  ('AQ', 'Antarctica', '', '', 'AN', '', '', ''),
+  ('AQ', 'Antarctica', 'Antarctica', '', 'AN', '', '', ''),
   ('AR', 'Argentina', 'Argentina', '54', 'SA', 'Buenos Aires', 'ARS', 'es,gn'),
   ('AS', 'American Samoa', 'American Samoa', '1684', 'OC', 'Pago Pago', 'USD', 'en,sm'),
   ('AT', 'Austria', 'Österreich', '43', 'EU', 'Vienna', 'EUR', 'de'),
