@@ -3,26 +3,41 @@
 const
     NAME = 'countries',
     LF = "\n",
+    DO_CSV = 'csv',
     DO_MIN = 'min',
     DO_MINIMAL = 'minimal',
     DO_SQL = 'sql',
+    JSON_EXT = 'json',
     fs = require('fs'),
     gulp = require('gulp'),
-    countries = require('./' + NAME + '.json');
+    data = require('./' + NAME + '.json');
+
+gulp.task(DO_CSV, function (callback) {
+    const continents = data.continents;
+    const countryList = getCountryList();
+    const csvData = countryList.map(country => {
+        const countryData = Object.assign({}, country);
+        countryData.continent = continents[country.continent];
+
+        return '"' + objectValues(countryData).join('","') + '"';
+    }).join(LF);
+
+    fs.writeFile(`./${NAME}.${DO_CSV}`, csvData + LF, callback);
+});
 
 gulp.task(DO_MIN, function (callback) {
-    fs.writeFile(`./${NAME}.${DO_MIN}.json`, JSON.stringify(countries) + LF, callback);
+    fs.writeFile(`./${NAME}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(data) + LF, callback);
 });
 
 gulp.task(DO_MINIMAL, function (callback) {
     let minimal = {},
-        codes = Object.keys(countries.countries);
+        codes = Object.keys(data.countries);
 
     for (let code of codes) {
-        minimal[code] = countries.countries[code].name;
+        minimal[code] = data.countries[code].name;
     }
 
-    fs.writeFile(`./${NAME}.${DO_MINIMAL}.json`, JSON.stringify(minimal) + LF, callback);
+    fs.writeFile(`./${NAME}.${DO_MINIMAL}.${JSON_EXT}`, JSON.stringify(minimal) + LF, callback);
 });
 
 gulp.task(DO_SQL, function (callback) {
@@ -62,13 +77,13 @@ gulp.task(DO_SQL, function (callback) {
             type: 'VARCHAR(30) NOT NULL DEFAULT \'\''
         }],
 
-        continentList = Object.keys(countries.continents)
+        continentList = Object.keys(data.continents)
             .map(key => {
-                return [key, countries.continents[key]];
+                return [key, data.continents[key]];
             }),
-        countryList = Object.keys(countries.countries)
+        countryList = Object.keys(data.countries)
             .map(key => {
-                let country = countries.countries[key],
+                let country = data.countries[key],
                     values = [key];
 
                 Object.keys(country).forEach(field => {
@@ -90,13 +105,17 @@ gulp.task(DO_SQL, function (callback) {
     fs.writeFile(`./${NAME}.${DO_SQL}`, sql + LF, callback);
 });
 
-gulp.task('default', [DO_MIN, DO_MINIMAL, DO_SQL]);
+gulp.task('default', [DO_CSV, DO_MIN, DO_MINIMAL, DO_SQL]);
 
 
 function objectValues(item) {
     return Object.keys(item)
         .map(key => item[key]);
 }
+function getCountryList() {
+    return objectValues(data.countries);
+}
+
 function sqlHeader(table, fields) {
     let lines = [
         'DROP TABLE IF EXISTS `' + table + '`;',

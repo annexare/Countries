@@ -1,13 +1,13 @@
 # Countries
 
 Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes.
-Lists are available in JSON and SQL formats.
+Lists are available in JSON, CSV and SQL formats.
 
 **Note**: Languages, currencies, calling codes may be a comma-separated list.
 
 ## Usage
 
-Here you have ready to use both JSON for most web apps and SQL files for some backend stuff.
+Here you have ready to use JSON for the most of web apps, CSV and SQL files for some backend stuff.
 
 Package is available via:
 

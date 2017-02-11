@@ -1,7 +1,7 @@
 {
     "name": "countries-list",
-    "version": "1.2.0",
-    "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Available in JSON and SQL formats.",
+    "version": "1.3.0",
+    "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Available in JSON, CSV and SQL formats.",
     "main": "countries.json",
     "repository": {
         "type": "git",
@@ -15,6 +15,7 @@
         "capital",
         "currency",
         "data",
+        "csv",
         "json",
         "sql",
         "ISO 3166-1",
@@ -25,7 +26,12 @@
         "email": "z@annexare.com",
         "url": "https://github.com/z-ax"
     },
+    "scripts": {
+        "start": "gulp",
+        "eslint": "eslint gulpfile.js; exit 0"
+    },
     "devDependencies": {
+        "eslint": "*",
         "gulp": "*"
     },
     "license": "MIT",
