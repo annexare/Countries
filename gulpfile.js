@@ -2,11 +2,15 @@
 
 const
     NAME = 'countries',
+    COMMA = '","',
     LF = "\n",
+    QUOTE = '"',
+
     DO_CSV = 'csv',
     DO_MIN = 'min',
     DO_MINIMAL = 'minimal',
     DO_SQL = 'sql',
+
     JSON_EXT = 'json',
     fs = require('fs'),
     gulp = require('gulp'),
@@ -14,12 +18,15 @@ const
 
 gulp.task(DO_CSV, function (callback) {
     const continents = data.continents;
-    const countryList = getCountryList();
-    const csvData = countryList.map(country => {
-        const countryData = Object.assign({}, country);
-        countryData.continent = continents[country.continent];
+    const countryList = Object.keys(data.countries);
+    const csvHeader = QUOTE + 'Code' + COMMA
+        + Object.keys(data.countries.UA).map(key => titleCase(key)).join(COMMA)
+        + QUOTE;
+    const csvData = csvHeader + LF + countryList.map(code => {
+        const country = Object.assign({}, data.countries[code]);
+        country.continent = continents[country.continent];
 
-        return '"' + objectValues(countryData).join('","') + '"';
+        return QUOTE + code + COMMA + objectValues(country).join(COMMA) + QUOTE;
     }).join(LF);
 
     fs.writeFile(`./${NAME}.${DO_CSV}`, csvData + LF, callback);
@@ -112,10 +119,13 @@ function objectValues(item) {
     return Object.keys(item)
         .map(key => item[key]);
 }
-function getCountryList() {
-    return objectValues(data.countries);
+function titleCase(str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
 }
-
 function sqlHeader(table, fields) {
     let lines = [
         'DROP TABLE IF EXISTS `' + table + '`;',
