@@ -1,0 +1,8 @@
+title: Countries List
+description: Continents & countries (with languages, capital and currency, native name, calling codes).
+google_analytics: UA-23960333-9
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
