@@ -44,7 +44,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('AU', 'Australia', 'Australia', '61', 'OC', 'Canberra', 'AUD', 'en'),
   ('AW', 'Aruba', 'Aruba', '297', 'NA', 'Oranjestad', 'AWG', 'nl,pa'),
   ('AX', 'Åland', 'Åland', '358', 'EU', 'Mariehamn', 'EUR', 'sv'),
-  ('AZ', 'Azerbaijan', 'Azərbaycan', '994', 'AS', 'Baku', 'AZN', 'az,hy'),
+  ('AZ', 'Azerbaijan', 'Azərbaycan', '994', 'AS', 'Baku', 'AZN', 'az'),
   ('BA', 'Bosnia and Herzegovina', 'Bosna i Hercegovina', '387', 'EU', 'Sarajevo', 'BAM', 'bs,hr,sr'),
   ('BB', 'Barbados', 'Barbados', '1246', 'NA', 'Bridgetown', 'BBD', 'en'),
   ('BD', 'Bangladesh', 'Bangladesh', '880', 'AS', 'Dhaka', 'BDT', 'bn'),
