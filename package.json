@@ -1,6 +1,6 @@
 {
     "name": "countries-list",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes. Available in JSON, CSV and SQL formats.",
     "main": "countries.json",
     "repository": {
@@ -11,6 +11,7 @@
         "country",
         "countries",
         "continent",
+        "emoji",
         "languages",
         "capital",
         "currency",
@@ -31,9 +32,9 @@
         "eslint": "eslint gulpfile.js; exit 0"
     },
     "devDependencies": {
-        "emoji-flags": "*",
         "eslint": "*",
-        "gulp": "*"
+        "gulp": "*",
+        "punycode": "*"
     },
     "license": "MIT",
     "bugs": {

@@ -2,6 +2,7 @@
 
 Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
+Also, contains separate JSON files with additional country **Emoji** flags data.
 
 **Note**: Languages, currencies, calling codes may be a comma-separated list.
 
