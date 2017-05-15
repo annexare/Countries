@@ -35,7 +35,7 @@ gulp.task(DO_CSV, function (callback) {
 
 gulp.task(DO_EMOJI, function (callback) {
     const
-        emojiFlags = require('emoji-flags'),
+        emojiFlag = require('./emoji-flag'),
         dataWithEmoji = Object.assign({}, data, {
             countries: {}
         }),
@@ -43,21 +43,14 @@ gulp.task(DO_EMOJI, function (callback) {
         countryCodes = Object.keys(countries);
 
     countryCodes.forEach(code => {
-        const emojiData = emojiFlags.countryCode(code);
-
-        if (!emojiData) {
-            console.error(`Country Emoji data was not found for "${code}".`);
-            return;
-        }
-
         const
-            {emoji, unicode} = emojiData,
-            country = Object.assign({}, countries[code], {
-                emoji,
-                emojiU: unicode
-            });
+            emoji = emojiFlag.getEmojiFlag(code),
+            emojiU = emojiFlag.getUnicode(emoji);
 
-        dataWithEmoji.countries[code] = country;
+        dataWithEmoji.countries[code] = Object.assign({}, countries[code], {
+            emoji,
+            emojiU,
+        });
     });
 
     fs.writeFileSync(`./${NAME}.${DO_EMOJI}.${JSON_EXT}`, JSON.stringify(dataWithEmoji, false, 4) + LF);
@@ -154,7 +147,7 @@ function objectValues(item) {
 }
 function titleCase(str) {
   str = str.toLowerCase().split(' ');
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
   }
   return str.join(' ');

@@ -2693,6 +2693,17 @@
             "emoji": "🇼🇸",
             "emojiU": "U+1F1FC U+1F1F8"
         },
+        "XK": {
+            "name": "Kosovo",
+            "native": "Republika e Kosovës",
+            "phone": "377,381,386",
+            "continent": "EU",
+            "capital": "Pristina",
+            "currency": "EUR",
+            "languages": "sq,sr",
+            "emoji": "🇽🇰",
+            "emojiU": "U+1F1FD U+1F1F0"
+        },
         "YE": {
             "name": "Yemen",
             "native": "اليَمَن",

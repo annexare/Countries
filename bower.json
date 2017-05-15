@@ -1,6 +1,6 @@
 {
     "name": "Countries",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "homepage": "http://annexare.github.io/Countries/",
     "author": {
         "name": "Dmytro",
@@ -12,6 +12,7 @@
         "country",
         "countries",
         "continent",
+        "emoji",
         "languages",
         "capital",
         "currency",
