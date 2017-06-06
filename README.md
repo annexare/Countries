@@ -1,5 +1,6 @@
 # Countries
 
+[![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
 [![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
 [![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
 
