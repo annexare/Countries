@@ -16,7 +16,9 @@
             "continent": "EU",
             "capital": "Andorra la Vella",
             "currency": "EUR",
-            "languages": "ca"
+            "languages": "ca",
+            "emoji": "🇦🇩",
+            "emojiUnicode": "U+1F1E6 U+1F1E9"
         },
         "AE": {
             "name": "United Arab Emirates",
@@ -25,7 +27,9 @@
             "continent": "AS",
             "capital": "Abu Dhabi",
             "currency": "AED",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇦🇪",
+            "emojiUnicode": "U+1F1E6 U+1F1EA"
         },
         "AF": {
             "name": "Afghanistan",
@@ -34,7 +38,9 @@
             "continent": "AS",
             "capital": "Kabul",
             "currency": "AFN",
-            "languages": "ps,uz,tk"
+            "languages": "ps,uz,tk",
+            "emoji": "🇦🇫",
+            "emojiUnicode": "U+1F1E6 U+1F1EB"
         },
         "AG": {
             "name": "Antigua and Barbuda",
@@ -43,7 +49,9 @@
             "continent": "NA",
             "capital": "Saint John's",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇦🇬",
+            "emojiUnicode": "U+1F1E6 U+1F1EC"
         },
         "AI": {
             "name": "Anguilla",
@@ -52,7 +60,9 @@
             "continent": "NA",
             "capital": "The Valley",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇦🇮",
+            "emojiUnicode": "U+1F1E6 U+1F1EE"
         },
         "AL": {
             "name": "Albania",
@@ -61,7 +71,9 @@
             "continent": "EU",
             "capital": "Tirana",
             "currency": "ALL",
-            "languages": "sq"
+            "languages": "sq",
+            "emoji": "🇦🇱",
+            "emojiUnicode": "U+1F1E6 U+1F1F1"
         },
         "AM": {
             "name": "Armenia",
@@ -70,7 +82,9 @@
             "continent": "AS",
             "capital": "Yerevan",
             "currency": "AMD",
-            "languages": "hy,ru"
+            "languages": "hy,ru",
+            "emoji": "🇦🇲",
+            "emojiUnicode": "U+1F1E6 U+1F1F2"
         },
         "AO": {
             "name": "Angola",
@@ -79,7 +93,9 @@
             "continent": "AF",
             "capital": "Luanda",
             "currency": "AOA",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇦🇴",
+            "emojiUnicode": "U+1F1E6 U+1F1F4"
         },
         "AQ": {
             "name": "Antarctica",
@@ -88,7 +104,9 @@
             "continent": "AN",
             "capital": "",
             "currency": "",
-            "languages": ""
+            "languages": "",
+            "emoji": "🇦🇶",
+            "emojiUnicode": "U+1F1E6 U+1F1F6"
         },
         "AR": {
             "name": "Argentina",
@@ -97,7 +115,9 @@
             "continent": "SA",
             "capital": "Buenos Aires",
             "currency": "ARS",
-            "languages": "es,gn"
+            "languages": "es,gn",
+            "emoji": "🇦🇷",
+            "emojiUnicode": "U+1F1E6 U+1F1F7"
         },
         "AS": {
             "name": "American Samoa",
@@ -106,7 +126,9 @@
             "continent": "OC",
             "capital": "Pago Pago",
             "currency": "USD",
-            "languages": "en,sm"
+            "languages": "en,sm",
+            "emoji": "🇦🇸",
+            "emojiUnicode": "U+1F1E6 U+1F1F8"
         },
         "AT": {
             "name": "Austria",
@@ -115,7 +137,9 @@
             "continent": "EU",
             "capital": "Vienna",
             "currency": "EUR",
-            "languages": "de"
+            "languages": "de",
+            "emoji": "🇦🇹",
+            "emojiUnicode": "U+1F1E6 U+1F1F9"
         },
         "AU": {
             "name": "Australia",
@@ -124,7 +148,9 @@
             "continent": "OC",
             "capital": "Canberra",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇦🇺",
+            "emojiUnicode": "U+1F1E6 U+1F1FA"
         },
         "AW": {
             "name": "Aruba",
@@ -133,7 +159,9 @@
             "continent": "NA",
             "capital": "Oranjestad",
             "currency": "AWG",
-            "languages": "nl,pa"
+            "languages": "nl,pa",
+            "emoji": "🇦🇼",
+            "emojiUnicode": "U+1F1E6 U+1F1FC"
         },
         "AX": {
             "name": "Åland",
@@ -142,7 +170,9 @@
             "continent": "EU",
             "capital": "Mariehamn",
             "currency": "EUR",
-            "languages": "sv"
+            "languages": "sv",
+            "emoji": "🇦🇽",
+            "emojiUnicode": "U+1F1E6 U+1F1FD"
         },
         "AZ": {
             "name": "Azerbaijan",
@@ -151,7 +181,9 @@
             "continent": "AS",
             "capital": "Baku",
             "currency": "AZN",
-            "languages": "az"
+            "languages": "az",
+            "emoji": "🇦🇿",
+            "emojiUnicode": "U+1F1E6 U+1F1FF"
         },
         "BA": {
             "name": "Bosnia and Herzegovina",
@@ -160,7 +192,9 @@
             "continent": "EU",
             "capital": "Sarajevo",
             "currency": "BAM",
-            "languages": "bs,hr,sr"
+            "languages": "bs,hr,sr",
+            "emoji": "🇧🇦",
+            "emojiUnicode": "U+1F1E7 U+1F1E6"
         },
         "BB": {
             "name": "Barbados",
@@ -169,7 +203,9 @@
             "continent": "NA",
             "capital": "Bridgetown",
             "currency": "BBD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇧🇧",
+            "emojiUnicode": "U+1F1E7 U+1F1E7"
         },
         "BD": {
             "name": "Bangladesh",
@@ -178,7 +214,9 @@
             "continent": "AS",
             "capital": "Dhaka",
             "currency": "BDT",
-            "languages": "bn"
+            "languages": "bn",
+            "emoji": "🇧🇩",
+            "emojiUnicode": "U+1F1E7 U+1F1E9"
         },
         "BE": {
             "name": "Belgium",
@@ -187,7 +225,9 @@
             "continent": "EU",
             "capital": "Brussels",
             "currency": "EUR",
-            "languages": "nl,fr,de"
+            "languages": "nl,fr,de",
+            "emoji": "🇧🇪",
+            "emojiUnicode": "U+1F1E7 U+1F1EA"
         },
         "BF": {
             "name": "Burkina Faso",
@@ -196,7 +236,9 @@
             "continent": "AF",
             "capital": "Ouagadougou",
             "currency": "XOF",
-            "languages": "fr,ff"
+            "languages": "fr,ff",
+            "emoji": "🇧🇫",
+            "emojiUnicode": "U+1F1E7 U+1F1EB"
         },
         "BG": {
             "name": "Bulgaria",
@@ -205,7 +247,9 @@
             "continent": "EU",
             "capital": "Sofia",
             "currency": "BGN",
-            "languages": "bg"
+            "languages": "bg",
+            "emoji": "🇧🇬",
+            "emojiUnicode": "U+1F1E7 U+1F1EC"
         },
         "BH": {
             "name": "Bahrain",
@@ -214,7 +258,9 @@
             "continent": "AS",
             "capital": "Manama",
             "currency": "BHD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇧🇭",
+            "emojiUnicode": "U+1F1E7 U+1F1ED"
         },
         "BI": {
             "name": "Burundi",
@@ -223,7 +269,9 @@
             "continent": "AF",
             "capital": "Bujumbura",
             "currency": "BIF",
-            "languages": "fr,rn"
+            "languages": "fr,rn",
+            "emoji": "🇧🇮",
+            "emojiUnicode": "U+1F1E7 U+1F1EE"
         },
         "BJ": {
             "name": "Benin",
@@ -232,7 +280,9 @@
             "continent": "AF",
             "capital": "Porto-Novo",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇧🇯",
+            "emojiUnicode": "U+1F1E7 U+1F1EF"
         },
         "BL": {
             "name": "Saint Barthélemy",
@@ -241,7 +291,9 @@
             "continent": "NA",
             "capital": "Gustavia",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇧🇱",
+            "emojiUnicode": "U+1F1E7 U+1F1F1"
         },
         "BM": {
             "name": "Bermuda",
@@ -250,7 +302,9 @@
             "continent": "NA",
             "capital": "Hamilton",
             "currency": "BMD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇧🇲",
+            "emojiUnicode": "U+1F1E7 U+1F1F2"
         },
         "BN": {
             "name": "Brunei",
@@ -259,7 +313,9 @@
             "continent": "AS",
             "capital": "Bandar Seri Begawan",
             "currency": "BND",
-            "languages": "ms"
+            "languages": "ms",
+            "emoji": "🇧🇳",
+            "emojiUnicode": "U+1F1E7 U+1F1F3"
         },
         "BO": {
             "name": "Bolivia",
@@ -268,7 +324,9 @@
             "continent": "SA",
             "capital": "Sucre",
             "currency": "BOB,BOV",
-            "languages": "es,ay,qu"
+            "languages": "es,ay,qu",
+            "emoji": "🇧🇴",
+            "emojiUnicode": "U+1F1E7 U+1F1F4"
         },
         "BQ": {
             "name": "Bonaire",
@@ -277,7 +335,9 @@
             "continent": "NA",
             "capital": "Kralendijk",
             "currency": "USD",
-            "languages": "nl"
+            "languages": "nl",
+            "emoji": "🇧🇶",
+            "emojiUnicode": "U+1F1E7 U+1F1F6"
         },
         "BR": {
             "name": "Brazil",
@@ -286,7 +346,9 @@
             "continent": "SA",
             "capital": "Brasília",
             "currency": "BRL",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇧🇷",
+            "emojiUnicode": "U+1F1E7 U+1F1F7"
         },
         "BS": {
             "name": "Bahamas",
@@ -295,7 +357,9 @@
             "continent": "NA",
             "capital": "Nassau",
             "currency": "BSD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇧🇸",
+            "emojiUnicode": "U+1F1E7 U+1F1F8"
         },
         "BT": {
             "name": "Bhutan",
@@ -304,7 +368,9 @@
             "continent": "AS",
             "capital": "Thimphu",
             "currency": "BTN,INR",
-            "languages": "dz"
+            "languages": "dz",
+            "emoji": "🇧🇹",
+            "emojiUnicode": "U+1F1E7 U+1F1F9"
         },
         "BV": {
             "name": "Bouvet Island",
@@ -313,7 +379,9 @@
             "continent": "AN",
             "capital": "",
             "currency": "NOK",
-            "languages": ""
+            "languages": "",
+            "emoji": "🇧🇻",
+            "emojiUnicode": "U+1F1E7 U+1F1FB"
         },
         "BW": {
             "name": "Botswana",
@@ -322,7 +390,9 @@
             "continent": "AF",
             "capital": "Gaborone",
             "currency": "BWP",
-            "languages": "en,tn"
+            "languages": "en,tn",
+            "emoji": "🇧🇼",
+            "emojiUnicode": "U+1F1E7 U+1F1FC"
         },
         "BY": {
             "name": "Belarus",
@@ -331,7 +401,9 @@
             "continent": "EU",
             "capital": "Minsk",
             "currency": "BYR",
-            "languages": "be,ru"
+            "languages": "be,ru",
+            "emoji": "🇧🇾",
+            "emojiUnicode": "U+1F1E7 U+1F1FE"
         },
         "BZ": {
             "name": "Belize",
@@ -340,7 +412,9 @@
             "continent": "NA",
             "capital": "Belmopan",
             "currency": "BZD",
-            "languages": "en,es"
+            "languages": "en,es",
+            "emoji": "🇧🇿",
+            "emojiUnicode": "U+1F1E7 U+1F1FF"
         },
         "CA": {
             "name": "Canada",
@@ -349,7 +423,9 @@
             "continent": "NA",
             "capital": "Ottawa",
             "currency": "CAD",
-            "languages": "en,fr"
+            "languages": "en,fr",
+            "emoji": "🇨🇦",
+            "emojiUnicode": "U+1F1E8 U+1F1E6"
         },
         "CC": {
             "name": "Cocos [Keeling] Islands",
@@ -358,7 +434,9 @@
             "continent": "AS",
             "capital": "West Island",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇨🇨",
+            "emojiUnicode": "U+1F1E8 U+1F1E8"
         },
         "CD": {
             "name": "Democratic Republic of the Congo",
@@ -367,7 +445,9 @@
             "continent": "AF",
             "capital": "Kinshasa",
             "currency": "CDF",
-            "languages": "fr,ln,kg,sw,lu"
+            "languages": "fr,ln,kg,sw,lu",
+            "emoji": "🇨🇩",
+            "emojiUnicode": "U+1F1E8 U+1F1E9"
         },
         "CF": {
             "name": "Central African Republic",
@@ -376,7 +456,9 @@
             "continent": "AF",
             "capital": "Bangui",
             "currency": "XAF",
-            "languages": "fr,sg"
+            "languages": "fr,sg",
+            "emoji": "🇨🇫",
+            "emojiUnicode": "U+1F1E8 U+1F1EB"
         },
         "CG": {
             "name": "Republic of the Congo",
@@ -385,7 +467,9 @@
             "continent": "AF",
             "capital": "Brazzaville",
             "currency": "XAF",
-            "languages": "fr,ln"
+            "languages": "fr,ln",
+            "emoji": "🇨🇬",
+            "emojiUnicode": "U+1F1E8 U+1F1EC"
         },
         "CH": {
             "name": "Switzerland",
@@ -394,7 +478,9 @@
             "continent": "EU",
             "capital": "Bern",
             "currency": "CHE,CHF,CHW",
-            "languages": "de,fr,it"
+            "languages": "de,fr,it",
+            "emoji": "🇨🇭",
+            "emojiUnicode": "U+1F1E8 U+1F1ED"
         },
         "CI": {
             "name": "Ivory Coast",
@@ -403,7 +489,9 @@
             "continent": "AF",
             "capital": "Yamoussoukro",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇨🇮",
+            "emojiUnicode": "U+1F1E8 U+1F1EE"
         },
         "CK": {
             "name": "Cook Islands",
@@ -412,7 +500,9 @@
             "continent": "OC",
             "capital": "Avarua",
             "currency": "NZD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇨🇰",
+            "emojiUnicode": "U+1F1E8 U+1F1F0"
         },
         "CL": {
             "name": "Chile",
@@ -421,7 +511,9 @@
             "continent": "SA",
             "capital": "Santiago",
             "currency": "CLF,CLP",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇨🇱",
+            "emojiUnicode": "U+1F1E8 U+1F1F1"
         },
         "CM": {
             "name": "Cameroon",
@@ -430,7 +522,9 @@
             "continent": "AF",
             "capital": "Yaoundé",
             "currency": "XAF",
-            "languages": "en,fr"
+            "languages": "en,fr",
+            "emoji": "🇨🇲",
+            "emojiUnicode": "U+1F1E8 U+1F1F2"
         },
         "CN": {
             "name": "China",
@@ -439,7 +533,9 @@
             "continent": "AS",
             "capital": "Beijing",
             "currency": "CNY",
-            "languages": "zh"
+            "languages": "zh",
+            "emoji": "🇨🇳",
+            "emojiUnicode": "U+1F1E8 U+1F1F3"
         },
         "CO": {
             "name": "Colombia",
@@ -448,7 +544,9 @@
             "continent": "SA",
             "capital": "Bogotá",
             "currency": "COP",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇨🇴",
+            "emojiUnicode": "U+1F1E8 U+1F1F4"
         },
         "CR": {
             "name": "Costa Rica",
@@ -457,7 +555,9 @@
             "continent": "NA",
             "capital": "San José",
             "currency": "CRC",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇨🇷",
+            "emojiUnicode": "U+1F1E8 U+1F1F7"
         },
         "CU": {
             "name": "Cuba",
@@ -466,7 +566,9 @@
             "continent": "NA",
             "capital": "Havana",
             "currency": "CUC,CUP",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇨🇺",
+            "emojiUnicode": "U+1F1E8 U+1F1FA"
         },
         "CV": {
             "name": "Cape Verde",
@@ -475,7 +577,9 @@
             "continent": "AF",
             "capital": "Praia",
             "currency": "CVE",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇨🇻",
+            "emojiUnicode": "U+1F1E8 U+1F1FB"
         },
         "CW": {
             "name": "Curacao",
@@ -484,7 +588,9 @@
             "continent": "NA",
             "capital": "Willemstad",
             "currency": "ANG",
-            "languages": "nl,pa,en"
+            "languages": "nl,pa,en",
+            "emoji": "🇨🇼",
+            "emojiUnicode": "U+1F1E8 U+1F1FC"
         },
         "CX": {
             "name": "Christmas Island",
@@ -493,7 +599,9 @@
             "continent": "AS",
             "capital": "Flying Fish Cove",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇨🇽",
+            "emojiUnicode": "U+1F1E8 U+1F1FD"
         },
         "CY": {
             "name": "Cyprus",
@@ -502,7 +610,9 @@
             "continent": "EU",
             "capital": "Nicosia",
             "currency": "EUR",
-            "languages": "el,tr,hy"
+            "languages": "el,tr,hy",
+            "emoji": "🇨🇾",
+            "emojiUnicode": "U+1F1E8 U+1F1FE"
         },
         "CZ": {
             "name": "Czech Republic",
@@ -511,7 +621,9 @@
             "continent": "EU",
             "capital": "Prague",
             "currency": "CZK",
-            "languages": "cs,sk"
+            "languages": "cs,sk",
+            "emoji": "🇨🇿",
+            "emojiUnicode": "U+1F1E8 U+1F1FF"
         },
         "DE": {
             "name": "Germany",
@@ -520,7 +632,9 @@
             "continent": "EU",
             "capital": "Berlin",
             "currency": "EUR",
-            "languages": "de"
+            "languages": "de",
+            "emoji": "🇩🇪",
+            "emojiUnicode": "U+1F1E9 U+1F1EA"
         },
         "DJ": {
             "name": "Djibouti",
@@ -529,7 +643,9 @@
             "continent": "AF",
             "capital": "Djibouti",
             "currency": "DJF",
-            "languages": "fr,ar"
+            "languages": "fr,ar",
+            "emoji": "🇩🇯",
+            "emojiUnicode": "U+1F1E9 U+1F1EF"
         },
         "DK": {
             "name": "Denmark",
@@ -538,7 +654,9 @@
             "continent": "EU",
             "capital": "Copenhagen",
             "currency": "DKK",
-            "languages": "da"
+            "languages": "da",
+            "emoji": "🇩🇰",
+            "emojiUnicode": "U+1F1E9 U+1F1F0"
         },
         "DM": {
             "name": "Dominica",
@@ -547,7 +665,9 @@
             "continent": "NA",
             "capital": "Roseau",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇩🇲",
+            "emojiUnicode": "U+1F1E9 U+1F1F2"
         },
         "DO": {
             "name": "Dominican Republic",
@@ -556,7 +676,9 @@
             "continent": "NA",
             "capital": "Santo Domingo",
             "currency": "DOP",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇩🇴",
+            "emojiUnicode": "U+1F1E9 U+1F1F4"
         },
         "DZ": {
             "name": "Algeria",
@@ -565,7 +687,9 @@
             "continent": "AF",
             "capital": "Algiers",
             "currency": "DZD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇩🇿",
+            "emojiUnicode": "U+1F1E9 U+1F1FF"
         },
         "EC": {
             "name": "Ecuador",
@@ -574,7 +698,9 @@
             "continent": "SA",
             "capital": "Quito",
             "currency": "USD",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇪🇨",
+            "emojiUnicode": "U+1F1EA U+1F1E8"
         },
         "EE": {
             "name": "Estonia",
@@ -583,7 +709,9 @@
             "continent": "EU",
             "capital": "Tallinn",
             "currency": "EUR",
-            "languages": "et"
+            "languages": "et",
+            "emoji": "🇪🇪",
+            "emojiUnicode": "U+1F1EA U+1F1EA"
         },
         "EG": {
             "name": "Egypt",
@@ -592,7 +720,9 @@
             "continent": "AF",
             "capital": "Cairo",
             "currency": "EGP",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇪🇬",
+            "emojiUnicode": "U+1F1EA U+1F1EC"
         },
         "EH": {
             "name": "Western Sahara",
@@ -601,7 +731,9 @@
             "continent": "AF",
             "capital": "El Aaiún",
             "currency": "MAD,DZD,MRO",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇪🇭",
+            "emojiUnicode": "U+1F1EA U+1F1ED"
         },
         "ER": {
             "name": "Eritrea",
@@ -610,7 +742,9 @@
             "continent": "AF",
             "capital": "Asmara",
             "currency": "ERN",
-            "languages": "ti,ar,en"
+            "languages": "ti,ar,en",
+            "emoji": "🇪🇷",
+            "emojiUnicode": "U+1F1EA U+1F1F7"
         },
         "ES": {
             "name": "Spain",
@@ -619,7 +753,9 @@
             "continent": "EU",
             "capital": "Madrid",
             "currency": "EUR",
-            "languages": "es,eu,ca,gl,oc"
+            "languages": "es,eu,ca,gl,oc",
+            "emoji": "🇪🇸",
+            "emojiUnicode": "U+1F1EA U+1F1F8"
         },
         "ET": {
             "name": "Ethiopia",
@@ -628,7 +764,9 @@
             "continent": "AF",
             "capital": "Addis Ababa",
             "currency": "ETB",
-            "languages": "am"
+            "languages": "am",
+            "emoji": "🇪🇹",
+            "emojiUnicode": "U+1F1EA U+1F1F9"
         },
         "FI": {
             "name": "Finland",
@@ -637,7 +775,9 @@
             "continent": "EU",
             "capital": "Helsinki",
             "currency": "EUR",
-            "languages": "fi,sv"
+            "languages": "fi,sv",
+            "emoji": "🇫🇮",
+            "emojiUnicode": "U+1F1EB U+1F1EE"
         },
         "FJ": {
             "name": "Fiji",
@@ -646,7 +786,9 @@
             "continent": "OC",
             "capital": "Suva",
             "currency": "FJD",
-            "languages": "en,fj,hi,ur"
+            "languages": "en,fj,hi,ur",
+            "emoji": "🇫🇯",
+            "emojiUnicode": "U+1F1EB U+1F1EF"
         },
         "FK": {
             "name": "Falkland Islands",
@@ -655,7 +797,9 @@
             "continent": "SA",
             "capital": "Stanley",
             "currency": "FKP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇫🇰",
+            "emojiUnicode": "U+1F1EB U+1F1F0"
         },
         "FM": {
             "name": "Micronesia",
@@ -664,7 +808,9 @@
             "continent": "OC",
             "capital": "Palikir",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇫🇲",
+            "emojiUnicode": "U+1F1EB U+1F1F2"
         },
         "FO": {
             "name": "Faroe Islands",
@@ -673,7 +819,9 @@
             "continent": "EU",
             "capital": "Tórshavn",
             "currency": "DKK",
-            "languages": "fo"
+            "languages": "fo",
+            "emoji": "🇫🇴",
+            "emojiUnicode": "U+1F1EB U+1F1F4"
         },
         "FR": {
             "name": "France",
@@ -682,7 +830,9 @@
             "continent": "EU",
             "capital": "Paris",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇫🇷",
+            "emojiUnicode": "U+1F1EB U+1F1F7"
         },
         "GA": {
             "name": "Gabon",
@@ -691,7 +841,9 @@
             "continent": "AF",
             "capital": "Libreville",
             "currency": "XAF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇬🇦",
+            "emojiUnicode": "U+1F1EC U+1F1E6"
         },
         "GB": {
             "name": "United Kingdom",
@@ -700,7 +852,9 @@
             "continent": "EU",
             "capital": "London",
             "currency": "GBP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇧",
+            "emojiUnicode": "U+1F1EC U+1F1E7"
         },
         "GD": {
             "name": "Grenada",
@@ -709,7 +863,9 @@
             "continent": "NA",
             "capital": "St. George's",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇩",
+            "emojiUnicode": "U+1F1EC U+1F1E9"
         },
         "GE": {
             "name": "Georgia",
@@ -718,7 +874,9 @@
             "continent": "AS",
             "capital": "Tbilisi",
             "currency": "GEL",
-            "languages": "ka"
+            "languages": "ka",
+            "emoji": "🇬🇪",
+            "emojiUnicode": "U+1F1EC U+1F1EA"
         },
         "GF": {
             "name": "French Guiana",
@@ -727,7 +885,9 @@
             "continent": "SA",
             "capital": "Cayenne",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇬🇫",
+            "emojiUnicode": "U+1F1EC U+1F1EB"
         },
         "GG": {
             "name": "Guernsey",
@@ -736,7 +896,9 @@
             "continent": "EU",
             "capital": "St. Peter Port",
             "currency": "GBP",
-            "languages": "en,fr"
+            "languages": "en,fr",
+            "emoji": "🇬🇬",
+            "emojiUnicode": "U+1F1EC U+1F1EC"
         },
         "GH": {
             "name": "Ghana",
@@ -745,7 +907,9 @@
             "continent": "AF",
             "capital": "Accra",
             "currency": "GHS",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇭",
+            "emojiUnicode": "U+1F1EC U+1F1ED"
         },
         "GI": {
             "name": "Gibraltar",
@@ -754,7 +918,9 @@
             "continent": "EU",
             "capital": "Gibraltar",
             "currency": "GIP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇮",
+            "emojiUnicode": "U+1F1EC U+1F1EE"
         },
         "GL": {
             "name": "Greenland",
@@ -763,7 +929,9 @@
             "continent": "NA",
             "capital": "Nuuk",
             "currency": "DKK",
-            "languages": "kl"
+            "languages": "kl",
+            "emoji": "🇬🇱",
+            "emojiUnicode": "U+1F1EC U+1F1F1"
         },
         "GM": {
             "name": "Gambia",
@@ -772,7 +940,9 @@
             "continent": "AF",
             "capital": "Banjul",
             "currency": "GMD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇲",
+            "emojiUnicode": "U+1F1EC U+1F1F2"
         },
         "GN": {
             "name": "Guinea",
@@ -781,7 +951,9 @@
             "continent": "AF",
             "capital": "Conakry",
             "currency": "GNF",
-            "languages": "fr,ff"
+            "languages": "fr,ff",
+            "emoji": "🇬🇳",
+            "emojiUnicode": "U+1F1EC U+1F1F3"
         },
         "GP": {
             "name": "Guadeloupe",
@@ -790,7 +962,9 @@
             "continent": "NA",
             "capital": "Basse-Terre",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇬🇵",
+            "emojiUnicode": "U+1F1EC U+1F1F5"
         },
         "GQ": {
             "name": "Equatorial Guinea",
@@ -799,7 +973,9 @@
             "continent": "AF",
             "capital": "Malabo",
             "currency": "XAF",
-            "languages": "es,fr"
+            "languages": "es,fr",
+            "emoji": "🇬🇶",
+            "emojiUnicode": "U+1F1EC U+1F1F6"
         },
         "GR": {
             "name": "Greece",
@@ -808,7 +984,9 @@
             "continent": "EU",
             "capital": "Athens",
             "currency": "EUR",
-            "languages": "el"
+            "languages": "el",
+            "emoji": "🇬🇷",
+            "emojiUnicode": "U+1F1EC U+1F1F7"
         },
         "GS": {
             "name": "South Georgia and the South Sandwich Islands",
@@ -817,7 +995,9 @@
             "continent": "AN",
             "capital": "King Edward Point",
             "currency": "GBP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇸",
+            "emojiUnicode": "U+1F1EC U+1F1F8"
         },
         "GT": {
             "name": "Guatemala",
@@ -826,7 +1006,9 @@
             "continent": "NA",
             "capital": "Guatemala City",
             "currency": "GTQ",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇬🇹",
+            "emojiUnicode": "U+1F1EC U+1F1F9"
         },
         "GU": {
             "name": "Guam",
@@ -835,7 +1017,9 @@
             "continent": "OC",
             "capital": "Hagåtña",
             "currency": "USD",
-            "languages": "en,ch,es"
+            "languages": "en,ch,es",
+            "emoji": "🇬🇺",
+            "emojiUnicode": "U+1F1EC U+1F1FA"
         },
         "GW": {
             "name": "Guinea-Bissau",
@@ -844,7 +1028,9 @@
             "continent": "AF",
             "capital": "Bissau",
             "currency": "XOF",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇬🇼",
+            "emojiUnicode": "U+1F1EC U+1F1FC"
         },
         "GY": {
             "name": "Guyana",
@@ -853,7 +1039,9 @@
             "continent": "SA",
             "capital": "Georgetown",
             "currency": "GYD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇬🇾",
+            "emojiUnicode": "U+1F1EC U+1F1FE"
         },
         "HK": {
             "name": "Hong Kong",
@@ -862,7 +1050,9 @@
             "continent": "AS",
             "capital": "City of Victoria",
             "currency": "HKD",
-            "languages": "zh,en"
+            "languages": "zh,en",
+            "emoji": "🇭🇰",
+            "emojiUnicode": "U+1F1ED U+1F1F0"
         },
         "HM": {
             "name": "Heard Island and McDonald Islands",
@@ -871,7 +1061,9 @@
             "continent": "AN",
             "capital": "",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇭🇲",
+            "emojiUnicode": "U+1F1ED U+1F1F2"
         },
         "HN": {
             "name": "Honduras",
@@ -880,7 +1072,9 @@
             "continent": "NA",
             "capital": "Tegucigalpa",
             "currency": "HNL",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇭🇳",
+            "emojiUnicode": "U+1F1ED U+1F1F3"
         },
         "HR": {
             "name": "Croatia",
@@ -889,7 +1083,9 @@
             "continent": "EU",
             "capital": "Zagreb",
             "currency": "HRK",
-            "languages": "hr"
+            "languages": "hr",
+            "emoji": "🇭🇷",
+            "emojiUnicode": "U+1F1ED U+1F1F7"
         },
         "HT": {
             "name": "Haiti",
@@ -898,7 +1094,9 @@
             "continent": "NA",
             "capital": "Port-au-Prince",
             "currency": "HTG,USD",
-            "languages": "fr,ht"
+            "languages": "fr,ht",
+            "emoji": "🇭🇹",
+            "emojiUnicode": "U+1F1ED U+1F1F9"
         },
         "HU": {
             "name": "Hungary",
@@ -907,7 +1105,9 @@
             "continent": "EU",
             "capital": "Budapest",
             "currency": "HUF",
-            "languages": "hu"
+            "languages": "hu",
+            "emoji": "🇭🇺",
+            "emojiUnicode": "U+1F1ED U+1F1FA"
         },
         "ID": {
             "name": "Indonesia",
@@ -916,7 +1116,9 @@
             "continent": "AS",
             "capital": "Jakarta",
             "currency": "IDR",
-            "languages": "id"
+            "languages": "id",
+            "emoji": "🇮🇩",
+            "emojiUnicode": "U+1F1EE U+1F1E9"
         },
         "IE": {
             "name": "Ireland",
@@ -925,7 +1127,9 @@
             "continent": "EU",
             "capital": "Dublin",
             "currency": "EUR",
-            "languages": "ga,en"
+            "languages": "ga,en",
+            "emoji": "🇮🇪",
+            "emojiUnicode": "U+1F1EE U+1F1EA"
         },
         "IL": {
             "name": "Israel",
@@ -934,7 +1138,9 @@
             "continent": "AS",
             "capital": "Jerusalem",
             "currency": "ILS",
-            "languages": "he,ar"
+            "languages": "he,ar",
+            "emoji": "🇮🇱",
+            "emojiUnicode": "U+1F1EE U+1F1F1"
         },
         "IM": {
             "name": "Isle of Man",
@@ -943,7 +1149,9 @@
             "continent": "EU",
             "capital": "Douglas",
             "currency": "GBP",
-            "languages": "en,gv"
+            "languages": "en,gv",
+            "emoji": "🇮🇲",
+            "emojiUnicode": "U+1F1EE U+1F1F2"
         },
         "IN": {
             "name": "India",
@@ -952,7 +1160,9 @@
             "continent": "AS",
             "capital": "New Delhi",
             "currency": "INR",
-            "languages": "hi,en"
+            "languages": "hi,en",
+            "emoji": "🇮🇳",
+            "emojiUnicode": "U+1F1EE U+1F1F3"
         },
         "IO": {
             "name": "British Indian Ocean Territory",
@@ -961,7 +1171,9 @@
             "continent": "AS",
             "capital": "Diego Garcia",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇮🇴",
+            "emojiUnicode": "U+1F1EE U+1F1F4"
         },
         "IQ": {
             "name": "Iraq",
@@ -970,7 +1182,9 @@
             "continent": "AS",
             "capital": "Baghdad",
             "currency": "IQD",
-            "languages": "ar,ku"
+            "languages": "ar,ku",
+            "emoji": "🇮🇶",
+            "emojiUnicode": "U+1F1EE U+1F1F6"
         },
         "IR": {
             "name": "Iran",
@@ -979,7 +1193,9 @@
             "continent": "AS",
             "capital": "Tehran",
             "currency": "IRR",
-            "languages": "fa"
+            "languages": "fa",
+            "emoji": "🇮🇷",
+            "emojiUnicode": "U+1F1EE U+1F1F7"
         },
         "IS": {
             "name": "Iceland",
@@ -988,7 +1204,9 @@
             "continent": "EU",
             "capital": "Reykjavik",
             "currency": "ISK",
-            "languages": "is"
+            "languages": "is",
+            "emoji": "🇮🇸",
+            "emojiUnicode": "U+1F1EE U+1F1F8"
         },
         "IT": {
             "name": "Italy",
@@ -997,7 +1215,9 @@
             "continent": "EU",
             "capital": "Rome",
             "currency": "EUR",
-            "languages": "it"
+            "languages": "it",
+            "emoji": "🇮🇹",
+            "emojiUnicode": "U+1F1EE U+1F1F9"
         },
         "JE": {
             "name": "Jersey",
@@ -1006,7 +1226,9 @@
             "continent": "EU",
             "capital": "Saint Helier",
             "currency": "GBP",
-            "languages": "en,fr"
+            "languages": "en,fr",
+            "emoji": "🇯🇪",
+            "emojiUnicode": "U+1F1EF U+1F1EA"
         },
         "JM": {
             "name": "Jamaica",
@@ -1015,7 +1237,9 @@
             "continent": "NA",
             "capital": "Kingston",
             "currency": "JMD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇯🇲",
+            "emojiUnicode": "U+1F1EF U+1F1F2"
         },
         "JO": {
             "name": "Jordan",
@@ -1024,7 +1248,9 @@
             "continent": "AS",
             "capital": "Amman",
             "currency": "JOD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇯🇴",
+            "emojiUnicode": "U+1F1EF U+1F1F4"
         },
         "JP": {
             "name": "Japan",
@@ -1033,7 +1259,9 @@
             "continent": "AS",
             "capital": "Tokyo",
             "currency": "JPY",
-            "languages": "ja"
+            "languages": "ja",
+            "emoji": "🇯🇵",
+            "emojiUnicode": "U+1F1EF U+1F1F5"
         },
         "KE": {
             "name": "Kenya",
@@ -1042,7 +1270,9 @@
             "continent": "AF",
             "capital": "Nairobi",
             "currency": "KES",
-            "languages": "en,sw"
+            "languages": "en,sw",
+            "emoji": "🇰🇪",
+            "emojiUnicode": "U+1F1F0 U+1F1EA"
         },
         "KG": {
             "name": "Kyrgyzstan",
@@ -1051,7 +1281,9 @@
             "continent": "AS",
             "capital": "Bishkek",
             "currency": "KGS",
-            "languages": "ky,ru"
+            "languages": "ky,ru",
+            "emoji": "🇰🇬",
+            "emojiUnicode": "U+1F1F0 U+1F1EC"
         },
         "KH": {
             "name": "Cambodia",
@@ -1060,7 +1292,9 @@
             "continent": "AS",
             "capital": "Phnom Penh",
             "currency": "KHR",
-            "languages": "km"
+            "languages": "km",
+            "emoji": "🇰🇭",
+            "emojiUnicode": "U+1F1F0 U+1F1ED"
         },
         "KI": {
             "name": "Kiribati",
@@ -1069,7 +1303,9 @@
             "continent": "OC",
             "capital": "South Tarawa",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇰🇮",
+            "emojiUnicode": "U+1F1F0 U+1F1EE"
         },
         "KM": {
             "name": "Comoros",
@@ -1078,7 +1314,9 @@
             "continent": "AF",
             "capital": "Moroni",
             "currency": "KMF",
-            "languages": "ar,fr"
+            "languages": "ar,fr",
+            "emoji": "🇰🇲",
+            "emojiUnicode": "U+1F1F0 U+1F1F2"
         },
         "KN": {
             "name": "Saint Kitts and Nevis",
@@ -1087,7 +1325,9 @@
             "continent": "NA",
             "capital": "Basseterre",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇰🇳",
+            "emojiUnicode": "U+1F1F0 U+1F1F3"
         },
         "KP": {
             "name": "North Korea",
@@ -1096,7 +1336,9 @@
             "continent": "AS",
             "capital": "Pyongyang",
             "currency": "KPW",
-            "languages": "ko"
+            "languages": "ko",
+            "emoji": "🇰🇵",
+            "emojiUnicode": "U+1F1F0 U+1F1F5"
         },
         "KR": {
             "name": "South Korea",
@@ -1105,7 +1347,9 @@
             "continent": "AS",
             "capital": "Seoul",
             "currency": "KRW",
-            "languages": "ko"
+            "languages": "ko",
+            "emoji": "🇰🇷",
+            "emojiUnicode": "U+1F1F0 U+1F1F7"
         },
         "KW": {
             "name": "Kuwait",
@@ -1114,7 +1358,9 @@
             "continent": "AS",
             "capital": "Kuwait City",
             "currency": "KWD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇰🇼",
+            "emojiUnicode": "U+1F1F0 U+1F1FC"
         },
         "KY": {
             "name": "Cayman Islands",
@@ -1123,7 +1369,9 @@
             "continent": "NA",
             "capital": "George Town",
             "currency": "KYD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇰🇾",
+            "emojiUnicode": "U+1F1F0 U+1F1FE"
         },
         "KZ": {
             "name": "Kazakhstan",
@@ -1132,7 +1380,9 @@
             "continent": "AS",
             "capital": "Astana",
             "currency": "KZT",
-            "languages": "kk,ru"
+            "languages": "kk,ru",
+            "emoji": "🇰🇿",
+            "emojiUnicode": "U+1F1F0 U+1F1FF"
         },
         "LA": {
             "name": "Laos",
@@ -1141,7 +1391,9 @@
             "continent": "AS",
             "capital": "Vientiane",
             "currency": "LAK",
-            "languages": "lo"
+            "languages": "lo",
+            "emoji": "🇱🇦",
+            "emojiUnicode": "U+1F1F1 U+1F1E6"
         },
         "LB": {
             "name": "Lebanon",
@@ -1150,7 +1402,9 @@
             "continent": "AS",
             "capital": "Beirut",
             "currency": "LBP",
-            "languages": "ar,fr"
+            "languages": "ar,fr",
+            "emoji": "🇱🇧",
+            "emojiUnicode": "U+1F1F1 U+1F1E7"
         },
         "LC": {
             "name": "Saint Lucia",
@@ -1159,7 +1413,9 @@
             "continent": "NA",
             "capital": "Castries",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇱🇨",
+            "emojiUnicode": "U+1F1F1 U+1F1E8"
         },
         "LI": {
             "name": "Liechtenstein",
@@ -1168,7 +1424,9 @@
             "continent": "EU",
             "capital": "Vaduz",
             "currency": "CHF",
-            "languages": "de"
+            "languages": "de",
+            "emoji": "🇱🇮",
+            "emojiUnicode": "U+1F1F1 U+1F1EE"
         },
         "LK": {
             "name": "Sri Lanka",
@@ -1177,7 +1435,9 @@
             "continent": "AS",
             "capital": "Colombo",
             "currency": "LKR",
-            "languages": "si,ta"
+            "languages": "si,ta",
+            "emoji": "🇱🇰",
+            "emojiUnicode": "U+1F1F1 U+1F1F0"
         },
         "LR": {
             "name": "Liberia",
@@ -1186,7 +1446,9 @@
             "continent": "AF",
             "capital": "Monrovia",
             "currency": "LRD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇱🇷",
+            "emojiUnicode": "U+1F1F1 U+1F1F7"
         },
         "LS": {
             "name": "Lesotho",
@@ -1195,7 +1457,9 @@
             "continent": "AF",
             "capital": "Maseru",
             "currency": "LSL,ZAR",
-            "languages": "en,st"
+            "languages": "en,st",
+            "emoji": "🇱🇸",
+            "emojiUnicode": "U+1F1F1 U+1F1F8"
         },
         "LT": {
             "name": "Lithuania",
@@ -1204,7 +1468,9 @@
             "continent": "EU",
             "capital": "Vilnius",
             "currency": "LTL",
-            "languages": "lt"
+            "languages": "lt",
+            "emoji": "🇱🇹",
+            "emojiUnicode": "U+1F1F1 U+1F1F9"
         },
         "LU": {
             "name": "Luxembourg",
@@ -1213,7 +1479,9 @@
             "continent": "EU",
             "capital": "Luxembourg",
             "currency": "EUR",
-            "languages": "fr,de,lb"
+            "languages": "fr,de,lb",
+            "emoji": "🇱🇺",
+            "emojiUnicode": "U+1F1F1 U+1F1FA"
         },
         "LV": {
             "name": "Latvia",
@@ -1222,7 +1490,9 @@
             "continent": "EU",
             "capital": "Riga",
             "currency": "EUR",
-            "languages": "lv"
+            "languages": "lv",
+            "emoji": "🇱🇻",
+            "emojiUnicode": "U+1F1F1 U+1F1FB"
         },
         "LY": {
             "name": "Libya",
@@ -1231,7 +1501,9 @@
             "continent": "AF",
             "capital": "Tripoli",
             "currency": "LYD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇱🇾",
+            "emojiUnicode": "U+1F1F1 U+1F1FE"
         },
         "MA": {
             "name": "Morocco",
@@ -1240,7 +1512,9 @@
             "continent": "AF",
             "capital": "Rabat",
             "currency": "MAD",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇲🇦",
+            "emojiUnicode": "U+1F1F2 U+1F1E6"
         },
         "MC": {
             "name": "Monaco",
@@ -1249,7 +1523,9 @@
             "continent": "EU",
             "capital": "Monaco",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇲🇨",
+            "emojiUnicode": "U+1F1F2 U+1F1E8"
         },
         "MD": {
             "name": "Moldova",
@@ -1258,7 +1534,9 @@
             "continent": "EU",
             "capital": "Chișinău",
             "currency": "MDL",
-            "languages": "ro"
+            "languages": "ro",
+            "emoji": "🇲🇩",
+            "emojiUnicode": "U+1F1F2 U+1F1E9"
         },
         "ME": {
             "name": "Montenegro",
@@ -1267,7 +1545,9 @@
             "continent": "EU",
             "capital": "Podgorica",
             "currency": "EUR",
-            "languages": "sr,bs,sq,hr"
+            "languages": "sr,bs,sq,hr",
+            "emoji": "🇲🇪",
+            "emojiUnicode": "U+1F1F2 U+1F1EA"
         },
         "MF": {
             "name": "Saint Martin",
@@ -1276,7 +1556,9 @@
             "continent": "NA",
             "capital": "Marigot",
             "currency": "EUR",
-            "languages": "en,fr,nl"
+            "languages": "en,fr,nl",
+            "emoji": "🇲🇫",
+            "emojiUnicode": "U+1F1F2 U+1F1EB"
         },
         "MG": {
             "name": "Madagascar",
@@ -1285,7 +1567,9 @@
             "continent": "AF",
             "capital": "Antananarivo",
             "currency": "MGA",
-            "languages": "fr,mg"
+            "languages": "fr,mg",
+            "emoji": "🇲🇬",
+            "emojiUnicode": "U+1F1F2 U+1F1EC"
         },
         "MH": {
             "name": "Marshall Islands",
@@ -1294,7 +1578,9 @@
             "continent": "OC",
             "capital": "Majuro",
             "currency": "USD",
-            "languages": "en,mh"
+            "languages": "en,mh",
+            "emoji": "🇲🇭",
+            "emojiUnicode": "U+1F1F2 U+1F1ED"
         },
         "MK": {
             "name": "Macedonia",
@@ -1303,7 +1589,9 @@
             "continent": "EU",
             "capital": "Skopje",
             "currency": "MKD",
-            "languages": "mk"
+            "languages": "mk",
+            "emoji": "🇲🇰",
+            "emojiUnicode": "U+1F1F2 U+1F1F0"
         },
         "ML": {
             "name": "Mali",
@@ -1312,7 +1600,9 @@
             "continent": "AF",
             "capital": "Bamako",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇲🇱",
+            "emojiUnicode": "U+1F1F2 U+1F1F1"
         },
         "MM": {
             "name": "Myanmar [Burma]",
@@ -1321,7 +1611,9 @@
             "continent": "AS",
             "capital": "Naypyidaw",
             "currency": "MMK",
-            "languages": "my"
+            "languages": "my",
+            "emoji": "🇲🇲",
+            "emojiUnicode": "U+1F1F2 U+1F1F2"
         },
         "MN": {
             "name": "Mongolia",
@@ -1330,7 +1622,9 @@
             "continent": "AS",
             "capital": "Ulan Bator",
             "currency": "MNT",
-            "languages": "mn"
+            "languages": "mn",
+            "emoji": "🇲🇳",
+            "emojiUnicode": "U+1F1F2 U+1F1F3"
         },
         "MO": {
             "name": "Macao",
@@ -1339,7 +1633,9 @@
             "continent": "AS",
             "capital": "",
             "currency": "MOP",
-            "languages": "zh,pt"
+            "languages": "zh,pt",
+            "emoji": "🇲🇴",
+            "emojiUnicode": "U+1F1F2 U+1F1F4"
         },
         "MP": {
             "name": "Northern Mariana Islands",
@@ -1348,7 +1644,9 @@
             "continent": "OC",
             "capital": "Saipan",
             "currency": "USD",
-            "languages": "en,ch"
+            "languages": "en,ch",
+            "emoji": "🇲🇵",
+            "emojiUnicode": "U+1F1F2 U+1F1F5"
         },
         "MQ": {
             "name": "Martinique",
@@ -1357,7 +1655,9 @@
             "continent": "NA",
             "capital": "Fort-de-France",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇲🇶",
+            "emojiUnicode": "U+1F1F2 U+1F1F6"
         },
         "MR": {
             "name": "Mauritania",
@@ -1366,7 +1666,9 @@
             "continent": "AF",
             "capital": "Nouakchott",
             "currency": "MRO",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇲🇷",
+            "emojiUnicode": "U+1F1F2 U+1F1F7"
         },
         "MS": {
             "name": "Montserrat",
@@ -1375,7 +1677,9 @@
             "continent": "NA",
             "capital": "Plymouth",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇲🇸",
+            "emojiUnicode": "U+1F1F2 U+1F1F8"
         },
         "MT": {
             "name": "Malta",
@@ -1384,7 +1688,9 @@
             "continent": "EU",
             "capital": "Valletta",
             "currency": "EUR",
-            "languages": "mt,en"
+            "languages": "mt,en",
+            "emoji": "🇲🇹",
+            "emojiUnicode": "U+1F1F2 U+1F1F9"
         },
         "MU": {
             "name": "Mauritius",
@@ -1393,7 +1699,9 @@
             "continent": "AF",
             "capital": "Port Louis",
             "currency": "MUR",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇲🇺",
+            "emojiUnicode": "U+1F1F2 U+1F1FA"
         },
         "MV": {
             "name": "Maldives",
@@ -1402,7 +1710,9 @@
             "continent": "AS",
             "capital": "Malé",
             "currency": "MVR",
-            "languages": "dv"
+            "languages": "dv",
+            "emoji": "🇲🇻",
+            "emojiUnicode": "U+1F1F2 U+1F1FB"
         },
         "MW": {
             "name": "Malawi",
@@ -1411,7 +1721,9 @@
             "continent": "AF",
             "capital": "Lilongwe",
             "currency": "MWK",
-            "languages": "en,ny"
+            "languages": "en,ny",
+            "emoji": "🇲🇼",
+            "emojiUnicode": "U+1F1F2 U+1F1FC"
         },
         "MX": {
             "name": "Mexico",
@@ -1420,7 +1732,9 @@
             "continent": "NA",
             "capital": "Mexico City",
             "currency": "MXN",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇲🇽",
+            "emojiUnicode": "U+1F1F2 U+1F1FD"
         },
         "MY": {
             "name": "Malaysia",
@@ -1429,7 +1743,9 @@
             "continent": "AS",
             "capital": "Kuala Lumpur",
             "currency": "MYR",
-            "languages": ""
+            "languages": "",
+            "emoji": "🇲🇾",
+            "emojiUnicode": "U+1F1F2 U+1F1FE"
         },
         "MZ": {
             "name": "Mozambique",
@@ -1438,7 +1754,9 @@
             "continent": "AF",
             "capital": "Maputo",
             "currency": "MZN",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇲🇿",
+            "emojiUnicode": "U+1F1F2 U+1F1FF"
         },
         "NA": {
             "name": "Namibia",
@@ -1447,7 +1765,9 @@
             "continent": "AF",
             "capital": "Windhoek",
             "currency": "NAD,ZAR",
-            "languages": "en,af"
+            "languages": "en,af",
+            "emoji": "🇳🇦",
+            "emojiUnicode": "U+1F1F3 U+1F1E6"
         },
         "NC": {
             "name": "New Caledonia",
@@ -1456,7 +1776,9 @@
             "continent": "OC",
             "capital": "Nouméa",
             "currency": "XPF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇳🇨",
+            "emojiUnicode": "U+1F1F3 U+1F1E8"
         },
         "NE": {
             "name": "Niger",
@@ -1465,7 +1787,9 @@
             "continent": "AF",
             "capital": "Niamey",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇳🇪",
+            "emojiUnicode": "U+1F1F3 U+1F1EA"
         },
         "NF": {
             "name": "Norfolk Island",
@@ -1474,7 +1798,9 @@
             "continent": "OC",
             "capital": "Kingston",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇳🇫",
+            "emojiUnicode": "U+1F1F3 U+1F1EB"
         },
         "NG": {
             "name": "Nigeria",
@@ -1483,7 +1809,9 @@
             "continent": "AF",
             "capital": "Abuja",
             "currency": "NGN",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇳🇬",
+            "emojiUnicode": "U+1F1F3 U+1F1EC"
         },
         "NI": {
             "name": "Nicaragua",
@@ -1492,7 +1820,9 @@
             "continent": "NA",
             "capital": "Managua",
             "currency": "NIO",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇳🇮",
+            "emojiUnicode": "U+1F1F3 U+1F1EE"
         },
         "NL": {
             "name": "Netherlands",
@@ -1501,7 +1831,9 @@
             "continent": "EU",
             "capital": "Amsterdam",
             "currency": "EUR",
-            "languages": "nl"
+            "languages": "nl",
+            "emoji": "🇳🇱",
+            "emojiUnicode": "U+1F1F3 U+1F1F1"
         },
         "NO": {
             "name": "Norway",
@@ -1510,7 +1842,9 @@
             "continent": "EU",
             "capital": "Oslo",
             "currency": "NOK",
-            "languages": "no,nb,nn"
+            "languages": "no,nb,nn",
+            "emoji": "🇳🇴",
+            "emojiUnicode": "U+1F1F3 U+1F1F4"
         },
         "NP": {
             "name": "Nepal",
@@ -1519,7 +1853,9 @@
             "continent": "AS",
             "capital": "Kathmandu",
             "currency": "NPR",
-            "languages": "ne"
+            "languages": "ne",
+            "emoji": "🇳🇵",
+            "emojiUnicode": "U+1F1F3 U+1F1F5"
         },
         "NR": {
             "name": "Nauru",
@@ -1528,7 +1864,9 @@
             "continent": "OC",
             "capital": "Yaren",
             "currency": "AUD",
-            "languages": "en,na"
+            "languages": "en,na",
+            "emoji": "🇳🇷",
+            "emojiUnicode": "U+1F1F3 U+1F1F7"
         },
         "NU": {
             "name": "Niue",
@@ -1537,7 +1875,9 @@
             "continent": "OC",
             "capital": "Alofi",
             "currency": "NZD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇳🇺",
+            "emojiUnicode": "U+1F1F3 U+1F1FA"
         },
         "NZ": {
             "name": "New Zealand",
@@ -1546,7 +1886,9 @@
             "continent": "OC",
             "capital": "Wellington",
             "currency": "NZD",
-            "languages": "en,mi"
+            "languages": "en,mi",
+            "emoji": "🇳🇿",
+            "emojiUnicode": "U+1F1F3 U+1F1FF"
         },
         "OM": {
             "name": "Oman",
@@ -1555,7 +1897,9 @@
             "continent": "AS",
             "capital": "Muscat",
             "currency": "OMR",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇴🇲",
+            "emojiUnicode": "U+1F1F4 U+1F1F2"
         },
         "PA": {
             "name": "Panama",
@@ -1564,7 +1908,9 @@
             "continent": "NA",
             "capital": "Panama City",
             "currency": "PAB,USD",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇵🇦",
+            "emojiUnicode": "U+1F1F5 U+1F1E6"
         },
         "PE": {
             "name": "Peru",
@@ -1573,7 +1919,9 @@
             "continent": "SA",
             "capital": "Lima",
             "currency": "PEN",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇵🇪",
+            "emojiUnicode": "U+1F1F5 U+1F1EA"
         },
         "PF": {
             "name": "French Polynesia",
@@ -1582,7 +1930,9 @@
             "continent": "OC",
             "capital": "Papeetē",
             "currency": "XPF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇵🇫",
+            "emojiUnicode": "U+1F1F5 U+1F1EB"
         },
         "PG": {
             "name": "Papua New Guinea",
@@ -1591,7 +1941,9 @@
             "continent": "OC",
             "capital": "Port Moresby",
             "currency": "PGK",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇵🇬",
+            "emojiUnicode": "U+1F1F5 U+1F1EC"
         },
         "PH": {
             "name": "Philippines",
@@ -1600,7 +1952,9 @@
             "continent": "AS",
             "capital": "Manila",
             "currency": "PHP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇵🇭",
+            "emojiUnicode": "U+1F1F5 U+1F1ED"
         },
         "PK": {
             "name": "Pakistan",
@@ -1609,7 +1963,9 @@
             "continent": "AS",
             "capital": "Islamabad",
             "currency": "PKR",
-            "languages": "en,ur"
+            "languages": "en,ur",
+            "emoji": "🇵🇰",
+            "emojiUnicode": "U+1F1F5 U+1F1F0"
         },
         "PL": {
             "name": "Poland",
@@ -1618,7 +1974,9 @@
             "continent": "EU",
             "capital": "Warsaw",
             "currency": "PLN",
-            "languages": "pl"
+            "languages": "pl",
+            "emoji": "🇵🇱",
+            "emojiUnicode": "U+1F1F5 U+1F1F1"
         },
         "PM": {
             "name": "Saint Pierre and Miquelon",
@@ -1627,7 +1985,9 @@
             "continent": "NA",
             "capital": "Saint-Pierre",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇵🇲",
+            "emojiUnicode": "U+1F1F5 U+1F1F2"
         },
         "PN": {
             "name": "Pitcairn Islands",
@@ -1636,7 +1996,9 @@
             "continent": "OC",
             "capital": "Adamstown",
             "currency": "NZD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇵🇳",
+            "emojiUnicode": "U+1F1F5 U+1F1F3"
         },
         "PR": {
             "name": "Puerto Rico",
@@ -1645,7 +2007,9 @@
             "continent": "NA",
             "capital": "San Juan",
             "currency": "USD",
-            "languages": "es,en"
+            "languages": "es,en",
+            "emoji": "🇵🇷",
+            "emojiUnicode": "U+1F1F5 U+1F1F7"
         },
         "PS": {
             "name": "Palestine",
@@ -1654,7 +2018,9 @@
             "continent": "AS",
             "capital": "Ramallah",
             "currency": "ILS",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇵🇸",
+            "emojiUnicode": "U+1F1F5 U+1F1F8"
         },
         "PT": {
             "name": "Portugal",
@@ -1663,7 +2029,9 @@
             "continent": "EU",
             "capital": "Lisbon",
             "currency": "EUR",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇵🇹",
+            "emojiUnicode": "U+1F1F5 U+1F1F9"
         },
         "PW": {
             "name": "Palau",
@@ -1672,7 +2040,9 @@
             "continent": "OC",
             "capital": "Ngerulmud",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇵🇼",
+            "emojiUnicode": "U+1F1F5 U+1F1FC"
         },
         "PY": {
             "name": "Paraguay",
@@ -1681,7 +2051,9 @@
             "continent": "SA",
             "capital": "Asunción",
             "currency": "PYG",
-            "languages": "es,gn"
+            "languages": "es,gn",
+            "emoji": "🇵🇾",
+            "emojiUnicode": "U+1F1F5 U+1F1FE"
         },
         "QA": {
             "name": "Qatar",
@@ -1690,7 +2062,9 @@
             "continent": "AS",
             "capital": "Doha",
             "currency": "QAR",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇶🇦",
+            "emojiUnicode": "U+1F1F6 U+1F1E6"
         },
         "RE": {
             "name": "Réunion",
@@ -1699,7 +2073,9 @@
             "continent": "AF",
             "capital": "Saint-Denis",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇷🇪",
+            "emojiUnicode": "U+1F1F7 U+1F1EA"
         },
         "RO": {
             "name": "Romania",
@@ -1708,7 +2084,9 @@
             "continent": "EU",
             "capital": "Bucharest",
             "currency": "RON",
-            "languages": "ro"
+            "languages": "ro",
+            "emoji": "🇷🇴",
+            "emojiUnicode": "U+1F1F7 U+1F1F4"
         },
         "RS": {
             "name": "Serbia",
@@ -1717,7 +2095,9 @@
             "continent": "EU",
             "capital": "Belgrade",
             "currency": "RSD",
-            "languages": "sr"
+            "languages": "sr",
+            "emoji": "🇷🇸",
+            "emojiUnicode": "U+1F1F7 U+1F1F8"
         },
         "RU": {
             "name": "Russia",
@@ -1726,7 +2106,9 @@
             "continent": "EU",
             "capital": "Moscow",
             "currency": "RUB",
-            "languages": "ru"
+            "languages": "ru",
+            "emoji": "🇷🇺",
+            "emojiUnicode": "U+1F1F7 U+1F1FA"
         },
         "RW": {
             "name": "Rwanda",
@@ -1735,7 +2117,9 @@
             "continent": "AF",
             "capital": "Kigali",
             "currency": "RWF",
-            "languages": "rw,en,fr"
+            "languages": "rw,en,fr",
+            "emoji": "🇷🇼",
+            "emojiUnicode": "U+1F1F7 U+1F1FC"
         },
         "SA": {
             "name": "Saudi Arabia",
@@ -1744,7 +2128,9 @@
             "continent": "AS",
             "capital": "Riyadh",
             "currency": "SAR",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇸🇦",
+            "emojiUnicode": "U+1F1F8 U+1F1E6"
         },
         "SB": {
             "name": "Solomon Islands",
@@ -1753,7 +2139,9 @@
             "continent": "OC",
             "capital": "Honiara",
             "currency": "SBD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇸🇧",
+            "emojiUnicode": "U+1F1F8 U+1F1E7"
         },
         "SC": {
             "name": "Seychelles",
@@ -1762,7 +2150,9 @@
             "continent": "AF",
             "capital": "Victoria",
             "currency": "SCR",
-            "languages": "fr,en"
+            "languages": "fr,en",
+            "emoji": "🇸🇨",
+            "emojiUnicode": "U+1F1F8 U+1F1E8"
         },
         "SD": {
             "name": "Sudan",
@@ -1771,7 +2161,9 @@
             "continent": "AF",
             "capital": "Khartoum",
             "currency": "SDG",
-            "languages": "ar,en"
+            "languages": "ar,en",
+            "emoji": "🇸🇩",
+            "emojiUnicode": "U+1F1F8 U+1F1E9"
         },
         "SE": {
             "name": "Sweden",
@@ -1780,7 +2172,9 @@
             "continent": "EU",
             "capital": "Stockholm",
             "currency": "SEK",
-            "languages": "sv"
+            "languages": "sv",
+            "emoji": "🇸🇪",
+            "emojiUnicode": "U+1F1F8 U+1F1EA"
         },
         "SG": {
             "name": "Singapore",
@@ -1789,7 +2183,9 @@
             "continent": "AS",
             "capital": "Singapore",
             "currency": "SGD",
-            "languages": "en,ms,ta,zh"
+            "languages": "en,ms,ta,zh",
+            "emoji": "🇸🇬",
+            "emojiUnicode": "U+1F1F8 U+1F1EC"
         },
         "SH": {
             "name": "Saint Helena",
@@ -1798,7 +2194,9 @@
             "continent": "AF",
             "capital": "Jamestown",
             "currency": "SHP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇸🇭",
+            "emojiUnicode": "U+1F1F8 U+1F1ED"
         },
         "SI": {
             "name": "Slovenia",
@@ -1807,7 +2205,9 @@
             "continent": "EU",
             "capital": "Ljubljana",
             "currency": "EUR",
-            "languages": "sl"
+            "languages": "sl",
+            "emoji": "🇸🇮",
+            "emojiUnicode": "U+1F1F8 U+1F1EE"
         },
         "SJ": {
             "name": "Svalbard and Jan Mayen",
@@ -1816,7 +2216,9 @@
             "continent": "EU",
             "capital": "Longyearbyen",
             "currency": "NOK",
-            "languages": "no"
+            "languages": "no",
+            "emoji": "🇸🇯",
+            "emojiUnicode": "U+1F1F8 U+1F1EF"
         },
         "SK": {
             "name": "Slovakia",
@@ -1825,7 +2227,9 @@
             "continent": "EU",
             "capital": "Bratislava",
             "currency": "EUR",
-            "languages": "sk"
+            "languages": "sk",
+            "emoji": "🇸🇰",
+            "emojiUnicode": "U+1F1F8 U+1F1F0"
         },
         "SL": {
             "name": "Sierra Leone",
@@ -1834,7 +2238,9 @@
             "continent": "AF",
             "capital": "Freetown",
             "currency": "SLL",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇸🇱",
+            "emojiUnicode": "U+1F1F8 U+1F1F1"
         },
         "SM": {
             "name": "San Marino",
@@ -1843,7 +2249,9 @@
             "continent": "EU",
             "capital": "City of San Marino",
             "currency": "EUR",
-            "languages": "it"
+            "languages": "it",
+            "emoji": "🇸🇲",
+            "emojiUnicode": "U+1F1F8 U+1F1F2"
         },
         "SN": {
             "name": "Senegal",
@@ -1852,7 +2260,9 @@
             "continent": "AF",
             "capital": "Dakar",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇸🇳",
+            "emojiUnicode": "U+1F1F8 U+1F1F3"
         },
         "SO": {
             "name": "Somalia",
@@ -1861,7 +2271,9 @@
             "continent": "AF",
             "capital": "Mogadishu",
             "currency": "SOS",
-            "languages": "so,ar"
+            "languages": "so,ar",
+            "emoji": "🇸🇴",
+            "emojiUnicode": "U+1F1F8 U+1F1F4"
         },
         "SR": {
             "name": "Suriname",
@@ -1870,7 +2282,9 @@
             "continent": "SA",
             "capital": "Paramaribo",
             "currency": "SRD",
-            "languages": "nl"
+            "languages": "nl",
+            "emoji": "🇸🇷",
+            "emojiUnicode": "U+1F1F8 U+1F1F7"
         },
         "SS": {
             "name": "South Sudan",
@@ -1879,7 +2293,9 @@
             "continent": "AF",
             "capital": "Juba",
             "currency": "SSP",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇸🇸",
+            "emojiUnicode": "U+1F1F8 U+1F1F8"
         },
         "ST": {
             "name": "São Tomé and Príncipe",
@@ -1888,7 +2304,9 @@
             "continent": "AF",
             "capital": "São Tomé",
             "currency": "STD",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇸🇹",
+            "emojiUnicode": "U+1F1F8 U+1F1F9"
         },
         "SV": {
             "name": "El Salvador",
@@ -1897,7 +2315,9 @@
             "continent": "NA",
             "capital": "San Salvador",
             "currency": "SVC,USD",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇸🇻",
+            "emojiUnicode": "U+1F1F8 U+1F1FB"
         },
         "SX": {
             "name": "Sint Maarten",
@@ -1906,7 +2326,9 @@
             "continent": "NA",
             "capital": "Philipsburg",
             "currency": "ANG",
-            "languages": "nl,en"
+            "languages": "nl,en",
+            "emoji": "🇸🇽",
+            "emojiUnicode": "U+1F1F8 U+1F1FD"
         },
         "SY": {
             "name": "Syria",
@@ -1915,7 +2337,9 @@
             "continent": "AS",
             "capital": "Damascus",
             "currency": "SYP",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇸🇾",
+            "emojiUnicode": "U+1F1F8 U+1F1FE"
         },
         "SZ": {
             "name": "Swaziland",
@@ -1924,7 +2348,9 @@
             "continent": "AF",
             "capital": "Lobamba",
             "currency": "SZL",
-            "languages": "en,ss"
+            "languages": "en,ss",
+            "emoji": "🇸🇿",
+            "emojiUnicode": "U+1F1F8 U+1F1FF"
         },
         "TC": {
             "name": "Turks and Caicos Islands",
@@ -1933,7 +2359,9 @@
             "continent": "NA",
             "capital": "Cockburn Town",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇹🇨",
+            "emojiUnicode": "U+1F1F9 U+1F1E8"
         },
         "TD": {
             "name": "Chad",
@@ -1942,7 +2370,9 @@
             "continent": "AF",
             "capital": "N'Djamena",
             "currency": "XAF",
-            "languages": "fr,ar"
+            "languages": "fr,ar",
+            "emoji": "🇹🇩",
+            "emojiUnicode": "U+1F1F9 U+1F1E9"
         },
         "TF": {
             "name": "French Southern Territories",
@@ -1951,7 +2381,9 @@
             "continent": "AN",
             "capital": "Port-aux-Français",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇹🇫",
+            "emojiUnicode": "U+1F1F9 U+1F1EB"
         },
         "TG": {
             "name": "Togo",
@@ -1960,7 +2392,9 @@
             "continent": "AF",
             "capital": "Lomé",
             "currency": "XOF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇹🇬",
+            "emojiUnicode": "U+1F1F9 U+1F1EC"
         },
         "TH": {
             "name": "Thailand",
@@ -1969,7 +2403,9 @@
             "continent": "AS",
             "capital": "Bangkok",
             "currency": "THB",
-            "languages": "th"
+            "languages": "th",
+            "emoji": "🇹🇭",
+            "emojiUnicode": "U+1F1F9 U+1F1ED"
         },
         "TJ": {
             "name": "Tajikistan",
@@ -1978,7 +2414,9 @@
             "continent": "AS",
             "capital": "Dushanbe",
             "currency": "TJS",
-            "languages": "tg,ru"
+            "languages": "tg,ru",
+            "emoji": "🇹🇯",
+            "emojiUnicode": "U+1F1F9 U+1F1EF"
         },
         "TK": {
             "name": "Tokelau",
@@ -1987,7 +2425,9 @@
             "continent": "OC",
             "capital": "Fakaofo",
             "currency": "NZD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇹🇰",
+            "emojiUnicode": "U+1F1F9 U+1F1F0"
         },
         "TL": {
             "name": "East Timor",
@@ -1996,7 +2436,9 @@
             "continent": "OC",
             "capital": "Dili",
             "currency": "USD",
-            "languages": "pt"
+            "languages": "pt",
+            "emoji": "🇹🇱",
+            "emojiUnicode": "U+1F1F9 U+1F1F1"
         },
         "TM": {
             "name": "Turkmenistan",
@@ -2005,7 +2447,9 @@
             "continent": "AS",
             "capital": "Ashgabat",
             "currency": "TMT",
-            "languages": "tk,ru"
+            "languages": "tk,ru",
+            "emoji": "🇹🇲",
+            "emojiUnicode": "U+1F1F9 U+1F1F2"
         },
         "TN": {
             "name": "Tunisia",
@@ -2014,7 +2458,9 @@
             "continent": "AF",
             "capital": "Tunis",
             "currency": "TND",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇹🇳",
+            "emojiUnicode": "U+1F1F9 U+1F1F3"
         },
         "TO": {
             "name": "Tonga",
@@ -2023,7 +2469,9 @@
             "continent": "OC",
             "capital": "Nuku'alofa",
             "currency": "TOP",
-            "languages": "en,to"
+            "languages": "en,to",
+            "emoji": "🇹🇴",
+            "emojiUnicode": "U+1F1F9 U+1F1F4"
         },
         "TR": {
             "name": "Turkey",
@@ -2032,7 +2480,9 @@
             "continent": "AS",
             "capital": "Ankara",
             "currency": "TRY",
-            "languages": "tr"
+            "languages": "tr",
+            "emoji": "🇹🇷",
+            "emojiUnicode": "U+1F1F9 U+1F1F7"
         },
         "TT": {
             "name": "Trinidad and Tobago",
@@ -2041,7 +2491,9 @@
             "continent": "NA",
             "capital": "Port of Spain",
             "currency": "TTD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇹🇹",
+            "emojiUnicode": "U+1F1F9 U+1F1F9"
         },
         "TV": {
             "name": "Tuvalu",
@@ -2050,7 +2502,9 @@
             "continent": "OC",
             "capital": "Funafuti",
             "currency": "AUD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇹🇻",
+            "emojiUnicode": "U+1F1F9 U+1F1FB"
         },
         "TW": {
             "name": "Taiwan",
@@ -2059,7 +2513,9 @@
             "continent": "AS",
             "capital": "Taipei",
             "currency": "TWD",
-            "languages": "zh"
+            "languages": "zh",
+            "emoji": "🇹🇼",
+            "emojiUnicode": "U+1F1F9 U+1F1FC"
         },
         "TZ": {
             "name": "Tanzania",
@@ -2068,7 +2524,9 @@
             "continent": "AF",
             "capital": "Dodoma",
             "currency": "TZS",
-            "languages": "sw,en"
+            "languages": "sw,en",
+            "emoji": "🇹🇿",
+            "emojiUnicode": "U+1F1F9 U+1F1FF"
         },
         "UA": {
             "name": "Ukraine",
@@ -2077,7 +2535,9 @@
             "continent": "EU",
             "capital": "Kiev",
             "currency": "UAH",
-            "languages": "uk"
+            "languages": "uk",
+            "emoji": "🇺🇦",
+            "emojiUnicode": "U+1F1FA U+1F1E6"
         },
         "UG": {
             "name": "Uganda",
@@ -2086,7 +2546,9 @@
             "continent": "AF",
             "capital": "Kampala",
             "currency": "UGX",
-            "languages": "en,sw"
+            "languages": "en,sw",
+            "emoji": "🇺🇬",
+            "emojiUnicode": "U+1F1FA U+1F1EC"
         },
         "UM": {
             "name": "U.S. Minor Outlying Islands",
@@ -2095,7 +2557,9 @@
             "continent": "OC",
             "capital": "",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇺🇲",
+            "emojiUnicode": "U+1F1FA U+1F1F2"
         },
         "US": {
             "name": "United States",
@@ -2104,7 +2568,9 @@
             "continent": "NA",
             "capital": "Washington D.C.",
             "currency": "USD,USN,USS",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇺🇸",
+            "emojiUnicode": "U+1F1FA U+1F1F8"
         },
         "UY": {
             "name": "Uruguay",
@@ -2113,7 +2579,9 @@
             "continent": "SA",
             "capital": "Montevideo",
             "currency": "UYI,UYU",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇺🇾",
+            "emojiUnicode": "U+1F1FA U+1F1FE"
         },
         "UZ": {
             "name": "Uzbekistan",
@@ -2122,7 +2590,9 @@
             "continent": "AS",
             "capital": "Tashkent",
             "currency": "UZS",
-            "languages": "uz,ru"
+            "languages": "uz,ru",
+            "emoji": "🇺🇿",
+            "emojiUnicode": "U+1F1FA U+1F1FF"
         },
         "VA": {
             "name": "Vatican City",
@@ -2131,7 +2601,9 @@
             "continent": "EU",
             "capital": "Vatican City",
             "currency": "EUR",
-            "languages": "it,la"
+            "languages": "it,la",
+            "emoji": "🇻🇦",
+            "emojiUnicode": "U+1F1FB U+1F1E6"
         },
         "VC": {
             "name": "Saint Vincent and the Grenadines",
@@ -2140,7 +2612,9 @@
             "continent": "NA",
             "capital": "Kingstown",
             "currency": "XCD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇻🇨",
+            "emojiUnicode": "U+1F1FB U+1F1E8"
         },
         "VE": {
             "name": "Venezuela",
@@ -2149,7 +2623,9 @@
             "continent": "SA",
             "capital": "Caracas",
             "currency": "VEF",
-            "languages": "es"
+            "languages": "es",
+            "emoji": "🇻🇪",
+            "emojiUnicode": "U+1F1FB U+1F1EA"
         },
         "VG": {
             "name": "British Virgin Islands",
@@ -2158,7 +2634,9 @@
             "continent": "NA",
             "capital": "Road Town",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇻🇬",
+            "emojiUnicode": "U+1F1FB U+1F1EC"
         },
         "VI": {
             "name": "U.S. Virgin Islands",
@@ -2167,7 +2645,9 @@
             "continent": "NA",
             "capital": "Charlotte Amalie",
             "currency": "USD",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇻🇮",
+            "emojiUnicode": "U+1F1FB U+1F1EE"
         },
         "VN": {
             "name": "Vietnam",
@@ -2176,7 +2656,9 @@
             "continent": "AS",
             "capital": "Hanoi",
             "currency": "VND",
-            "languages": "vi"
+            "languages": "vi",
+            "emoji": "🇻🇳",
+            "emojiUnicode": "U+1F1FB U+1F1F3"
         },
         "VU": {
             "name": "Vanuatu",
@@ -2185,7 +2667,9 @@
             "continent": "OC",
             "capital": "Port Vila",
             "currency": "VUV",
-            "languages": "bi,en,fr"
+            "languages": "bi,en,fr",
+            "emoji": "🇻🇺",
+            "emojiUnicode": "U+1F1FB U+1F1FA"
         },
         "WF": {
             "name": "Wallis and Futuna",
@@ -2194,7 +2678,9 @@
             "continent": "OC",
             "capital": "Mata-Utu",
             "currency": "XPF",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇼🇫",
+            "emojiUnicode": "U+1F1FC U+1F1EB"
         },
         "WS": {
             "name": "Samoa",
@@ -2203,7 +2689,9 @@
             "continent": "OC",
             "capital": "Apia",
             "currency": "WST",
-            "languages": "sm,en"
+            "languages": "sm,en",
+            "emoji": "🇼🇸",
+            "emojiUnicode": "U+1F1FC U+1F1F8"
         },
         "XK": {
             "name": "Kosovo",
@@ -2221,7 +2709,9 @@
             "continent": "AS",
             "capital": "Sana'a",
             "currency": "YER",
-            "languages": "ar"
+            "languages": "ar",
+            "emoji": "🇾🇪",
+            "emojiUnicode": "U+1F1FE U+1F1EA"
         },
         "YT": {
             "name": "Mayotte",
@@ -2230,7 +2720,9 @@
             "continent": "AF",
             "capital": "Mamoudzou",
             "currency": "EUR",
-            "languages": "fr"
+            "languages": "fr",
+            "emoji": "🇾🇹",
+            "emojiUnicode": "U+1F1FE U+1F1F9"
         },
         "ZA": {
             "name": "South Africa",
@@ -2239,7 +2731,9 @@
             "continent": "AF",
             "capital": "Pretoria",
             "currency": "ZAR",
-            "languages": "af,en,nr,st,ss,tn,ts,ve,xh,zu"
+            "languages": "af,en,nr,st,ss,tn,ts,ve,xh,zu",
+            "emoji": "🇿🇦",
+            "emojiUnicode": "U+1F1FF U+1F1E6"
         },
         "ZM": {
             "name": "Zambia",
@@ -2248,7 +2742,9 @@
             "continent": "AF",
             "capital": "Lusaka",
             "currency": "ZMK",
-            "languages": "en"
+            "languages": "en",
+            "emoji": "🇿🇲",
+            "emojiUnicode": "U+1F1FF U+1F1F2"
         },
         "ZW": {
             "name": "Zimbabwe",
@@ -2257,7 +2753,9 @@
             "continent": "AF",
             "capital": "Harare",
             "currency": "ZWL",
-            "languages": "en,sn,nd"
+            "languages": "en,sn,nd",
+            "emoji": "🇿🇼",
+            "emojiUnicode": "U+1F1FF U+1F1FC"
         }
     }
 }
