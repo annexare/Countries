@@ -2,12 +2,15 @@
 
 const
     NAME = 'countries',
+    LANGUAGES = 'languages',
     COMMA = '","',
     LF = "\n",
     QUOTE = '"',
 
     DO_CSV = 'csv',
+    DO_DATA = 'data',
     DO_EMOJI = 'emoji',
+    DO_LANG = 'languages',
     DO_MIN = 'min',
     DO_MINIMAL = 'minimal',
     DO_SQL = 'sql',
@@ -15,7 +18,10 @@ const
     JSON_EXT = 'json',
     fs = require('fs'),
     gulp = require('gulp'),
-    data = require('./' + NAME + '.json');
+    data = require('./' + NAME + '.json'),
+    languages = require('./' + LANGUAGES + '.json'),
+
+    DEFAULT_TASK = [DO_CSV, DO_DATA, DO_EMOJI, DO_LANG, DO_MIN, DO_MINIMAL, DO_SQL];
 
 gulp.task(DO_CSV, function (callback) {
     const continents = data.continents;
@@ -33,29 +39,24 @@ gulp.task(DO_CSV, function (callback) {
     fs.writeFile(`./${NAME}.${DO_CSV}`, csvData + LF, callback);
 });
 
+gulp.task(DO_DATA, function (callback) {
+    const fullData = Object.assign({}, getDataWithEmoji(), languages);
+
+    fs.writeFile(`./${DO_DATA}.${JSON_EXT}`, JSON.stringify(fullData, false, 4) + LF);
+    fs.writeFile(`./${DO_DATA}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(fullData) + LF);
+    callback && callback();
+});
+
 gulp.task(DO_EMOJI, function (callback) {
-    const
-        emojiFlag = require('./emoji-flag'),
-        dataWithEmoji = Object.assign({}, data, {
-            countries: {}
-        }),
-        {countries} = data,
-        countryCodes = Object.keys(countries);
-
-    countryCodes.forEach(code => {
-        const
-            emoji = emojiFlag.getEmojiFlag(code),
-            emojiU = emojiFlag.getUnicode(emoji);
-
-        dataWithEmoji.countries[code] = Object.assign({}, countries[code], {
-            emoji,
-            emojiU,
-        });
-    });
+    const dataWithEmoji = getDataWithEmoji();
 
     fs.writeFileSync(`./${NAME}.${DO_EMOJI}.${JSON_EXT}`, JSON.stringify(dataWithEmoji, false, 4) + LF);
     fs.writeFileSync(`./${NAME}.${DO_EMOJI}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(dataWithEmoji) + LF);
     callback && callback();
+});
+
+gulp.task(DO_LANG, function (callback) {
+    fs.writeFile(`./${LANGUAGES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languages) + LF, callback);
 });
 
 gulp.task(DO_MIN, function (callback) {
@@ -138,9 +139,31 @@ gulp.task(DO_SQL, function (callback) {
     fs.writeFile(`./${NAME}.${DO_SQL}`, sql + LF, callback);
 });
 
-gulp.task('default', [DO_CSV, DO_EMOJI, DO_MIN, DO_MINIMAL, DO_SQL]);
+gulp.task('default', DEFAULT_TASK);
 
 
+function getDataWithEmoji() {
+    const
+        emojiFlag = require('./emoji-flag'),
+        dataWithEmoji = Object.assign({}, data, {
+            countries: {}
+        }),
+        {countries} = data,
+        countryCodes = Object.keys(countries);
+
+    countryCodes.forEach(code => {
+        const
+            emoji = emojiFlag.getEmojiFlag(code),
+            emojiU = emojiFlag.getUnicode(emoji);
+
+        dataWithEmoji.countries[code] = Object.assign({}, countries[code], {
+            emoji,
+            emojiU,
+        });
+    });
+
+    return dataWithEmoji;
+}
 function objectValues(item) {
     return Object.keys(item)
         .map(key => item[key]);

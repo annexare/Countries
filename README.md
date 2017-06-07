@@ -4,7 +4,7 @@
 [![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
 [![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
 
-Continents & countries: ISO 3166-1 alpha-2 code, name, languages, capital and currency, native name, calling codes.
+Continents & countries: **ISO 3166-1 alpha-2** code, name, **ISO 639-1** languages, capital and currency, native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
@@ -72,9 +72,11 @@ Also, there's a minimal JSON file with only country by code object:
 
 ## Contributing
 
-Everything's generated from `countries.json`, including SQL file.
-But generated files are in repository, so in future please make changes to this file and
-run `gulp` default command.
+Everything related to countries is generated from `countries.json`, including SQL file.<br>
+Everything related to languages is generated from `languages.json`.
+
+Generated files are in repository, so please make data related changes **ONLY** to files above
+and then run `gulp` default command to commit generated files as well.
 
 ## Credits
 
