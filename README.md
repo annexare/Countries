@@ -11,7 +11,7 @@ Also, contains separate JSON files with additional country **Emoji** flags data.
 # Version 2.0: Breaking changes
 
 This version changes a lot in the data structures, and placement of the files.
-So, if your projects depends on the old structure - specify previous versions, `<2.0.0`.
+So, if your projects depend on the old structure — specify previous versions, `<2.0.0`.
 
 The `./data` directory contains source data.
 Built files are in the `./dist` directory.
