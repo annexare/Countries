@@ -8,7 +8,16 @@ Continents & countries: **ISO 3166-1 alpha-2** code, name, **ISO 639-1** languag
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
-**Note**: Languages, currencies, calling codes may be a comma-separated list.
+# Version 2.0: Breaking changes
+
+This version changes a lot in the data structures, and placement of the files.
+So, if your projects depends on the old structure - specify previous versions, `<2.0.0`.
+
+The `./data` directory contains source data.
+Built files are in the `./dist` directory.
+Module exports `continents`, `countries`, `languages` and functions `getEmojiFlag(countryCode)` and `getUnicode(emoji)`.
+
+**Note**: Languages is an array. Currencies, calling codes may be a comma-separated list.
 
 ## Usage
 
@@ -24,60 +33,70 @@ Package is available via:
 
 ```
 {
-    "continents": {
-        "AF": "Africa",
-        "AN": "Antarctica",
-        "AS": "Asia",
-        "EU": "Europe",
-        "NA": "North America",
-        "OC": "Oceania",
-        "SA": "South America"
+  "continents": {
+    "AF": "Africa",
+    "AN": "Antarctica",
+    "AS": "Asia",
+    "EU": "Europe",
+    "NA": "North America",
+    "OC": "Oceania",
+    "SA": "South America"
+  },
+  "countries": {
+    "AE": {
+      "name": "United Arab Emirates",
+      "native": "دولة الإمارات العربية المتحدة",
+      "phone": "971",
+      "continent": "AS",
+      "capital": "Abu Dhabi",
+      "currency": "AED",
+      "languages": [
+        "ar"
+      ],
+      "emoji": "🇦🇪",
+      "emojiU": "U+1F1E6 U+1F1EA"
     },
-    "countries": {
-        "AD": {
-            "name": "Andorra",
-            "native": "Andorra",
-            "phone": "376",
-            "continent": "EU",
-            "capital": "Andorra la Vella",
-            "currency": "EUR",
-            "languages": "ca"
-        },
-        ...
-        "CH": {
-            "name": "Switzerland",
-            "native": "Schweiz",
-            "phone": "41",
-            "continent": "EU",
-            "capital": "Bern",
-            "currency": "CHE,CHF,CHW",
-            "languages": "de,fr,it"
-        },
-        ...
+    ...
+    "UA": {
+      "name": "Ukraine",
+      "native": "Україна",
+      "phone": "380",
+      "continent": "EU",
+      "capital": "Kyiv",
+      "currency": "UAH",
+      "languages": [
+        "uk"
+      ],
+      "emoji": "🇺🇦",
+      "emojiU": "U+1F1FA U+1F1E6"
     }
-}
-```
-
-Also, there's a minimal JSON file with only country by code object:
-
-```
-{
-  ...
-  "UA":"Ukraine",
-  ...
-  "US":"United States"
-  ...
+  },
+  "languages": {
+    "ar": {
+      "name": "Arabic",
+      "native": "العربية",
+      "rtl": 1
+    },
+    ...
+    "uk": {
+      "name": "Ukrainian",
+      "native": "Українська"
+    }
+  }
 }
 ```
 
 ## Contributing
 
-Everything related to countries is generated from `countries.json`, including SQL file.<br>
-Everything related to languages is generated from `languages.json`.
+Everything is generated from files in `./data`, including SQL file.
 
-Generated files are in repository, so please make data related changes **ONLY** to files above
+Everything in `./dist` is generated,
+so please make data related changes **ONLY** to files from `./data`
 and then run `gulp` default command to commit generated files as well.
 
 ## Credits
 
-Prepared by [Annexare Studio](https://annexare.com/) from different public sources. Feel free to use it as you need in your apps or send updates into [this](https://github.com/annexare/Countries) public repository. It's under MIT license.
+Prepared by [Annexare Studio](https://annexare.com/) from different public sources.
+Feel free to use it as you need in your apps
+or send updates into [this](https://github.com/annexare/Countries) public repository.
+It's under MIT license.
