@@ -5,8 +5,10 @@ converting `Object` with fields to `Array` with fields in predefined order to de
 
 ## Countries ~17KB
 
-Example: `{"UA":["Ukraine","Україна","380","EU","Kyiv","UAH","uk"]}`.
+Example: `{"UA":["Ukraine","Україна","380","EU","Kyiv","UAH",["uk"]]}`
+(`name`, `native`, `phone`, `continent`, `capital`, `currency`, `languages`).
 
 ## Languages ~6KB
 
-Example: `{"uk":["Ukrainian","Українська",0]}`.
+Example: `{"uk":["Ukrainian","Українська",0]}`
+(`name`, `native`, `rtl`).

@@ -191,7 +191,7 @@ function getCountryDataOrdered(data) {
 function getCountryDataValues(data, key = false) {
   const { name, native, phone, continent, capital, currency, languages } = data;
   const values = [
-    name, native, phone, continent, capital, currency, getStringFromArray(languages)
+    name, native, phone, continent, capital, currency, key ? getStringFromArray(languages) : languages
   ];
 
   if (key) {
