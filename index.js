@@ -1,7 +1,7 @@
 const { getEmojiFlag, getUnicode } = require('./emoji-flag');
-const continents = require('./data/continents.json');
+const continents = require('./dist/continents.json');
 const countries = require('./dist/countries.emoji.json');
-const languages = require('./data/languages.json');
+const languages = require('./dist/languages.json');
 
 module.exports = {
   continents,
