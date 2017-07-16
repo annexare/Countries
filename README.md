@@ -14,6 +14,16 @@ Also, contains separate JSON files with additional country **Emoji** flags data.
 This version changes a lot in the data structures, and placement of the files.
 So, if your projects depend on the old structure — specify previous versions, `<2.0.0`.
 
+## Installation
+
+Package is available via:
+
+* **NPM** `npm install countries-list`
+* **Composer / Packagist** `composer require annexare/countries-list`
+* **Bower** `bower install countries`
+
+## Usage
+
 Module exports `continents`, `countries`, `languages`, `languagesAll` and functions:
 * `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
 * `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
@@ -27,14 +37,6 @@ The consistent data is available from `./dist/data.*` files (JSON, SQL).
 But `currency` and `phone` calling codes may be a comma-separated `String`.
 
 **Note**: Languages list only contains languages used in Countries data. Full list of known languages is exported as `languagesAll` from `./dist/languages.all.json`.
-
-## Install
-
-Package is available via:
-
-* **NPM** `npm install countries-list`
-* **Composer / Packagist** `composer require annexare/countries-list`
-* **Bower** `bower install countries`
 
 ## Data example
 
