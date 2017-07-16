@@ -1,0 +1,7 @@
+data/
+.editorconfig
+.eslintrc.json
+.gitignore
+bower.json
+composer.json
+gulpfile.js
