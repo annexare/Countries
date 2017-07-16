@@ -28,9 +28,7 @@ But `currency` and `phone` calling codes may be a comma-separated `String`.
 
 **Note**: Languages list only contains languages used in Countries data. Full list of known languages is exported as `languagesAll` from `./dist/languages.all.json`.
 
-## Usage
-
-Here you have ready to use JSON for the most of web apps, CSV and SQL files for some backend stuff.
+## Install
 
 Package is available via:
 
@@ -38,7 +36,7 @@ Package is available via:
 * **Composer / Packagist** `composer require annexare/countries-list`
 * **Bower** `bower install countries`
 
-## Examples
+## Data example
 
 ```
 {
