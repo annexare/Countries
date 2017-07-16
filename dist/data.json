@@ -3372,42 +3372,18 @@
     }
   },
   "languages": {
-    "aa": {
-      "name": "Afar",
-      "native": "Afar"
-    },
-    "ab": {
-      "name": "Abkhazian",
-      "native": "Аҧсуа"
-    },
     "af": {
       "name": "Afrikaans",
       "native": "Afrikaans"
-    },
-    "ak": {
-      "name": "Akan",
-      "native": "Akana"
     },
     "am": {
       "name": "Amharic",
       "native": "አማርኛ"
     },
-    "an": {
-      "name": "Aragonese",
-      "native": "Aragonés"
-    },
     "ar": {
       "name": "Arabic",
       "native": "العربية",
       "rtl": 1
-    },
-    "as": {
-      "name": "Assamese",
-      "native": "অসমীয়া"
-    },
-    "av": {
-      "name": "Avar",
-      "native": "Авар"
     },
     "ay": {
       "name": "Aymara",
@@ -3417,10 +3393,6 @@
       "name": "Azerbaijani",
       "native": "Azərbaycanca / آذربايجان"
     },
-    "ba": {
-      "name": "Bashkir",
-      "native": "Башҡорт"
-    },
     "be": {
       "name": "Belarusian",
       "native": "Беларуская"
@@ -3429,29 +3401,13 @@
       "name": "Bulgarian",
       "native": "Български"
     },
-    "bh": {
-      "name": "Bihari",
-      "native": "भोजपुरी"
-    },
     "bi": {
       "name": "Bislama",
       "native": "Bislama"
     },
-    "bm": {
-      "name": "Bambara",
-      "native": "Bamanankan"
-    },
     "bn": {
       "name": "Bengali",
       "native": "বাংলা"
-    },
-    "bo": {
-      "name": "Tibetan",
-      "native": "བོད་ཡིག / Bod skad"
-    },
-    "br": {
-      "name": "Breton",
-      "native": "Brezhoneg"
     },
     "bs": {
       "name": "Bosnian",
@@ -3461,37 +3417,13 @@
       "name": "Catalan",
       "native": "Català"
     },
-    "ce": {
-      "name": "Chechen",
-      "native": "Нохчийн"
-    },
     "ch": {
       "name": "Chamorro",
       "native": "Chamoru"
     },
-    "co": {
-      "name": "Corsican",
-      "native": "Corsu"
-    },
-    "cr": {
-      "name": "Cree",
-      "native": "Nehiyaw"
-    },
     "cs": {
       "name": "Czech",
       "native": "Česky"
-    },
-    "cu": {
-      "name": "Old Church Slavonic / Old Bulgarian",
-      "native": "словѣньскъ / slověnĭskŭ"
-    },
-    "cv": {
-      "name": "Chuvash",
-      "native": "Чăваш"
-    },
-    "cy": {
-      "name": "Welsh",
-      "native": "Cymraeg"
     },
     "da": {
       "name": "Danish",
@@ -3510,10 +3442,6 @@
       "name": "Dzongkha",
       "native": "ཇོང་ཁ"
     },
-    "ee": {
-      "name": "Ewe",
-      "native": "Ɛʋɛ"
-    },
     "el": {
       "name": "Greek",
       "native": "Ελληνικά"
@@ -3521,10 +3449,6 @@
     "en": {
       "name": "English",
       "native": "English"
-    },
-    "eo": {
-      "name": "Esperanto",
-      "native": "Esperanto"
     },
     "es": {
       "name": "Spanish",
@@ -3563,17 +3487,9 @@
       "name": "French",
       "native": "Français"
     },
-    "fy": {
-      "name": "West Frisian",
-      "native": "Frysk"
-    },
     "ga": {
       "name": "Irish",
       "native": "Gaeilge"
-    },
-    "gd": {
-      "name": "Scottish Gaelic",
-      "native": "Gàidhlig"
     },
     "gl": {
       "name": "Galician",
@@ -3583,18 +3499,9 @@
       "name": "Guarani",
       "native": "Avañe'ẽ"
     },
-    "gu": {
-      "name": "Gujarati",
-      "native": "ગુજરાતી"
-    },
     "gv": {
       "name": "Manx",
       "native": "Gaelg"
-    },
-    "ha": {
-      "name": "Hausa",
-      "native": "هَوُسَ",
-      "rtl": 1
     },
     "he": {
       "name": "Hebrew",
@@ -3604,10 +3511,6 @@
     "hi": {
       "name": "Hindi",
       "native": "हिन्दी"
-    },
-    "ho": {
-      "name": "Hiri Motu",
-      "native": "Hiri Motu"
     },
     "hr": {
       "name": "Croatian",
@@ -3625,37 +3528,9 @@
       "name": "Armenian",
       "native": "Հայերեն"
     },
-    "hz": {
-      "name": "Herero",
-      "native": "Otsiherero"
-    },
-    "ia": {
-      "name": "Interlingua",
-      "native": "Interlingua"
-    },
     "id": {
       "name": "Indonesian",
       "native": "Bahasa Indonesia"
-    },
-    "ie": {
-      "name": "Interlingue",
-      "native": "Interlingue"
-    },
-    "ig": {
-      "name": "Igbo",
-      "native": "Igbo"
-    },
-    "ii": {
-      "name": "Sichuan Yi",
-      "native": "ꆇꉙ / 四川彝语"
-    },
-    "ik": {
-      "name": "Inupiak",
-      "native": "Iñupiak"
-    },
-    "io": {
-      "name": "Ido",
-      "native": "Ido"
     },
     "is": {
       "name": "Icelandic",
@@ -3665,17 +3540,9 @@
       "name": "Italian",
       "native": "Italiano"
     },
-    "iu": {
-      "name": "Inuktitut",
-      "native": "ᐃᓄᒃᑎᑐᑦ"
-    },
     "ja": {
       "name": "Japanese",
       "native": "日本語"
-    },
-    "jv": {
-      "name": "Javanese",
-      "native": "Basa Jawa"
     },
     "ka": {
       "name": "Georgian",
@@ -3684,14 +3551,6 @@
     "kg": {
       "name": "Kongo",
       "native": "KiKongo"
-    },
-    "ki": {
-      "name": "Kikuyu",
-      "native": "Gĩkũyũ"
-    },
-    "kj": {
-      "name": "Kuanyama",
-      "native": "Kuanyama"
     },
     "kk": {
       "name": "Kazakh",
@@ -3705,35 +3564,14 @@
       "name": "Cambodian",
       "native": "ភាសាខ្មែរ"
     },
-    "kn": {
-      "name": "Kannada",
-      "native": "ಕನ್ನಡ"
-    },
     "ko": {
       "name": "Korean",
       "native": "한국어"
-    },
-    "kr": {
-      "name": "Kanuri",
-      "native": "Kanuri"
-    },
-    "ks": {
-      "name": "Kashmiri",
-      "native": "कश्मीरी / كشميري",
-      "rtl": 1
     },
     "ku": {
       "name": "Kurdish",
       "native": "Kurdî / كوردی",
       "rtl": 1
-    },
-    "kv": {
-      "name": "Komi",
-      "native": "Коми"
-    },
-    "kw": {
-      "name": "Cornish",
-      "native": "Kernewek"
     },
     "ky": {
       "name": "Kirghiz",
@@ -3747,14 +3585,6 @@
       "name": "Luxembourgish",
       "native": "Lëtzebuergesch"
     },
-    "lg": {
-      "name": "Ganda",
-      "native": "Luganda"
-    },
-    "li": {
-      "name": "Limburgian",
-      "native": "Limburgs"
-    },
     "ln": {
       "name": "Lingala",
       "native": "Lingála"
@@ -3767,6 +3597,7 @@
       "name": "Lithuanian",
       "native": "Lietuvių"
     },
+    "lu": {},
     "lv": {
       "name": "Latvian",
       "native": "Latviešu"
@@ -3787,21 +3618,9 @@
       "name": "Macedonian",
       "native": "Македонски"
     },
-    "ml": {
-      "name": "Malayalam",
-      "native": "മലയാളം"
-    },
     "mn": {
       "name": "Mongolian",
       "native": "Монгол"
-    },
-    "mo": {
-      "name": "Moldovan",
-      "native": "Moldovenească"
-    },
-    "mr": {
-      "name": "Marathi",
-      "native": "मराठी"
     },
     "ms": {
       "name": "Malay",
@@ -3819,6 +3638,7 @@
       "name": "Nauruan",
       "native": "Dorerin Naoero"
     },
+    "nb": {},
     "nd": {
       "name": "North Ndebele",
       "native": "Sindebele"
@@ -3826,10 +3646,6 @@
     "ne": {
       "name": "Nepali",
       "native": "नेपाली"
-    },
-    "ng": {
-      "name": "Ndonga",
-      "native": "Oshiwambo"
     },
     "nl": {
       "name": "Dutch",
@@ -3847,10 +3663,6 @@
       "name": "South Ndebele",
       "native": "isiNdebele"
     },
-    "nv": {
-      "name": "Navajo",
-      "native": "Diné bizaad"
-    },
     "ny": {
       "name": "Chichewa",
       "native": "Chi-Chewa"
@@ -3859,29 +3671,9 @@
       "name": "Occitan",
       "native": "Occitan"
     },
-    "oj": {
-      "name": "Ojibwa",
-      "native": "ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin"
-    },
-    "om": {
-      "name": "Oromo",
-      "native": "Oromoo"
-    },
-    "or": {
-      "name": "Oriya",
-      "native": "ଓଡ଼ିଆ"
-    },
-    "os": {
-      "name": "Ossetian / Ossetic",
-      "native": "Иронау"
-    },
     "pa": {
       "name": "Panjabi / Punjabi",
       "native": "ਪੰਜਾਬੀ / पंजाबी / پنجابي"
-    },
-    "pi": {
-      "name": "Pali",
-      "native": "Pāli / पाऴि"
     },
     "pl": {
       "name": "Polish",
@@ -3900,10 +3692,6 @@
       "name": "Quechua",
       "native": "Runa Simi"
     },
-    "rm": {
-      "name": "Raeto Romance",
-      "native": "Rumantsch"
-    },
     "rn": {
       "name": "Kirundi",
       "native": "Kirundi"
@@ -3920,29 +3708,9 @@
       "name": "Rwandi",
       "native": "Kinyarwandi"
     },
-    "sa": {
-      "name": "Sanskrit",
-      "native": "संस्कृतम्"
-    },
-    "sc": {
-      "name": "Sardinian",
-      "native": "Sardu"
-    },
-    "sd": {
-      "name": "Sindhi",
-      "native": "सिनधि"
-    },
-    "se": {
-      "name": "Northern Sami",
-      "native": "Sámegiella"
-    },
     "sg": {
       "name": "Sango",
       "native": "Sängö"
-    },
-    "sh": {
-      "name": "Serbo-Croatian",
-      "native": "Srpskohrvatski / Српскохрватски"
     },
     "si": {
       "name": "Sinhalese",
@@ -3984,10 +3752,6 @@
       "name": "Southern Sotho",
       "native": "Sesotho"
     },
-    "su": {
-      "name": "Sundanese",
-      "native": "Basa Sunda"
-    },
     "sv": {
       "name": "Swedish",
       "native": "Svenska"
@@ -3999,10 +3763,6 @@
     "ta": {
       "name": "Tamil",
       "native": "தமிழ்"
-    },
-    "te": {
-      "name": "Telugu",
-      "native": "తెలుగు"
     },
     "tg": {
       "name": "Tajik",
@@ -4020,10 +3780,6 @@
       "name": "Turkmen",
       "native": "Туркмен / تركمن"
     },
-    "tl": {
-      "name": "Tagalog / Filipino",
-      "native": "Tagalog"
-    },
     "tn": {
       "name": "Tswana",
       "native": "Setswana"
@@ -4039,22 +3795,6 @@
     "ts": {
       "name": "Tsonga",
       "native": "Xitsonga"
-    },
-    "tt": {
-      "name": "Tatar",
-      "native": "Tatarça"
-    },
-    "tw": {
-      "name": "Twi",
-      "native": "Twi"
-    },
-    "ty": {
-      "name": "Tahitian",
-      "native": "Reo Mā`ohi"
-    },
-    "ug": {
-      "name": "Uyghur",
-      "native": "Uyƣurqə / ئۇيغۇرچە"
     },
     "uk": {
       "name": "Ukrainian",
@@ -4077,34 +3817,9 @@
       "name": "Vietnamese",
       "native": "Tiếng Việt"
     },
-    "vo": {
-      "name": "Volapük",
-      "native": "Volapük"
-    },
-    "wa": {
-      "name": "Walloon",
-      "native": "Walon"
-    },
-    "wo": {
-      "name": "Wolof",
-      "native": "Wollof"
-    },
     "xh": {
       "name": "Xhosa",
       "native": "isiXhosa"
-    },
-    "yi": {
-      "name": "Yiddish",
-      "native": "ייִדיש",
-      "rtl": 1
-    },
-    "yo": {
-      "name": "Yoruba",
-      "native": "Yorùbá"
-    },
-    "za": {
-      "name": "Zhuang",
-      "native": "Cuengh / Tôô / 壮语"
     },
     "zh": {
       "name": "Chinese",

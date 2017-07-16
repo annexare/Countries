@@ -10,6 +10,7 @@ const
 
   ALL = 'all',
   DATA = './data/',
+  DATA_FILE = 'data',
   DIST = './dist/',
 
   DO_CSV = 'csv',
@@ -30,11 +31,27 @@ const
 
   DEFAULT_TASKS = [DO_COPY, DO_CSV, DO_DATA, DO_EMOJI, DO_MINIMAL, DO_MIN, DO_SQL];
 
+const languagesInUse = getLanguagesInUse();
+
+
+gulp.task('test', function () {
+  const unused = [];
+  Object.keys(languages).forEach(lang => {
+    if (!languagesInUse.hasOwnProperty(lang)) {
+      unused.push(lang);
+    }
+  });
+
+  console.log(`Unused languages: ${unused.length} / ${Object.keys(languages).length}`);
+  console.error(JSON.stringify(unused));
+  console.info(JSON.stringify(Object.keys(languagesInUse)));
+});
 
 gulp.task(DO_COPY, function (callback) {
   fs.writeFileSync(`${DIST}${CONTINENTS}.${JSON_EXT}`, JSON.stringify(continents, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${COUNTRIES}.${JSON_EXT}`, JSON.stringify(countries, false, JSON_TAB) + LF);
-  fs.writeFileSync(`${DIST}${LANGUAGES}.${JSON_EXT}`, JSON.stringify(languages, false, JSON_TAB) + LF);
+  fs.writeFileSync(`${DIST}${LANGUAGES}.${JSON_EXT}`, JSON.stringify(languagesInUse, false, JSON_TAB) + LF);
+  fs.writeFileSync(`${DIST}${LANGUAGES}.${ALL}.${JSON_EXT}`, JSON.stringify(languages, false, JSON_TAB) + LF);
   callback && callback();
 });
 
@@ -45,9 +62,8 @@ gulp.task(DO_CSV, function (callback) {
     + QUOTE;
   const csvData = csvHeader + LF + countryList.map(code => {
     const country = Object.assign({}, countries[code]);
-    const { languages } = country;
     country.continent = continents[country.continent];
-    country.languages = getStringFromArray(languages);
+    country.languages = getStringFromArray(country.languages);
 
     return QUOTE + code + COMMA + objectValues(getCountryDataOrdered(country)).join(COMMA) + QUOTE;
   }).join(LF);
@@ -59,11 +75,11 @@ gulp.task(DO_DATA, function (callback) {
   const fullData = {
     continents,
     countries: getCountriesWithEmoji(),
-    languages,
+    languages: languagesInUse,
   };
 
-  fs.writeFileSync(`${DIST}${ALL}.${JSON_EXT}`, JSON.stringify(fullData, false, JSON_TAB) + LF);
-  fs.writeFileSync(`${DIST}${ALL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(fullData) + LF);
+  fs.writeFileSync(`${DIST}${DATA_FILE}.${JSON_EXT}`, JSON.stringify(fullData, false, JSON_TAB) + LF);
+  fs.writeFileSync(`${DIST}${DATA_FILE}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(fullData) + LF);
   callback && callback();
 });
 
@@ -78,7 +94,8 @@ gulp.task(DO_EMOJI, function (callback) {
 gulp.task(DO_MIN, function (callback) {
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(countries) + LF);
   fs.writeFileSync(`${DIST}${CONTINENTS}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(continents) + LF);
-  fs.writeFileSync(`${DIST}${LANGUAGES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languages) + LF);
+  fs.writeFileSync(`${DIST}${LANGUAGES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languagesInUse) + LF);
+  fs.writeFileSync(`${DIST}${LANGUAGES}.${ALL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languages) + LF);
   callback && callback();
 });
 
@@ -99,8 +116,8 @@ gulp.task(DO_MINIMAL, function (callback) {
 
   // Languages: each item is an Array of fields in order
   const minLanguages = {};
-  Object.keys(languages).forEach(code => {
-    minLanguages[code] = getLanguageDataValues(languages[code]);
+  Object.keys(languagesInUse).forEach(code => {
+    minLanguages[code] = getLanguageDataValues(languagesInUse[code]);
   });
   fs.writeFileSync(`${DIST}${DO_MINIMAL}/${LANGUAGES}.${DO_MINIMAL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minLanguages) + LF);
 
@@ -165,8 +182,8 @@ gulp.task(DO_SQL, function (callback) {
       }),
     countryList = Object.keys(countries)
       .map(key => getCountryDataValues(countries[key], key)),
-    languageList = Object.keys(languages)
-      .map(key => getLanguageDataValues(languages[key], key)),
+    languageList = Object.keys(languagesInUse)
+      .map(key => getLanguageDataValues(languagesInUse[key], key)),
 
     sql = ''
       // Continents
@@ -184,7 +201,7 @@ gulp.task(DO_SQL, function (callback) {
       + LF + LF
       + sqlValues('countries', countryFields, countryList);
 
-  fs.writeFile(`${DIST}${ALL}.${DO_SQL}`, sql + LF, callback);
+  fs.writeFile(`${DIST}${DATA_FILE}.${DO_SQL}`, sql + LF, callback);
 });
 
 gulp.task('default', DEFAULT_TASKS);
@@ -197,6 +214,7 @@ function getCountryDataOrdered(data) {
     name, native, phone, continent, capital, currency, languages
   };
 }
+
 function getCountryDataValues(data, key = false) {
   const { name, native, phone, continent, capital, currency, languages } = data;
   const values = [
@@ -209,6 +227,7 @@ function getCountryDataValues(data, key = false) {
 
   return values;
 }
+
 function getLanguageDataValues(data, key = false) {
   const { name, native, rtl } = data;
   const values = [
@@ -221,6 +240,7 @@ function getLanguageDataValues(data, key = false) {
 
   return values;
 }
+
 function getCountriesWithEmoji() {
   const
     { getEmojiFlag, getUnicode } = require('./emoji-flag'),
@@ -240,6 +260,7 @@ function getCountriesWithEmoji() {
 
   return dataWithEmoji;
 }
+
 function getStringFromArray(arr) {
   if (!arr || !arr.length) {
     return '';
@@ -247,6 +268,35 @@ function getStringFromArray(arr) {
 
   return arr.join(',');
 }
+
+function getLanguagesInUse() {
+  const usedList = [];
+  Object.keys(countries).forEach(code => {
+    const country = countries[code];
+    if (country.languages && country.languages.length) {
+      country.languages.forEach(lang => {
+        if (usedList.indexOf(lang) < 0) {
+          usedList.push(lang);
+        }
+      });
+    }
+  });
+
+  const languagesInUse = {};
+  usedList.sort().forEach(lang => {
+    languagesInUse[lang] = Object.assign({}, languages[lang]);
+  });
+
+  // const unused = [];
+  // Object.keys(languages).forEach(lang => {
+  //   if (used.indexOf(lang) < 0) {
+  //     unused.push(lang);
+  //   }
+  // });
+
+  return languagesInUse;
+}
+
 function objectValues(item) {
   return Object.keys(item)
     .map(key => item[key]);
@@ -258,6 +308,7 @@ function titleCase(str) {
   }
   return str.join(' ');
 }
+
 function sqlHeader(table, fields) {
   let lines = [
     'DROP TABLE IF EXISTS `' + table + '`;',
@@ -272,6 +323,7 @@ function sqlHeader(table, fields) {
 
   return lines.join(LF);
 }
+
 function sqlKeys(fields) {
   let keys = [];
 
@@ -292,6 +344,7 @@ function sqlKeys(fields) {
   return (keys ? ',' + LF + '  ' : '')
     + keys.join(',' + LF + '  ');
 }
+
 function sqlValues(table, fields, values) {
   if (!values || !values.length) {
     return '';

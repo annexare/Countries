@@ -14,11 +14,19 @@ Also, contains separate JSON files with additional country **Emoji** flags data.
 This version changes a lot in the data structures, and placement of the files.
 So, if your projects depend on the old structure — specify previous versions, `<2.0.0`.
 
-The `./data` directory contains source data.
-Built files are in the `./dist` directory.
-Module exports `continents`, `countries`, `languages` and functions `getEmojiFlag(countryCode)` and `getUnicode(emoji)`.
+Module exports `continents`, `countries`, `languages`, `languagesAll` and functions:
+* `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
+* `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
 
-**Note**: Languages is an array. Currencies, calling codes may be a comma-separated list.
+Built files are in the `./dist` directory.
+The `./data` directory contains source data.
+
+The consistent data is available from `./dist/data.*` files (JSON, SQL).
+
+**Note**: Country item `languages` field is an `Array` in JSON files to easily count and match items with a Language item.
+But `currency` and `phone` calling codes may be a comma-separated `String`.
+
+**Note**: Languages list only contains languages used in Countries data. Full list of known languages is exported as `languagesAll` from `./dist/languages.all.json`.
 
 ## Usage
 
