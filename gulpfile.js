@@ -114,6 +114,13 @@ gulp.task(DO_MINIMAL, function (callback) {
   });
   fs.writeFileSync(`${DIST}${DO_MINIMAL}/${COUNTRIES}.${DO_MINIMAL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minCountries) + LF);
 
+  // Languages: each item is a String language name in English
+  const minLanguageNames = {};
+  Object.keys(languagesInUse).forEach(code => {
+    minLanguageNames[code] = languagesInUse[code].name;
+  });
+  fs.writeFileSync(`${DIST}${DO_MINIMAL}/${LANGUAGES}.en.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minLanguageNames) + LF);
+
   // Languages: each item is an Array of fields in order
   const minLanguages = {};
   Object.keys(languagesInUse).forEach(code => {
