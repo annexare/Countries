@@ -83,12 +83,21 @@ gulp.task(DO_MIN, function (callback) {
 });
 
 gulp.task(DO_MINIMAL, function (callback) {
+  // Countries: each item is a String country name in English
+  const minCountryNames = {};
+  Object.keys(countries).forEach(code => {
+    minCountryNames[code] = countries[code].name;
+  });
+  fs.writeFileSync(`${DIST}${DO_MINIMAL}/${COUNTRIES}.en.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minCountryNames) + LF);
+
+  // Countries: each item is an Array of fields in order
   const minCountries = {};
   Object.keys(countries).forEach(code => {
     minCountries[code] = getCountryDataValues(countries[code]);
   });
   fs.writeFileSync(`${DIST}${DO_MINIMAL}/${COUNTRIES}.${DO_MINIMAL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minCountries) + LF);
 
+  // Languages: each item is an Array of fields in order
   const minLanguages = {};
   Object.keys(languages).forEach(code => {
     minLanguages[code] = getLanguageDataValues(languages[code]);
