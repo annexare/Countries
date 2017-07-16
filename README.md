@@ -1,4 +1,4 @@
-# Countries
+# Countries, Languages & Continents data
 
 [![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
 [![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
@@ -9,7 +9,7 @@ Continents & countries: **ISO 3166-1 alpha-2** code, name, **ISO 639-1** languag
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
-# Version 2.0: Breaking changes
+## Version 2.0: Breaking changes
 
 This version changes a lot in the data structures, and placement of the files.
 So, if your projects depend on the old structure — specify previous versions, `<2.0.0`.
