@@ -3,6 +3,7 @@
 [![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
 [![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
 [![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
+[![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
 Continents & countries: **ISO 3166-1 alpha-2** code, name, **ISO 639-1** languages, capital and currency, native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
