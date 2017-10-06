@@ -33,6 +33,8 @@ The `./data` directory contains source data.
 
 The consistent data is available from `./dist/data.*` files (JSON, SQL).
 
+**Note**: ES5 UMD build is here: `./dist/index.es5.min.js`.
+
 **Note**: Country item `languages` field is an `Array` in JSON files to easily count and match items with a Language item.
 But `currency` and `phone` calling codes may be a comma-separated `String`.
 
