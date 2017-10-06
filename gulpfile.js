@@ -1,6 +1,7 @@
 'use strict';
 
 const
+  NAME = 'Countries',
   CONTINENTS = 'continents',
   COUNTRIES = 'countries',
   LANGUAGES = 'languages',
@@ -18,9 +19,11 @@ const
   DO_DATA = 'data',
   DO_EMOJI = 'emoji',
   DO_MIN = 'min',
+  DO_MIN_ES5 = 'es5.min',
   DO_MINIMAL = 'minimal',
   DO_SQL = 'sql',
 
+  JS_EXT = 'js',
   JSON_EXT = 'json',
   JSON_TAB = 2,
   fs = require('fs'),
@@ -89,6 +92,39 @@ gulp.task(DO_EMOJI, function (callback) {
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_EMOJI}.${JSON_EXT}`, JSON.stringify(countriesEmoji, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_EMOJI}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(countriesEmoji) + LF);
   callback && callback();
+});
+
+gulp.task(DO_MIN_ES5, function () {
+  const babel = require('gulp-babel');
+  const header = require('gulp-header');
+  const pkg = require('./package.json');
+  const uglify = require('gulp-uglify');
+  const webpack = require('webpack-stream');
+
+  const banner = '/*! <%= pkg.name %> v<%= pkg.version %> by Annexare | <%= pkg.license %> */\n';
+
+  return gulp.src('dist/index.js')
+    .pipe(webpack({
+      output: {
+        filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
+        libraryTarget: 'umd',
+        library: NAME,
+        umdNamedDefine: true,
+      },
+      stats: false
+    }))
+    .pipe(babel({
+      presets: [
+        ['env', {
+          targets: {
+            uglify: true
+          }
+        }]
+      ]
+    }))
+    .pipe(uglify())
+    .pipe(header(banner, { pkg }))
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task(DO_MIN, function (callback) {

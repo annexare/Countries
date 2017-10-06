@@ -33,9 +33,15 @@
     "eslint": "eslint gulpfile.js; exit 0"
   },
   "devDependencies": {
-    "eslint": "*",
-    "gulp": "*",
-    "punycode": "*"
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-header": "^1.8.9",
+    "gulp-uglify": "^3.0.0",
+    "punycode": "^2.1.0",
+    "webpack-stream": "^4.0.0"
   },
   "devEngines": {
     "node": ">=6.0"
