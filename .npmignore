@@ -1,7 +1,9 @@
 data/
+.idea
 .editorconfig
 .eslintrc.json
 .gitignore
 bower.json
 composer.json
 gulpfile.js
+yarn.lock
