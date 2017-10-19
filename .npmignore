@@ -4,6 +4,6 @@ data/
 .eslintrc.json
 .gitignore
 bower.json
-composer.json
+composer.*
 gulpfile.js
 yarn.lock
