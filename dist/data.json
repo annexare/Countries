@@ -119,7 +119,7 @@
     "AQ": {
       "name": "Antarctica",
       "native": "Antarctica",
-      "phone": "",
+      "phone": "672",
       "continent": "AN",
       "capital": "",
       "currency": "",
@@ -453,7 +453,7 @@
     "BV": {
       "name": "Bouvet Island",
       "native": "Bouvetøya",
-      "phone": "",
+      "phone": "47",
       "continent": "AN",
       "capital": "",
       "currency": "NOK",
@@ -1292,7 +1292,7 @@
     "HM": {
       "name": "Heard Island and McDonald Islands",
       "native": "Heard Island and McDonald Islands",
-      "phone": "",
+      "phone": "61",
       "continent": "AN",
       "capital": "",
       "currency": "AUD",
@@ -2896,7 +2896,7 @@
     "TF": {
       "name": "French Southern Territories",
       "native": "Territoire des Terres australes et antarctiques fr",
-      "phone": "",
+      "phone": "262",
       "continent": "AN",
       "capital": "Port-aux-Français",
       "currency": "EUR",
@@ -3109,7 +3109,7 @@
     "UM": {
       "name": "U.S. Minor Outlying Islands",
       "native": "United States Minor Outlying Islands",
-      "phone": "",
+      "phone": "1",
       "continent": "OC",
       "capital": "",
       "currency": "USD",
