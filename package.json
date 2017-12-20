@@ -44,7 +44,7 @@
     "webpack-stream": "^4.0.0"
   },
   "devEngines": {
-    "node": ">=6.0"
+    "node": ">=6.4"
   },
   "license": "MIT",
   "bugs": {
