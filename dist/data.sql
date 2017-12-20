@@ -398,7 +398,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('VU', 'Vanuatu', 'Vanuatu', '678', 'OC', 'Port Vila', 'VUV', 'bi,en,fr'),
   ('WF', 'Wallis and Futuna', 'Wallis et Futuna', '681', 'OC', 'Mata-Utu', 'XPF', 'fr'),
   ('WS', 'Samoa', 'Samoa', '685', 'OC', 'Apia', 'WST', 'sm,en'),
-  ('XK', 'Kosovo', 'Republika e Kosovës', '377,381,386', 'EU', 'Pristina', 'EUR', 'sq,sr'),
+  ('XK', 'Kosovo', 'Republika e Kosovës', '377,381,383,386', 'EU', 'Pristina', 'EUR', 'sq,sr'),
   ('YE', 'Yemen', 'اليَمَن', '967', 'AS', 'Sana''a', 'YER', 'ar'),
   ('YT', 'Mayotte', 'Mayotte', '262', 'AF', 'Mamoudzou', 'EUR', 'fr'),
   ('ZA', 'South Africa', 'South Africa', '27', 'AF', 'Pretoria', 'ZAR', 'af,en,nr,st,ss,tn,ts,ve,xh,zu'),
