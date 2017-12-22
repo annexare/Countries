@@ -33,7 +33,17 @@ const
   countries = require(DATA + COUNTRIES + '.json'),
   languages = require(DATA + LANGUAGES + '.json'),
 
-  DEFAULT_TASKS = [DO_COPY, DO_CSV, DO_DATA, DO_EMOJI, DO_MINIMAL, DO_MIN, DO_SQL, DO_D_TS];
+  DEFAULT_TASKS = [
+    DO_COPY,
+    DO_CSV,
+    DO_DATA,
+    DO_EMOJI,
+    DO_MINIMAL,
+    DO_MIN,
+    DO_SQL,
+    DO_MIN_ES5,
+    DO_D_TS,
+  ];
 
 const languagesInUse = getLanguagesInUse();
 
