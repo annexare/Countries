@@ -17,6 +17,7 @@ const
   DO_CSV = 'csv',
   DO_COPY = 'copy',
   DO_DATA = 'data',
+  DO_D_TS = 'd-ts',
   DO_EMOJI = 'emoji',
   DO_MIN = 'min',
   DO_MIN_ES5 = 'es5.min',
@@ -32,7 +33,7 @@ const
   countries = require(DATA + COUNTRIES + '.json'),
   languages = require(DATA + LANGUAGES + '.json'),
 
-  DEFAULT_TASKS = [DO_COPY, DO_CSV, DO_DATA, DO_EMOJI, DO_MINIMAL, DO_MIN, DO_SQL];
+  DEFAULT_TASKS = [DO_COPY, DO_CSV, DO_DATA, DO_EMOJI, DO_MINIMAL, DO_MIN, DO_SQL, DO_D_TS];
 
 const languagesInUse = getLanguagesInUse();
 
@@ -72,6 +73,43 @@ gulp.task(DO_CSV, function (callback) {
   }).join(LF);
 
   fs.writeFile(`${DIST}${COUNTRIES}.${DO_CSV}`, csvData + LF, callback);
+});
+
+gulp.task(DO_D_TS, function (callback) {
+  const { name, version } = require('./package.json');
+  let tpl = fs.readFileSync('./dist/index.tpl.d.ts', 'utf8');
+
+  let continentList = '';
+  Object.keys(continents).forEach(continent => {
+    continentList += `  ${continent}: string;\n`;
+  });
+
+  let countryList = '';
+  Object.keys(countries).forEach(country => {
+    countryList += `  ${country}: Country;\n`;
+  });
+
+  let languageList = '';
+  Object.keys(languagesInUse).forEach(lang => {
+    languageList += `  ${lang}: Language;\n`;
+  });
+
+  let languageAllList = '';
+  Object.keys(languages).forEach(langa => {
+    languageAllList += `  ${langa}: Language;\n`;
+  });
+
+  fs.writeFileSync(
+    `${DIST}index.d.ts`,
+    tpl
+      .replace('// name', name)
+      .replace('// version', version)
+      .replace(/\/\/ continents\s+/, continentList)
+      .replace(/\/\/ countries\s+/, countryList)
+      .replace(/\/\/ languages\s+/, languageList)
+      .replace(/\/\/ languagesAll\s+/, languageAllList)
+  );
+  callback && callback();
 });
 
 gulp.task(DO_DATA, function (callback) {
