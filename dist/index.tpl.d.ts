@@ -2,6 +2,7 @@
 // Project: https://github.com/annexare/Countries
 // Definitions by: Dmytro <https://github.com/z-ax>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.1
 
 export interface Country {
   /**

@@ -87,6 +87,7 @@ gulp.task(DO_CSV, function (callback) {
 
 gulp.task(DO_D_TS, function (callback) {
   const { name, version } = require('./package.json');
+  const [ maj, min ] = version.split('.');
   let tpl = fs.readFileSync('./dist/index.tpl.d.ts', 'utf8');
 
   let continentList = '';
@@ -113,7 +114,7 @@ gulp.task(DO_D_TS, function (callback) {
     `${DIST}index.d.ts`,
     tpl
       .replace('// name', name)
-      .replace('// version', version)
+      .replace('// version', `${maj}.${min}`)
       .replace(/\/\/ continents\s+/, continentList)
       .replace(/\/\/ countries\s+/, countryList)
       .replace(/\/\/ languages\s+/, languageList)

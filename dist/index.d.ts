@@ -1,7 +1,8 @@
-// Type definitions for countries-list 2.3.0
+// Type definitions for countries-list 2.3
 // Project: https://github.com/annexare/Countries
 // Definitions by: Dmytro <https://github.com/z-ax>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.1
 
 export interface Country {
   /**
