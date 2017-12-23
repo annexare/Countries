@@ -25,6 +25,9 @@ export interface Country {
    * Country flag Emoji string unicode characters space-separated, e.g. "U+1F1FA U+1F1E6".
    */
   emojiU: string;
+  /**
+   * List of Country's spoken Languages (alpha-2 codes).
+   */
   languages: string[];
   /**
    * Country name in English.
@@ -59,21 +62,21 @@ export interface Language {
  * Continents, key-value object (key is alpha-2 code).
  */
 export const continents: {
-// continents
+  // continents
 };
 
 /**
  * Countries, key-value object (key is alpha-2 code, uppercase).
  */
 export const countries: {
-// countries
+  // countries
 };
 
 /**
  * Languages in use only, key-value object (key is alpha-2 code).
  */
 export const languages: {
-// languages
+  // languages
 };
 
 /**
@@ -81,7 +84,7 @@ export const languages: {
  * A complete list including not used by Countries list.
  */
 export const languagesAll: {
-// languagesAll
+  // languagesAll
 };
 
 /**
