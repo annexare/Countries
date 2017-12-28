@@ -62,7 +62,7 @@ export interface Language {
  * Continents, key-value object (key is alpha-2 code).
  */
 export const continents: {
-    AF: string;
+  AF: string;
   AN: string;
   AS: string;
   EU: string;
@@ -75,7 +75,7 @@ export const continents: {
  * Countries, key-value object (key is alpha-2 code, uppercase).
  */
 export const countries: {
-    AD: Country;
+  AD: Country;
   AE: Country;
   AF: Country;
   AG: Country;
@@ -331,7 +331,7 @@ export const countries: {
  * Languages in use only, key-value object (key is alpha-2 code).
  */
 export const languages: {
-    af: Language;
+  af: Language;
   am: Language;
   ar: Language;
   ay: Language;
@@ -452,7 +452,7 @@ export const languages: {
  * A complete list including not used by Countries list.
  */
 export const languagesAll: {
-    aa: Language;
+  aa: Language;
   ab: Language;
   af: Language;
   ak: Language;
