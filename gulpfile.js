@@ -47,7 +47,7 @@ const
 
 const languagesInUse = getLanguagesInUse();
 
-
+/*
 gulp.task('test', function () {
   const unused = [];
   Object.keys(languages).forEach(lang => {
@@ -60,6 +60,7 @@ gulp.task('test', function () {
   console.error(JSON.stringify(unused));
   console.info(JSON.stringify(Object.keys(languagesInUse)));
 });
+*/
 
 gulp.task(DO_COPY, function (callback) {
   fs.writeFileSync(`${DIST}${CONTINENTS}.${JSON_EXT}`, JSON.stringify(continents, false, JSON_TAB) + LF);
@@ -88,7 +89,7 @@ gulp.task(DO_CSV, function (callback) {
 gulp.task(DO_D_TS, function (callback) {
   const { name, version } = require('./package.json');
   const [ maj, min ] = version.split('.');
-  let tpl = fs.readFileSync('./dist/index.tpl.d.ts', 'utf8');
+  let tpl = fs.readFileSync('./index.tpl.d.ts', 'utf8');
 
   let continentList = '';
   Object.keys(continents).forEach(continent => {
@@ -115,10 +116,10 @@ gulp.task(DO_D_TS, function (callback) {
     tpl
       .replace('// name', name)
       .replace('// version', `${maj}.${min}`)
-      .replace(/\/\/ continents\s+/, continentList)
-      .replace(/\/\/ countries\s+/, countryList)
-      .replace(/\/\/ languages\s+/, languageList)
-      .replace(/\/\/ languagesAll\s+/, languageAllList)
+      .replace(/\s\s\/\/ continents\s+/, continentList)
+      .replace(/\s\s\/\/ countries\s+/, countryList)
+      .replace(/\s\s\/\/ languages\s+/, languageList)
+      .replace(/\s\s\/\/ languagesAll\s+/, languageAllList)
   );
   callback && callback();
 });
@@ -335,7 +336,7 @@ function getLanguageDataValues(data, key = false) {
 
 function getCountriesWithEmoji() {
   const
-    { getEmojiFlag, getUnicode } = require('./emoji-flag'),
+    { getEmojiFlag, getUnicode } = require('./dist'),
     dataWithEmoji = {},
     countryCodes = Object.keys(countries);
 

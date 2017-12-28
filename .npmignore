@@ -6,4 +6,6 @@ data/
 bower.json
 composer.*
 gulpfile.js
+index.tpl.d.ts
+package-lock.json
 yarn.lock
