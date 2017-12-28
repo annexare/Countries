@@ -2,7 +2,7 @@
   "name": "countries-list",
   "version": "2.4.0",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
-  "main": "dist/index.js",
+  "main": "./dist/index.es5.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/annexare/Countries"
@@ -34,9 +34,6 @@
     "eslint": "eslint gulpfile.js; exit 0"
   },
   "typings": "./dist/index.d.ts",
-  "dependencies": {
-    "punycode": "^2.1.0"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -45,6 +42,7 @@
     "gulp-babel": "^7.0.0",
     "gulp-header": "^1.8.9",
     "gulp-uglify": "^3.0.0",
+    "punycode": "^2.1.0",
     "webpack-stream": "^4.0.0"
   },
   "devEngines": {
