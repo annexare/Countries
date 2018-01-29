@@ -144,37 +144,59 @@ gulp.task(DO_EMOJI, function (callback) {
   callback && callback();
 });
 
-gulp.task(DO_MIN_ES5, function () {
-  const babel = require('gulp-babel');
-  const header = require('gulp-header');
+gulp.task(DO_MIN_ES5, function (callback) {
   const pkg = require('./package.json');
-  const uglify = require('gulp-uglify');
-  const webpack = require('webpack-stream');
+  const banner = `${pkg.name} v${pkg.version} by Annexare | ${pkg.license}`;
+  const webpack = require('webpack');
+  const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-  const banner = '/*! <%= pkg.name %> v<%= pkg.version %> by Annexare | <%= pkg.license %> */\n';
-
-  return gulp.src('dist/index.js')
-    .pipe(webpack({
+  const webpackConfig = {
+    entry: `${DIST}index.js`,
       output: {
         filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
         libraryTarget: 'umd',
         library: NAME,
+      path: require('path').resolve(__dirname, DIST),
         umdNamedDefine: true,
       },
-      stats: false
-    }))
-    .pipe(babel({
-      presets: [
-        ['env', {
-          targets: {
-            uglify: true
+    module: {
+      rules: [
+        {
+          test: /\.js$/, use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['babel-preset-env']
           }
-        }]
+          }
+        }
       ]
-    }))
-    .pipe(uglify())
-    .pipe(header(banner, { pkg }))
-    .pipe(gulp.dest('dist/'));
+    },
+    plugins: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          // compress: true,
+          ecma: 5,
+          ie8: true,
+          output: {
+            // comments: false,
+            // beautify: false,
+            ecma: 5,
+          },
+        }
+      }),
+      new webpack.BannerPlugin(banner),
+    ],
+    stats: false,
+    target: 'web',
+  };
+
+  webpack(webpackConfig, (err, stats) => {
+    if (err || stats.hasErrors()) {
+      console.error('ERROR', err || stats.toJson('errors-only'));
+    }
+
+    callback();
+  });
 });
 
 gulp.task(DO_MIN, function (callback) {
