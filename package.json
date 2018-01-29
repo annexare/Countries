@@ -44,8 +44,7 @@
     "gulp-uglify": "^3.0.0",
     "punycode": "^2.1.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
-    "webpack": "^3.10.0",
-    "webpack-stream": "^4.0.0"
+    "webpack": "^3.10.0"
   },
   "devEngines": {
     "node": ">=6.4"
