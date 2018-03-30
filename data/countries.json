@@ -381,7 +381,11 @@
     "continent": "AN",
     "capital": "",
     "currency": "NOK",
-    "languages": []
+    "languages": [
+      "no",
+      "nb",
+      "nn"
+    ]
   },
   "BW": {
     "name": "Botswana",
@@ -1805,7 +1809,9 @@
     "continent": "AS",
     "capital": "Kuala Lumpur",
     "currency": "MYR",
-    "languages": []
+    "languages": [
+      "ms"
+    ]
   },
   "MZ": {
     "name": "Mozambique",
