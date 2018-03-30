@@ -457,7 +457,11 @@
       "continent": "AN",
       "capital": "",
       "currency": "NOK",
-      "languages": [],
+      "languages": [
+        "no",
+        "nb",
+        "nn"
+      ],
       "emoji": "🇧🇻",
       "emojiU": "U+1F1E7 U+1F1FB"
     },
@@ -2129,7 +2133,9 @@
       "continent": "AS",
       "capital": "Kuala Lumpur",
       "currency": "MYR",
-      "languages": [],
+      "languages": [
+        "ms"
+      ],
       "emoji": "🇲🇾",
       "emojiU": "U+1F1F2 U+1F1FE"
     },
