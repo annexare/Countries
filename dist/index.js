@@ -7,6 +7,7 @@ const languagesAll = require('./languages.all.json');
 const { ucs2 } = require('punycode');
 const
   // "Regional Indicator Symbol Letter A" - "Latin Capital Letter A"
+  // The flags are represented by the unicode representation of letters of their country code
   UNICODE_BASE = 127462 - 'A'.charCodeAt(0),
   // Country code should contain exactly 2 uppercase characters from A..Z
   COUNTRY_CODE_REGEX = /^[A-Z]{2}$/;
@@ -16,8 +17,9 @@ const getEmojiFlag = (countryCode) => {
     return '';
   }
 
+  const mappedCode = countryCode === 'UK' ? 'GB' : countryCode;
   return ucs2.encode(
-    countryCode
+    mappedCode
       .split('')
       .map(letter => UNICODE_BASE + letter.charCodeAt(0))
   );

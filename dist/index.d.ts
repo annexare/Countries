@@ -306,6 +306,7 @@ export const countries: {
   TZ: Country;
   UA: Country;
   UG: Country;
+  UK: Country;
   UM: Country;
   US: Country;
   UY: Country;

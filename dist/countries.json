@@ -2640,6 +2640,17 @@
       "sw"
     ]
   },
+  "UK": {
+    "name": "United Kingdom",
+    "native": "United Kingdom",
+    "phone": "44",
+    "continent": "EU",
+    "capital": "London",
+    "currency": "GBP",
+    "languages": [
+      "en"
+    ]
+  },
   "UM": {
     "name": "U.S. Minor Outlying Islands",
     "native": "United States Minor Outlying Islands",

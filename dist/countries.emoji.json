@@ -3102,6 +3102,19 @@
     "emoji": "🇺🇬",
     "emojiU": "U+1F1FA U+1F1EC"
   },
+  "UK": {
+    "name": "United Kingdom",
+    "native": "United Kingdom",
+    "phone": "44",
+    "continent": "EU",
+    "capital": "London",
+    "currency": "GBP",
+    "languages": [
+      "en"
+    ],
+    "emoji": "🇬🇧",
+    "emojiU": "U+1F1EC U+1F1E7"
+  },
   "UM": {
     "name": "U.S. Minor Outlying Islands",
     "native": "United States Minor Outlying Islands",

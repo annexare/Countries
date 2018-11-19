@@ -385,6 +385,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('TZ', 'Tanzania', 'Tanzania', '255', 'AF', 'Dodoma', 'TZS', 'sw,en'),
   ('UA', 'Ukraine', 'Україна', '380', 'EU', 'Kyiv', 'UAH', 'uk'),
   ('UG', 'Uganda', 'Uganda', '256', 'AF', 'Kampala', 'UGX', 'en,sw'),
+  ('UK', 'United Kingdom', 'United Kingdom', '44', 'EU', 'London', 'GBP', 'en'),
   ('UM', 'U.S. Minor Outlying Islands', 'United States Minor Outlying Islands', '1', 'OC', '', 'USD', 'en'),
   ('US', 'United States', 'United States', '1', 'NA', 'Washington D.C.', 'USD,USN,USS', 'en'),
   ('UY', 'Uruguay', 'Uruguay', '598', 'SA', 'Montevideo', 'UYI,UYU', 'es'),
