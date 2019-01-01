@@ -1968,7 +1968,7 @@
     },
     "MM": {
       "name": "Myanmar [Burma]",
-      "native": "Myanma",
+      "native": "မြန်မာ",
       "phone": "95",
       "continent": "AS",
       "capital": "Naypyidaw",
@@ -3638,7 +3638,7 @@
     },
     "my": {
       "name": "Burmese",
-      "native": "Myanmasa"
+      "native": "မြန်မာစာ"
     },
     "na": {
       "name": "Nauruan",
