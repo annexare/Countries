@@ -1,4 +1,4 @@
-// Type definitions for countries-list 2.3
+// Type definitions for countries-list 2.4
 // Project: https://github.com/annexare/Countries
 // Definitions by: Dmytro <https://github.com/z-ax>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
