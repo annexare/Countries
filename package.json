@@ -35,14 +35,14 @@
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.14.0",
-    "gulp": "^3.9.1",
-    "punycode": "^2.1.0",
-    "uglifyjs-webpack-plugin": "^1.1.6",
-    "webpack": "^3.10.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.11.1",
+    "gulp": "^4.0.0",
+    "punycode": "^2.1.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3"
   },
   "devEngines": {
     "node": ">=6.4"

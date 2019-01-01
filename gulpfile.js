@@ -28,7 +28,7 @@ const
   JSON_EXT = 'json',
   JSON_TAB = 2,
   fs = require('fs'),
-  gulp = require('gulp'),
+  { series } = require('gulp'),
   continents = require(DATA + CONTINENTS + '.json'),
   countries = require(DATA + COUNTRIES + '.json'),
   languages = require(DATA + LANGUAGES + '.json'),
@@ -62,15 +62,15 @@ gulp.task('test', function () {
 });
 */
 
-gulp.task(DO_COPY, function (callback) {
+exports[DO_COPY] = function copy(callback) {
   fs.writeFileSync(`${DIST}${CONTINENTS}.${JSON_EXT}`, JSON.stringify(continents, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${COUNTRIES}.${JSON_EXT}`, JSON.stringify(countries, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${LANGUAGES}.${JSON_EXT}`, JSON.stringify(languagesInUse, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${LANGUAGES}.${ALL}.${JSON_EXT}`, JSON.stringify(languages, false, JSON_TAB) + LF);
   callback && callback();
-});
+}
 
-gulp.task(DO_CSV, function (callback) {
+exports[DO_CSV] = function csv(callback) {
   const countryList = Object.keys(countries);
   const csvHeader = QUOTE + 'Code' + COMMA
     + Object.keys(countries.UA).map(key => titleCase(key)).join(COMMA)
@@ -84,9 +84,9 @@ gulp.task(DO_CSV, function (callback) {
   }).join(LF);
 
   fs.writeFile(`${DIST}${COUNTRIES}.${DO_CSV}`, csvData + LF, callback);
-});
+}
 
-gulp.task(DO_D_TS, function (callback) {
+exports[DO_D_TS] = function d_ts(callback) {
   const { name, version } = require('./package.json');
   const [ maj, min ] = version.split('.');
   let tpl = fs.readFileSync('./index.tpl.d.ts', 'utf8');
@@ -122,9 +122,9 @@ gulp.task(DO_D_TS, function (callback) {
       .replace(/\s\s\/\/ languagesAll\s+/, languageAllList)
   );
   callback && callback();
-});
+}
 
-gulp.task(DO_DATA, function (callback) {
+exports[DO_DATA] = function data(callback) {
   const fullData = {
     continents,
     countries: getCountriesWithEmoji(),
@@ -134,17 +134,17 @@ gulp.task(DO_DATA, function (callback) {
   fs.writeFileSync(`${DIST}${DATA_FILE}.${JSON_EXT}`, JSON.stringify(fullData, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${DATA_FILE}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(fullData) + LF);
   callback && callback();
-});
+}
 
-gulp.task(DO_EMOJI, function (callback) {
+exports[DO_EMOJI] = function emoji(callback) {
   const countriesEmoji = getCountriesWithEmoji();
 
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_EMOJI}.${JSON_EXT}`, JSON.stringify(countriesEmoji, false, JSON_TAB) + LF);
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_EMOJI}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(countriesEmoji) + LF);
   callback && callback();
-});
+}
 
-gulp.task(DO_MIN_ES5, function (callback) {
+exports[DO_MIN_ES5] = function min_es5(callback) {
   const pkg = require('./package.json');
   const banner = `${pkg.name} v${pkg.version} by Annexare | ${pkg.license}`;
   const webpack = require('webpack');
@@ -175,13 +175,13 @@ gulp.task(DO_MIN_ES5, function (callback) {
       new UglifyJsPlugin({
         uglifyOptions: {
           // compress: true,
-          ecma: 5,
+          // ecma: 5,
           ie8: true,
-          output: {
+          // output: {
             // comments: false,
             // beautify: false,
-            ecma: 5,
-          },
+            // ecma: 5,
+          // },
         }
       }),
       new webpack.BannerPlugin(banner),
@@ -192,22 +192,23 @@ gulp.task(DO_MIN_ES5, function (callback) {
 
   webpack(webpackConfig, (err, stats) => {
     if (err || stats.hasErrors()) {
+      // eslint-disable-next-line no-console
       console.error('ERROR', err || stats.toJson('errors-only'));
     }
 
     callback();
   });
-});
+}
 
-gulp.task(DO_MIN, function (callback) {
+exports[DO_MIN] = function min(callback) {
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(countries) + LF);
   fs.writeFileSync(`${DIST}${CONTINENTS}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(continents) + LF);
   fs.writeFileSync(`${DIST}${LANGUAGES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languagesInUse) + LF);
   fs.writeFileSync(`${DIST}${LANGUAGES}.${ALL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(languages) + LF);
   callback && callback();
-});
+}
 
-gulp.task(DO_MINIMAL, function (callback) {
+exports[DO_MINIMAL] = function minimal(callback) {
   // Countries: each item is a String country name in English
   const minCountryNames = {};
   Object.keys(countries).forEach(code => {
@@ -237,9 +238,9 @@ gulp.task(DO_MINIMAL, function (callback) {
   fs.writeFileSync(`${DIST}${DO_MINIMAL}/${LANGUAGES}.${DO_MINIMAL}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(minLanguages) + LF);
 
   callback && callback();
-});
+}
 
-gulp.task(DO_SQL, function (callback) {
+exports[DO_SQL] = function sql(callback) {
   const
     continentFields = [{
       name: 'code',
@@ -317,10 +318,9 @@ gulp.task(DO_SQL, function (callback) {
       + sqlValues('countries', countryFields, countryList);
 
   fs.writeFile(`${DIST}${DATA_FILE}.${DO_SQL}`, sql + LF, callback);
-});
+}
 
-gulp.task('default', DEFAULT_TASKS);
-
+exports.default = series(DEFAULT_TASKS.map(task => exports[task]));
 
 function getCountryDataOrdered(data) {
   const { name, native, phone, continent, capital, currency, languages } = data;
