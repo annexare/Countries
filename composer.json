@@ -1,6 +1,6 @@
 {
   "name": "annexare/countries-list",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "type": "library",
   "keywords": [
