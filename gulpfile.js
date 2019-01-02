@@ -152,13 +152,14 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
 
   const webpackConfig = {
     entry: `${DIST}index.js`,
-      output: {
-        filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
-        libraryTarget: 'umd',
-        library: NAME,
+    output: {
+      globalObject: 'this',
+      filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
+      libraryTarget: 'umd',
+      library: NAME,
       path: require('path').resolve(__dirname, DIST),
-        umdNamedDefine: true,
-      },
+      umdNamedDefine: true,
+    },
     module: {
       rules: [
         {
