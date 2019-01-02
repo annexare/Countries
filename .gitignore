@@ -3,6 +3,8 @@
 *lock.json
 *.lock
 
+coverage
+
 composer.phar
 
 # Dependency directory

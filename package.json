@@ -1,6 +1,6 @@
 {
   "name": "countries-list",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "main": "./dist/index.es5.min.js",
   "repository": {
@@ -30,22 +30,32 @@
     "url": "https://github.com/z-ax"
   },
   "scripts": {
-    "start": "gulp",
-    "eslint": "eslint gulpfile.js; exit 0"
+    "build": "gulp && npm run test",
+    "test": "jest",
+    "lint": "eslint gulpfile.js; exit 0"
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.14.0",
-    "gulp": "^3.9.1",
-    "punycode": "^2.1.0",
-    "uglifyjs-webpack-plugin": "^1.1.6",
-    "webpack": "^3.10.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.11.1",
+    "gulp": "^4.0.0",
+    "jest": "^23.6.0",
+    "punycode": "^2.1.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3"
   },
   "devEngines": {
-    "node": ">=6.4"
+    "node": ">=8.14.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      ".*\\.min\\.js"
+    ],
+    "verbose": true
   },
   "license": "MIT",
   "bugs": {
