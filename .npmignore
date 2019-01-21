@@ -4,6 +4,7 @@ data/
 .editorconfig
 .eslintrc.json
 .gitignore
+.travis.yml
 bower.json
 composer.*
 gulpfile.js
