@@ -1,6 +1,5 @@
 # IDE
 .idea
-*lock.json
 *.lock
 
 coverage
