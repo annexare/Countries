@@ -893,7 +893,7 @@
       "phone": "212",
       "continent": "AF",
       "capital": "El Aaiún",
-      "currency": "MAD,DZD,MRO",
+      "currency": "MAD,DZD,MRU",
       "languages": [
         "es"
       ],
@@ -1794,7 +1794,7 @@
       "phone": "370",
       "continent": "EU",
       "capital": "Vilnius",
-      "currency": "LTL",
+      "currency": "EUR",
       "languages": [
         "lt"
       ],
@@ -2039,7 +2039,7 @@
       "phone": "222",
       "continent": "AF",
       "capital": "Nouakchott",
-      "currency": "MRO",
+      "currency": "MRU",
       "languages": [
         "ar"
       ],
@@ -2811,7 +2811,7 @@
       "phone": "239",
       "continent": "AF",
       "capital": "São Tomé",
-      "currency": "STD",
+      "currency": "STN",
       "languages": [
         "pt"
       ],
@@ -3198,7 +3198,7 @@
       "phone": "58",
       "continent": "SA",
       "capital": "Caracas",
-      "currency": "VEF",
+      "currency": "VES",
       "languages": [
         "es"
       ],
@@ -3367,7 +3367,7 @@
       "phone": "263",
       "continent": "AF",
       "capital": "Harare",
-      "currency": "ZWL",
+      "currency": "USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY",
       "languages": [
         "en",
         "sn",
