@@ -346,7 +346,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('RS', 'Serbia', 'Србија', '381', 'EU', 'Belgrade', 'RSD', 'sr'),
   ('RU', 'Russia', 'Россия', '7', 'EU', 'Moscow', 'RUB', 'ru'),
   ('RW', 'Rwanda', 'Rwanda', '250', 'AF', 'Kigali', 'RWF', 'rw,en,fr'),
-  ('SA', 'Saudi Arabia', 'العربية السعودية', '966', 'AS', 'Riyadh', 'SAR', 'ar'),
+  ('SA', 'v Arabia', 'العربية السعودية', '966', 'AS', 'Riyadh', 'SAR', 'ar'),
   ('SB', 'Solomon Islands', 'Solomon Islands', '677', 'OC', 'Honiara', 'SBD', 'en'),
   ('SC', 'Seychelles', 'Seychelles', '248', 'AF', 'Victoria', 'SCR', 'fr,en'),
   ('SD', 'Sudan', 'السودان', '249', 'AF', 'Khartoum', 'SDG', 'ar,en'),
