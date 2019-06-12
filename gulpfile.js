@@ -152,6 +152,7 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
 
   const webpackConfig = {
     entry: `${DIST}index.js`,
+    mode: 'production',
     output: {
       globalObject: 'this',
       filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
@@ -166,7 +167,7 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
           test: /\.js$/, use: {
             loader: 'babel-loader',
             options: {
-              presets: ['babel-preset-env']
+              presets: ['@babel/preset-env']
           }
           }
         }
@@ -187,7 +188,7 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
       }),
       new webpack.BannerPlugin(banner),
     ],
-    stats: false,
+    stats: 'errors-warnings',
     target: 'web',
   };
 
