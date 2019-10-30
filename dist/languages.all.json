@@ -394,6 +394,10 @@
     "name": "Lithuanian",
     "native": "Lietuvių"
   },
+  "lu": {
+    "name": "Luba-Katanga",
+    "native": "Tshiluba"
+  },
   "lv": {
     "name": "Latvian",
     "native": "Latviešu"
@@ -446,6 +450,10 @@
     "name": "Nauruan",
     "native": "Dorerin Naoero"
   },
+  "nb": {
+    "name": "Norwegian Bokmål",
+    "native": "Norsk bokmål"
+  },
   "nd": {
     "name": "North Ndebele",
     "native": "Sindebele"
@@ -464,11 +472,11 @@
   },
   "nn": {
     "name": "Norwegian Nynorsk",
-    "native": "Norsk (nynorsk)"
+    "native": "Norsk nynorsk"
   },
   "no": {
     "name": "Norwegian",
-    "native": "Norsk (bokmål / riksmål)"
+    "native": "Norsk"
   },
   "nr": {
     "name": "South Ndebele",

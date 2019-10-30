@@ -1,4 +1,4 @@
-// Type definitions for countries-list 2.4
+// Type definitions for countries-list 2.5
 // Project: https://github.com/annexare/Countries
 // Definitions by: Dmytro <https://github.com/z-ax>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -549,6 +549,7 @@ export const languagesAll: {
   ln: Language;
   lo: Language;
   lt: Language;
+  lu: Language;
   lv: Language;
   mg: Language;
   mh: Language;
@@ -562,6 +563,7 @@ export const languagesAll: {
   mt: Language;
   my: Language;
   na: Language;
+  nb: Language;
   nd: Language;
   ne: Language;
   ng: Language;
