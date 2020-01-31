@@ -19,6 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build --if-present
-    - run: npm test
+    # Test is intentionally glued with `build` script
+    # - run: npm test
       env:
         CI: true
