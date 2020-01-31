@@ -148,11 +148,27 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
   const pkg = require('./package.json');
   const banner = `${pkg.name} v${pkg.version} by Annexare | ${pkg.license}`;
   const webpack = require('webpack');
-  const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+  const TerserPlugin = require('terser-webpack-plugin');
 
   const webpackConfig = {
     entry: `${DIST}index.js`,
     mode: 'production',
+    optimization: {
+      minimize: true,
+      minimizer: [new TerserPlugin({
+        extractComments: false,
+        terserOptions: {
+          // compress: true,
+          // ecma: 5,
+          ie8: true,
+          // output: {
+            // comments: false,
+            // beautify: false,
+            // ecma: 5,
+          // },
+        }
+      })],
+    },
     output: {
       globalObject: 'this',
       filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
@@ -168,24 +184,12 @@ exports[DO_MIN_ES5] = function min_es5(callback) {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env']
-          }
+            }
           }
         }
       ]
     },
     plugins: [
-      new UglifyJsPlugin({
-        uglifyOptions: {
-          // compress: true,
-          // ecma: 5,
-          ie8: true,
-          // output: {
-            // comments: false,
-            // beautify: false,
-            // ecma: 5,
-          // },
-        }
-      }),
       new webpack.BannerPlugin(banner),
     ],
     stats: 'errors-warnings',
