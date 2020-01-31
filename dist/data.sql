@@ -389,7 +389,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('US', 'United States', 'United States', '1', 'NA', 'Washington D.C.', 'USD,USN,USS', 'en'),
   ('UY', 'Uruguay', 'Uruguay', '598', 'SA', 'Montevideo', 'UYI,UYU', 'es'),
   ('UZ', 'Uzbekistan', 'O‘zbekiston', '998', 'AS', 'Tashkent', 'UZS', 'uz,ru'),
-  ('VA', 'Vatican City', 'Vaticano', '39066,379', 'EU', 'Vatican City', 'EUR', 'it,la'),
+  ('VA', 'Vatican City', 'Vaticano', '379', 'EU', 'Vatican City', 'EUR', 'it,la'),
   ('VC', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', '1784', 'NA', 'Kingstown', 'XCD', 'en'),
   ('VE', 'Venezuela', 'Venezuela', '58', 'SA', 'Caracas', 'VES', 'es'),
   ('VG', 'British Virgin Islands', 'British Virgin Islands', '1284', 'NA', 'Road Town', 'USD', 'en'),
