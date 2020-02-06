@@ -3,6 +3,7 @@
 [![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
 [![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
 [![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
+[![GitHub CI](https://github.com/annexare/Countries/workflows/build/badge.svg "GitHub CI")](https://github.com/annexare/Countries/actions)
 [![Travis CI](https://travis-ci.org/annexare/Countries.svg "Travis CI")](https://travis-ci.org/annexare/Countries)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
