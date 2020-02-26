@@ -101,11 +101,11 @@ But `currency` and `phone` calling codes may be a comma-separated `String`.
 
 ## Contributing
 
-Everything is generated from files in `./data`, including SQL file.
+Everything is generated from files in `./data/`, including SQL file.
 
-Everything in `./dist` is generated,
-so please make data related changes **ONLY** to files from `./data`
-and then run `gulp` default command to commit generated files as well.
+Everything in `./dist/` is generated,
+so please make data related changes **ONLY** to files from `./data/`, commit them
+and then run `npm run build` command to build/test generated files.
 
 ## Credits
 
