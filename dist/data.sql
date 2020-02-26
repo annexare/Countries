@@ -402,5 +402,5 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('YE', 'Yemen', 'اليَمَن', '967', 'AS', 'Sana''a', 'YER', 'ar'),
   ('YT', 'Mayotte', 'Mayotte', '262', 'AF', 'Mamoudzou', 'EUR', 'fr'),
   ('ZA', 'South Africa', 'South Africa', '27', 'AF', 'Pretoria', 'ZAR', 'af,en,nr,st,ss,tn,ts,ve,xh,zu'),
-  ('ZM', 'Zambia', 'Zambia', '260', 'AF', 'Lusaka', 'ZMK', 'en'),
+  ('ZM', 'Zambia', 'Zambia', '260', 'AF', 'Lusaka', 'ZMW', 'en'),
   ('ZW', 'Zimbabwe', 'Zimbabwe', '263', 'AF', 'Harare', 'USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY', 'en,sn,nd');
