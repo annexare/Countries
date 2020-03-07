@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea or use case
-title: ''
+title: Feature
 labels: feature request
 assignees: ''
 
