@@ -1,9 +1,10 @@
 coverage/
 data/
+node_modules/
 .idea
 .editorconfig
 .eslintrc.json
-.gitignore
+.git*
 .travis.yml
 bower.json
 composer.*
