@@ -8,8 +8,8 @@ const {
   getUnicode,
 } = require('./index.js');
 
-const countries2to3 = require('../data/countries2to3.json')
-const countries3to2 = require('../data/countries3to2.json')
+const countries2to3 = require('./countries2to3.json')
+const countries3to2 = require('./countries3to2.json')
 
 const TYPE_OBJECT = 'object';
 const TYPE_STRING = 'string';
