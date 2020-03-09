@@ -1,3 +1,6 @@
+# OS specific
+.DS_Store
+
 # IDE
 .idea
 *.lock

@@ -7,7 +7,7 @@
 [![Travis CI](https://travis-ci.org/annexare/Countries.svg "Travis CI")](https://travis-ci.org/annexare/Countries)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
-Continents & countries: **ISO 3166-1 alpha-2** code, name, **ISO 639-1** languages, capital and currency, native name, calling codes.
+Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital and currency, native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
