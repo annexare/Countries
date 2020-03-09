@@ -1,6 +1,6 @@
 {
   "name": "countries-list",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "main": "./dist/index.es5.min.js",
   "repository": {
@@ -36,15 +36,15 @@
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
-    "@babel/core": "~7.8.4",
-    "@babel/preset-env": "~7.8.4",
+    "@babel/core": "~7.8.7",
+    "@babel/preset-env": "~7.8.7",
     "babel-loader": "~8.0.6",
     "eslint": "~6.8.0",
     "gulp": "~4.0.2",
     "jest": "~25.1.0",
     "punycode": "2.1.1",
     "terser-webpack-plugin": "~2.3.4",
-    "webpack": "~4.41.5"
+    "webpack": "~4.42.0"
   },
   "devEngines": {
     "node": ">=8.14.1"
