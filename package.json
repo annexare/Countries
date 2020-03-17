@@ -43,7 +43,7 @@
     "gulp": "~4.0.2",
     "jest": "~25.1.0",
     "punycode": "2.1.1",
-    "terser-webpack-plugin": "~2.3.4",
+    "terser-webpack-plugin": "~2.3.5",
     "webpack": "~4.42.0"
   },
   "devEngines": {
