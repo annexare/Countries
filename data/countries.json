@@ -1205,7 +1205,9 @@
     "currency": "INR",
     "languages": [
       "hi",
-      "en"
+      "en",
+      "te",
+      "ta"
     ]
   },
   "IO": {
