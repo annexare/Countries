@@ -711,7 +711,8 @@
     "capital": "Algiers",
     "currency": "DZD",
     "languages": [
-      "ar"
+      "ar",
+      "bb"
     ]
   },
   "EC": {
@@ -1557,7 +1558,8 @@
     "capital": "Tripoli",
     "currency": "LYD",
     "languages": [
-      "ar"
+      "ar",
+      "bb"
     ]
   },
   "MA": {
@@ -1568,7 +1570,8 @@
     "capital": "Rabat",
     "currency": "MAD",
     "languages": [
-      "ar"
+      "ar",
+      "bb"
     ]
   },
   "MC": {
@@ -2546,7 +2549,8 @@
     "capital": "Tunis",
     "currency": "TND",
     "languages": [
-      "ar"
+      "ar",
+      "bb"
     ]
   },
   "TO": {
