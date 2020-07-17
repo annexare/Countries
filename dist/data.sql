@@ -36,7 +36,7 @@ INSERT INTO `languages` (`code`, `name`, `native`, `rtl`) VALUES
   ('bs', 'Bosnian', 'Bosanski', '0'),
   ('ca', 'Catalan', 'Català', '0'),
   ('ch', 'Chamorro', 'Chamoru', '0'),
-  ('cs', 'Czech', 'Česky', '0'),
+  ('cs', 'Czech', 'Čeština', '0'),
   ('da', 'Danish', 'Dansk', '0'),
   ('de', 'German', 'Deutsch', '0'),
   ('dv', 'Divehi', 'ދިވެހިބަސް', '1'),
