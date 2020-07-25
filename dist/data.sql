@@ -73,7 +73,7 @@ INSERT INTO `languages` (`code`, `name`, `native`, `rtl`) VALUES
   ('km', 'Cambodian', 'ភាសាខ្មែរ', '0'),
   ('ko', 'Korean', '한국어', '0'),
   ('ku', 'Kurdish', 'Kurdî / كوردی', '1'),
-  ('ky', 'Kirghiz', 'Kırgızca / Кыргызча', '0'),
+  ('ky', 'Kyrgyz', 'Кыргызча', '0'),
   ('la', 'Latin', 'Latina', '0'),
   ('lb', 'Luxembourgish', 'Lëtzebuergesch', '0'),
   ('ln', 'Lingala', 'Lingála', '0'),
