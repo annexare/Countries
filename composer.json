@@ -32,5 +32,10 @@
     "issues": "https://github.com/annexare/Countries/issues"
   },
   "require": {},
+  "autoload": {
+      "files": [
+          "dist/index.php"
+      ]
+  },
   "homepage": "http://annexare.github.io/Countries/"
 }
