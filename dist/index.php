@@ -13,7 +13,7 @@ use const JSON_THROW_ON_ERROR;
 
 /**
  * Loads a JSON file relative to the current directory.
- * 
+ *
  * @param string $path
  *
  * @return array
@@ -22,18 +22,18 @@ use const JSON_THROW_ON_ERROR;
  */
 function load(string $path): array
 {
-    static $cache = [];
+  static $cache = [];
 
-    if (isset($cache[$path])) {
-        return $cache[$path];
-    }
+  if (isset($cache[$path])) {
+    return $cache[$path];
+  }
 
-    return $cache[$path] = json_decode(
-        file_get_contents(__DIR__ . '/' . $path),
-        true,
-        512,
-        JSON_THROW_ON_ERROR
-    );
+  return $cache[$path] = json_decode(
+    file_get_contents(__DIR__ . '/' . $path),
+    true,
+    512,
+    JSON_THROW_ON_ERROR
+  );
 }
 
 /**
@@ -44,7 +44,7 @@ function load(string $path): array
  */
 function continents(): array
 {
-    return load('continents.min.json');
+  return load('continents.min.json');
 }
 
 /**
@@ -55,7 +55,7 @@ function continents(): array
  */
 function countries(): array
 {
-    return load('countries.min.json');
+  return load('countries.min.json');
 }
 
 /**
@@ -66,7 +66,7 @@ function countries(): array
  */
 function languages(): array
 {
-    return load('languages.min.json');
+  return load('languages.min.json');
 }
 
 /**
@@ -78,5 +78,5 @@ function languages(): array
  */
 function languagesAll(): array
 {
-    return load('languages.all.min.json');
+  return load('languages.all.min.json');
 }
