@@ -6,13 +6,8 @@ namespace Annexare\Countries;
 
 use JsonException;
 
-use function array_map;
 use function file_get_contents;
-use function idn_to_utf8;
 use function json_decode;
-use function ord;
-use function preg_match;
-use function str_split;
 
 use const JSON_THROW_ON_ERROR;
 
@@ -84,40 +79,4 @@ function languages(): array
 function languagesAll(): array
 {
     return load('languages.all.min.json');
-}
-
-/**
- * Returns country flag Emoji string.
- *
- * @param string $countryCode
- *
- * @return string
- */
-function getEmojiFlag(string $countryCode): string
-{
-    $unicodeBase = 127462 - ord('A');
-    $regex='/^[A-Z]{2}$/';
-
-    if (! preg_match($regex, $countryCode)) {
-        return '';
-    }
-
-    return idn_to_utf8(array_map(
-            fn(string $letter) => $unicodeBase + ord($letter),
-            str_split( $countryCode)
-        )
-    );
-}
-
-/**
- * TODO: Finish implementation
- * 
- * @param string $emoji
- *
- * @return string
- * @internal
- */
-function getUnicode(string $emoji): string
-{
-    return '';
 }
