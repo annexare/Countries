@@ -6,6 +6,7 @@
 *.lock
 
 coverage
+.phpunit.cache
 
 composer.phar
 

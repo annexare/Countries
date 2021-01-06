@@ -32,5 +32,13 @@
     "issues": "https://github.com/annexare/Countries/issues"
   },
   "require": {},
-  "homepage": "http://annexare.github.io/Countries/"
+  "autoload": {
+      "files": [
+          "dist/index.php"
+      ]
+  },
+  "homepage": "http://annexare.github.io/Countries/",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
 }
