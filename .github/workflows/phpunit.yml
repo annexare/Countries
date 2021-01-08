@@ -1,0 +1,34 @@
+name: Countries PHP CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/*.yml"
+      - "data/**"
+      - "dist/*.php"
+      - "test/*.php"
+      - "*.js"
+      - "*.json"
+      - "*.ts"
+      - "!.editorconfig"
+      - "!.travis.yml"
+      - "!**LICENSE*"
+      - "!**README*"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v2
+        with:
+          configuration: phpunit.xml
+          args: --coverage-text

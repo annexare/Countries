@@ -12,7 +12,7 @@
          verbose="true">
   <testsuites>
     <testsuite name="default">
-      <directory>tests</directory>
+      <directory>test</directory>
     </testsuite>
   </testsuites>
 
