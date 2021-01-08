@@ -1,4 +1,4 @@
-name: Countries PHP CI
+name: Countries PHP
 
 on:
   push:

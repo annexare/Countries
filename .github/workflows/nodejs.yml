@@ -1,4 +1,4 @@
-name: Countries CI
+name: Countries JS
 
 on:
   push:
