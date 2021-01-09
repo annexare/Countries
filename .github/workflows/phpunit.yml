@@ -21,7 +21,7 @@ on:
       - "!**README*"
 
 jobs:
-  build-test:
+  phpunit:
     runs-on: ubuntu-latest
 
     steps:
