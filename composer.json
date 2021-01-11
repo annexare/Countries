@@ -33,9 +33,9 @@
   },
   "require": {},
   "autoload": {
-      "files": [
-          "dist/index.php"
-      ]
+    "files": [
+      "dist/index.php"
+    ]
   },
   "homepage": "http://annexare.github.io/Countries/",
   "require-dev": {

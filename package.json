@@ -32,7 +32,7 @@
   "scripts": {
     "build": "gulp && npm run test",
     "test": "jest",
-    "lint": "eslint gulpfile.js; exit 0"
+    "lint": "eslint"
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
@@ -41,10 +41,13 @@
     "babel-loader": "~8.2.2",
     "eslint": "~7.17.0",
     "gulp": "~4.0.2",
+    "husky": "~4.3.7",
     "jest": "~26.6.3",
+    "lint-staged": "~10.5.3",
+    "prettier": "2.2.1",
     "punycode": "2.1.1",
-    "terser-webpack-plugin": "~5.0.3",
-    "webpack": "~5.12.1"
+    "terser-webpack-plugin": "~3.1.0",
+    "webpack": "~4.45.0"
   },
   "devEngines": {
     "node": ">=8.14.1"
@@ -62,5 +65,14 @@
   "bugs": {
     "url": "https://github.com/annexare/Countries/issues"
   },
-  "homepage": "http://annexare.github.io/Countries/"
+  "homepage": "http://annexare.github.io/Countries/",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }

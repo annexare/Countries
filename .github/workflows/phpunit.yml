@@ -8,17 +8,17 @@ on:
     branches:
       - master
     paths:
-      - ".github/workflows/*.yml"
-      - "data/**"
-      - "dist/*.php"
-      - "test/*.php"
-      - "*.js"
-      - "*.json"
-      - "*.ts"
-      - "!.editorconfig"
-      - "!.travis.yml"
-      - "!**LICENSE*"
-      - "!**README*"
+      - '.github/workflows/*.yml'
+      - 'data/**'
+      - 'dist/*.php'
+      - 'test/*.php'
+      - '*.js'
+      - '*.json'
+      - '*.ts'
+      - '!.editorconfig'
+      - '!.travis.yml'
+      - '!**LICENSE*'
+      - '!**README*'
 
 jobs:
   phpunit:

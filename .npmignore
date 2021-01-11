@@ -8,6 +8,7 @@ test/
 .editorconfig
 .eslintrc.json
 .git*
+.prettierrc*
 .travis.yml
 
 bower.json
