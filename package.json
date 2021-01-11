@@ -35,6 +35,9 @@
     "lint": "eslint gulpfile.js; exit 0"
   },
   "typings": "./dist/index.d.ts",
+  "dependencies": {
+    "punycode": "^2.1.1"
+  },
   "devDependencies": {
     "@babel/core": "~7.12.10",
     "@babel/preset-env": "~7.12.11",
@@ -42,7 +45,6 @@
     "eslint": "~7.17.0",
     "gulp": "~4.0.2",
     "jest": "~26.6.3",
-    "punycode": "2.1.1",
     "terser-webpack-plugin": "~5.0.3",
     "webpack": "~5.12.1"
   },
