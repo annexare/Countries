@@ -6,18 +6,19 @@ test/
 
 .idea
 .editorconfig
-.eslintrc.json
+.eslint*
 .git*
 .prettier*
 .travis.yml
 
-bower.json
-composer.*
 gulpfile.js
 index.tpl.d.ts
-package-lock.json
 rollup.*
-yarn.lock
 *.test.*
+
+bower.json
+composer.*
+package-lock.json
+yarn.lock
 
 phpunit.xml
