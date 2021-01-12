@@ -8,7 +8,7 @@ test/
 .editorconfig
 .eslintrc.json
 .git*
-.prettierrc*
+.prettier*
 .travis.yml
 
 bower.json
@@ -16,6 +16,8 @@ composer.*
 gulpfile.js
 index.tpl.d.ts
 package-lock.json
+rollup.*
 yarn.lock
+*.test.*
 
 phpunit.xml
