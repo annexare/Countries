@@ -7,6 +7,7 @@
   "extends": [
     "eslint:recommended"
   ],
+  "ignorePatterns": ["**/dist/*.min.*"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "script"

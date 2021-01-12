@@ -1,10 +1,10 @@
 # Countries, Languages & Continents data
 
 [![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
-[![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
-[![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
-[![CI: JS](https://github.com/annexare/Countries/workflows/Countries%20JS/badge.svg "CI: JS")](https://github.com/annexare/Countries/actions)
-[![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg "CI: PHP")](https://github.com/annexare/Countries/actions)
+[![NPM](https://img.shields.io/npm/v/countries-list.svg 'NPM package version')](https://www.npmjs.com/package/countries-list)
+[![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg 'Packagist version')](https://packagist.org/packages/annexare/countries-list)
+[![CI: JS](https://github.com/annexare/Countries/workflows/Countries%20JS/badge.svg 'CI: JS')](https://github.com/annexare/Countries/actions)
+[![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg 'CI: PHP')](https://github.com/annexare/Countries/actions)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
 Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital and currency, native name, calling codes.
@@ -20,15 +20,16 @@ So, if your projects depend on the old structure — specify previous versions, 
 
 Package is available via:
 
-* **NPM** `npm install countries-list`
-* **Composer / Packagist** `composer require annexare/countries-list`
-* **Bower** `bower install countries`
+- **NPM** `npm install countries-list`
+- **Composer / Packagist** `composer require annexare/countries-list`
+- **Bower** `bower install countries`
 
 ## Usage
 
 Module exports `continents`, `countries`, `languages`, `languagesAll` and functions:
-* `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
-* `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
+
+- `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
+- `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
 
 Built files are in the `./dist` directory.
 The `./data` directory contains source data.

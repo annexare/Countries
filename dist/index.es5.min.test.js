@@ -1,24 +1,51 @@
-const fs = require('fs');
-const es5 = require('./index.es5.min.js');
-const lib = require('./index.js');
+const fs = require('fs')
+
+const es5 = require('./index.es5.min.js')
+const exportList = [
+  'continents',
+  'countries',
+  'languages',
+  'languagesAll',
+  'getEmojiFlag',
+  'getUnicode'
+]
+const exportDataList = [
+  'continents',
+  'countries',
+  'languages',
+  'languagesAll'
+]
+const data = {
+  continents: require('./continents.json'),
+  countries: require('./countries.emoji.json'),
+  languages: require('./languages.json'),
+  languagesAll: require('./languages.all.json')
+}
 
 test('has proper ES5 export', () => {
-  expect(typeof es5).toBe('object');
-  expect(typeof lib).toBe('object');
+  expect(typeof es5).toBe('object')
 
-  Object.keys(lib).forEach(prop => {
-    expect(es5.hasOwnProperty(prop)).toBeTruthy();
-  });
-});
+  for (const prop of exportList) {
+    expect(Object.prototype.hasOwnProperty.call(es5, prop)).toBeTruthy()
+  }
+
+  for (const prop of exportDataList) {
+    expect(Object.keys(es5[prop])).toEqual(Object.keys(data[prop]))
+  }
+})
 
 test('loads ES5 <script> properly', () => {
-  const scriptEl = document.createElement('script');
-  scriptEl.text = fs.readFileSync(__dirname + '/index.es5.min.js');
-  document.body.appendChild(scriptEl);
+  const scriptEl = document.createElement('script')
+  scriptEl.text = fs.readFileSync(__dirname + '/index.es5.min.js')
+  document.body.appendChild(scriptEl)
 
-  expect(window.Countries).toBeDefined();
+  expect(window.Countries).toBeDefined()
 
-  Object.keys(lib).forEach(prop => {
-    expect(window.Countries.hasOwnProperty(prop)).toBeTruthy();
-  });
-});
+  for (const prop of exportList) {
+    expect(Object.prototype.hasOwnProperty.call(window.Countries, prop)).toBeTruthy()
+  }
+
+  for (const prop of exportDataList) {
+    expect(Object.keys(window.Countries[prop])).toEqual(Object.keys(data[prop]))
+  }
+})

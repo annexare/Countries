@@ -1,0 +1,6 @@
+coverage/*
+
+*.json
+
+*.min.*
+*.test.*

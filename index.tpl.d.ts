@@ -8,54 +8,54 @@ export interface Country {
   /**
    * Capital in English.
    */
-  capital: string;
+  capital: string
   /**
    * Continent alpha-2 code.
    */
-  continent: string;
+  continent: string
   /**
    * Currency alpha-3 codes, comma-separated.
    */
-  currency: string;
+  currency: string
   /**
    * Country flag Emoji.
    */
-  emoji: string;
+  emoji: string
   /**
    * Country flag Emoji string unicode characters space-separated, e.g. "U+1F1FA U+1F1E6".
    */
-  emojiU: string;
+  emojiU: string
   /**
    * List of Country's spoken Languages (alpha-2 codes).
    */
-  languages: string[];
+  languages: string[]
   /**
    * Country name in English.
    */
-  name: string;
+  name: string
   /**
    * Country name written natively.
    */
-  native: string;
+  native: string
   /**
    * Calling phone codes, comma-separated.
    */
-  phone: string;
+  phone: string
 }
 
 export interface Language {
   /**
    * Language name in English.
    */
-  name: string;
+  name: string
   /**
    * Language name written natively.
    */
-  native: string;
+  native: string
   /**
    * Specified if Language is RTL.
    */
-  rtl?: number;
+  rtl?: number
 }
 
 /**
@@ -63,21 +63,21 @@ export interface Language {
  */
 export const continents: {
   // continents
-};
+}
 
 /**
  * Countries, key-value object (key is alpha-2 code, uppercase).
  */
 export const countries: {
   // countries
-};
+}
 
 /**
  * Languages in use only, key-value object (key is alpha-2 code).
  */
 export const languages: {
   // languages
-};
+}
 
 /**
  * Languages, key-value object (key is alpha-2 code).
@@ -85,14 +85,14 @@ export const languages: {
  */
 export const languagesAll: {
   // languagesAll
-};
+}
 
 /**
  * Returns country flag Emoji string.
  */
-export function getEmojiFlag(countryCode: string): string;
+export function getEmojiFlag(countryCode: string): string
 
 /**
  * Returns country flag Emoji string unicode characters space-separated, e.g. "U+1F1FA U+1F1E6".
  */
-export function getUnicode(emoji: string): string;
+export function getUnicode(emoji: string): string
