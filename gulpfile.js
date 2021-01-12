@@ -2,8 +2,7 @@
 
 const path = require('path')
 
-const NAME = 'Countries',
-  CONTINENTS = 'continents',
+const CONTINENTS = 'continents',
   COUNTRIES = 'countries',
   LANGUAGES = 'languages',
   COMMA = '","',
@@ -22,7 +21,6 @@ const NAME = 'Countries',
   DO_MIN_ES5 = 'es5.min',
   DO_MINIMAL = 'minimal',
   DO_SQL = 'sql',
-  JS_EXT = 'js',
   JSON_EXT = 'json',
   JSON_TAB = 2,
   fs = require('fs'),
@@ -175,76 +173,17 @@ exports[DO_EMOJI] = function emoji(callback) {
 }
 
 exports[DO_MIN_ES5] = function min_es5(callback) {
-  const pkg = require('./package.json')
-  const banner = `${pkg.name} v${pkg.version} by Annexare | ${pkg.license}`
-  const webpack = require('webpack')
-  const TerserPlugin = require('terser-webpack-plugin')
+  const rollup = require('rollup')
+  const loadConfigFile = require('rollup/dist/loadConfigFile')
 
-  const webpackConfig = {
-    entry: `${DIST}index.js`,
-    mode: 'production',
-    optimization: {
-      nodeEnv: 'production',
-      minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          extractComments: false,
-          terserOptions: {
-            // compress: {},
-            ecma: 5,
-            ie8: true,
-            // mangle: true,
-            // output: {
-            //   // comments: false,
-            //   // beautify: false,
-            //   ecma: 5,
-            // },
-            safari10: true,
-            toplevel: true,
-          },
-        }),
-      ],
-    },
-    output: {
-      globalObject: 'this',
-      filename: `index.${DO_MIN_ES5}.${JS_EXT}`,
-      libraryTarget: 'umd',
-      library: NAME,
-      path: require('path').resolve(__dirname, DIST),
-      umdNamedDefine: true,
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-          parser: {
-            requireInclude: [
-              path.resolve(__dirname, 'node_modules/punycode'),
-              // path.resolve(__dirname, "dist"),
-            ],
-          },
-        },
-      ],
-    },
-    plugins: [new webpack.BannerPlugin(banner)],
-    stats: 'errors-warnings',
-    target: 'web',
-  }
+  let outputOptions
 
-  webpack(webpackConfig, (err, stats) => {
-    if (err || stats.hasErrors()) {
-      // eslint-disable-next-line no-console
-      console.error('ERROR', err || stats.toJson('errors-only'))
-    }
-
-    callback()
-  })
+  loadConfigFile(path.resolve(__dirname, 'rollup.config.js'))
+    .then(({ options: [inputOptions] }) => {
+      outputOptions = inputOptions.output[0]
+      return rollup.rollup(inputOptions).then((bundle) => bundle.write(outputOptions))
+    })
+    .finally(callback)
 }
 
 exports[DO_MIN] = function min(callback) {

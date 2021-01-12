@@ -6,7 +6,9 @@ const languages = require('./languages.json')
 const languagesAll = require('./languages.all.json')
 
 // See: https://github.com/bestiejs/punycode.js#installation
-const { ucs2 } = require('punycode/punycode')
+const {
+  ucs2: { decode, encode },
+} = require('punycode/punycode')
 
 const // "Regional Indicator Symbol Letter A" - "Latin Capital Letter A"
   UNICODE_BASE = 127462 - 'A'.charCodeAt(0),
@@ -18,12 +20,11 @@ const getEmojiFlag = (countryCode) => {
     return ''
   }
 
-  return ucs2.encode(countryCode.split('').map((letter) => UNICODE_BASE + letter.charCodeAt(0)))
+  return encode(countryCode.split('').map((letter) => UNICODE_BASE + letter.charCodeAt(0)))
 }
 
 const getUnicode = (emoji) => {
-  return ucs2
-    .decode(emoji)
+  return decode(emoji)
     .map((code) => 'U+' + Number(code).toString(16).toUpperCase())
     .join(' ')
 }
