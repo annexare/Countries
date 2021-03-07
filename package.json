@@ -30,8 +30,8 @@
     "url": "https://github.com/z-ax"
   },
   "scripts": {
-    "build": "gulp && npm run test",
-    "build-js": "gulp es5.min",
+    "build": "gulp && npm run build-js && npm run test",
+    "build-js": "rollup --config",
     "test": "jest",
     "lint": "eslint"
   },
@@ -41,6 +41,8 @@
     "@rollup/plugin-commonjs": "~17.1.0",
     "@rollup/plugin-json": "~4.1.0",
     "@rollup/plugin-node-resolve": "~11.2.0",
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/punycode": "~2.1.0",
     "eslint": "~7.21.0",
     "gulp": "~4.0.2",
     "husky": "~5.1.3",
@@ -49,7 +51,8 @@
     "prettier": "2.2.1",
     "punycode": "2.1.1",
     "rollup": "~2.40.0",
-    "rollup-plugin-terser": "~7.0.2"
+    "rollup-plugin-terser": "~7.0.2",
+    "typescript": "^4.2.3"
   },
   "devEngines": {
     "node": ">=8.14.1"

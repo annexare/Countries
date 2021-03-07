@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "lib": ["ES5"],
+    "allowJs": true,
+    "checkJs": false,
+    // "declaration": true,                         /* Generates corresponding '.d.ts' file. */
+    // "declarationMap": true,                      /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    "sourceMap": true,
+    // "outFile": "index.es5.min.js",
+    // "outDir": "./dist",
+    "removeComments": true,
+    "strict": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["dist/index.ts", "punycode/punycode.es6.js"]
+}

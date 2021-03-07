@@ -1,6 +1,6 @@
 'use strict'
 
-const path = require('path')
+// const path = require('path')
 
 const CONTINENTS = 'continents',
   COUNTRIES = 'countries',
@@ -18,7 +18,7 @@ const CONTINENTS = 'continents',
   DO_D_TS = 'd-ts',
   DO_EMOJI = 'emoji',
   DO_MIN = 'min',
-  DO_MIN_ES5 = 'es5.min',
+  // DO_MIN_ES5 = 'es5.min',
   DO_MINIMAL = 'minimal',
   DO_SQL = 'sql',
   JSON_EXT = 'json',
@@ -36,7 +36,7 @@ const CONTINENTS = 'continents',
     DO_MINIMAL,
     DO_MIN,
     DO_SQL,
-    DO_MIN_ES5,
+    // DO_MIN_ES5,
     DO_D_TS,
   ]
 
@@ -172,19 +172,19 @@ exports[DO_EMOJI] = function emoji(callback) {
   callback && callback()
 }
 
-exports[DO_MIN_ES5] = function min_es5(callback) {
-  const rollup = require('rollup')
-  const loadConfigFile = require('rollup/dist/loadConfigFile')
+// exports[DO_MIN_ES5] = function min_es5(callback) {
+//   const rollup = require('rollup')
+//   const loadConfigFile = require('rollup/dist/loadConfigFile')
 
-  let outputOptions
+//   let outputOptions
 
-  loadConfigFile(path.resolve(__dirname, 'rollup.config.js'))
-    .then(({ options: [inputOptions] }) => {
-      outputOptions = inputOptions.output[0]
-      return rollup.rollup(inputOptions).then((bundle) => bundle.write(outputOptions))
-    })
-    .finally(callback)
-}
+//   loadConfigFile(path.resolve(__dirname, 'rollup.config.js'))
+//     .then(({ options: [inputOptions] }) => {
+//       outputOptions = inputOptions.output[0]
+//       return rollup.rollup(inputOptions).then((bundle) => bundle.write(outputOptions))
+//     })
+//     .finally(callback)
+// }
 
 exports[DO_MIN] = function min(callback) {
   fs.writeFileSync(`${DIST}${COUNTRIES}.${DO_MIN}.${JSON_EXT}`, JSON.stringify(countries) + LF)
@@ -387,7 +387,7 @@ function getLanguageDataValues(data, key = false) {
 }
 
 function getCountriesWithEmoji() {
-  const { getEmojiFlag, getUnicode } = require('./dist'),
+  const { getEmojiFlag, getUnicode } = require('./dist/index.es5.min'),
     dataWithEmoji = {},
     countryCodes = Object.keys(countries)
 
