@@ -1,10 +1,19 @@
 import fs from 'fs'
 
-import { default as continents } from '../data/continents.json'
-import { default as countries } from '../data/countries.json'
-import { default as languagesAll } from '../data/languages.json'
+import { default as continentsData } from '../data/continents.json'
+import { default as countriesData } from '../data/countries.json'
+import { default as languagesAllData } from '../data/languages.json'
 
-import { getCountryDataCsv, getLanguagesInUse, getStringFromArray, getTitleCase } from './utils'
+const continents = continentsData as TContinents
+const countries = countriesData as TCountries
+const languagesAll = languagesAllData as TLanguages
+
+import {
+  getCountryDataCsv,
+  getLanguagesInUse,
+  getStringFromArray,
+  getTitleCase,
+} from './utils'
 
 const languagesInUse = getLanguagesInUse(countries, languagesAll)
 
@@ -56,13 +65,18 @@ const generateCsv = () => {
     LF +
     countryList
       .map((code) => {
-        const country = Object.assign({}, countries[code])
-        country.continent = continents[country.continent]
-        country.languages = getStringFromArray(country.languages)
+        const { name, native, phone, continent, capital, currency, languages } = countries[code]
+        const country: ICountryCsv = {
+          capital,
+          continent: continents[continent],
+          currency,
+          languages: getStringFromArray(languages),
+          name,
+          native,
+          phone,
+        }
 
-        return (
-          QUOTE + code + COMMA + getCountryDataCsv(country, COMMA) + QUOTE
-        )
+        return QUOTE + code + COMMA + getCountryDataCsv(country, COMMA) + QUOTE
       })
       .join(LF)
 

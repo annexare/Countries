@@ -3,6 +3,7 @@
   "version": "2.6.1",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "main": "./dist/index.es5.min.js",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/annexare/Countries"
@@ -27,16 +28,16 @@
   "author": {
     "name": "Dmytro",
     "email": "z@annexare.com",
-    "url": "https://github.com/z-ax"
+    "url": "https://github.com/dmythro"
   },
   "scripts": {
-    "build": "ts-node scripts/index.ts",
+    "build": "ts-node --files --project tsconfig.json --require tsconfig-paths/register scripts/index.ts",
     "build-js": "rollup --config",
     "format": "prettier --write \"{**/,}*.ts\"",
     "lint": "eslint",
     "test": "jest"
   },
-  "typings": "./dist/index.d.ts",
+  "types": "types/index",
   "devDependencies": {
     "@rollup/plugin-babel": "~5.3.0",
     "@rollup/plugin-commonjs": "~17.1.0",
@@ -54,6 +55,7 @@
     "rollup-plugin-terser": "~7.0.2",
     "ts-jest": "^26.5.3",
     "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3"
   },
   "devEngines": {

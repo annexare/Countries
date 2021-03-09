@@ -35,7 +35,35 @@ declare interface ICountry {
   phone: string
 }
 
-declare interface ICountryEmoji extends ICountry {
+declare interface ICountryCsv {
+  /**
+   * Capital in English.
+   */
+  capital: string
+  /**
+   * Continent alpha-2 code.
+   */
+  continent: string
+  /**
+   * Currency alpha-3 codes, comma-separated.
+   */
+  currency: string
+  /**
+   * List of Country's spoken Languages (alpha-2 codes).
+   */
+  languages: string
+  /**
+   * Country name in English.
+   */
+  name: string
+  /**
+   * Country name written natively.
+   */
+  native: string
+  /**
+   * Calling phone codes, comma-separated.
+   */
+  phone: string
   /**
    * Country flag Emoji.
    */
@@ -56,3 +84,7 @@ declare interface ILanguage {
    */
   rtl?: number
 }
+
+declare type TContinents = Record<string, string>
+declare type TCountries = Record<string, ICountry>
+declare type TLanguages = Record<string, ILanguage>

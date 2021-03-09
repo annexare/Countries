@@ -1,5 +1,5 @@
 export const getCountryDataCsv = (
-  { name, native, phone, continent, capital, currency, languages }: ICountry,
+  { name, native, phone, continent, capital, currency, languages }: ICountryCsv,
   joinWith: string
 ) => [name, native, phone, continent, capital, currency, languages].join(joinWith)
 
@@ -19,7 +19,7 @@ export const getLanguagesInUse = (
     }
   })
 
-  const languagesInUse = {}
+  const languagesInUse: Record<string, ILanguage> = {}
   usedList.sort().forEach((lang) => {
     languagesInUse[lang] = Object.assign({}, languagesAll[lang])
   })
