@@ -30,10 +30,11 @@
     "url": "https://github.com/z-ax"
   },
   "scripts": {
-    "build": "gulp && npm run build-js && npm run test",
+    "build": "ts-node scripts/index.ts",
     "build-js": "rollup --config",
-    "test": "jest",
-    "lint": "eslint"
+    "format": "prettier --write \"{**/,}*.ts\"",
+    "lint": "eslint",
+    "test": "jest"
   },
   "typings": "./dist/index.d.ts",
   "devDependencies": {
@@ -42,16 +43,17 @@
     "@rollup/plugin-json": "~4.1.0",
     "@rollup/plugin-node-resolve": "~11.2.0",
     "@rollup/plugin-typescript": "^8.2.0",
+    "@types/jest": "^26.0.20",
     "@types/punycode": "~2.1.0",
     "eslint": "~7.21.0",
-    "gulp": "~4.0.2",
     "husky": "~5.1.3",
     "jest": "~26.6.3",
     "lint-staged": "~10.5.4",
     "prettier": "2.2.1",
-    "punycode": "2.1.1",
-    "rollup": "~2.40.0",
+    "rollup": "~2.41.0",
     "rollup-plugin-terser": "~7.0.2",
+    "ts-jest": "^26.5.3",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
   },
   "devEngines": {
@@ -63,6 +65,7 @@
       "/node_modules/",
       ".*\\.min\\.js"
     ],
+    "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "verbose": true
   },

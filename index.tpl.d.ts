@@ -91,8 +91,3 @@ export const languagesAll: {
  * Returns country flag Emoji string.
  */
 export function getEmojiFlag(countryCode: string): string
-
-/**
- * Returns country flag Emoji string unicode characters space-separated, e.g. "U+1F1FA U+1F1E6".
- */
-export function getUnicode(emoji: string): string
