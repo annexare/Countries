@@ -1,5 +1,6 @@
-const json = require('@rollup/plugin-json')
-const typescript = require('@rollup/plugin-typescript')
+const jsonPlugin = require('@rollup/plugin-json')
+const { terser: terserPlugin } = require('rollup-plugin-terser')
+const typescriptPlugin = require('rollup-plugin-typescript2')
 const pkg = require('./package.json')
 const banner = `/*! ${pkg.name} v${pkg.version} by Annexare | ${pkg.license} */`
 
@@ -16,9 +17,10 @@ module.exports = {
     name: 'Countries',
   },
   plugins: [
-    json({
+    jsonPlugin({
       compact: true,
     }),
-    typescript(),
+    typescriptPlugin(),
+    terserPlugin(),
   ],
 }

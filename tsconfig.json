@@ -4,16 +4,13 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "checkJs": false,
-    "declaration": true,
-    "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "lib": ["ES5"],
-    "module": "ESNext",
+    "module": "ES2015",
     "moduleResolution": "Node",
     "outDir": "./dist",
-    // "outFile": "index.es5.min.js",
     "plugins": [
       {
         "name": "typescript-eslint-language-service"
@@ -30,6 +27,6 @@
       "./node_modules/@types"
     ]
   },
-  "exclude": [],
-  "include": ["./src/index.ts"],
+  "exclude": ["**.test.*"],
+  "include": ["./src/*.ts", "./data/*.json"]
 }
