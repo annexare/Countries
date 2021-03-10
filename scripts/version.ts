@@ -44,6 +44,7 @@ saveJsonFile('../package.json', {
   version,
 })
 
+// Make sure package-lock is up to date, with actual version
 execSync('npm i')
 console.log('Updated', chalk.blue('package-lock.json'))
 
