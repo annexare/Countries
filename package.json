@@ -23,7 +23,8 @@
     "typings",
     "ISO 3166-1",
     "ISO 639-1",
-    "node"
+    "node",
+    "typescript"
   ],
   "author": {
     "name": "Dmytro",
