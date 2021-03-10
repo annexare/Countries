@@ -1,21 +1,26 @@
-import fs from 'fs'
+import chalk from 'chalk'
 
 import { ICountryCsv, TContinents, TCountries, TCountryCode, TLanguages } from '../src/types'
 
 import continentsData from '../data/continents.json'
 import countriesData from '../data/countries.json'
 import languagesAllData from '../data/languages.json'
+import countries2to3Data from '../data/countries2to3.json'
+import countries3to2Data from '../data/countries3to2.json'
 
 const continents = continentsData as TContinents
 const countries = countriesData as TCountries
 const languagesAll = languagesAllData as TLanguages
+const countries2to3 = countries2to3Data as Record<TCountryCode, string>
+const countries3to2 = countries3to2Data as Record<string, TCountryCode>
 
 import {
-  getCountryDataCsv,
+  getCountryDataToCsv,
   getLanguagesInUse,
   getStringFromArray,
   getTitleCase,
   saveJsonFile,
+  saveTextFile,
 } from './utils'
 
 const languagesInUse = getLanguagesInUse(countries, languagesAll)
@@ -25,12 +30,8 @@ const COUNTRIES = 'countries'
 const LANGUAGES = 'languages'
 
 const ALL = '.all'
-const MIN = '.min'
 
 const CSV_EXT = 'csv'
-const DIST = './dist/'
-const JSON_EXT = '.json'
-const JSON_MIN = `${MIN}${JSON_EXT}`
 
 const COMMA = '","'
 const LF = '\n'
@@ -39,13 +40,17 @@ const QUOTE = '"'
 // TODO: Split tasks into separate files
 
 const minifyJsonData = () => {
-  saveJsonFile(continents, CONTINENTS)
-  saveJsonFile(countries, COUNTRIES)
-  saveJsonFile(languagesInUse, LANGUAGES)
-  saveJsonFile(languagesAll, `${LANGUAGES}${ALL}`)
+  console.log(chalk.bold('\nMinifying JSON files:'))
+  saveJsonFile(CONTINENTS, continents)
+  saveJsonFile(COUNTRIES, countries)
+  saveJsonFile(`${COUNTRIES}2to3`, countries2to3)
+  saveJsonFile(`${COUNTRIES}3to2`, countries3to2)
+  saveJsonFile(LANGUAGES, languagesInUse)
+  saveJsonFile(`${LANGUAGES}${ALL}`, languagesAll)
 }
 
 const generateCsv = () => {
+  console.log(chalk.bold('\nGenerating CSV:'))
   const countryCodeList = Object.keys(countries) as TCountryCode[]
   const csvHeader =
     QUOTE +
@@ -71,11 +76,11 @@ const generateCsv = () => {
           phone,
         }
 
-        return QUOTE + code + COMMA + getCountryDataCsv(country, COMMA) + QUOTE
+        return QUOTE + code + COMMA + getCountryDataToCsv(country, COMMA) + QUOTE
       })
       .join(LF)
 
-  fs.writeFileSync(`${DIST}${COUNTRIES}.${CSV_EXT}`, csvData + LF)
+  saveTextFile(`${COUNTRIES}.${CSV_EXT}`, csvData)
 }
 
 /**

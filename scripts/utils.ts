@@ -1,7 +1,8 @@
 import fs from 'fs'
 import path from 'path'
+import chalk from 'chalk'
 
-import { ICountry, ICountryCsv, ILanguage } from '../src/types'
+import { ICountryCsv, TCountries, TLanguageCode, TLanguages } from '../src/types'
 
 const DIST = path.resolve(__dirname, '../dist/') + '/'
 const LF = '\n'
@@ -10,43 +11,48 @@ const MIN_EXT = '.min'
 const JSON_EXT = '.json'
 const JSON_MIN_EXT = `${MIN_EXT}${JSON_EXT}`
 
-export const getCountryDataCsv = (
+export const getCountryDataToCsv = (
   { name, native, phone, continent, capital, currency, languages }: ICountryCsv,
   joinWith: string
-) => [name, native, phone, continent, capital, currency, languages].join(joinWith)
+): string => [name, native, phone, continent, capital, currency, languages].join(joinWith)
 
 export const getLanguagesInUse = (
-  countries: Record<string, ICountry>,
-  languagesAll: Record<string, ILanguage>
-) => {
-  const usedList: string[] = []
-  Object.keys(countries).forEach((code) => {
-    const country = countries[code]
+  countries: TCountries,
+  languagesAll: TLanguages
+): Partial<TLanguages> => {
+  const inUseList: TLanguageCode[] = []
+
+  // Languages in use processing
+  Object.values(countries).forEach((country) => {
     if (country.languages && country.languages.length) {
       country.languages.forEach((lang) => {
-        if (usedList.indexOf(lang) < 0) {
-          usedList.push(lang)
+        if (!inUseList.includes(lang)) {
+          inUseList.push(lang)
         }
       })
     }
   })
+  console.log('Languages in use:', inUseList.length)
 
-  const languagesInUse: Record<string, ILanguage> = {}
-  usedList.sort().forEach((lang) => {
+  const languagesInUse: Partial<TLanguages> = {}
+  inUseList.sort().forEach((lang) => {
     languagesInUse[lang] = Object.assign({}, languagesAll[lang])
   })
 
-  // const unused = [];
-  // Object.keys(languages).forEach(lang => {
-  //   if (used.indexOf(lang) < 0) {
-  //     unused.push(lang);
-  //   }
-  // });
+  // Languages not in use check
+  const notInUseList: TLanguageCode[] = []
+  const languageCodes = Object.keys(languagesAll) as TLanguageCode[]
+  languageCodes.forEach((lang) => {
+    if (!inUseList.includes(lang)) {
+      notInUseList.push(lang)
+    }
+  })
+  console.log('Unused languages:', notInUseList.length, `(${notInUseList.join(', ')})`)
 
   return languagesInUse
 }
 
-export const getStringFromArray = (arr: string[]) => {
+export const getStringFromArray = (arr: string[]): string => {
   if (!arr || !arr.length) {
     return ''
   }
@@ -55,7 +61,7 @@ export const getStringFromArray = (arr: string[]) => {
 }
 
 export const getTitleCase = (text: string): string => {
-  let result = text.toLowerCase().split(' ')
+  const result = text.toLowerCase().split(' ')
 
   for (let i = 0; i < result.length; i++) {
     result[i] = result[i].charAt(0).toUpperCase() + result[i].slice(1)
@@ -64,9 +70,19 @@ export const getTitleCase = (text: string): string => {
   return result.join(' ')
 }
 
-export const saveJsonFile = (data: any, fileName: string) => {
-  const filePath = `${DIST}${fileName}${JSON_MIN_EXT}`
-  fs.writeFileSync(filePath, JSON.stringify(data) + LF)
+export const saveTextFile = (fileName: string, data: string): boolean => {
+  const filePath = `${DIST}${fileName}`
 
-  console.log('Saved:', filePath.replace(__dirname, ''))
+  try {
+    fs.writeFileSync(filePath, data + LF)
+  } catch (e) {
+    console.error(`Could not save file: "${filePath}"`, e)
+    return false
+  }
+
+  console.log('Saved', chalk.blue(filePath.replace(__dirname, '')))
+  return true
 }
+
+export const saveJsonFile = (fileName: string, data: any): boolean =>
+  saveTextFile(`${fileName}${JSON_MIN_EXT}`, JSON.stringify(data))
