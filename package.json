@@ -76,6 +76,7 @@
     ],
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
+    "testMatch": ["**/?(*.)+(spec|test).ts"],
     "verbose": true
   },
   "license": "MIT",

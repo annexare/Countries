@@ -1,8 +1,8 @@
 import { continents, countries, languages, languagesAll, getEmojiFlag } from './index'
 import { TCountryCode } from './types'
 
-import countries2to3 from '../dist/countries2to3.json'
-import countries3to2 from '../dist/countries3to2.json'
+import countries2to3 from '../dist/countries2to3.min.json'
+import countries3to2 from '../dist/countries3to2.min.json'
 
 const TYPE_OBJECT = 'object'
 const TYPE_STRING = 'string'

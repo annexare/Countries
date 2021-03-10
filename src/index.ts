@@ -1,9 +1,9 @@
 import { TContinents, TCountries, TCountryCode, TLanguages } from './types'
 
-import continentsData from '../dist/continents.json'
+import continentsData from '../dist/continents.min.json'
 import countriesData from '../dist/countries.emoji.json'
-import languagesData from '../dist/languages.json'
-import languagesAllData from '../dist/languages.all.json'
+import languagesData from '../dist/languages.min.json'
+import languagesAllData from '../dist/languages.all.min.json'
 
 export const continents = (continentsData as TContinents)
 export const countries = (countriesData as TCountries)
