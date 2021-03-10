@@ -80,7 +80,7 @@ export const saveTextFile = (fileName: string, data: string): boolean => {
     return false
   }
 
-  console.log('Saved', chalk.blue(filePath.replace(__dirname, '')))
+  console.log('Saved', chalk.blue(path.relative(process.cwd(), filePath)))
   return true
 }
 
