@@ -31,11 +31,13 @@
     "url": "https://github.com/dmythro"
   },
   "scripts": {
-    "build": "ts-node --files --project tsconfig.scripts.json --require tsconfig-paths/register scripts/index.ts",
+    "build": "npm run build-js",
     "build-js": "rollup --config",
     "format": "prettier --write \"{**/,}*.ts\"",
     "lint": "eslint \"{scripts,src}{**/,}/*.ts\"",
     "lint:fix": "eslint \"{scripts,src}{**/,}/*.ts\" --fix",
+    "prebuild": "ts-node --files --project tsconfig.scripts.json --require tsconfig-paths/register scripts/index.ts",
+    "postbuild": "npm run test",
     "test": "jest",
     "version": "ts-node --files --project tsconfig.scripts.json --require tsconfig-paths/register scripts/version.ts"
   },
