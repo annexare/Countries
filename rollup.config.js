@@ -21,6 +21,17 @@ module.exports = {
       compact: true,
     }),
     typescriptPlugin(),
-    terserPlugin(),
+    terserPlugin({
+      ecma: 5,
+      format: {
+        comments: function (node, comment) {
+          if (comment.type == 'comment2') {
+            // multiline comment
+            return /countries-list|@preserve|@license|@cc_on/i.test(comment.value)
+          }
+        },
+      },
+      ie8: true,
+    }),
   ],
 }

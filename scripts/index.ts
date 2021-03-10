@@ -1,4 +1,6 @@
 import chalk from 'chalk'
+import fs from 'fs'
+import path from 'path'
 
 import { ICountryCsv, TContinents, TCountries, TCountryCode, TLanguages } from '../src/types'
 
@@ -39,16 +41,6 @@ const QUOTE = '"'
 
 // TODO: Split tasks into separate files
 
-const minifyJsonData = () => {
-  console.log(chalk.bold('\nMinifying JSON files:'))
-  saveJsonFile(CONTINENTS, continents)
-  saveJsonFile(COUNTRIES, countries)
-  saveJsonFile(`${COUNTRIES}2to3`, countries2to3)
-  saveJsonFile(`${COUNTRIES}3to2`, countries3to2)
-  saveJsonFile(LANGUAGES, languagesInUse)
-  saveJsonFile(`${LANGUAGES}${ALL}`, languagesAll)
-}
-
 const generateCsv = () => {
   console.log(chalk.bold('\nGenerating CSV:'))
   const countryCodeList = Object.keys(countries) as TCountryCode[]
@@ -83,9 +75,32 @@ const generateCsv = () => {
   saveTextFile(`${COUNTRIES}.${CSV_EXT}`, csvData)
 }
 
+const generateTypings = () => {
+  const current = fs.readFileSync(path.resolve(__dirname, '../src/types.ts'), { encoding: 'utf-8' })
+  const typings = current
+    .replace(/export/g, 'declare')
+    .replace(/import .* from '.*'\n/g, '')
+    .replace('keyof typeof continents', "'" + Object.keys(continents).join("' | '") + "'")
+    .replace('keyof typeof countries', "'" + Object.keys(countries).join("' | '") + "'")
+    .replace('keyof typeof languages', "'" + Object.keys(languagesAll).join("' | '") + "'")
+
+  saveTextFile('index.d.ts', typings.trim())
+}
+
+const minifyJsonData = () => {
+  console.log(chalk.bold('\nMinifying JSON files:'))
+  saveJsonFile(CONTINENTS, continents)
+  saveJsonFile(COUNTRIES, countries)
+  saveJsonFile(`${COUNTRIES}2to3`, countries2to3)
+  saveJsonFile(`${COUNTRIES}3to2`, countries3to2)
+  saveJsonFile(LANGUAGES, languagesInUse)
+  saveJsonFile(`${LANGUAGES}${ALL}`, languagesAll)
+}
+
 /**
  * Task execution
  */
 
 minifyJsonData()
 generateCsv()
+generateTypings()

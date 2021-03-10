@@ -3,7 +3,7 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "checkJs": false,
+    "checkJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,

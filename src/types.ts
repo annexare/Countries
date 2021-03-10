@@ -1,6 +1,6 @@
-import { default as continents } from '../data/continents.json'
-import { default as countries } from '../data/countries.json'
-import { default as languages } from '../data/languages.json'
+import continents from '../data/continents.json'
+import countries from '../data/countries.json'
+import languages from '../data/languages.json'
 
 export type TContinentCode = keyof typeof continents
 export type TCountryCode = keyof typeof countries
