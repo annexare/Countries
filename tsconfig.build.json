@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "lib": ["ES5"],
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "./dist",
     // "outFile": "index.es5.min.js",

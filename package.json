@@ -31,7 +31,7 @@
     "url": "https://github.com/dmythro"
   },
   "scripts": {
-    "build": "ts-node --files --project tsconfig.json --require tsconfig-paths/register scripts/index.ts",
+    "build": "ts-node --files --project tsconfig.build.json --require tsconfig-paths/register scripts/index.ts",
     "build-js": "rollup --config",
     "format": "prettier --write \"{**/,}*.ts\"",
     "lint": "eslint",
@@ -56,6 +56,7 @@
     "ts-jest": "^26.5.3",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
+    "tslib": "^2.1.0",
     "typescript": "^4.2.3"
   },
   "devEngines": {

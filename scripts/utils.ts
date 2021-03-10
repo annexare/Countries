@@ -1,3 +1,15 @@
+import fs from 'fs'
+import path from 'path'
+
+import { ICountry, ICountryCsv, ILanguage } from '../src/types'
+
+const DIST = path.resolve(__dirname, '../dist/') + '/'
+const LF = '\n'
+const MIN_EXT = '.min'
+
+const JSON_EXT = '.json'
+const JSON_MIN_EXT = `${MIN_EXT}${JSON_EXT}`
+
 export const getCountryDataCsv = (
   { name, native, phone, continent, capital, currency, languages }: ICountryCsv,
   joinWith: string
@@ -50,4 +62,11 @@ export const getTitleCase = (text: string): string => {
   }
 
   return result.join(' ')
+}
+
+export const saveJsonFile = (data: any, fileName: string) => {
+  const filePath = `${DIST}${fileName}${JSON_MIN_EXT}`
+  fs.writeFileSync(filePath, JSON.stringify(data) + LF)
+
+  console.log('Saved:', filePath.replace(__dirname, ''))
 }

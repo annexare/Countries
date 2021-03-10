@@ -1,17 +1,19 @@
 import { continents, countries, languages, languagesAll, getEmojiFlag } from './index'
+import { TCountryCode } from './types'
 
-import countries2to3 from './countries2to3.json'
-import countries3to2 from './countries3to2.json'
+import countries2to3 from '../dist/countries2to3.json'
+import countries3to2 from '../dist/countries3to2.json'
 
 const TYPE_OBJECT = 'object'
 const TYPE_STRING = 'string'
-const TEST_COUNTRY_CODE = 'UA'
+const TEST_COUNTRY_CODE: TCountryCode = 'UA'
 const TEST_EMOJI = '🇺🇦'
 
 const expectObjectOf = (data: any, dataType: string) => () => {
   expect(typeof data).toBe(TYPE_OBJECT)
 
   Object.keys(data).forEach((key) => {
+    expect(data).toHaveProperty(key)
     expect(typeof data[key]).toBe(dataType)
   })
 }
@@ -33,7 +35,7 @@ test('"countries" has proper type and structure', expectObjectOf(countries, TYPE
 test('"languages" has proper type and structure', expectObjectOf(languages, TYPE_OBJECT))
 test('"languagesAll" has proper type and structure', expectObjectOf(languagesAll, TYPE_OBJECT))
 
-test('"getEmojiFlag()" empty country code', () => expect(getEmojiFlag('')).toBe(''))
+test('"getEmojiFlag()" empty country code', () => expect(getEmojiFlag('' as TCountryCode)).toBe(''))
 test('"getEmojiFlag()" UA country code properly', () =>
   expect(getEmojiFlag(TEST_COUNTRY_CODE)).toBe(TEST_EMOJI))
 

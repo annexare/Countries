@@ -1,10 +1,12 @@
-// Type definitions for // name // version
-// Project: https://github.com/annexare/Countries
-// Definitions by: Dmytro <https://github.com/dmythro>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
+import { default as continents } from '../data/continents.json'
+import { default as countries } from '../data/countries.json'
+import { default as languages } from '../data/languages.json'
 
-declare interface ICountry {
+export type TContinentCode = keyof typeof continents
+export type TCountryCode = keyof typeof countries
+export type TLanguageCode = keyof typeof languages
+
+export interface ICountry {
   /**
    * Capital in English.
    */
@@ -12,15 +14,16 @@ declare interface ICountry {
   /**
    * Continent alpha-2 code.
    */
-  continent: string
+  continent: TContinentCode
   /**
    * Currency alpha-3 codes, comma-separated.
+   * TODO: Refactor to array of currencies.
    */
   currency: string
   /**
    * List of Country's spoken Languages (alpha-2 codes).
    */
-  languages: string[]
+  languages: TLanguageCode[]
   /**
    * Country name in English.
    */
@@ -35,13 +38,13 @@ declare interface ICountry {
   phone: string
 }
 
-declare interface ICountryCsv {
+export interface ICountryCsv {
   /**
    * Capital in English.
    */
   capital: string
   /**
-   * Continent alpha-2 code.
+   * Continent name.
    */
   continent: string
   /**
@@ -49,7 +52,7 @@ declare interface ICountryCsv {
    */
   currency: string
   /**
-   * List of Country's spoken Languages (alpha-2 codes).
+   * List of Country's spoken Languages (alpha-2 codes), comma-separated.
    */
   languages: string
   /**
@@ -70,7 +73,7 @@ declare interface ICountryCsv {
   emoji?: string
 }
 
-declare interface ILanguage {
+export interface ILanguage {
   /**
    * Language name in English.
    */
@@ -85,6 +88,6 @@ declare interface ILanguage {
   rtl?: number
 }
 
-declare type TContinents = Record<string, string>
-declare type TCountries = Record<string, ICountry>
-declare type TLanguages = Record<string, ILanguage>
+export type TContinents = Record<TContinentCode, string>
+export type TCountries = Record<TCountryCode, ICountry>
+export type TLanguages = Record<TLanguageCode, ILanguage>

@@ -4,7 +4,7 @@ const pkg = require('./package.json')
 const banner = `/*! ${pkg.name} v${pkg.version} by Annexare | ${pkg.license} */`
 
 module.exports = {
-  input: 'dist/index.ts',
+  input: 'src/index.ts',
   treeshake: true,
   output: {
     amd: {
