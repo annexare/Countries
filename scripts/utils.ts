@@ -2,7 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import chalk from 'chalk'
 
-import { ICountryCsv, TCountries, TLanguageCode, TLanguages } from '../src/types'
+import { TCountries, TLanguageCode, TLanguages } from '../src/types'
+import { ICountryCsv } from './types'
 
 const DIST = path.resolve(__dirname, '../dist/') + '/'
 const LF = '\n'

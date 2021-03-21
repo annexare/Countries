@@ -36,41 +36,10 @@ export interface ICountry {
    * Calling phone codes, comma-separated.
    */
   phone: string
-}
-
-export interface ICountryCsv {
   /**
-   * Capital in English.
+   * Emoji for a country flag.
    */
-  capital: string
-  /**
-   * Continent name.
-   */
-  continent: string
-  /**
-   * Currency alpha-3 codes, comma-separated.
-   */
-  currency: string
-  /**
-   * List of Country's spoken Languages (alpha-2 codes), comma-separated.
-   */
-  languages: string
-  /**
-   * Country name in English.
-   */
-  name: string
-  /**
-   * Country name written natively.
-   */
-  native: string
-  /**
-   * Calling phone codes, comma-separated.
-   */
-  phone: string
-  /**
-   * Country flag Emoji.
-   */
-  emoji?: string
+   emoji?: string
 }
 
 export interface ILanguage {
@@ -90,4 +59,5 @@ export interface ILanguage {
 
 export type TContinents = Record<TContinentCode, string>
 export type TCountries = Record<TCountryCode, ICountry>
+export type TCountriesEmoji = Record<TCountryCode, string>
 export type TLanguages = Record<TLanguageCode, ILanguage>

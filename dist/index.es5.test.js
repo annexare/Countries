@@ -6,7 +6,7 @@ const exportList = ['continents', 'countries', 'languages', 'languagesAll', 'get
 const exportDataList = ['continents', 'countries', 'languages', 'languagesAll']
 const data = {
   continents: require('./continents.min.json'),
-  countries: require('./countries.emoji.min.json'),
+  countries: require('./countries.min.json'),
   languages: require('./languages.min.json'),
   languagesAll: require('./languages.all.min.json'),
 }

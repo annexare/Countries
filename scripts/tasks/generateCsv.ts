@@ -1,9 +1,10 @@
 import chalk from 'chalk'
 
-import { TCountryCode, ICountryCsv } from '../../src/types'
+import { TCountryCode } from '../../src/types'
 
 import { COMMA, COUNTRIES, CSV_EXT, LF, QUOTE } from '../constants'
 import { countries, continents } from '../data'
+import { ICountryCsv } from '../types'
 import { getCountryDataToCsv, getStringFromArray, getTitleCase, saveTextFile } from '../utils'
 
 export const generateCsv = (): void => {
