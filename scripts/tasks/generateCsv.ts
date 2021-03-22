@@ -27,7 +27,7 @@ export const generateCsv = (): void => {
         const country: ICountryCsv = {
           capital,
           continent: continents[continent],
-          currency,
+          currency: currency.join(','),
           languages: getStringFromArray(languages),
           name,
           native,

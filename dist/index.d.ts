@@ -16,10 +16,9 @@ declare interface ICountry {
    */
   continents?: TContinentCode[]
   /**
-   * Currency alpha-3 codes, comma-separated.
-   * TODO: Refactor to array of currencies.
+   * Currency alpha-3 codes.
    */
-  currency: string
+  currency: string[]
   /**
    * List of Country's spoken Languages (alpha-2 codes).
    */

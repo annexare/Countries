@@ -79,7 +79,7 @@ function getCountryDataValues(data: ICountry, key = '') {
     phone,
     continent,
     capital,
-    currency,
+    currency.join(','),
     (key ? getStringFromArray(languages) : languages) as string,
   ]
 
@@ -180,9 +180,7 @@ export const generateSql = (): void => {
   for (const key of Object.keys(languagesInUse)) {
     const lang = languagesInUse[key as TLanguageCode]
     if (lang) {
-      languageList.push(
-        getLanguageDataValues(lang, key as string)
-      )
+      languageList.push(getLanguageDataValues(lang, key as string))
     }
   }
 
