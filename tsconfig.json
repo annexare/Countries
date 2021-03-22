@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "lib": ["ES5"],
+    "lib": ["ES5", "DOM"],
     "module": "ES2015",
     "moduleResolution": "Node",
     "outDir": "./dist",
