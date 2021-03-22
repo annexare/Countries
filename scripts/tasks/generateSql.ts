@@ -76,7 +76,7 @@ function getCountryDataValues(data: ICountry, key = '') {
   const values: string[] = [
     name,
     native,
-    phone,
+    phone.join(','),
     continent,
     capital,
     currency.join(','),

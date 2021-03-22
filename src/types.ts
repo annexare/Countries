@@ -40,9 +40,9 @@ export interface ICountry {
    */
   parent?: TCountryCode
   /**
-   * Calling phone codes, comma-separated.
+   * Calling phone codes.
    */
-  phone: string
+  phone: number[]
 }
 
 export interface ILanguage {

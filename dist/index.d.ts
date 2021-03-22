@@ -36,9 +36,9 @@ declare interface ICountry {
    */
   parent?: TCountryCode
   /**
-   * Calling phone codes, comma-separated.
+   * Calling phone codes.
    */
-  phone: string
+  phone: number[]
 }
 
 declare interface ILanguage {

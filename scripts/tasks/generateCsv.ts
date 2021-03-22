@@ -31,7 +31,7 @@ export const generateCsv = (): void => {
           languages: getStringFromArray(languages),
           name,
           native,
-          phone,
+          phone: phone.join(','),
         }
 
         return QUOTE + code + COMMA + getCountryDataToCsv(country, COMMA) + QUOTE
