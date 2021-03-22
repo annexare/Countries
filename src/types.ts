@@ -65,3 +65,4 @@ export type TCountries = Record<TCountryCode, ICountry>
 export type TCountryToString = Record<TCountryCode, string>
 export type TStringToCountry = Record<string, TCountryCode>
 export type TLanguages = Record<TLanguageCode, ILanguage>
+export type TLanguageToString = Record<TLanguageCode, string>

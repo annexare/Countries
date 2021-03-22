@@ -1,3 +1,4 @@
+import chalk from 'chalk'
 import fs from 'fs'
 import path from 'path'
 
@@ -5,6 +6,8 @@ import { continents, countries, languagesAll } from '../data'
 import { saveTextFile } from '../utils'
 
 export const generateTypings = (): void => {
+  console.log(chalk.bold('\nGenerating main type definitions file:\n'))
+
   const current = fs.readFileSync(path.resolve(__dirname, '../../src/types.ts'), {
     encoding: 'utf-8',
   })

@@ -1,3 +1,5 @@
+import chalk from 'chalk'
+
 import { ICountry, ILanguage, TContinentCode, TCountryCode, TLanguageCode } from '../../src/types'
 import { DATA_FILE, LF, SQL_EXT } from '../constants'
 import { continents, countries, languagesInUse } from '../data'
@@ -102,6 +104,8 @@ function getLanguageDataValues(data: ILanguage, key = '') {
 }
 
 export const generateSql = (): void => {
+  console.log(chalk.bold('\nGenerating SQL file:\n'))
+
   const continentFields: IDataField[] = [
     {
       name: 'code',

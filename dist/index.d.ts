@@ -61,3 +61,4 @@ declare type TCountries = Record<TCountryCode, ICountry>
 declare type TCountryToString = Record<TCountryCode, string>
 declare type TStringToCountry = Record<string, TCountryCode>
 declare type TLanguages = Record<TLanguageCode, ILanguage>
+declare type TLanguageToString = Record<TLanguageCode, string>

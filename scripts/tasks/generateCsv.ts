@@ -8,7 +8,7 @@ import { ICountryCsv } from '../types'
 import { getCountryDataToCsv, getStringFromArray, getTitleCase, saveTextFile } from '../utils'
 
 export const generateCsv = (): void => {
-  console.log(chalk.bold('\nGenerating CSV:'))
+  console.log(chalk.bold('\nGenerating CSV file:\n'))
   const countryCodeList = Object.keys(countries) as TCountryCode[]
   const csvHeader =
     QUOTE +
