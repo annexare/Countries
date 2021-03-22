@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import chalk from 'chalk'
+import prettyBytes from 'pretty-bytes'
 
 import { TCountries, TLanguageCode, TLanguages } from '../src/types'
 import { ICountryCsv } from './types'
@@ -73,15 +74,21 @@ export const getTitleCase = (text: string): string => {
 
 export const saveTextFile = (fileName: string, data: string): boolean => {
   const filePath = `${DIST}${fileName}`
+  const relativePath = path.relative(process.cwd(), filePath)
 
   try {
     fs.writeFileSync(filePath, data + LF)
   } catch (e) {
-    console.error(`Could not save file: "${filePath}"`, e)
+    console.error(`Could not save file: "${relativePath}"`, e)
     return false
   }
 
-  console.log('Saved', chalk.blue(path.relative(process.cwd(), filePath)))
+  const stats = fs.statSync(filePath)
+  console.log(
+    'Saved',
+    chalk.blue(path.relative(process.cwd(), filePath)),
+    chalk.bold(prettyBytes(stats.size))
+  )
   return true
 }
 
