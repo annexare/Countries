@@ -12,9 +12,13 @@ export interface ICountry {
    */
   capital: string
   /**
-   * Continent alpha-2 code.
+   * Main continent alpha-2 code.
    */
   continent: TContinentCode
+  /**
+   * Continent list alpha-2 codes (for transcontinental countries).
+   */
+  continents?: TContinentCode[]
   /**
    * Currency alpha-3 codes, comma-separated.
    * TODO: Refactor to array of currencies.
@@ -32,6 +36,10 @@ export interface ICountry {
    * Country name written natively.
    */
   native: string
+  /**
+   * Specified in cases when entity is currently a part of another one.
+   */
+  parent?: TCountryCode
   /**
    * Calling phone codes, comma-separated.
    */

@@ -173,6 +173,7 @@
     "native": "Azərbaycan",
     "phone": "994",
     "continent": "AS",
+    "continents": ["AS", "EU"],
     "capital": "Baku",
     "currency": "AZN",
     "languages": [
@@ -675,6 +676,7 @@
     "native": "Danmark",
     "phone": "45",
     "continent": "EU",
+    "continents": ["EU", "NA"],
     "capital": "Copenhagen",
     "currency": "DKK",
     "languages": [
@@ -741,6 +743,7 @@
     "native": "مصر‎",
     "phone": "20",
     "continent": "AF",
+    "continents": ["AF", "AS"],
     "capital": "Cairo",
     "currency": "EGP",
     "languages": [
@@ -1427,6 +1430,7 @@
     "native": "Қазақстан",
     "phone": "76,77",
     "continent": "AS",
+    "continents": ["AS", "EU"],
     "capital": "Astana",
     "currency": "KZT",
     "languages": [
@@ -2178,6 +2182,7 @@
     "native": "Россия",
     "phone": "7",
     "continent": "EU",
+    "continents": ["AS", "EU"],
     "capital": "Moscow",
     "currency": "RUB",
     "languages": [
@@ -2566,6 +2571,7 @@
     "native": "Türkiye",
     "phone": "90",
     "continent": "AS",
+    "continents": ["AS", "EU"],
     "capital": "Ankara",
     "currency": "TRY",
     "languages": [
