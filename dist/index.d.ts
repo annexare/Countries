@@ -28,7 +28,7 @@ declare interface ICountry {
    */
   name: string
   /**
-   * Country name written natively.
+   * Country name in the native language.
    */
   native: string
   /**
