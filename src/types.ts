@@ -36,10 +36,6 @@ export interface ICountry {
    * Calling phone codes, comma-separated.
    */
   phone: string
-  /**
-   * Emoji for a country flag.
-   */
-   emoji?: string
 }
 
 export interface ILanguage {
@@ -59,5 +55,6 @@ export interface ILanguage {
 
 export type TContinents = Record<TContinentCode, string>
 export type TCountries = Record<TCountryCode, ICountry>
-export type TCountriesEmoji = Record<TCountryCode, string>
+export type TCountryToString = Record<TCountryCode, string>
+export type TStringToCountry = Record<string, TCountryCode>
 export type TLanguages = Record<TLanguageCode, ILanguage>

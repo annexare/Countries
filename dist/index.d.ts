@@ -32,10 +32,6 @@ declare interface ICountry {
    * Calling phone codes, comma-separated.
    */
   phone: string
-  /**
-   * Emoji for a country flag.
-   */
-   emoji?: string
 }
 
 declare interface ILanguage {
@@ -55,5 +51,6 @@ declare interface ILanguage {
 
 declare type TContinents = Record<TContinentCode, string>
 declare type TCountries = Record<TCountryCode, ICountry>
-declare type TCountriesEmoji = Record<TCountryCode, string>
+declare type TCountryToString = Record<TCountryCode, string>
+declare type TStringToCountry = Record<string, TCountryCode>
 declare type TLanguages = Record<TLanguageCode, ILanguage>
