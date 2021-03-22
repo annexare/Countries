@@ -2,6 +2,8 @@
 // Project: countries-list
 // Definitions by: dmythro <https://github.com/dmythro>
 
+/// <reference path="index.d.ts" />
+
 export const continents: TContinents
 export const countries: TCountries
 export const languages: TLanguages
