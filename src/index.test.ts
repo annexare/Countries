@@ -1,31 +1,24 @@
-const {
-  continents,
-  countries,
-  languages,
-  languagesAll,
+import { continents, countries, languages, languagesAll, getEmojiFlag } from './index'
+import { TCountryCode } from './types'
 
-  getEmojiFlag,
-  getUnicode,
-} = require('./index.js')
-
-const countries2to3 = require('./countries2to3.json')
-const countries3to2 = require('./countries3to2.json')
+import countries2to3 from '../dist/more/countries.2to3.min.json'
+import countries3to2 from '../dist/more/countries.3to2.min.json'
 
 const TYPE_OBJECT = 'object'
 const TYPE_STRING = 'string'
-const TEST_COUNTRY_CODE = 'UA'
+const TEST_COUNTRY_CODE: TCountryCode = 'UA'
 const TEST_EMOJI = '🇺🇦'
-const TEST_EMOJI_U = 'U+1F1FA U+1F1E6'
 
-const expectObjectOf = (data, dataType) => () => {
+const expectObjectOf = (data: any, dataType: string) => () => {
   expect(typeof data).toBe(TYPE_OBJECT)
 
   Object.keys(data).forEach((key) => {
+    expect(data).toHaveProperty(key)
     expect(typeof data[key]).toBe(dataType)
   })
 }
 
-const expectToHaveKeysOf = (data, keyList, dataType) => () => {
+const expectToHaveKeysOf = (data: any, keyList: string[], dataType: string) => () => {
   keyList.forEach((key) => {
     expect(typeof data[key]).toBe(dataType)
   })
@@ -42,12 +35,9 @@ test('"countries" has proper type and structure', expectObjectOf(countries, TYPE
 test('"languages" has proper type and structure', expectObjectOf(languages, TYPE_OBJECT))
 test('"languagesAll" has proper type and structure', expectObjectOf(languagesAll, TYPE_OBJECT))
 
-test('"getEmojiFlag()" empty country code', () => expect(getEmojiFlag()).toBe(''))
-test('"getEmojiFlag()" wrong country code', () => expect(getEmojiFlag(42)).toBe(''))
+test('"getEmojiFlag()" empty country code', () => expect(getEmojiFlag('' as TCountryCode)).toBe(''))
 test('"getEmojiFlag()" UA country code properly', () =>
   expect(getEmojiFlag(TEST_COUNTRY_CODE)).toBe(TEST_EMOJI))
-
-test('"getUnicode()" converts properly', () => expect(getUnicode(TEST_EMOJI)).toBe(TEST_EMOJI_U))
 
 test('"countries2to3" has proper type and structure', expectObjectOf(countries2to3, TYPE_STRING))
 test(

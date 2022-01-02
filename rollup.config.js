@@ -1,33 +1,29 @@
-const json = require('@rollup/plugin-json')
-const { babel } = require('@rollup/plugin-babel')
-const commonjs = require('@rollup/plugin-commonjs')
-const { nodeResolve } = require('@rollup/plugin-node-resolve')
-const { terser } = require('rollup-plugin-terser')
+const jsonPlugin = require('@rollup/plugin-json')
+const { terser: terserPlugin } = require('rollup-plugin-terser')
+const typescriptPlugin = require('rollup-plugin-typescript2')
 const pkg = require('./package.json')
 const banner = `/*! ${pkg.name} v${pkg.version} by Annexare | ${pkg.license} */`
 
-module.exports = {
-  input: 'dist/index.js',
+const dataList = ['countries.2to3', 'countries.3to2', 'countries.emoji']
+
+const getConfig = (inputFile, outFile, moduleName) => ({
+  input: `src/${inputFile}.ts`,
   treeshake: true,
   output: {
     amd: {
-      id: 'Countries',
+      id: moduleName,
     },
     banner,
-    file: 'dist/index.es5.min.js',
+    file: `dist/${outFile}.min.js`,
     format: 'umd',
-    name: 'Countries',
+    name: moduleName,
   },
   plugins: [
-    json({
+    jsonPlugin({
       compact: true,
     }),
-    nodeResolve(),
-    commonjs(),
-    babel({
-      babelHelpers: 'bundled',
-    }),
-    terser({
+    typescriptPlugin(),
+    terserPlugin({
       ecma: 5,
       format: {
         comments: function (node, comment) {
@@ -40,4 +36,21 @@ module.exports = {
       ie8: true,
     }),
   ],
+})
+
+const getModuleName = (fileName) => {
+  const result = fileName.toLowerCase().split(/[\s\.]+/)
+
+  for (let i = 0; i < result.length; i++) {
+    result[i] = result[i].charAt(0).toUpperCase() + result[i].slice(1)
+  }
+
+  return result.join('')
 }
+
+module.exports = [
+  getConfig('index', 'index.es5', 'Countries'),
+  ...dataList.map((dataName) =>
+    getConfig(dataName + '.data', 'more/' + dataName, getModuleName(dataName))
+  ),
+]

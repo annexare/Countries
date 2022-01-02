@@ -4,12 +4,15 @@
     "jest": true,
     "node": true
   },
-  "extends": [
-    "eslint:recommended"
-  ],
-  "ignorePatterns": ["**/dist/*.min.*"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "ignorePatterns": ["*.js", "*.min.*"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "script"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": ["warn"]
   }
 }
