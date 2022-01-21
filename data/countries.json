@@ -1645,8 +1645,28 @@
       "INR"
     ],
     "languages": [
-      "hi",
-      "en"
+     "as",
+     "bn",
+     "brx",
+     "doi",
+     "en",
+     "gu",
+     "hi",
+     "kn",
+     "kok",
+     "ks",
+     "mai",
+     "ml",
+     "mr",
+     "ne",
+     "or",
+     "pa",
+     "sa",
+     "sat",
+     "sd",
+     "ta",
+     "te",
+     "ur"
     ]
   },
   "IO": {

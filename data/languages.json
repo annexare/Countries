@@ -80,6 +80,10 @@
     "name": "Breton",
     "native": "Brezhoneg"
   },
+  "brx":{
+    "name":"bodo",
+    "native": "बर'/बड़ो"
+  },
   "bs": {
     "name": "Bosnian",
     "native": "Bosanski"
@@ -127,6 +131,10 @@
   "de": {
     "name": "German",
     "native": "Deutsch"
+  },
+  "doi":{
+    "name": "Dogri",
+    "native": "डोगरी"
   },
   "dv": {
     "name": "Divehi",
@@ -340,6 +348,10 @@
     "name": "Korean",
     "native": "한국어"
   },
+  "kok":{
+    "name": "Konkani",
+    "native": "कोंकणी"
+  },
   "kr": {
     "name": "Kanuri",
     "native": "Kanuri"
@@ -401,6 +413,10 @@
   "lv": {
     "name": "Latvian",
     "native": "Latviešu"
+  },
+  "mai":{
+    "name":"Maithili",
+    "native":"মৈথিলী"
   },
   "mg": {
     "name": "Malagasy",
@@ -558,6 +574,10 @@
   "sa": {
     "name": "Sanskrit",
     "native": "संस्कृतम्"
+  },
+  "sat":{
+    "name": "Santali",
+    "native": "ᱥᱟᱱᱛᱟᱲᱤ"
   },
   "sc": {
     "name": "Sardinian",
