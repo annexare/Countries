@@ -7,7 +7,7 @@
 [![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg 'CI: PHP')](https://github.com/annexare/Countries/actions)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
-Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital and currency, native name, calling codes.
+Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital and **ISO 4217** currency codes, native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
