@@ -11,4 +11,4 @@ export const languages = languagesData as TLanguages
 export const languagesAll = languagesAllData as TLanguages
 
 export { getEmojiFlag } from './getEmojiFlag'
-export { Continent } from './continents-enum'
+export { Continent } from './continent-enum'
