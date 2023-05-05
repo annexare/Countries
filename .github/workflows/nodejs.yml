@@ -13,11 +13,8 @@ on:
     branches:
       - master
     paths:
-      - '.github/workflows/*.yml'
+      - '.github/workflows/nodejs.yml'
       - 'packages/countries/src/**'
-      - '*.js'
-      - '*.json'
-      - '*.ts'
       - '!.editorconfig'
       - '!.travis.yml'
       - '!**LICENSE*'
