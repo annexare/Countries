@@ -1,24 +1,13 @@
 coverage/
-data/
-dist/*.php
 node_modules/
-test/
 
-.idea
-.editorconfig
-.eslint*
 .git*
-.prettier*
-.travis.yml
+.phpunit.*
 
-gulpfile.js
 index.tpl.d.ts
-rollup.*
+*.php
 *.test.*
 
-bower.json
 composer.*
 package-lock.json
 yarn.lock
-
-phpunit.xml

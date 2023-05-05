@@ -35,7 +35,7 @@
   "require": {},
   "autoload": {
     "files": [
-      "dist/index.php"
+      "index.php"
     ]
   },
   "homepage": "http://annexare.github.io/Countries/",
