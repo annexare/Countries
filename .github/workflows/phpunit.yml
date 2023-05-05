@@ -34,5 +34,7 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
-          configuration: ../packages/test-php/phpunit.xml
+          # configuration: ../packages/test-php/phpunit.xml
+          bootstrap: ../dist/index.php
+          testsuite: ../packages/test-php/CountriesTest.php
           args: --coverage-text
