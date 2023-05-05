@@ -10,10 +10,15 @@ import {
   languages,
 } from 'scripts/data.ts'
 import { saveJsonFile } from 'scripts/utils.ts'
-import { getEmojiFlag } from 'src/getEmojiFlag.ts'
-import { TCountryCode, TCountryToString, TLanguageCode, TLanguageToString } from 'src/types.ts'
+import { getEmojiFlag } from 'countries/index.ts'
+import {
+  TCountryCode,
+  TCountryToString,
+  TLanguageCode,
+  TLanguageToString,
+} from 'countries/types.ts'
 
-import { generateMoreTypings } from './generateTypings.ts'
+import { generateMoreTypings } from 'scripts/tasks/generateTypings.ts'
 
 export const minifyJsonData = (): void => {
   console.log(chalk.bold('\nMinifying main JSON files:\n'))

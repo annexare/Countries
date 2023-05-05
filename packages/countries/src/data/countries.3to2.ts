@@ -1,4 +1,4 @@
-import { TCountryCode } from 'src/types.ts'
+import { TCountryCode } from '../types.ts'
 
 export default {
   AND: 'AD',

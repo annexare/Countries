@@ -1,18 +1,21 @@
 {
+  "include": [".", "../countries/*", "../scripts/*"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "allowJs": true,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "checkJs": true,
-    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
-    "lib": ["ES5", "DOM"],
-    "module": "ES2020",
-    "moduleResolution": "node",
-    "outDir": "./dist",
+    "lib": ["ESNext", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "outDir": "../../dist",
+    "paths": {
+      "countries/*": ["../countries/src/*"],
+      "scripts/*": ["../scripts/*"]
+    },
     "removeComments": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -20,5 +23,7 @@
     "strict": true,
     "target": "ES5"
   },
-  "exclude": ["**.test.*"]
+  "ts-node": {
+    "transpileOnly": true
+  }
 }

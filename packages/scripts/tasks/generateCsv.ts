@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 
-import { TCountryCode } from 'src/types.ts'
+import { TCountryCode } from 'countries/types.ts'
 
 import { COMMA, COUNTRIES, CSV_EXT, LF, QUOTE } from 'scripts/constants.ts'
 import { countries, continents } from 'scripts/data.ts'

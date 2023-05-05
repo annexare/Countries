@@ -1,4 +1,4 @@
-import { ICountry } from 'src/types.ts'
+import { ICountry } from '../types.ts'
 
 export default {
   AD: {

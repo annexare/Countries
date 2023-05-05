@@ -1,6 +1,6 @@
-import continents from 'src/data/continents.ts'
-import countries from 'src/data/countries.ts'
-import languages from 'src/data/languages.ts'
+import continents from './data/continents.ts'
+import countries from './data/countries.ts'
+import languages from './data/languages.ts'
 
 export type TContinentCode = keyof typeof continents
 export type TCountryCode = keyof typeof countries

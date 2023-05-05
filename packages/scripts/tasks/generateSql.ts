@@ -1,6 +1,12 @@
 import chalk from 'chalk'
 
-import { ICountry, ILanguage, TContinentCode, TCountryCode, TLanguageCode } from 'src/types.ts'
+import {
+  ICountry,
+  ILanguage,
+  TContinentCode,
+  TCountryCode,
+  TLanguageCode,
+} from 'countries/types.ts'
 import { DATA_FILE, LF, SQL_EXT } from 'scripts/constants.ts'
 import { continents, countries, languagesInUse } from 'scripts/data.ts'
 import { getStringFromArray, saveTextFile } from 'scripts/utils.ts'

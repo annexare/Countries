@@ -1,4 +1,4 @@
-import { ILanguage } from 'src/types.ts'
+import { ILanguage } from '../types.ts'
 
 export default {
   aa: {

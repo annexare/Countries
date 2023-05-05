@@ -1,15 +1,7 @@
 {
   "extends": "tsconfig/tsconfig.json",
   "compilerOptions": {
-    "lib": ["DOM", "ESNext"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "paths": {
-      "src/*": ["../countries/src/*"],
-      "scripts/*": ["scripts/*"]
-    },
     "types": ["node"]
   },
-  "include": [".", "../countries/src"],
-  "exclude": ["node_modules"]
+  "include": [".", "../countries/src/*"]
 }

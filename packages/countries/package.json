@@ -1,14 +1,19 @@
 {
-  "name": "countries-list",
+  "name": "countries",
   "version": "3.0.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "*": "./src/*"
+  },
   "author": {
     "name": "Dmytro",
     "email": "d@klmn.me",
     "url": "https://github.com/dmythro"
   },
   "scripts": {
-    "build": "npm run build-js",
     "lint": "eslint \"src/{**/,}*.ts\"",
     "lint:fix": "eslint \"src/{**/,}*.ts\" --fix"
   },

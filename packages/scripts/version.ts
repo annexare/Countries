@@ -4,9 +4,9 @@ import fs from 'node:fs'
 import path from 'node:path'
 import compare from 'semver-compare'
 
-import distComposer from '../../dist/composer.json'
-import distPkg from '../../dist/package.json'
-import pkg from '../countries/package.json'
+import distComposer from '../../dist/composer.json' assert { type: 'json' }
+import distPkg from '../../dist/package.json' assert { type: 'json' }
+import pkg from '../countries/package.json' assert { type: 'json' }
 
 const [, , version]: string[] = process.argv
 
@@ -20,7 +20,7 @@ if (compare(version, distPkg.version) < 0) {
   process.exit()
 }
 
-const saveJsonFile = (filePath: string, data: any) => {
+const saveJsonFile = (filePath: string, data: unknown) => {
   fs.writeFileSync(filePath, JSON.stringify(data, undefined, 2) + '\n')
   console.log('Saved', chalk.blue(path.relative(process.cwd(), filePath)))
 }

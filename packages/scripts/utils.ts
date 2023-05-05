@@ -4,7 +4,7 @@ import chalk from 'chalk'
 import prettyBytes from 'pretty-bytes'
 
 import { ICountryCsv } from 'scripts/types.ts'
-import { TCountries, TLanguageCode, TLanguages } from 'src/types.ts'
+import { TCountries, TLanguageCode, TLanguages } from 'countries/types.ts'
 
 const DIST = '../../dist/'
 const LF = '\n'
@@ -86,11 +86,11 @@ export const saveTextFile = (fileName: string, data: string): boolean => {
   const stats = fs.statSync(filePath)
   console.log(
     'Saved',
-    chalk.blue(path.relative(process.cwd(), filePath)),
+    chalk.blue(path.relative('../../', filePath)),
     chalk.bold(prettyBytes(stats.size))
   )
   return true
 }
 
-export const saveJsonFile = (fileName: string, data: any): boolean =>
+export const saveJsonFile = (fileName: string, data: unknown): boolean =>
   saveTextFile(`${fileName}${JSON_MIN_EXT}`, JSON.stringify(data))
