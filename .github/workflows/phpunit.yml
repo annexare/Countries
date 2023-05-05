@@ -31,5 +31,6 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
+          version: 9
           configuration: phpunit.xml
           args: --coverage-text
