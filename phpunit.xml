@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
-         bootstrap="../../dist/index.php"
+         bootstrap="dist/index.php"
          cacheResultFile=".phpunit.cache/test-results"
          executionOrder="depends,defects"
          beStrictAboutCoversAnnotation="true"
@@ -12,14 +12,14 @@
          verbose="true">
   <testsuites>
     <testsuite name="default">
-      <directory>.</directory>
+      <directory>test</directory>
     </testsuite>
   </testsuites>
 
   <coverage cacheDirectory=".phpunit.cache/code-coverage"
             processUncoveredFiles="true">
     <include>
-      <directory suffix=".php">../../dist</directory>
+      <directory suffix=".php">dist</directory>
     </include>
   </coverage>
 </phpunit>

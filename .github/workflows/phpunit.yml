@@ -9,9 +9,11 @@ on:
       - master
     paths:
       - '.github/workflows/phpunit.yml'
+      - 'dist/**.json'
       - 'dist/*.php'
       - 'packages/countries/data/**'
-      - 'packages/test-php/*.php'
+      - 'packages/test-php/**'
+      - 'phpunit.xml'
       - '!.editorconfig'
       - '!.travis.yml'
       - '!**LICENSE*'
@@ -24,12 +26,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - uses: php-actions/composer@v6
+      - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
-          # configuration: ../packages/test-php/phpunit.xml
-          bootstrap: './dist/index.php'
-          testsuite: './packages/test-php/CountriesTest.php'
-          # args: --coverage-text
+          configuration: phpunit.xml
+          args: --coverage-text
