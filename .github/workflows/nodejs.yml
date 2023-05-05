@@ -21,7 +21,7 @@ on:
       - '!**README*'
 
 jobs:
-  build:
+  nodejs:
     runs-on: ubuntu-latest
 
     strategy:
