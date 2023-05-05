@@ -1,10 +1,5 @@
 name: Countries PHP
 
-defaults:
-  run:
-    shell: bash
-    working-directory: dist
-
 on:
   push:
     branches:
@@ -34,5 +29,5 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
-          configuration: ../packages/test-php/phpunit.xml
+          configuration: packages/test-php/phpunit.xml
           args: --coverage-text
