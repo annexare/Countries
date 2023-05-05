@@ -34,14 +34,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
+          cache: 'npm'
           node-version: ${{ matrix.node-version }}
-
-      - uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('./package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('./package-lock.json') }}
 
       - name: NPM install
         run: npm ci --prefer-offline --no-audit --no-optional --ignore-scripts
