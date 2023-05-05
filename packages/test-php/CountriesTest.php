@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 use function Annexare\Countries\continents;
 use function Annexare\Countries\countries;
 use function Annexare\Countries\languages;
+use function Annexare\Countries\languagesAll;
 
 class CountriesTest extends TestCase
 {
@@ -54,6 +55,22 @@ class CountriesTest extends TestCase
     self::assertJsonStringEqualsJsonFile(
       __DIR__ . '/../../dist/languages.min.json',
       json_encode($languages, JSON_THROW_ON_ERROR)
+    );
+  }
+
+  /**
+   * @throws JsonException
+   * @throws ExpectationFailedException
+   * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+   */
+  public function testLanguagesAll(): void
+  {
+    $languagesAll = languagesAll();
+
+    self::assertIsArray($languagesAll);
+    self::assertJsonStringEqualsJsonFile(
+      __DIR__ . '/../../dist/languages.all.min.json',
+      json_encode($languagesAll, JSON_THROW_ON_ERROR)
     );
   }
 }
