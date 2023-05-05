@@ -32,4 +32,4 @@ jobs:
           # configuration: ../packages/test-php/phpunit.xml
           bootstrap: './dist/index.php'
           testsuite: './packages/test-php/CountriesTest.php'
-          args: --coverage-text
+          # args: --coverage-text
