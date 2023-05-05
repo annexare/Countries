@@ -8,7 +8,7 @@ on:
     branches:
       - master
     paths:
-      - '.github/workflows/*.yml'
+      - '.github/workflows/phpunit.yml'
       - 'dist/*.php'
       - 'packages/countries/data/**'
       - 'packages/test-php/*.php'
@@ -29,5 +29,5 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
-          configuration: phpunit.xml
+          configuration: packages/test-php/phpunit.xml
           args: --coverage-text
