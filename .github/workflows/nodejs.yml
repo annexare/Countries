@@ -1,5 +1,10 @@
 name: Countries JS
 
+defaults:
+  run:
+    shell: bash
+    working-directory: packages/countries
+
 on:
   push:
     branches:
@@ -9,7 +14,7 @@ on:
       - master
     paths:
       - '.github/workflows/*.yml'
-      - 'data/**'
+      - 'packages/countries/src/**'
       - '*.js'
       - '*.json'
       - '*.ts'
@@ -24,17 +29,17 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18, 16, 14, 12]
+        node-version: [20, 18, 16]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('./package-lock.json') }}

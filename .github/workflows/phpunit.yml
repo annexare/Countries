@@ -9,12 +9,9 @@ on:
       - master
     paths:
       - '.github/workflows/*.yml'
-      - 'data/**'
       - 'dist/*.php'
-      - 'test/*.php'
-      - '*.js'
-      - '*.json'
-      - '*.ts'
+      - 'packages/countries/data/**'
+      - 'packages/test-php/*.php'
       - '!.editorconfig'
       - '!.travis.yml'
       - '!**LICENSE*'
@@ -25,12 +22,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: php-actions/composer@v5
+      - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v2
+        uses: php-actions/phpunit@v3
         with:
           configuration: phpunit.xml
           args: --coverage-text

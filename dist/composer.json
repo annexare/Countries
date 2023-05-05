@@ -1,0 +1,45 @@
+{
+  "name": "annexare/countries-list",
+  "version": "3.0.0",
+  "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
+  "type": "library",
+  "keywords": [
+    "country",
+    "countries",
+    "continent",
+    "emoji",
+    "languages",
+    "capital",
+    "currency",
+    "data",
+    "csv",
+    "json",
+    "sql",
+    "ISO 3166-1",
+    "ISO 639-1",
+    "node",
+    "typescript"
+  ],
+  "authors": [
+    {
+      "name": "Dmytro",
+      "email": "d@klmn.me",
+      "homepage": "https://github.com/dmythro"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "source": "https://github.com/annexare/Countries",
+    "issues": "https://github.com/annexare/Countries/issues"
+  },
+  "require": {},
+  "autoload": {
+    "files": [
+      "dist/index.php"
+    ]
+  },
+  "homepage": "http://annexare.github.io/Countries/",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}

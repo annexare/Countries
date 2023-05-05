@@ -1,0 +1,22 @@
+{
+  "name": "countries-list",
+  "version": "3.0.0",
+  "type": "module",
+  "author": {
+    "name": "Dmytro",
+    "email": "d@klmn.me",
+    "url": "https://github.com/dmythro"
+  },
+  "scripts": {
+    "build": "npm run build-js",
+    "lint": "eslint \"src/{**/,}*.ts\"",
+    "lint:fix": "eslint \"src/{**/,}*.ts\" --fix"
+  },
+  "devDependencies": {
+    "typescript": "~5.0.4"
+  },
+  "devEngines": {
+    "node": ">=14.16"
+  },
+  "license": "MIT"
+}

@@ -68,15 +68,3 @@ function languages(): array
 {
   return load('languages.min.json');
 }
-
-/**
- * Languages, key-value object (key is alpha-2 code).
- * A complete list including not used by Countries list.
- *
- * @return array
- * @throws JsonException
- */
-function languagesAll(): array
-{
-  return load('languages.all.min.json');
-}

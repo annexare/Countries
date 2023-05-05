@@ -17,7 +17,6 @@ declare global {
       continents: TContinents,
       countries: TCountries,
       languages: TLanguages,
-      languagesAll: TLanguages,
       getEmojiFlag(countryCode: TCountryCode): string,
     }
   }

@@ -26,7 +26,7 @@ Package is available via:
 
 ## Usage
 
-Module exports `continents`, `countries`, `languages`, `languagesAll` and functions:
+Module exports `continents`, `countries`, `languages` and functions:
 
 - `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
 - `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
@@ -40,8 +40,6 @@ The consistent data is available from `./dist/data.*` files (JSON, SQL).
 
 **Note**: Country item `languages` field is an `Array` in JSON files to easily count and match items with a Language item.
 But `currency` and `phone` calling codes may be a comma-separated `String`.
-
-**Note**: Languages list only contains languages used in Countries data. Full list of known languages is exported as `languagesAll` from `./dist/languages.all.json`.
 
 ## Data example
 
