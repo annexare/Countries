@@ -11,6 +11,7 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "prepare": "husky install",
+    "test": "turbo run test",
     "version": "cd ./packages/scripts && npm run version"
   },
   "devDependencies": {

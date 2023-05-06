@@ -9,11 +9,6 @@
     "typescript": "5.0.4"
   },
   "jest": {
-    "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      ".*\\.min\\.js"
-    ],
     "moduleNameMapper": {
       "src/(.*)": "<rootDir>/../countries/src/$1"
     },
