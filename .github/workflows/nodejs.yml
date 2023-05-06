@@ -1,10 +1,5 @@
 name: Countries JS
 
-defaults:
-  run:
-    shell: bash
-    working-directory: packages/countries
-
 on:
   push:
     branches:
