@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true
+  }
+}

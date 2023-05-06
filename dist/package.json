@@ -1,0 +1,68 @@
+{
+  "name": "countries-list",
+  "version": "3.0.0",
+  "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
+  "type": "module",
+  "exports": {
+    "./*": {
+      "require": "./*.js",
+      "import": "./*.mjs"
+    },
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/annexare/Countries"
+  },
+  "keywords": [
+    "country",
+    "countries",
+    "continent",
+    "emoji",
+    "languages",
+    "capital",
+    "currency",
+    "data",
+    "csv",
+    "json",
+    "sql",
+    "typings",
+    "ISO 3166-1",
+    "ISO 639-1",
+    "node",
+    "typescript"
+  ],
+  "author": {
+    "name": "Dmytro",
+    "email": "d@klmn.me",
+    "url": "https://github.com/dmythro"
+  },
+  "scripts": {
+    "build": "npm run build-js",
+    "format": "prettier --write \"{**/,}*.ts\"",
+    "lint": "eslint \"{scripts,src}{**/,}/*.ts\"",
+    "lint:fix": "eslint \"{scripts,src}{**/,}/*.ts\" --fix"
+  },
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/semver-compare": "~1.0.1",
+    "eslint": "~8.39.0",
+    "husky": "~8.0.3",
+    "lint-staged": "~13.2.2",
+    "prettier": "~2.8.8",
+    "pretty-bytes": "~6.1.0",
+    "semver-compare": "~1.0.0",
+    "typescript": "~5.0.4"
+  },
+  "devEngines": {
+    "node": ">=14.16"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/annexare/Countries/issues"
+  },
+  "homepage": "http://annexare.github.io/Countries/"
+}

@@ -8,6 +8,7 @@
 coverage
 .eslintcache
 .phpunit.cache
+.turbo
 
 composer.phar
 

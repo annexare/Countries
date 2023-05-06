@@ -23,7 +23,7 @@
   "authors": [
     {
       "name": "Dmytro",
-      "email": "z@annexare.com",
+      "email": "d@klmn.me",
       "homepage": "https://github.com/dmythro"
     }
   ],
@@ -35,7 +35,7 @@
   "require": {},
   "autoload": {
     "files": [
-      "dist/index.php"
+      "index.php"
     ]
   },
   "homepage": "http://annexare.github.io/Countries/",

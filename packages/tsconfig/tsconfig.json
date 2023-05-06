@@ -1,0 +1,29 @@
+{
+  "include": [".", "../countries/*", "../scripts/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "lib": ["ESNext", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "outDir": "../../dist",
+    "paths": {
+      "countries/*": ["../countries/src/*"],
+      "scripts/*": ["../scripts/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

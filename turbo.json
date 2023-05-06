@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "countries#build": {
+      "dependsOn": [
+        "^lint",
+        "scripts#build"
+      ]
+    },
+    "scripts#build": {
+      "dependsOn": [
+        "lint"
+      ]
+    },
+    "build": {
+      "dependsOn": [
+        "lint",
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "lint": {},
+    "test": {
+      "dependsOn": [
+        "build"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+coverage/
+node_modules/
+
+.git*
+.phpunit.*
+
+index.tpl.d.ts
+*.php
+*.test.*
+
+composer.*
+package-lock.json
+yarn.lock

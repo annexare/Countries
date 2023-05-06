@@ -1,0 +1,14 @@
+{
+  "extends": "tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "paths": {
+      "src/*": ["../countries/src/*"]
+    },
+    "types": ["jest", "node"]
+  },
+  "include": [".", "../countries/src"],
+  "exclude": ["node_modules"]
+}
