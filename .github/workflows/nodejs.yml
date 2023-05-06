@@ -43,8 +43,7 @@ jobs:
           CI: true
 
       - name: Build & Test
-        run: npm run build --if-present
-        # Test is intentionally glued with `build` script
-        # - run: npm test
+        # Runs lint, build & tests
+        run: npm run ci
         env:
           CI: true
