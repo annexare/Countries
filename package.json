@@ -7,7 +7,7 @@
   "scripts": {
     "build": "turbo run build",
     "ci": "turbo run lint build test",
-    "format": "prettier --write \"{**/,}*.ts\"",
+    "format": "prettier --write \"packages/**/*.ts\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "prepare": "husky install",

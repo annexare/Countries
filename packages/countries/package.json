@@ -15,8 +15,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint \"src/{**/,}*.ts\"",
-    "lint:fix": "eslint \"src/{**/,}*.ts\" --fix"
+    "lint": "eslint \"{/**,}/*.ts\"",
+    "lint:fix": "eslint \"{/**,}/*.ts\" --fix"
   },
   "devDependencies": {
     "tsup": "6.7.0",

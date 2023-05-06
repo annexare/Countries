@@ -1,10 +1,10 @@
 import fs from 'node:fs'
 
+import '../../dist/index.iife.d.ts'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import * as cjs from '../../dist/index.js'
+import * as cjs from '../../dist/index.min.js'
 import { continents, countries, languages, getEmojiFlag } from 'src/index.ts'
-import '../../dist/index.iife.d.ts'
 
 const source = {
   continents,
@@ -35,7 +35,7 @@ describe('dist', () => {
 
   test('loads ES6 <script> properly', () => {
     const scriptEl = document.createElement('script')
-    scriptEl.text = fs.readFileSync('../../dist/index.iife.js', { encoding: 'utf-8' })
+    scriptEl.text = fs.readFileSync('../../dist/index.iife.min.js', { encoding: 'utf-8' })
     document.body.appendChild(scriptEl)
 
     expect(window.Countries).toBeDefined()

@@ -21,6 +21,8 @@
   },
   "scripts": {
     "build": "tsx index.ts",
+    "lint": "eslint \"{/**,}/*.ts\"",
+    "lint:fix": "eslint \"{/**,}/*.ts\" --fix",
     "version": "tsx version.ts"
   }
 }

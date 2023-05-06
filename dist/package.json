@@ -5,14 +5,15 @@
   "type": "module",
   "exports": {
     "./*": {
-      "require": "./*.js",
-      "import": "./*.mjs"
+      "require": "./*.min.js",
+      "import": "./*.min.mjs"
     },
     ".": {
-      "require": "./index.js",
-      "import": "./index.mjs"
+      "require": "./index.min.js",
+      "import": "./index.min.mjs"
     }
   },
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/annexare/Countries"
@@ -40,13 +41,6 @@
     "email": "d@klmn.me",
     "url": "https://github.com/dmythro"
   },
-  "scripts": {
-    "build": "npm run build-js",
-    "format": "prettier --write \"{**/,}*.ts\"",
-    "lint": "eslint \"{scripts,src}{**/,}/*.ts\"",
-    "lint:fix": "eslint \"{scripts,src}{**/,}/*.ts\" --fix"
-  },
-  "types": "dist/index.d.ts",
   "devDependencies": {
     "@types/semver-compare": "~1.0.1",
     "eslint": "~8.39.0",

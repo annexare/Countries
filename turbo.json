@@ -3,7 +3,7 @@
   "pipeline": {
     "countries#build": {
       "dependsOn": [
-        "^lint",
+        "lint",
         "scripts#build"
       ]
     },
@@ -14,8 +14,7 @@
     },
     "build": {
       "dependsOn": [
-        "lint",
-        "^build"
+        "lint"
       ],
       "outputs": [
         "dist/**"
@@ -24,7 +23,9 @@
     "lint": {},
     "test": {
       "dependsOn": [
-        "build"
+        "lint",
+        "scripts#build",
+        "countries#build"
       ]
     }
   }
