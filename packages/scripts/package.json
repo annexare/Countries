@@ -20,7 +20,7 @@
     "node": ">=14.16"
   },
   "scripts": {
-    "build-data": "tsx index.ts",
+    "build": "tsx index.ts",
     "version": "tsx version.ts"
   }
 }

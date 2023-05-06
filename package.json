@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "ci": "turbo run lint build test",
     "format": "prettier --write \"{**/,}*.ts\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",

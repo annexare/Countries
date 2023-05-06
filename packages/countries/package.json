@@ -14,10 +14,12 @@
     "url": "https://github.com/dmythro"
   },
   "scripts": {
+    "build": "tsup",
     "lint": "eslint \"src/{**/,}*.ts\"",
     "lint:fix": "eslint \"src/{**/,}*.ts\" --fix"
   },
   "devDependencies": {
+    "tsup": "6.7.0",
     "typescript": "~5.0.4"
   },
   "devEngines": {

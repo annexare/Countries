@@ -1,10 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
-    "build-data": {},
+    "countries#build": {
+      "dependsOn": [
+        "^lint",
+        "scripts#build"
+      ]
+    },
+    "scripts#build": {
+      "dependsOn": [
+        "lint"
+      ]
+    },
     "build": {
       "dependsOn": [
-        "build-data",
+        "lint",
         "^build"
       ],
       "outputs": [
@@ -14,7 +24,7 @@
     "lint": {},
     "test": {
       "dependsOn": [
-        "^build"
+        "build"
       ]
     }
   }

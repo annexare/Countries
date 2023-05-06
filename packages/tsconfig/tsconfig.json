@@ -21,7 +21,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES5"
+    "target": "ESNext"
   },
   "ts-node": {
     "transpileOnly": true
