@@ -33,7 +33,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: NPM install
-        run: npm ci --prefer-offline --no-audit --omit=optional --ignore-scripts
+        run: npm install --prefer-offline --no-audit
         env:
           CI: true
 
