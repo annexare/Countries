@@ -1915,8 +1915,8 @@ export default {
     languages: ['ar'],
   },
   SZ: {
-    name: 'Swaziland',
-    native: 'Swaziland',
+    name: 'Eswatini',
+    native: 'Eswatini',
     phone: [268],
     continent: 'AF',
     capital: 'Lobamba',
