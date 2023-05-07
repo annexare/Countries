@@ -883,7 +883,7 @@ export default {
     phone: [385],
     continent: 'EU',
     capital: 'Zagreb',
-    currency: ['HRK'],
+    currency: ['EUR'],
     languages: ['hr'],
   },
   HT: {
