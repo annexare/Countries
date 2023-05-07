@@ -27,10 +27,23 @@ describe('dist', () => {
     for (const prop of exportDataList) {
       expect(cjs).toHaveProperty(prop)
 
-      const es5Props = Object.keys(cjs[prop])
-      const dataProps = Object.keys(source[prop])
-      expect(es5Props).toEqual(dataProps)
+      const cjsKeys = Object.keys(cjs[prop])
+      const srcKeys = Object.keys(source[prop])
+      expect(cjsKeys).toEqual(srcKeys)
     }
+  })
+
+  test('all English country names should contain only A-Z characters', () => {
+    const nameReg = /^[a-z\s.()-]+$/i
+    const nonAZ: string[] = []
+    for (const c of Object.values(countries)) {
+      if (!nameReg.test(c.name)) {
+        nonAZ.push(c.name)
+      }
+    }
+
+    // It helps see incorrect names right away in logs
+    expect(nonAZ).toMatchObject([])
   })
 
   test('loads ES6 <script> properly', () => {
