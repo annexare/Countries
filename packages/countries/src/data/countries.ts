@@ -1510,7 +1510,7 @@ export default {
   },
   NP: {
     name: 'Nepal',
-    native: 'नपल',
+    native: 'नेपाल',
     phone: [977],
     continent: 'AS',
     capital: 'Kathmandu',
