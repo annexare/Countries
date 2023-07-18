@@ -3,10 +3,10 @@ name: Countries JS
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - '.github/workflows/nodejs.yml'
       - 'packages/countries/src/**'
