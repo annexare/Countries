@@ -321,7 +321,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('NI', 'Nicaragua', 'Nicaragua', '505', 'NA', 'Managua', 'NIO', 'es'),
   ('NL', 'Netherlands', 'Nederland', '31', 'EU', 'Amsterdam', 'EUR', 'nl'),
   ('NO', 'Norway', 'Norge', '47', 'EU', 'Oslo', 'NOK', 'no,nb,nn'),
-  ('NP', 'Nepal', 'नपल', '977', 'AS', 'Kathmandu', 'NPR', 'ne'),
+  ('NP', 'Nepal', 'नेपाल', '977', 'AS', 'Kathmandu', 'NPR', 'ne'),
   ('NR', 'Nauru', 'Nauru', '674', 'OC', 'Yaren', 'AUD', 'en,na'),
   ('NU', 'Niue', 'Niuē', '683', 'OC', 'Alofi', 'NZD', 'en'),
   ('NZ', 'New Zealand', 'New Zealand', '64', 'OC', 'Wellington', 'NZD', 'en,mi'),
