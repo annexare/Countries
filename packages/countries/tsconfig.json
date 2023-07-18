@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true
   }
 }

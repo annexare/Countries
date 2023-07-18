@@ -5,7 +5,7 @@
     "node": true
   },
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "ignorePatterns": ["*.js", "*.min.*"],
+  "ignorePatterns": ["*.*js*", "*.min.*"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 6,
@@ -13,6 +13,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "@typescript-eslint/no-explicit-any": ["warn"]
+    "@typescript-eslint/no-explicit-any": ["warn"],
+    "@typescript-eslint/triple-slash-reference": 0
   }
 }

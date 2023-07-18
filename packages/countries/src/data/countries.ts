@@ -128,7 +128,7 @@ export default {
     languages: ['nl', 'pa'],
   },
   AX: {
-    name: 'Åland',
+    name: 'Aland',
     native: 'Åland',
     phone: [358],
     continent: 'EU',
@@ -228,7 +228,7 @@ export default {
     languages: ['fr'],
   },
   BL: {
-    name: 'Saint Barthélemy',
+    name: 'Saint Barthelemy',
     native: 'Saint-Barthélemy',
     phone: [590],
     continent: 'NA',
@@ -345,7 +345,7 @@ export default {
     languages: ['en', 'fr'],
   },
   CC: {
-    name: 'Cocos [Keeling] Islands',
+    name: 'Cocos (Keeling) Islands',
     native: 'Cocos (Keeling) Islands',
     phone: [61],
     continent: 'AS',
@@ -883,7 +883,7 @@ export default {
     phone: [385],
     continent: 'EU',
     capital: 'Zagreb',
-    currency: ['HRK'],
+    currency: ['EUR'],
     languages: ['hr'],
   },
   HT: {
@@ -1311,7 +1311,7 @@ export default {
     languages: ['fr'],
   },
   MM: {
-    name: 'Myanmar [Burma]',
+    name: 'Myanmar (Burma)',
     native: 'မြန်မာ',
     phone: [95],
     continent: 'AS',
@@ -1510,7 +1510,7 @@ export default {
   },
   NP: {
     name: 'Nepal',
-    native: 'नपल',
+    native: 'नेपाल',
     phone: [977],
     continent: 'AS',
     capital: 'Kathmandu',
@@ -1689,7 +1689,7 @@ export default {
     languages: ['ar'],
   },
   RE: {
-    name: 'Réunion',
+    name: 'Reunion',
     native: 'La Réunion',
     phone: [262],
     continent: 'AF',
@@ -1879,7 +1879,7 @@ export default {
     languages: ['en'],
   },
   ST: {
-    name: 'São Tomé and Príncipe',
+    name: 'Sao Tome and Principe',
     native: 'São Tomé e Príncipe',
     phone: [239],
     continent: 'AF',
@@ -1915,8 +1915,8 @@ export default {
     languages: ['ar'],
   },
   SZ: {
-    name: 'Swaziland',
-    native: 'Swaziland',
+    name: 'Eswatini',
+    native: 'Eswatini',
     phone: [268],
     continent: 'AF',
     capital: 'Lobamba',

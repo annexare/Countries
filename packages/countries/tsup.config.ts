@@ -1,5 +1,5 @@
 import { defineConfig } from 'tsup'
-import * as pkg from './package.json' // assert { type: 'json' }
+import { default as pkg } from './package.json' assert { type: 'json' }
 
 export default defineConfig({
   banner: () => ({ js: `/*! countries-list v${pkg.version} by Annexare | MIT */` }),
@@ -11,7 +11,7 @@ export default defineConfig({
   minify: true,
   outDir: '../../dist',
   outExtension: ({ format }) => ({
-    js: `.${format === 'esm' ? 'mjs' : format === 'iife' ? 'iife.js' : 'js'}`,
+    js: `${format === 'iife' ? '.iife' : ''}.min.${format === 'esm' ? 'mjs' : 'js'}`,
   }),
   sourcemap: true,
   splitting: false,

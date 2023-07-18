@@ -7,20 +7,22 @@
   "scripts": {
     "build": "turbo run build",
     "ci": "turbo run lint build test",
-    "format": "prettier --write \"{**/,}*.ts\"",
+    "format": "prettier --write \"packages/**/*.ts\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "prepare": "husky install",
+    "test": "turbo run test",
     "version": "cd ./packages/scripts && npm run version"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.59.2",
-    "eslint": "8.39.0",
+    "@typescript-eslint/eslint-plugin": "6.1.0",
+    "@typescript-eslint/parser": "6.1.0",
+    "eslint": "8.45.0",
     "eslint-config-custom": "*",
     "husky": "8.0.3",
-    "lint-staged": "13.2.2",
-    "prettier": "2.8.8",
-    "turbo": "latest"
+    "lint-staged": "13.2.3",
+    "prettier": "3.0.0",
+    "turbo": "1.10.8"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

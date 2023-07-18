@@ -15,12 +15,12 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint \"src/{**/,}*.ts\"",
-    "lint:fix": "eslint \"src/{**/,}*.ts\" --fix"
+    "lint": "eslint \"{/**,}/*.ts\"",
+    "lint:fix": "eslint \"{/**,}/*.ts\" --fix"
   },
   "devDependencies": {
-    "tsup": "6.7.0",
-    "typescript": "~5.0.4"
+    "tsup": "7.1.0",
+    "typescript": "~5.1.6"
   },
   "devEngines": {
     "node": ">=14.16"

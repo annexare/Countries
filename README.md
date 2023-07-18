@@ -37,12 +37,12 @@ The `./data` directory contains source data.
 The consistent data is available from `./dist/data.*` files (JSON, SQL).
 
 **Note**: ES6 builds:
-- CJS `./dist/index.js`.
-- ESM `./dist/index.mjs`.
-- IIFE `./dist/index.iife.js`.
+- CJS `./dist/index.min.js`.
+- ESM `./dist/index.min.mjs`.
+- IIFE `./dist/index.iife.min.js`.
 
 **Note**: Country item `languages` field is an `Array` in JSON files to easily count and match items with a Language item.
-But `currency` and `phone` calling codes may be a comma-separated `String`.
+TODO: But `currency` and `phone` calling codes may be a comma-separated `String`.
 
 ## Data example
 

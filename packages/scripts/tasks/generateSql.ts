@@ -7,8 +7,11 @@ import {
   TCountryCode,
   TLanguageCode,
 } from 'countries/types.ts'
+import continents from 'countries/data/continents.ts'
+import countries from 'countries/data/countries.ts'
+
 import { DATA_FILE, LF, SQL_EXT } from 'scripts/constants.ts'
-import { continents, countries, languagesInUse } from 'scripts/data.ts'
+import { languagesInUse } from 'scripts/data.ts'
 import { getStringFromArray, saveTextFile } from 'scripts/utils.ts'
 
 interface IDataField {
@@ -79,38 +82,35 @@ function sqlValues(table: string, fields: IDataField[], values: (string | number
   return lines.join(LF) + LF + valueLines.join(',' + LF) + ';'
 }
 
-function getCountryDataValues(data: ICountry, key = '') {
+function getCountryDataValues(data: ICountry, countryCode: TCountryCode) {
   const { name, native, phone, continent, capital, currency, languages } = data
-  const values: string[] = [
+  const values: [TCountryCode, string, string, string, TContinentCode, string, string, string] = [
+    countryCode,
     name,
     native,
     phone.join(','),
     continent,
     capital,
     currency.join(','),
-    (key ? getStringFromArray(languages) : languages) as string,
+    getStringFromArray(languages),
   ]
-
-  if (key) {
-    values.unshift(key as string)
-  }
 
   return values
 }
 
-function getLanguageDataValues(data: ILanguage, key = '') {
+function getLanguageDataValues(data: ILanguage, langCode: TLanguageCode) {
   const { name, native, rtl } = data
-  const values = [name, native, rtl ? 1 : 0]
-
-  if (key) {
-    values.unshift(key as string)
-  }
+  const values: [TLanguageCode, string, string, 0 | 1] = [langCode, name, native, rtl ? 1 : 0]
 
   return values
 }
 
 export const generateSql = (): void => {
   console.log(chalk.bold('\nGenerating SQL file:\n'))
+
+  /**
+   * Continents
+   */
 
   const continentFields: IDataField[] = [
     {
@@ -123,6 +123,20 @@ export const generateSql = (): void => {
       type: "VARCHAR(15) NOT NULL DEFAULT ''",
     },
   ]
+  const continentList: string[][] = Object.keys(continents).map((key) => {
+    return [key as string, continents[key as TContinentCode]]
+  })
+
+  /**
+   * Countries
+   */
+
+  const maxCurrencyLength = Math.max(
+    ...Object.values(countries).map(({ currency }) => currency.join(',').length)
+  )
+  const maxLanguagesLength = Math.max(
+    ...Object.values(countries).map(({ languages }) => languages.join(',').length)
+  )
   const countryFields: IDataField[] = [
     {
       name: 'code',
@@ -152,13 +166,21 @@ export const generateSql = (): void => {
     },
     {
       name: 'currency',
-      type: "VARCHAR(30) NOT NULL DEFAULT ''",
+      type: `VARCHAR(${maxCurrencyLength}) NOT NULL DEFAULT ''`,
     },
     {
       name: 'languages',
-      type: "VARCHAR(30) NOT NULL DEFAULT ''",
+      type: `VARCHAR(${maxLanguagesLength}) NOT NULL DEFAULT ''`,
     },
   ]
+  const countryList: string[][] = (Object.keys(countries) as TCountryCode[]).map((countryCode) =>
+    getCountryDataValues(countries[countryCode], countryCode)
+  )
+
+  /**
+   * Languages
+   */
+
   const languageFields: IDataField[] = [
     {
       name: 'code',
@@ -178,19 +200,11 @@ export const generateSql = (): void => {
       type: 'TINYINT(1) NOT NULL DEFAULT 0',
     },
   ]
-  const continentList: string[][] = Object.keys(continents).map((key) => {
-    return [key as string, continents[key as TContinentCode]]
-  })
-
-  const countryList: string[][] = Object.keys(countries).map((key) =>
-    getCountryDataValues(countries[key as TCountryCode], key as string)
-  )
-
   const languageList: (string | number)[][] = []
-  for (const key of Object.keys(languagesInUse)) {
-    const lang = languagesInUse[key as TLanguageCode]
-    if (lang) {
-      languageList.push(getLanguageDataValues(lang, key as string))
+  for (const langCode of Object.keys(languagesInUse) as TLanguageCode[]) {
+    const data = languagesInUse[langCode]
+    if (langCode && data) {
+      languageList.push(getLanguageDataValues(data, langCode))
     }
   }
 
