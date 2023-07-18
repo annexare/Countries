@@ -8,11 +8,11 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "20.0.0",
+    "@types/node": "20.4.2",
     "@types/semver-compare": "1.0.1",
-    "chalk": "5.2.0",
+    "chalk": "5.3.0",
     "countries-list": "*",
-    "pretty-bytes": "6.1.0",
+    "pretty-bytes": "6.1.1",
     "semver-compare": "1.0.0",
     "tsx": "3.12.7"
   },
