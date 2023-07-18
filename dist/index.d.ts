@@ -56,6 +56,11 @@ declare interface ILanguage {
   rtl?: number
 }
 
+declare interface ICountryData extends ICountry {
+  iso2: TCountryCode
+  iso3: string
+}
+
 declare type TContinents = Record<TContinentCode, string>
 declare type TCountries = Record<TCountryCode, ICountry>
 declare type TCountryToString = Record<TCountryCode, string>

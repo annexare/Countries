@@ -60,6 +60,11 @@ export interface ILanguage {
   rtl?: number
 }
 
+export interface ICountryData extends ICountry {
+  iso2: TCountryCode
+  iso3: string
+}
+
 export type TContinents = Record<TContinentCode, string>
 export type TCountries = Record<TCountryCode, ICountry>
 export type TCountryToString = Record<TCountryCode, string>
