@@ -2116,7 +2116,7 @@ export default {
   },
   UZ: {
     name: 'Uzbekistan',
-    native: 'O‘zbekiston',
+    native: "O'zbekiston",
     phone: [998],
     continent: 'AS',
     capital: 'Tashkent',
