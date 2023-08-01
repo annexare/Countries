@@ -704,7 +704,7 @@ export default {
   },
   uz: {
     name: 'Uzbek',
-    native: 'Ўзбек',
+    native: "O'zbekcha",
   },
   ve: {
     name: 'Venda',
