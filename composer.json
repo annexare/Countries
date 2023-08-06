@@ -37,7 +37,15 @@
     ]
   },
   "archive": {
-    "exclude": ["/.*", "/packages", "/package*", "turbo*"]
+    "exclude": [
+      ".npmignore",
+      "*.js",
+      "*.ts",
+      "/.*",
+      "/packages",
+      "package*.json",
+      "turbo.json"
+    ]
   },
   "homepage": "http://annexare.github.io/Countries/"
 }
