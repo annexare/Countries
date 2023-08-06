@@ -19,7 +19,7 @@
   <coverage cacheDirectory=".phpunit.cache/code-coverage"
             processUncoveredFiles="true">
     <include>
-      <directory suffix=".php">dist</directory>
+      <directory suffix=".php">../../dist</directory>
     </include>
   </coverage>
 </phpunit>
