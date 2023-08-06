@@ -9,13 +9,9 @@ on:
       - main
     paths:
       - '.github/workflows/phpunit.yml'
-      - 'dist/**.json'
-      - 'dist/*.php'
-      - 'packages/countries/data/**'
+      - 'packages/countries/src/data/**'
       - 'packages/test-php/**'
-      - 'phpunit.xml'
       - '!.editorconfig'
-      - '!.travis.yml'
       - '!**LICENSE*'
       - '!**README*'
 
@@ -32,5 +28,5 @@ jobs:
         uses: php-actions/phpunit@v3
         with:
           version: 9
-          configuration: phpunit.xml
+          configuration: packages/test-php/phpunit.xml
           args: --coverage-text
