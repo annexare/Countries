@@ -40,6 +40,8 @@
     "exclude": [
       ".npmignore",
       "*.js",
+      "*.map",
+      "*.mjs",
       "*.ts",
       "/.*",
       "/packages",
