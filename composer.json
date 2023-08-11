@@ -16,9 +16,7 @@
     "json",
     "sql",
     "ISO 3166-1",
-    "ISO 639-1",
-    "node",
-    "typescript"
+    "ISO 639-1"
   ],
   "authors": [
     {
@@ -35,11 +33,21 @@
   "require": {},
   "autoload": {
     "files": [
-      "index.php"
+      "dist/index.php"
     ]
   },
-  "homepage": "http://annexare.github.io/Countries/",
-  "require-dev": {
-    "phpunit/phpunit": "^9.5"
-  }
+  "archive": {
+    "exclude": [
+      ".npmignore",
+      "*.js",
+      "*.map",
+      "*.mjs",
+      "*.ts",
+      "/.*",
+      "/packages",
+      "package*.json",
+      "turbo.json"
+    ]
+  },
+  "homepage": "http://annexare.github.io/Countries/"
 }

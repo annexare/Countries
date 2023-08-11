@@ -11,6 +11,10 @@ Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
+## Version 3.0: Breaking changes
+
+Version 3 comes with some data structure changes. Also, it was completely reworked with TypeScript, ESM exports and Turborepo file structure.
+
 ## Version 2.0: Breaking changes
 
 This version changes a lot in the data structures, and placement of the files.
