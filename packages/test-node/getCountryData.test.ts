@@ -1,24 +1,27 @@
+import assert from 'node:assert'
+import { test } from 'node:test'
+
 import countries from 'src/data/countries.ts'
 import { getCountryData, getCountryDataList } from 'src/getCountryData.ts'
 
 test('getCountryData()', () => {
   const countryDataUA = getCountryData('UA')
 
-  expect(countryDataUA.iso2).toBe('UA')
-  expect(countryDataUA.iso3).toBe('UKR')
-  expect(countryDataUA.name).toBe('Ukraine')
+  assert.equal(countryDataUA.iso2, 'UA')
+  assert.equal(countryDataUA.iso3, 'UKR')
+  assert.equal(countryDataUA.name, 'Ukraine')
 })
 
 test('getCountryDataList()', () => {
   const countryDataList = getCountryDataList()
   const countryCodeList = Object.keys(countries)
 
-  expect(countryDataList).toHaveLength(countryCodeList.length)
+  assert.equal(countryDataList.length, countryCodeList.length)
 
   for (const countryData of countryDataList) {
-    expect(typeof countryData).toBe('object')
-    expect(countryData.iso2).toBeTruthy()
-    expect(countryData.iso3).toBeTruthy()
-    expect(countryData.name).toBeTruthy()
+    assert.equal(typeof countryData, 'object')
+    assert(countryData.iso2)
+    assert(countryData.iso3)
+    assert(countryData.name)
   }
 })

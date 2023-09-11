@@ -1,70 +1,70 @@
 import fs from 'node:fs'
+import assert from 'node:assert'
+import { describe, it } from 'node:test'
 
-import '../../dist/index.iife.d.ts'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import * as cjs from '../../dist/index.min.js'
-import { continents, countries, languages, getEmojiFlag } from 'src/index.ts'
+import * as mjs from '../../dist/index.min.mjs'
+import * as source from 'src/index.ts'
 
-const source = {
-  continents,
-  countries,
-  languages,
-  getEmojiFlag,
-} as const
+console.log(' -- source', source)
 
 const exportDataList: Partial<keyof typeof source>[] = ['continents', 'countries', 'languages']
 const exportFnList: Partial<keyof typeof source>[] = ['getEmojiFlag']
 
+function evalIIFE(name = 'Countries') {
+  const script = fs.readFileSync('../../dist/index.iife.min.js', { encoding: 'utf-8' })
+  eval(`this.${name} = (function () { ${script}\nreturn ${name}})()`)
+}
+
 describe('dist', () => {
-  test('has proper CJS ES6 export', () => {
-    expect(typeof cjs).toBe('object')
+  it('has proper CJS ES6 export', () => {
+    assert.equal(typeof mjs, 'object')
 
     for (const prop of exportFnList) {
-      expect(cjs).toHaveProperty(prop)
+      assert(Object.hasOwn(mjs, prop))
     }
 
     for (const prop of exportDataList) {
-      expect(cjs).toHaveProperty(prop)
+      assert(Object.hasOwn(mjs, prop))
 
-      const cjsKeys = Object.keys(cjs[prop])
+      const cjsKeys = Object.keys(mjs[prop])
       const srcKeys = Object.keys(source[prop])
-      expect(cjsKeys).toEqual(srcKeys)
+      assert.deepEqual(cjsKeys, srcKeys)
     }
   })
 
-  test('all English country names should contain only A-Z characters', () => {
+  it('all English country names should contain only A-Z characters', () => {
     const nameReg = /^[a-z\s.()-]+$/i
     const nonAZ: string[] = []
-    for (const c of Object.values(countries)) {
+    for (const c of Object.values(source.countries)) {
       if (!nameReg.test(c.name)) {
         nonAZ.push(c.name)
       }
     }
 
     // It helps see incorrect names right away in logs
-    expect(nonAZ).toMatchObject([])
+    assert.deepEqual(nonAZ, [])
   })
 
-  test('loads ES6 <script> properly', () => {
-    const scriptEl = document.createElement('script')
-    scriptEl.text = fs.readFileSync('../../dist/index.iife.min.js', { encoding: 'utf-8' })
-    document.body.appendChild(scriptEl)
+  it('loads ES6 <script> properly', () => {
+    const context: { Countries?: typeof source } = {}
+    evalIIFE.call(context)
 
-    expect(window.Countries).toBeDefined()
+    const contextCountries = context.Countries
 
-    const winCountries = window.Countries
+    assert(contextCountries)
 
     for (const prop of exportFnList) {
-      expect(winCountries).toHaveProperty(prop)
+      assert(Object.hasOwn(contextCountries, prop))
     }
 
     for (const prop of exportDataList) {
-      expect(winCountries).toHaveProperty(prop)
+      assert(Object.hasOwn(contextCountries, prop))
 
-      const windowProps = Object.keys(winCountries[prop]) as string[]
+      const windowProps = Object.keys(contextCountries[prop]) as string[]
       const dataProps = Object.keys(source[prop]) as string[]
-      expect(windowProps).toEqual(dataProps)
+      assert.deepEqual(windowProps, dataProps)
     }
   })
 })

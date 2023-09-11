@@ -2,11 +2,8 @@
   "name": "test-node",
   "type": "module",
   "devDependencies": {
-    "@types/jest": "29.5.3",
-    "jest": "29.6.1",
-    "jest-environment-jsdom": "29.6.1",
-    "ts-jest": "29.1.1",
-    "typescript": "5.1.6"
+    "@swc-node/register": "1.6.7",
+    "typescript": "5.2.2"
   },
   "jest": {
     "moduleNameMapper": {
@@ -17,6 +14,6 @@
     "verbose": true
   },
   "scripts": {
-    "test": "jest"
+    "test": "node --no-warnings --loader @swc-node/register/esm --test-reporter spec --test ./*.test.ts"
   }
 }

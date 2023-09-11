@@ -8,13 +8,13 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "20.4.2",
+    "@types/node": "20.6.0",
     "@types/semver-compare": "1.0.1",
     "chalk": "5.3.0",
     "countries-list": "*",
     "pretty-bytes": "6.1.1",
     "semver-compare": "1.0.0",
-    "tsx": "3.12.7"
+    "tsx": "3.12.8"
   },
   "devEngines": {
     "node": ">=14.16"
