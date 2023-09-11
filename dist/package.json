@@ -44,19 +44,6 @@
     "email": "d@klmn.me",
     "url": "https://github.com/dmythro"
   },
-  "devDependencies": {
-    "@types/semver-compare": "~1.0.1",
-    "eslint": "~8.39.0",
-    "husky": "~8.0.3",
-    "lint-staged": "~13.2.2",
-    "prettier": "~2.8.8",
-    "pretty-bytes": "~6.1.0",
-    "semver-compare": "~1.0.0",
-    "typescript": "~5.0.4"
-  },
-  "devEngines": {
-    "node": ">=14.16"
-  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/annexare/Countries/issues"
