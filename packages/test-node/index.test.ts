@@ -7,8 +7,6 @@ import { describe, it } from 'node:test'
 import * as mjs from '../../dist/index.min.mjs'
 import * as source from 'src/index.ts'
 
-console.log(' -- source', source)
-
 const exportDataList: Partial<keyof typeof source>[] = ['continents', 'countries', 'languages']
 const exportFnList: Partial<keyof typeof source>[] = ['getEmojiFlag']
 
