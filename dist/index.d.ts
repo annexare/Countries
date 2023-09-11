@@ -67,3 +67,14 @@ declare type TCountryToString = Record<TCountryCode, string>
 declare type TStringToCountry = Record<string, TCountryCode>
 declare type TLanguages = Record<TLanguageCode, ILanguage>
 declare type TLanguageToString = Record<TLanguageCode, string>
+
+declare const getCountryCode: (countryName: string) => TCountryCode | false;
+declare const getCountryData: (iso2: TCountryCode) => ICountryData;
+declare const getCountryDataList: () => ICountryData[];
+declare const getEmojiFlag: (countryCode: TCountryCode) => string;
+
+declare const continents: TContinents
+declare const countries: TCountries
+declare const languages: TLanguages
+
+export { continents, countries, getCountryCode, getCountryData, getCountryDataList, getEmojiFlag, languages };
