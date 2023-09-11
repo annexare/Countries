@@ -12,23 +12,21 @@ export const generateTypings = (): void => {
   })
   const typings =
     current
-      .replace(/export/g, 'declare')
       .replace(/import .* from '.*'\n/g, '')
       .replace('keyof typeof continents', "'" + Object.keys(continents).join("' | '") + "'")
       .replace('keyof typeof countries', "'" + Object.keys(countries).join("' | '") + "'")
       .replace('keyof typeof languages', "'" + Object.keys(languages).join("' | '") + "'") +
     [
       '',
-      'declare const getCountryCode: (countryName: string) => TCountryCode | false',
-      'declare const getCountryData: (iso2: TCountryCode) => ICountryData',
-      'declare const getCountryDataList: () => ICountryData[]',
-      'declare const getEmojiFlag: (countryCode: TCountryCode) => string',
+      'export const getCountryCode: (countryName: string) => TCountryCode | false',
+      'export const getCountryData: (iso2: TCountryCode) => ICountryData',
+      'export const getCountryDataList: () => ICountryData[]',
+      'export const getEmojiFlag: (countryCode: TCountryCode) => string',
       '',
-      'declare const continents: TContinents',
-      'declare const countries: TCountries',
-      'declare const languages: TLanguages',
+      'export const continents: TContinents',
+      'export const countries: TCountries',
+      'export const languages: TLanguages',
       '',
-      'export { continents, countries, getCountryCode, getCountryData, getCountryDataList, getEmojiFlag, languages }',
     ].join('\n')
 
   saveTextFile('index.d.ts', typings.trim())
