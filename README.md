@@ -26,91 +26,94 @@ Package is available via:
 
 - **NPM** `npm install countries-list`
 - **Composer / Packagist** `composer require annexare/countries-list`
-- **Bower** `bower install countries`
 
-## Usage
+## Usage (version 3.x)
 
-Module exports `continents`, `countries`, `languages` and functions:
+Module exports `continents`, `countries`, `languages` and utility functions.
 
-- `getEmojiFlag(countryCode)`, where `countryCode` is alpha-2 `String`
-- `getUnicode(emoji)`, where `emoji` is alpha-2 emoji flag `String`
+```ts
+// Interfaces and types
+import type {
+  ICountry,
+  ICountryData,
+  ILanguage,
+  TContinentCode,
+  TCountryCode,
+  TLanguageCode,
+} from 'countries-list'
 
-Built files are in the `./dist` directory.
-The `./data` directory contains source data.
+// Main data and utils
+import { continents, countries, languages } from 'countries-list'
+// Utils
+import { getCountryCode, getCountryData, getCountryDataList, getEmojiFlag } from 'countries-list'
 
-The consistent data is available from `./dist/data.*` files (JSON, SQL).
+// Minimal data in JSON
+import countries2to3 from 'countries-list/minimal/countries.2to3.min.json'
+import countries3to2 from 'countries-list/minimal/countries.3to2.min.json'
+import languageNames from 'countries-list/minimal/languages.native.min'
 
-**Note**: ES6 builds:
-- CJS `./dist/index.min.js`.
-- ESM `./dist/index.min.mjs`.
-- IIFE `./dist/index.iife.min.js`.
-
-**Note**: Country item `languages` field is an `Array` in JSON files to easily count and match items with a Language item.
-TODO: But `currency` and `phone` calling codes may be a comma-separated `String`.
-
-## Data example
-
+getCountryCode('Ukraine') // 'UA'
+getCountryCode('Україна') // 'UA'
+getCountryData('UA') // ICountryData
 ```
-{
-  "continents": {
-    "AF": "Africa",
-    "AN": "Antarctica",
-    "AS": "Asia",
-    "EU": "Europe",
-    "NA": "North America",
-    "OC": "Oceania",
-    "SA": "South America"
+
+Built files are in the `dist` directory of this repository.
+The `packages/countries` directory contains source data.
+
+**Note**: JS builds:
+
+- CJS `index.min.js`.
+- ESM `index.min.mjs`.
+- IIFE `index.iife.min.js`.
+
+## Data structure examples
+
+```ts
+const continents = {
+  AF: 'Africa',
+  AN: 'Antarctica',
+  AS: 'Asia',
+  EU: 'Europe',
+  NA: 'North America',
+  OC: 'Oceania',
+  SA: 'South America',
+}
+
+const countries = {
+  // ...
+  UA: {
+    name: 'Ukraine',
+    native: 'Україна',
+    phone: [380],
+    continent: 'EU',
+    capital: 'Kyiv',
+    currency: ['UAH'],
+    languages: ['uk'],
   },
-  "countries": {
-    "AE": {
-      "name": "United Arab Emirates",
-      "native": "دولة الإمارات العربية المتحدة",
-      "phone": "971",
-      "continent": "AS",
-      "capital": "Abu Dhabi",
-      "currency": "AED",
-      "languages": [
-        "ar"
-      ],
-      "emoji": "🇦🇪",
-      "emojiU": "U+1F1E6 U+1F1EA"
-    },
-    ...
-    "UA": {
-      "name": "Ukraine",
-      "native": "Україна",
-      "phone": "380",
-      "continent": "EU",
-      "capital": "Kyiv",
-      "currency": "UAH",
-      "languages": [
-        "uk"
-      ],
-      "emoji": "🇺🇦",
-      "emojiU": "U+1F1FA U+1F1E6"
-    }
+  // ...
+}
+
+const languages = {
+  // ...
+  uk: {
+    name: 'Ukrainian',
+    native: 'Українська',
   },
-  "languages": {
-    "ar": {
-      "name": "Arabic",
-      "native": "العربية",
-      "rtl": 1
-    },
-    ...
-    "uk": {
-      "name": "Ukrainian",
-      "native": "Українська"
-    }
-  }
+  ur: {
+    name: 'Urdu',
+    native: 'اردو',
+    rtl: 1,
+  },
+  // ...
 }
 ```
 
 ## Contributing
 
-Everything is generated from files in `./data/`, including SQL file.
+Everything is generated from strongly typed files in `packages/countries/src`, including SQL file.
 
-Everything in `./dist/` is generated,
-so please make data related changes **ONLY** to files from `./data/`, commit them.
+Everything in `dist` is generated,
+so please make data related changes **ONLY** to files from `packages/countries`, commit them.
 Use `npm run build` command to build/test generated files.
 
 ## Credits
