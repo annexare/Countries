@@ -13,7 +13,7 @@ export default defineConfig({
   outExtension: ({ format }) => ({
     js: `${format === 'iife' ? '.iife' : ''}.min.${format === 'esm' ? 'mjs' : 'js'}`,
   }),
-  sourcemap: true,
+  sourcemap: false,
   splitting: false,
   target: 'es6',
 })
