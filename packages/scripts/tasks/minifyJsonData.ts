@@ -18,7 +18,7 @@ import {
   TLanguageToString,
 } from 'countries/types.ts'
 
-import { generateMinimalDataTypings } from 'scripts/tasks/generateTypings.ts'
+// import { generateMinimalDataTypings } from 'scripts/tasks/generateTypings.ts'
 
 export const minifyJsonData = (): void => {
   console.log(chalk.bold('\nMinifying main JSON files:\n'))
@@ -31,10 +31,10 @@ export const minifyJsonData = (): void => {
   console.log(chalk.bold('\nGenerating minimal data JSON files:\n'))
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.2to3`, countries2to3)
-  generateMinimalDataTypings(`${COUNTRIES}.2to3`, `${COUNTRIES}2to3`, 'TCountryToString')
+  // generateMinimalDataTypings(`${COUNTRIES}.2to3`, `${COUNTRIES}2to3`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.3to2`, countries3to2)
-  generateMinimalDataTypings(`${COUNTRIES}.3to2`, `${COUNTRIES}3to2`, 'TStringToCountry')
+  // generateMinimalDataTypings(`${COUNTRIES}.3to2`, `${COUNTRIES}3to2`, 'TStringToCountry')
 
   const countryCodes = Object.keys(countries) as TCountryCode[]
   const languageCodes = Object.keys(languagesInUse) as TLanguageCode[]
@@ -58,17 +58,17 @@ export const minifyJsonData = (): void => {
   }
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.emoji`, countriesEmoji)
-  generateMinimalDataTypings(`${COUNTRIES}.emoji`, `${COUNTRIES}Emoji`, 'TCountryToString')
+  // generateMinimalDataTypings(`${COUNTRIES}.emoji`, `${COUNTRIES}Emoji`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.en`, countriesEn)
-  generateMinimalDataTypings(`${COUNTRIES}.en`, `${COUNTRIES}En`, 'TCountryToString')
+  // generateMinimalDataTypings(`${COUNTRIES}.en`, `${COUNTRIES}En`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.native`, countriesNative)
-  generateMinimalDataTypings(`${COUNTRIES}.native`, `${COUNTRIES}Native`, 'TCountryToString')
+  // generateMinimalDataTypings(`${COUNTRIES}.native`, `${COUNTRIES}Native`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${LANGUAGES}.en`, languagesEn)
-  generateMinimalDataTypings(`${LANGUAGES}.en`, `${LANGUAGES}En`, 'TLanguageToString')
+  // generateMinimalDataTypings(`${LANGUAGES}.en`, `${LANGUAGES}En`, 'TLanguageToString')
 
   saveJsonFile(`${MINIMAL_DIR}${LANGUAGES}.native`, languagesNative)
-  generateMinimalDataTypings(`${LANGUAGES}.native`, `${LANGUAGES}Native`, 'TLanguageToString')
+  // generateMinimalDataTypings(`${LANGUAGES}.native`, `${LANGUAGES}Native`, 'TLanguageToString')
 }
