@@ -16,7 +16,7 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/annexare/Countries"
+    "url": "git+https://github.com/annexare/Countries.git"
   },
   "keywords": [
     "country",
