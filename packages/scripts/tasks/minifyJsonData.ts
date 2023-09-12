@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 
-import { ALL, CONTINENTS, COUNTRIES, MINIMAL_DIR, MORE_DIR, LANGUAGES } from 'scripts/constants.ts'
+import { ALL, CONTINENTS, COUNTRIES, MINIMAL_DIR, LANGUAGES } from 'scripts/constants.ts'
 import {
   continents,
   countries,
@@ -18,7 +18,7 @@ import {
   TLanguageToString,
 } from 'countries/types.ts'
 
-import { generateMoreTypings } from 'scripts/tasks/generateTypings.ts'
+import { generateMinimalDataTypings } from 'scripts/tasks/generateTypings.ts'
 
 export const minifyJsonData = (): void => {
   console.log(chalk.bold('\nMinifying main JSON files:\n'))
@@ -28,13 +28,13 @@ export const minifyJsonData = (): void => {
   saveJsonFile(LANGUAGES, languagesInUse)
   saveJsonFile(`${LANGUAGES}${ALL}`, languages)
 
-  console.log(chalk.bold('\nMinifying data JSON files:\n'))
+  console.log(chalk.bold('\nGenerating minimal data JSON files:\n'))
 
-  saveJsonFile(`${MORE_DIR}${COUNTRIES}.2to3`, countries2to3)
-  generateMoreTypings(`${COUNTRIES}.2to3`, `${COUNTRIES}2to3`, 'TCountryToString')
+  saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.2to3`, countries2to3)
+  generateMinimalDataTypings(`${COUNTRIES}.2to3`, `${COUNTRIES}2to3`, 'TCountryToString')
 
-  saveJsonFile(`${MORE_DIR}${COUNTRIES}.3to2`, countries3to2)
-  generateMoreTypings(`${COUNTRIES}.3to2`, `${COUNTRIES}3to2`, 'TStringToCountry')
+  saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.3to2`, countries3to2)
+  generateMinimalDataTypings(`${COUNTRIES}.3to2`, `${COUNTRIES}3to2`, 'TStringToCountry')
 
   const countryCodes = Object.keys(countries) as TCountryCode[]
   const languageCodes = Object.keys(languagesInUse) as TLanguageCode[]
@@ -57,14 +57,18 @@ export const minifyJsonData = (): void => {
     languagesNative[lang] = languages[lang].native
   }
 
-  saveJsonFile(`${MORE_DIR}${COUNTRIES}.emoji`, countriesEmoji)
-  generateMoreTypings(`${COUNTRIES}.emoji`, `${COUNTRIES}Emoji`, 'TCountryToString')
-
-  console.log(chalk.bold('\nGenerating minimal data JSON files:\n'))
+  saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.emoji`, countriesEmoji)
+  generateMinimalDataTypings(`${COUNTRIES}.emoji`, `${COUNTRIES}Emoji`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.en`, countriesEn)
+  generateMinimalDataTypings(`${COUNTRIES}.en`, `${COUNTRIES}En`, 'TCountryToString')
+
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.native`, countriesNative)
+  generateMinimalDataTypings(`${COUNTRIES}.native`, `${COUNTRIES}Native`, 'TCountryToString')
 
   saveJsonFile(`${MINIMAL_DIR}${LANGUAGES}.en`, languagesEn)
+  generateMinimalDataTypings(`${LANGUAGES}.en`, `${LANGUAGES}En`, 'TLanguageToString')
+
   saveJsonFile(`${MINIMAL_DIR}${LANGUAGES}.native`, languagesNative)
+  generateMinimalDataTypings(`${LANGUAGES}.native`, `${LANGUAGES}Native`, 'TLanguageToString')
 }

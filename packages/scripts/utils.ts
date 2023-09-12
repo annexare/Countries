@@ -34,10 +34,12 @@ export const getLanguagesInUse = (
       })
     }
   })
-  console.log('Languages in use:', inUseList.length)
+  inUseList.sort()
+
+  console.log('Languages in use:', inUseList.length, `(${inUseList.join(', ')})\n`)
 
   const languagesInUse: Partial<TLanguages> = {}
-  inUseList.sort().forEach((lang) => {
+  inUseList.forEach((lang) => {
     languagesInUse[lang] = Object.assign({}, languages[lang])
   })
 
@@ -49,6 +51,8 @@ export const getLanguagesInUse = (
       notInUseList.push(lang)
     }
   })
+  notInUseList.sort()
+
   console.log('Unused languages:', notInUseList.length, `(${notInUseList.join(', ')})`)
 
   return languagesInUse
@@ -87,6 +91,7 @@ export const saveTextFile = (fileName: string, data: string): boolean => {
   console.log(
     'Saved',
     chalk.blue(path.relative('../../', filePath)),
+    '-',
     chalk.bold(prettyBytes(stats.size))
   )
   return true

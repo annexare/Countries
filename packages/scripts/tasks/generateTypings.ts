@@ -1,6 +1,7 @@
 import chalk from 'chalk'
 import fs from 'node:fs'
 
+import { MINIMAL_DIR } from 'scripts/constants.ts'
 import { continents, countries, languages } from 'scripts/data.ts'
 import { saveTextFile } from 'scripts/utils.ts'
 
@@ -32,13 +33,17 @@ export const generateTypings = (): void => {
   saveTextFile('index.d.ts', typings.trim())
 }
 
-export const generateMoreTypings = (fileName: string, varName: string, type: string): void => {
+export const generateMinimalDataTypings = (
+  fileName: string,
+  varName: string,
+  type: string
+): void => {
   const fileContents = [
-    '/// <reference path="../index.d.ts" />',
+    `import type { ${type} } from '../'`,
     '',
     `declare const ${varName}: ${type}`,
     `export default ${varName}`,
   ].join('\n')
 
-  saveTextFile(`more/${fileName}.min.d.ts`, fileContents + '\n')
+  saveTextFile(`${MINIMAL_DIR}/${fileName}.min.d.ts`, fileContents + '\n')
 }
