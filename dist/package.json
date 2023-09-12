@@ -1,6 +1,6 @@
 {
   "name": "countries-list",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "type": "module",
   "exports": {

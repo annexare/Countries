@@ -4,7 +4,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import compare from 'semver-compare'
 
-import distComposer from '../../dist/composer.json' assert { type: 'json' }
+import distComposer from '../../composer.json' assert { type: 'json' }
 import distPkg from '../../dist/package.json' assert { type: 'json' }
 import pkg from '../countries/package.json' assert { type: 'json' }
 
@@ -27,7 +27,7 @@ const saveJsonFile = (filePath: string, data: unknown) => {
 
 console.log(chalk.bold('\nUpdating files:\n'))
 
-saveJsonFile('../../dist/composer.json', {
+saveJsonFile('../../composer.json', {
   ...distComposer,
   version,
 })
