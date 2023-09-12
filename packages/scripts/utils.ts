@@ -13,6 +13,14 @@ const MIN_EXT = '.min'
 const JSON_EXT = '.json'
 const JSON_MIN_EXT = `${MIN_EXT}${JSON_EXT}`
 
+export const copyFileToDist = (src: string) => {
+  const filename = path.basename(src)
+  const dest = path.resolve(DIST, filename)
+  fs.copyFileSync(src, dest)
+
+  console.log('Copied', chalk.blue(path.relative('../../', dest)))
+}
+
 export const getCountryDataToCsv = (
   { name, native, phone, continent, capital, currency, languages }: ICountryCsv,
   joinWith: string

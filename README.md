@@ -13,12 +13,12 @@ Also, contains separate JSON files with additional country **Emoji** flags data.
 
 ## Version 3.0: Breaking changes
 
-Version 3 comes with some data structure changes. Also, it was completely reworked with TypeScript, ESM exports and Turborepo file structure.
+Version 3 comes with some data structure changes.
+It was completely reworked under the hood with **TypeScript**, **ESM** exports and **Turborepo** file structure.
 
-## Version 2.0: Breaking changes
+Everything is strongly typed so you can easily use data with auto-complete in your IDE.
 
-This version changes a lot in the data structures, and placement of the files.
-So, if your projects depend on the old structure — specify previous versions, `<2.0.0`.
+**Note**: If your projects depend on the old structure, carefully specify required versions in your dependencies.
 
 ## Installation
 
@@ -57,10 +57,9 @@ getCountryCode('Україна') // 'UA'
 getCountryData('UA') // ICountryData
 ```
 
-Built files are in the `dist` directory of this repository.
-The `packages/countries` directory contains source data.
+Built files are in the `dist` directory of this repository, and `packages/countries` directory contains source data.
 
-**Note**: JS builds:
+**Note**: JS build contains ES modules, CommonJS and IIFE (for now)
 
 - CJS `index.min.js`.
 - ESM `index.min.mjs`.
@@ -108,13 +107,13 @@ const languages = {
 }
 ```
 
-## Contributing
+## Contributing to this repository
 
 Everything is generated from strongly typed files in `packages/countries/src`, including SQL file.
 
 Everything in `dist` is generated,
 so please make data related changes **ONLY** to files from `packages/countries`, commit them.
-Use `npm run build` command to build/test generated files.
+Use `npm run build` (or `turbo build`, `turbo test`) command to build/test generated files.
 
 ## Credits
 

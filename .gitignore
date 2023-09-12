@@ -14,3 +14,7 @@ composer.phar
 
 # Dependency directory
 node_modules
+
+# Copied during build
+dist/README*
+dist/LICENSE*

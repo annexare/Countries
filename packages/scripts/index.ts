@@ -1,3 +1,4 @@
+import { copyFiles } from 'scripts/tasks/copyFiles.ts'
 import { generateCsv } from 'scripts/tasks/generateCsv.ts'
 import { generateSql } from 'scripts/tasks/generateSql.ts'
 import { generateTypings } from 'scripts/tasks/generateTypings.ts'
@@ -12,3 +13,6 @@ generateSql()
 
 // Meta
 generateTypings()
+
+// Necessary files for publishing
+copyFiles()
