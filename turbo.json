@@ -8,6 +8,7 @@
       ]
     },
     "scripts#build": {
+      "cache": false,
       "dependsOn": [
         "lint"
       ]
