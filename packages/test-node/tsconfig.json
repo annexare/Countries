@@ -7,7 +7,7 @@
     "paths": {
       "src/*": ["../countries/src/*"]
     },
-    "types": ["jest", "node"]
+    "types": ["node"]
   },
   "include": [".", "../countries/src"],
   "exclude": ["node_modules"]

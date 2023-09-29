@@ -1,13 +1,19 @@
 {
   "name": "countries-list",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Continents & countries: ISO 3166-1 alpha-2 code, name, ISO 639-1 languages, capital, currency, native name, phone. JSON, CSV and SQL.",
   "type": "module",
   "exports": {
     "./minimal/*": "./minimal/*",
     ".": {
-      "require": "./index.min.js",
-      "import": "./index.min.mjs"
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.min.js"
+      },
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.min.mjs"
+      }
     }
   },
   "sideEffects": [
