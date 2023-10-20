@@ -4,14 +4,14 @@ import { describe, it } from 'node:test'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import * as mjs from '../../dist/index.min.mjs'
+import * as mjs from '../../dist/mjs/index.js'
 import * as source from 'src/index.ts'
 
 const exportDataList: Partial<keyof typeof source>[] = ['continents', 'countries', 'languages']
 const exportFnList: Partial<keyof typeof source>[] = ['getEmojiFlag']
 
 function evalIIFE(name = 'Countries') {
-  const script = fs.readFileSync('../../dist/index.iife.min.js', { encoding: 'utf-8' })
+  const script = fs.readFileSync('../../dist/index.iife.js', { encoding: 'utf-8' })
   eval(`this.${name} = (function () { ${script}\nreturn ${name}})()`)
 }
 

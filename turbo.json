@@ -23,6 +23,7 @@
     },
     "lint": {},
     "test": {
+      "cache": false,
       "dependsOn": [
         "lint",
         "scripts#build",

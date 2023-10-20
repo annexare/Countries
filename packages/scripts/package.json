@@ -8,13 +8,13 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "20.7.1",
-    "@types/semver-compare": "1.0.1",
+    "@types/node": "20.8.7",
+    "@types/semver-compare": "1.0.2",
     "chalk": "5.3.0",
     "countries-list": "*",
     "pretty-bytes": "6.1.1",
     "semver-compare": "1.0.0",
-    "tsx": "3.13.0"
+    "tsx": "3.14.0"
   },
   "scripts": {
     "build": "tsx index.ts",
