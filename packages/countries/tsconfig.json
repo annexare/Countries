@@ -1,9 +1,8 @@
 {
+  "extends": "./tsconfig-base.json",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "esModuleInterop": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true
+    "module": "ESNext",
+    "outDir": "../../dist/mjs",
+    "target": "ESNext"
   }
 }

@@ -1,3 +1,4 @@
+import path from 'path'
 import { defineConfig } from 'tsup'
 import { default as pkg } from './package.json' assert { type: 'json' }
 
@@ -9,11 +10,20 @@ export default defineConfig({
   format: ['cjs', 'esm', 'iife'],
   globalName: 'Countries',
   minify: true,
-  outDir: '../../dist',
+  esbuildOptions(options, { format }) {
+    if (format === 'iife' || format === 'cjs') {
+      options.outdir = `../../dist${format === 'cjs' ? '/cjs' : ''}`
+      options.tsconfig = path.resolve('./tsconfig-cjs.json')
+      options.target = 'es6'
+    } else {
+      options.outdir = '../../dist/mjs'
+    }
+  },
   outExtension: ({ format }) => ({
-    js: `${format === 'iife' ? '.iife' : ''}.min.${format === 'esm' ? 'mjs' : 'js'}`,
+    // js: `${format === 'iife' ? '.iife' : ''}.min.${format === 'esm' ? 'mjs' : 'js'}`,
+    js: `${format === 'iife' ? '.iife' : ''}.js`,
   }),
   sourcemap: false,
   splitting: false,
-  target: 'es6',
+  target: 'esnext',
 })

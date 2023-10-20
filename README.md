@@ -61,9 +61,9 @@ Built files are in the `dist` directory of this repository, and `packages/countr
 
 **Note**: JS build contains ES modules, CommonJS and IIFE (for now)
 
-- CJS `index.min.js`.
-- ESM `index.min.mjs`.
-- IIFE `index.iife.min.js`.
+- CJS `cjs/index.js`
+- ESM `mjs/index.js`
+- IIFE `index.iife.js`
 
 ## Data structure examples
 
