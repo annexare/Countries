@@ -2205,6 +2205,10 @@ export default {
     currency: ['WST'],
     languages: ['sm', 'en'],
   },
+  /**
+   * The code XK is being used by the European Commission the IMF, and SWIFT, the CLDR,
+   * and other organizations as a temporary country code for Kosovo.
+   */
   XK: {
     name: 'Kosovo',
     native: 'Republika e Kosovës',
