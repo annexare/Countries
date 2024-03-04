@@ -1125,7 +1125,7 @@ export default {
   KZ: {
     name: 'Kazakhstan',
     native: 'Қазақстан',
-    phone: [76, 77],
+    phone: [7],
     continent: 'AS',
     continents: ['AS', 'EU'],
     capital: 'Astana',
