@@ -135,6 +135,7 @@ export default {
     capital: 'Mariehamn',
     currency: ['EUR'],
     languages: ['sv'],
+    partOf: 'FI',
   },
   AZ: {
     name: 'Azerbaijan',
@@ -2212,6 +2213,7 @@ export default {
     capital: 'Pristina',
     currency: ['EUR'],
     languages: ['sq', 'sr'],
+    userAssigned: true,
   },
   YE: {
     name: 'Yemen',

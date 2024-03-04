@@ -37,12 +37,19 @@ export interface ICountry {
   native: string
   /**
    * Specified in cases when entity is currently a part of another one.
+   * Example: Åland is an autonomous and demilitarised region of Finland and has own ISO code.
+   * See: https://en.wikipedia.org/wiki/Åland
    */
-  parent?: TCountryCode
+  partOf?: string
   /**
    * Calling phone codes.
    */
   phone: number[]
+  /**
+   * Specified in cases when entity is not a part of the main ISO 3166-1 standart, but a User assigned code.
+   * See: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#User-assigned_code_elements
+   */
+  userAssigned?: boolean
 }
 
 export interface ILanguage {
