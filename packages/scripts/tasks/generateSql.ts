@@ -7,8 +7,8 @@ import {
   TCountryCode,
   TLanguageCode,
 } from 'countries/types.ts'
-import continents from 'countries/data/continents.ts'
-import countries from 'countries/data/countries.ts'
+import { continents } from 'countries/data/continents.ts'
+import { countries } from 'countries/data/countries.ts'
 
 import { DATA_FILE, LF, SQL_EXT } from 'scripts/constants.ts'
 import { languagesInUse } from 'scripts/data.ts'

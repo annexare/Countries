@@ -1,4 +1,4 @@
-export default {
+export const continents = {
   AF: 'Africa',
   AN: 'Antarctica',
   AS: 'Asia',

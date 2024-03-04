@@ -1,6 +1,6 @@
 import { ICountry } from '../types.ts'
 
-export default {
+export const countries = {
   AD: {
     name: 'Andorra',
     native: 'Andorra',
@@ -2264,4 +2264,4 @@ export default {
     currency: ['USD', 'ZAR', 'BWP', 'GBP', 'AUD', 'CNY', 'INR', 'JPY'],
     languages: ['en', 'sn', 'nd'],
   },
-} satisfies Record<string, ICountry>
+} as const satisfies Record<string, ICountry>

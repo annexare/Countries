@@ -1,6 +1,6 @@
 import { TCountryCode } from '../types.ts'
 
-export default {
+export const countries2to3 = {
   AD: 'AND',
   AE: 'ARE',
   AF: 'AFG',
@@ -251,4 +251,4 @@ export default {
   ZA: 'ZAF',
   ZM: 'ZMB',
   ZW: 'ZWE',
-} satisfies Record<TCountryCode, string>
+} as const satisfies Record<TCountryCode, string>

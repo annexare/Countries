@@ -1,7 +1,7 @@
 import assert from 'node:assert'
 import { test } from 'node:test'
 
-import countries from 'src/data/countries.ts'
+import { countries } from 'src/data/countries.ts'
 import { getCountryData, getCountryDataList } from 'src/getCountryData.ts'
 
 test('getCountryData()', () => {

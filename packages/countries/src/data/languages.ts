@@ -1,6 +1,6 @@
 import { ILanguage } from '../types.ts'
 
-export default {
+export const languages = {
   aa: {
     name: 'Afar',
     native: 'Afar',
@@ -751,4 +751,4 @@ export default {
     name: 'Zulu',
     native: 'isiZulu',
   },
-} satisfies Record<string, ILanguage>
+} as const satisfies Record<string, ILanguage>
