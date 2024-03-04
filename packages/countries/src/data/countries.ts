@@ -135,6 +135,7 @@ export default {
     capital: 'Mariehamn',
     currency: ['EUR'],
     languages: ['sv'],
+    partOf: 'FI',
   },
   AZ: {
     name: 'Azerbaijan',
@@ -1124,7 +1125,7 @@ export default {
   KZ: {
     name: 'Kazakhstan',
     native: 'Қазақстан',
-    phone: [76, 77],
+    phone: [7],
     continent: 'AS',
     continents: ['AS', 'EU'],
     capital: 'Astana',
@@ -2212,6 +2213,7 @@ export default {
     capital: 'Pristina',
     currency: ['EUR'],
     languages: ['sq', 'sr'],
+    userAssigned: true,
   },
   YE: {
     name: 'Yemen',

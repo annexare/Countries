@@ -278,7 +278,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('KR', 'South Korea', '대한민국', '82', 'AS', 'Seoul', 'KRW', 'ko'),
   ('KW', 'Kuwait', 'الكويت', '965', 'AS', 'Kuwait City', 'KWD', 'ar'),
   ('KY', 'Cayman Islands', 'Cayman Islands', '1345', 'NA', 'George Town', 'KYD', 'en'),
-  ('KZ', 'Kazakhstan', 'Қазақстан', '76,77', 'AS', 'Astana', 'KZT', 'kk,ru'),
+  ('KZ', 'Kazakhstan', 'Қазақстан', '7', 'AS', 'Astana', 'KZT', 'kk,ru'),
   ('LA', 'Laos', 'ສປປລາວ', '856', 'AS', 'Vientiane', 'LAK', 'lo'),
   ('LB', 'Lebanon', 'لبنان', '961', 'AS', 'Beirut', 'LBP', 'ar,fr'),
   ('LC', 'Saint Lucia', 'Saint Lucia', '1758', 'NA', 'Castries', 'XCD', 'en'),

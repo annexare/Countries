@@ -3,7 +3,7 @@
   "type": "module",
   "devDependencies": {
     "@swc-node/register": "1.6.7",
-    "typescript": "5.2.2"
+    "typescript": "5.3.3"
   },
   "devEngines": {
     "node": ">=18"
