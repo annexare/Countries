@@ -12,4 +12,15 @@ test('getCountryCode()', () => {
   assert.equal(getCountryCode('Ukrain'), false)
   assert.equal(getCountryCode('Ukraine1'), false)
   assert.equal(getCountryCode('Unknown'), false)
+
+  // Should not care about leading/trailing spaces
+  assert.equal(getCountryCode(' Ukraine '), 'UA')
+
+  // More unicode tests
+  assert.equal(getCountryCode('မြန်မာ'), 'MM')
+  assert.equal(getCountryCode('澳門'), 'MO')
+
+  // Special symbols
+  assert.equal(getCountryCode('Myanmar (Burma)'), 'MM')
+  assert.equal(getCountryCode('Cocos (Keeling) Islands'), 'CC')
 })
