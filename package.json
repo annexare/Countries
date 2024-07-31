@@ -11,7 +11,7 @@
     "format": "prettier --write \"packages/**/*.ts\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "test": "turbo run test",
     "version": "cd ./packages/scripts && npm run version"
   },
