@@ -2,7 +2,7 @@
   "name": "test-node",
   "type": "module",
   "devDependencies": {
-    "@swc-node/register": "1.10.9",
+    "@swc-node/register": "1.6.7",
     "typescript": "5.5.4"
   },
   "devEngines": {
