@@ -2,8 +2,8 @@
   "name": "test-node",
   "type": "module",
   "devDependencies": {
-    "@swc-node/register": "1.6.7",
-    "typescript": "5.3.3"
+    "@swc-node/register": "1.10.9",
+    "typescript": "5.5.4"
   },
   "devEngines": {
     "node": ">=18"
