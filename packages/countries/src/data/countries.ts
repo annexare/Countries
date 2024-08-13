@@ -387,7 +387,7 @@ export const countries = {
     phone: [41],
     continent: 'EU',
     capital: 'Bern',
-    currency: ['CHE', 'CHF', 'CHW'],
+    currency: ['CHF', 'CHE', 'CHW'],
     languages: ['de', 'fr', 'it'],
   },
   CI: {
