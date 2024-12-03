@@ -1,6 +1,7 @@
 import { TCountryCode } from '../types.ts'
 
 export const countries2to3 = {
+  AC: 'ASC',
   AD: 'AND',
   AE: 'ARE',
   AF: 'AFG',
@@ -214,6 +215,7 @@ export const countries2to3 = {
   SX: 'SXM',
   SY: 'SYR',
   SZ: 'SWZ',
+  TA: 'TAA',
   TC: 'TCA',
   TD: 'TCD',
   TF: 'ATF',
