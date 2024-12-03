@@ -9,6 +9,7 @@ export const countries = {
     capital: 'Georgetown',
     currency: ['SHP'],
     languages: ['en'],
+    partOf: 'GB'
   },
   AD: {
     name: 'Andorra',
@@ -1942,6 +1943,7 @@ export const countries = {
     capital: 'Edinburgh of the Seven Seas',
     currency: ['GBP'],
     languages: ['en'],
+    partOf: 'GB'
   },
   TC: {
     name: 'Turks and Caicos Islands',
