@@ -52,19 +52,18 @@ describe('dist', () => {
 
     const contextCountries = context.Countries
 
+    expect(contextCountries).toBeTruthy()
     expect(contextCountries).toBeObject()
-    if (!contextCountries) {
-      return
-    }
 
     for (const prop of exportFnList) {
-      expect(Object.hasOwn(contextCountries, prop)).toBe(true)
+      expect(contextCountries).toHaveProperty(prop)
     }
 
     for (const prop of exportDataList) {
-      expect(Object.hasOwn(contextCountries, prop)).toBe(true)
+      expect(contextCountries).toHaveProperty(prop)
 
-      const windowProps = Object.keys(contextCountries[prop]) as string[]
+      // biome-ignore lint/style/noNonNullAssertion: -
+      const windowProps = Object.keys(contextCountries![prop]) as string[]
       const dataProps = Object.keys(source[prop]) as string[]
       expect(windowProps).toEqual(dataProps)
     }
