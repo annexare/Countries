@@ -26,7 +26,7 @@ export const countries = {
     continent: 'AS',
     capital: 'Kabul',
     currency: ['AFN'],
-    languages: ['ps', 'uz', 'tk'],
+    languages: ['ps', 'fa', 'uz', 'tk'],
   },
   AG: {
     name: 'Antigua and Barbuda',
@@ -215,7 +215,7 @@ export const countries = {
     native: 'Burundi',
     phone: [257],
     continent: 'AF',
-    capital: 'Bujumbura',
+    capital: 'Gitega',
     currency: ['BIF'],
     languages: ['fr', 'rn'],
   },
@@ -320,7 +320,7 @@ export const countries = {
   },
   BY: {
     name: 'Belarus',
-    native: 'Белару́сь',
+    native: 'Беларусь',
     phone: [375],
     continent: 'EU',
     capital: 'Minsk',
@@ -387,7 +387,7 @@ export const countries = {
     phone: [41],
     continent: 'EU',
     capital: 'Bern',
-    currency: ['CHE', 'CHF', 'CHW'],
+    currency: ['CHF', 'CHE', 'CHW'],
     languages: ['de', 'fr', 'it'],
   },
   CI: {
@@ -459,7 +459,7 @@ export const countries = {
     phone: [53],
     continent: 'NA',
     capital: 'Havana',
-    currency: ['CUC', 'CUP'],
+    currency: ['CUP'],
     languages: ['es'],
   },
   CV: {
@@ -1052,7 +1052,7 @@ export const countries = {
   },
   KH: {
     name: 'Cambodia',
-    native: 'Kâmpŭchéa',
+    native: 'កម្ពុជា',
     phone: [855],
     continent: 'AS',
     capital: 'Phnom Penh',
@@ -1598,7 +1598,7 @@ export const countries = {
     continent: 'AS',
     capital: 'Manila',
     currency: ['PHP'],
-    languages: ['en'],
+    languages: ['en', 'tl'],
   },
   PK: {
     name: 'Pakistan',
@@ -1738,7 +1738,7 @@ export const countries = {
   },
   SA: {
     name: 'Saudi Arabia',
-    native: 'العربية السعودية',
+    native: 'المملكة العربية السعودية',
     phone: [966],
     continent: 'AS',
     capital: 'Riyadh',
