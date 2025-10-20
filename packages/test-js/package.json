@@ -1,5 +1,5 @@
 {
-  "name": "test-node",
+  "name": "test-js",
   "type": "module",
   "devDependencies": {
     "@types/bun": "catalog:default",

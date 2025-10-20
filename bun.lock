@@ -33,8 +33,8 @@
         "tsconfig": "workspace:*",
       },
     },
-    "packages/test-node": {
-      "name": "test-node",
+    "packages/test-js": {
+      "name": "test-js",
       "devDependencies": {
         "@types/bun": "catalog:default",
         "tsconfig": "workspace:*",
@@ -365,7 +365,7 @@
 
     "sucrase": ["sucrase@3.35.0", "", { "dependencies": { "@jridgewell/gen-mapping": "^0.3.2", "commander": "^4.0.0", "glob": "^10.3.10", "lines-and-columns": "^1.1.6", "mz": "^2.7.0", "pirates": "^4.0.1", "ts-interface-checker": "^0.1.9" }, "bin": { "sucrase": "bin/sucrase", "sucrase-node": "bin/sucrase-node" } }, "sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA=="],
 
-    "test-node": ["test-node@workspace:packages/test-node"],
+    "test-js": ["test-js@workspace:packages/test-js"],
 
     "thenify": ["thenify@3.3.1", "", { "dependencies": { "any-promise": "^1.0.0" } }, "sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw=="],
 
