@@ -1,4 +1,4 @@
-import { TCountryCode } from './types.ts'
+import type { TCountryCode } from './types.ts'
 
 // "Regional Indicator Symbol Letter A" - "Latin Capital Letter A"
 const UNICODE_BASE = 127462 - 'A'.charCodeAt(0)

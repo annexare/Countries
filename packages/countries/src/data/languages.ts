@@ -1,4 +1,4 @@
-import { ILanguage } from '../types.ts'
+import type { ILanguage } from '../types.ts'
 
 export const languages = {
   aa: {

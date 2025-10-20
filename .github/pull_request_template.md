@@ -6,7 +6,7 @@
   - unit tests are passing
   - separate changes with commits where necessary
   - when data needs to be changed, only files within `/data/` were modified
-  - when there is an update for `package.json`, please also push `package-lock.json` changes
+  - when there is an update for `package.json`, please also push `bun.lock` changes
   - no `/dist/` file changes accepted (they are built with every version bump)
 
  -->

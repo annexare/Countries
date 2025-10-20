@@ -4,10 +4,10 @@
     "lib": ["DOM", "ESNext"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
+    "noEmit": true,
     "paths": {
       "src/*": ["../countries/src/*"]
-    },
-    "types": ["node"]
+    }
   },
   "include": [".", "../countries/src"],
   "exclude": ["node_modules"]

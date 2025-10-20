@@ -1,35 +1,26 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
   "tasks": {
+    "//#lint": {
+      "cache": false
+    },
+    "//#check-types": {
+      "cache": false
+    },
     "countries#build": {
-      "dependsOn": [
-        "lint",
-        "scripts#build"
-      ]
+      "dependsOn": ["//#lint", "//#check-types", "scripts#build"]
     },
     "scripts#build": {
       "cache": false,
-      "dependsOn": [
-        "lint"
-      ]
+      "dependsOn": ["//#lint", "//#check-types"]
     },
     "build": {
-      "dependsOn": [
-        "lint"
-      ],
-      "outputs": [
-        "dist/**"
-      ]
+      "dependsOn": ["//#lint", "//#check-types"],
+      "outputs": ["dist/**"]
     },
-    "lint": {},
     "test": {
       "cache": false,
-      "dependsOn": [
-        "lint",
-        "scripts#build",
-        "countries#build"
-      ]
+      "dependsOn": ["//#lint", "//#check-types", "scripts#build", "countries#build"]
     }
   }
 }

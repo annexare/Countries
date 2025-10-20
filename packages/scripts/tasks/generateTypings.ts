@@ -1,5 +1,5 @@
-import chalk from 'chalk'
 import fs from 'node:fs'
+import chalk from 'chalk'
 
 import { MINIMAL_DIR } from 'scripts/constants.ts'
 import { continents, countries, languages } from 'scripts/data.ts'
@@ -14,9 +14,9 @@ export const generateTypings = (): void => {
   const typings =
     current
       .replace(/import .* from '.*'\n/g, '')
-      .replace('keyof typeof continents', "'" + Object.keys(continents).join("' | '") + "'")
-      .replace('keyof typeof countries', "'" + Object.keys(countries).join("' | '") + "'")
-      .replace('keyof typeof languages', "'" + Object.keys(languages).join("' | '") + "'") +
+      .replace('keyof typeof continents', `'${Object.keys(continents).join("' | '")}'`)
+      .replace('keyof typeof countries', `'${Object.keys(countries).join("' | '")}'`)
+      .replace('keyof typeof languages', `'${Object.keys(languages).join("' | '")}'`) +
     [
       '',
       'export const getCountryCode: (countryName: string) => TCountryCode | false',
@@ -45,5 +45,5 @@ export const generateMinimalDataTypings = (
     `export default ${varName}`,
   ].join('\n')
 
-  saveTextFile(`${MINIMAL_DIR}/${fileName}.min.d.ts`, fileContents + '\n')
+  saveTextFile(`${MINIMAL_DIR}/${fileName}.min.d.ts`, `${fileContents}\n`)
 }

@@ -1,4 +1,4 @@
-import { ICountry } from '../types.ts'
+import type { ICountry } from '../types.ts'
 
 export const countries = {
   AD: {

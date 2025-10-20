@@ -1,0 +1,12 @@
+{
+  "name": "test-js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "catalog:default",
+    "tsconfig": "workspace:*",
+    "typescript": "catalog:default"
+  },
+  "scripts": {
+    "test": "bun test"
+  }
+}

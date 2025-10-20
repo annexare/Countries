@@ -1,22 +1,21 @@
 import chalk from 'chalk'
-
-import { ALL, CONTINENTS, COUNTRIES, MINIMAL_DIR, LANGUAGES } from 'scripts/constants.ts'
-import {
-  continents,
-  countries,
-  countries2to3,
-  countries3to2,
-  languagesInUse,
-  languages,
-} from 'scripts/data.ts'
-import { saveJsonFile } from 'scripts/utils.ts'
 import { getEmojiFlag } from 'countries/index.ts'
-import {
+import type {
   TCountryCode,
   TCountryToString,
   TLanguageCode,
   TLanguageToString,
 } from 'countries/types.ts'
+import { ALL, CONTINENTS, COUNTRIES, LANGUAGES, MINIMAL_DIR } from 'scripts/constants.ts'
+import {
+  continents,
+  countries,
+  countries2to3,
+  countries3to2,
+  languages,
+  languagesInUse,
+} from 'scripts/data.ts'
+import { saveJsonFile } from 'scripts/utils.ts'
 
 // import { generateMinimalDataTypings } from 'scripts/tasks/generateTypings.ts'
 

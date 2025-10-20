@@ -3,10 +3,8 @@
 
 # IDE
 .idea
-*.lock
 
 coverage
-.eslintcache
 .phpunit.cache
 .turbo
 

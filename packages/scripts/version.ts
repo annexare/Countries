@@ -4,9 +4,9 @@ import fs from 'node:fs'
 import path from 'node:path'
 import compare from 'semver-compare'
 
-import distComposer from '../../composer.json' assert { type: 'json' }
-import distPkg from '../../dist/package.json' assert { type: 'json' }
-import pkg from '../countries/package.json' assert { type: 'json' }
+import distComposer from '../../composer.json' with { type: 'json' }
+import distPkg from '../../dist/package.json' with { type: 'json' }
+import pkg from '../countries/package.json' with { type: 'json' }
 
 const [, , version]: string[] = process.argv
 
@@ -43,7 +43,7 @@ saveJsonFile('../countries/package.json', {
 })
 
 // Make sure package-lock files are up to date, with actual version
-execSync('cd ../.. && npm i')
-console.log('Updated', chalk.blue('package-lock.json'), 'files')
+execSync('cd ../.. && bun i')
+console.log('Updated', chalk.blue('lock'), 'file')
 
 console.log(chalk.green('\nDone.'))

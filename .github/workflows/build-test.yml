@@ -15,29 +15,21 @@ on:
       - '!**README*'
 
 jobs:
-  nodejs:
+  build-test:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20, 18]
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          cache: 'npm'
-          node-version: ${{ matrix.node-version }}
+          bun-version: 1.3.0
 
-      - name: NPM install
-        run: npm install --prefer-offline --no-audit
-        env:
-          CI: true
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
 
       - name: Build & Test
-        # Runs lint, build & tests
-        run: npm run ci
+        run: bun run ci
         env:
           CI: true
