@@ -1,10 +1,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import chalk from 'chalk'
+import type { TCountries, TLanguageCode, TLanguages } from 'countries/types.ts'
 import prettyBytes from 'pretty-bytes'
-
-import { ICountryCsv } from 'scripts/types.ts'
-import { TCountries, TLanguageCode, TLanguages } from 'countries/types.ts'
+import type { ICountryCsv } from 'scripts/types.ts'
 
 const DIST = '../../dist/'
 const LF = '\n'
@@ -34,7 +33,7 @@ export const getLanguagesInUse = (
 
   // Languages in use processing
   Object.values(countries).forEach((c) => {
-    if (c.languages && c.languages.length) {
+    if (c.languages?.length) {
       c.languages.forEach((lang) => {
         if (!inUseList.includes(lang)) {
           inUseList.push(lang)

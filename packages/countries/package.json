@@ -14,13 +14,12 @@
     "url": "https://github.com/dmythro"
   },
   "scripts": {
-    "build": "tsup",
-    "lint": "eslint \"{/**,}/*.ts\"",
-    "lint:fix": "eslint \"{/**,}/*.ts\" --fix"
+    "build": "tsup"
   },
   "devDependencies": {
-    "tsup": "8.2.3",
-    "typescript": "~5.5.4"
+    "tsconfig": "workspace:*",
+    "tsup": "8.5.0",
+    "typescript": "catalog:default"
   },
   "license": "MIT"
 }

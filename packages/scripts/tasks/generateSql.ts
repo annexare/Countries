@@ -1,14 +1,13 @@
 import chalk from 'chalk'
-
-import {
+import { continents } from 'countries/data/continents.ts'
+import { countries } from 'countries/data/countries.ts'
+import type {
   ICountry,
   ILanguage,
   TContinentCode,
   TCountryCode,
   TLanguageCode,
 } from 'countries/types.ts'
-import { continents } from 'countries/data/continents.ts'
-import { countries } from 'countries/data/countries.ts'
 
 import { DATA_FILE, LF, SQL_EXT } from 'scripts/constants.ts'
 import { languagesInUse } from 'scripts/data.ts'
@@ -24,10 +23,10 @@ interface IDataField {
 
 function sqlHeader(table: string, fields: IDataField[]): string {
   return [
-    'DROP TABLE IF EXISTS `' + table + '`;',
-    'CREATE TABLE `' + table + '` (',
+    `DROP TABLE IF EXISTS \`${table}\`;`,
+    `CREATE TABLE \`${table}\` (`,
     '  ' +
-      fields.map((field) => '`' + field.name + '` ' + field.type).join(',' + LF + '  ') +
+      fields.map((field) => `\`${field.name}\` ${field.type}`).join(`,${LF}  `) +
       sqlKeys(fields),
     ') ENGINE=MyISAM DEFAULT CHARSET=utf8;',
   ].join(LF)
@@ -39,18 +38,18 @@ function sqlKeys(fields: IDataField[]) {
   fields.forEach((field) => {
     let key = ''
     if (field.key || field.unique) {
-      const name = '`' + field.name + '`'
-      key = 'KEY ' + name + ' (' + name + ')'
+      const name = `\`${field.name}\``
+      key = `KEY ${name} (${name})`
 
       if (field.unique) {
-        key = 'UNIQUE ' + key
+        key = `UNIQUE ${key}`
       }
 
       keys.push(key)
     }
   })
 
-  return (keys ? ',' + LF + '  ' : '') + keys.join(',' + LF + '  ')
+  return (keys ? `,${LF}  ` : '') + keys.join(`,${LF}  `)
 }
 
 function sqlValues(table: string, fields: IDataField[], values: (string | number)[][]): string {
@@ -59,7 +58,7 @@ function sqlValues(table: string, fields: IDataField[], values: (string | number
   }
 
   const lines = [
-    'INSERT INTO `' + table + '` (`' + fields.map((field) => field.name).join('`, `') + '`) VALUES',
+    `INSERT INTO \`${table}\` (\`${fields.map((field) => field.name).join('`, `')}\`) VALUES`,
   ]
   const valueLines: string[] = []
 
@@ -79,7 +78,7 @@ function sqlValues(table: string, fields: IDataField[], values: (string | number
     )
   })
 
-  return lines.join(LF) + LF + valueLines.join(',' + LF) + ';'
+  return `${lines.join(LF) + LF + valueLines.join(`,${LF}`)};`
 }
 
 function getCountryDataValues(data: ICountry, countryCode: TCountryCode) {

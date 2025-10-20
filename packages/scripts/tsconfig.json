@@ -1,7 +1,12 @@
 {
   "extends": "tsconfig/tsconfig.json",
   "compilerOptions": {
-    "types": ["node"]
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "countries/*": ["../countries/src/*"],
+      "scripts/*": ["./*"]
+    }
   },
   "include": [".", "../countries/src/*"]
 }

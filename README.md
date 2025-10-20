@@ -24,6 +24,7 @@ Everything is strongly typed so you can easily use data with auto-complete in yo
 
 Package is available via:
 
+- **Bun** `bun add countries-list`
 - **NPM** `npm install countries-list`
 - **Composer / Packagist** `composer require annexare/countries-list`
 
@@ -113,7 +114,7 @@ Everything is generated from strongly typed files in `packages/countries/src`, i
 
 Everything in `dist` is generated,
 so please make data related changes **ONLY** to files from `packages/countries`, commit them.
-Use `npm run build` (or `turbo build`, `turbo test`) command to build/test generated files.
+Use `bun run build` (or `turbo build`, `turbo test`) command to build/test generated files.
 
 ## Credits
 

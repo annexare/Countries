@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig-base.json",
   "compilerOptions": {
+    "composite": true,
     "module": "ESNext",
     "outDir": "../../dist/mjs",
     "target": "ESNext"

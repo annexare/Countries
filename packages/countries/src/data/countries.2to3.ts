@@ -1,4 +1,4 @@
-import { TCountryCode } from '../types.ts'
+import type { TCountryCode } from '../types.ts'
 
 export const countries2to3 = {
   AD: 'AND',

@@ -2,13 +2,11 @@
   "name": "test-node",
   "type": "module",
   "devDependencies": {
-    "@swc-node/register": "1.6.7",
-    "typescript": "5.5.4"
-  },
-  "devEngines": {
-    "node": ">=18"
+    "@types/bun": "catalog:default",
+    "tsconfig": "workspace:*",
+    "typescript": "catalog:default"
   },
   "scripts": {
-    "test": "node --no-warnings --loader @swc-node/register/esm --test-reporter spec --test ./*.test.ts"
+    "test": "bun test"
   }
 }

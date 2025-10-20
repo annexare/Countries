@@ -1,10 +1,10 @@
 import chalk from 'chalk'
 
-import { TCountryCode } from 'countries/types.ts'
+import type { TCountryCode } from 'countries/types.ts'
 
 import { COMMA, COUNTRIES, CSV_EXT, LF, QUOTE } from 'scripts/constants.ts'
-import { countries, continents } from 'scripts/data.ts'
-import { ICountryCsv } from 'scripts/types.ts'
+import { continents, countries } from 'scripts/data.ts'
+import type { ICountryCsv } from 'scripts/types.ts'
 import {
   getCountryDataToCsv,
   getStringFromArray,

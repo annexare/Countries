@@ -32,9 +32,7 @@
   },
   "require": {},
   "autoload": {
-    "files": [
-      "dist/index.php"
-    ]
+    "files": ["dist/index.php"]
   },
   "archive": {
     "exclude": [

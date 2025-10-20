@@ -1,26 +1,25 @@
-import assert from 'node:assert'
-import { test } from 'node:test'
+import { expect, test } from 'bun:test'
 
 import { getCountryCode } from 'src/getCountryCode.ts'
 
 test('getCountryCode()', () => {
-  assert.equal(getCountryCode('Ukraine'), 'UA')
-  assert.equal(getCountryCode('uKraine'), 'UA')
-  assert.equal(getCountryCode('Україна'), 'UA')
-  assert.equal(getCountryCode('уКраїна'), 'UA')
+  expect(getCountryCode('Ukraine')).toBe('UA')
+  expect(getCountryCode('uKraine')).toBe('UA')
+  expect(getCountryCode('Україна')).toBe('UA')
+  expect(getCountryCode('уКраїна')).toBe('UA')
 
-  assert.equal(getCountryCode('Ukrain'), false)
-  assert.equal(getCountryCode('Ukraine1'), false)
-  assert.equal(getCountryCode('Unknown'), false)
+  expect(getCountryCode('Ukrain')).toBe(false)
+  expect(getCountryCode('Ukraine1')).toBe(false)
+  expect(getCountryCode('Unknown')).toBe(false)
 
   // Should not care about leading/trailing spaces
-  assert.equal(getCountryCode(' Ukraine '), 'UA')
+  expect(getCountryCode(' Ukraine ')).toBe('UA')
 
   // More unicode tests
-  assert.equal(getCountryCode('မြန်မာ'), 'MM')
-  assert.equal(getCountryCode('澳門'), 'MO')
+  expect(getCountryCode('မြန်မာ')).toBe('MM')
+  expect(getCountryCode('澳門')).toBe('MO')
 
   // Special symbols
-  assert.equal(getCountryCode('Myanmar (Burma)'), 'MM')
-  assert.equal(getCountryCode('Cocos (Keeling) Islands'), 'CC')
+  expect(getCountryCode('Myanmar (Burma)')).toBe('MM')
+  expect(getCountryCode('Cocos (Keeling) Islands')).toBe('CC')
 })

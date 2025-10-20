@@ -1,5 +1,5 @@
-import { TCountryCode } from './types.ts'
 import { getCountryDataList } from './getCountryData.ts'
+import type { TCountryCode } from './types.ts'
 
 const countryDataList = getCountryDataList()
 
@@ -11,7 +11,7 @@ export const getCountryCode = (countryName: string): TCountryCode | false => {
     .replace(/-/g, '\\x2d')
 
   // Match exact country name, but case insensitive
-  const nameRegex = new RegExp('^' + name + '$', 'i')
+  const nameRegex = new RegExp(`^${name}$`, 'i')
 
   return (
     countryDataList.find(({ name, native }) => nameRegex.test(name) || nameRegex.test(native))
