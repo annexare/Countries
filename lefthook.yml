@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    biome:
+      glob: '*.{js,ts}'
+      run: bun --bun x biome check --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}

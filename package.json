@@ -9,8 +9,6 @@
       "default": {
         "@biomejs/biome": "2.2.6",
         "@types/bun": "1.3.0",
-        "husky": "9.1.7",
-        "lint-staged": "16.2.4",
         "turbo": "2.5.8",
         "typescript": "5.9.3"
       }
@@ -24,26 +22,21 @@
     "format": "biome format --write .",
     "lint": "biome check .",
     "lint:fix": "biome check --write --unsafe .",
-    "prepare": "husky",
     "test": "turbo run test",
     "version": "cd ./packages/scripts && bun run version"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "husky": "catalog:default",
-    "lint-staged": "catalog:default",
+    "lefthook": "2.0.0",
     "turbo": "catalog:default",
     "typescript": "catalog:default"
   },
   "trustedDependencies": [
     "@biomejs/biome",
     "esbuild",
-    "husky",
+    "lefthook",
     "turbo"
   ],
-  "lint-staged": {
-    "*.{js,ts}": "biome check --write"
-  },
   "packageManager": "bun@1.3.0"
 }

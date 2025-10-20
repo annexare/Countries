@@ -1,6 +1,6 @@
 import path from 'path'
 import { defineConfig } from 'tsup'
-import { default as pkg } from './package.json' assert { type: 'json' }
+import pkg from './package.json' with { type: 'json' }
 
 export default defineConfig({
   banner: () => ({ js: `/*! countries-list v${pkg.version} by Annexare | MIT */` }),

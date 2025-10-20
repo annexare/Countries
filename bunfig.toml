@@ -1,2 +1,12 @@
 [install]
 exact = true
+# See: https://bun.com/blog/bun-v1.3#isolated-installs-are-now-the-default-for-workspaces
+linker = "hoisted"
+# See: https://bun.sh/docs/runtime/bunfig#install-linkworkspacepackages
+linkWorkspacePackages = true
+# sharp may require this: https://sharp.pixelplumbing.com/install#prerequisites
+# optional = true
+
+[run]
+# equivalent to `bun --bun` for all `bun run` commands
+bun = true
