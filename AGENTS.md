@@ -7,7 +7,7 @@
 - Lint fix: `bun run lint:fix` (runs biome check --write)
 - Format: `bun run format` (runs biome format --write)
 - Test: `bun run test` (runs all tests)
-- Single test: `cd packages/test-node && bun test <test-file.test.ts>` (Bun test runner)
+- Single test: `cd packages/test-js && bun test <test-file.test.ts>` (Bun test runner)
 - CI: `bun run ci` (lint + build + test)
 
 ## Code Style
@@ -20,5 +20,6 @@
 - Exports: Named exports only (no default exports)
 - Files: One primary export per file matching filename (e.g., `getCountryData.ts` exports `getCountryData`)
 - Format: Run `bun run format` before committing (enforced by husky pre-commit hook)
+- Code should be clear and self-explanatory as much as possible
 - Do not write any documentation unless it was asked for
 - Do not write unnecessary comments in code, unless: code is not obvious, URLs should be linked to the issue, docs etc
