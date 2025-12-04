@@ -16,6 +16,9 @@ call_lefthook()
   elif lefthook -h >/dev/null 2>&1
   then
     lefthook "$@"
+  elif /Users/d/Repo/countries/node_modules/lefthook-darwin-arm64/bin/lefthook -h >/dev/null 2>&1
+  then
+    /Users/d/Repo/countries/node_modules/lefthook-darwin-arm64/bin/lefthook "$@"
   else
     dir="$(git rev-parse --show-toplevel)"
     osArch=$(uname | tr '[:upper:]' '[:lower:]')
@@ -32,7 +35,6 @@ call_lefthook()
     elif test -f "$dir/node_modules/lefthook/bin/index.js"
     then
       "$dir/node_modules/lefthook/bin/index.js" "$@"
-    
     elif go tool lefthook -h >/dev/null 2>&1
     then
       go tool lefthook "$@"

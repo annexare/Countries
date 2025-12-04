@@ -11,7 +11,6 @@
     "@types/bun": "catalog:default",
     "@types/semver-compare": "1.0.3",
     "chalk": "5.6.2",
-    "countries-list": "*",
     "pretty-bytes": "7.1.0",
     "semver-compare": "1.0.0",
     "tsconfig": "workspace:*"
