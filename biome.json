@@ -8,15 +8,15 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "experimentalScannerIgnores": ["**/dist", "**/node_modules", "!**/*.min.*"],
     "includes": [
       "**",
-      "!**/dist",
-      "!**/node_modules",
       "!**/*.min.*",
       "!**/*.config.ts",
       "!**/*.d.ts",
-      "!**/version.ts"
+      "!**/version.ts",
+      "!!**/dist",
+      "!!**/node_modules",
+      "!!**/*.min.*"
     ]
   },
   "formatter": {
