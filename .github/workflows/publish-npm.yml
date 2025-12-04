@@ -21,6 +21,9 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Copy README and LICENSE to dist
+        run: cp README.md LICENSE dist/
+
       - name: Publish to NPM
         run: npm publish
         working-directory: ./dist
