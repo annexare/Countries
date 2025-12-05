@@ -2025,7 +2025,7 @@ export const countries = {
     languages: ['en', 'to'],
   },
   TR: {
-    name: 'Turkey',
+    name: 'Türkiye',
     native: 'Türkiye',
     phone: [90],
     continent: 'AS',
