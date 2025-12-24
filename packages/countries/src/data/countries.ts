@@ -1,6 +1,16 @@
 import type { ICountry } from '../types.ts'
 
 export const countries = {
+  AC: {
+    name: 'Ascension Island',
+    native: 'Ascension Island',
+    phone: [247],
+    continent: 'AF',
+    capital: 'Georgetown',
+    currency: ['SHP'],
+    languages: ['en'],
+    partOf: 'GB'
+  },
   AD: {
     name: 'Andorra',
     native: 'Andorra',
@@ -1924,6 +1934,16 @@ export const countries = {
     capital: 'Lobamba',
     currency: ['SZL'],
     languages: ['en', 'ss'],
+  },
+  TA: {
+    name: 'Tristan da Cunha',
+    native: 'Tristan da Cunha',
+    phone: [290],
+    continent: 'AF',
+    capital: 'Edinburgh of the Seven Seas',
+    currency: ['GBP'],
+    languages: ['en'],
+    partOf: 'GB'
   },
   TC: {
     name: 'Turks and Caicos Islands',
