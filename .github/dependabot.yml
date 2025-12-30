@@ -9,11 +9,11 @@ updates:
         patterns:
           - '*'
 
-  - package-ecosystem: npm
+  - package-ecosystem: bun
     directory: /
     schedule:
       interval: weekly
     groups:
-      npm-dependencies:
+      dependencies:
         patterns:
           - '*'
