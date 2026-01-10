@@ -198,7 +198,7 @@ export const countries = {
     phone: [359],
     continent: 'EU',
     capital: 'Sofia',
-    currency: ['BGN'],
+    currency: ['EUR'],
     languages: ['bg'],
   },
   BH: {
