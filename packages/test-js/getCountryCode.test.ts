@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test'
 
-import { getCountryCode } from 'src/getCountryCode.ts'
+import { getCountryCode } from '../countries/src/getCountryCode.ts'
 
 test('getCountryCode()', () => {
   expect(getCountryCode('Ukraine')).toBe('UA')

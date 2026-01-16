@@ -2,16 +2,19 @@
 
 import { describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
-import * as source from 'src/index.ts'
+import path from 'node:path'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import * as mjs from '../../dist/mjs/index.js'
+import * as source from '../countries/src/index.ts'
+
+const distDir = path.resolve(import.meta.dir, '../../dist')
 
 const exportDataList: Partial<keyof typeof source>[] = ['continents', 'countries', 'languages']
 const exportFnList: Partial<keyof typeof source>[] = ['getEmojiFlag']
 
 function evalIIFE(name = 'Countries') {
-  const script = fs.readFileSync('../../dist/index.iife.js', { encoding: 'utf-8' })
+  const script = fs.readFileSync(path.join(distDir, 'index.iife.js'), { encoding: 'utf-8' })
   // biome-ignore lint/security/noGlobalEval: -
   eval(`this.${name} = (function () { ${script}\nreturn ${name}})()`)
 }

@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test'
 
-import { countries } from 'src/data/countries.ts'
-import { getCountryData, getCountryDataList } from 'src/getCountryData.ts'
+import { countries } from '../countries/src/data/countries.ts'
+import { getCountryData, getCountryDataList } from '../countries/src/getCountryData.ts'
 
 test('getCountryData()', () => {
   const countryDataUA = getCountryData('UA')
