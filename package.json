@@ -28,7 +28,7 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "lefthook": "2.0.16",
+    "lefthook": "2.1.0",
     "turbo": "catalog:default",
     "typescript": "catalog:default"
   },
