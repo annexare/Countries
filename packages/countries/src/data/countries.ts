@@ -9,7 +9,7 @@ export const countries = {
     capital: 'Georgetown',
     currency: ['SHP'],
     languages: ['en'],
-    partOf: 'GB',
+    partOf: 'SH',
   },
   AD: {
     name: 'Andorra',
@@ -1808,6 +1808,7 @@ export const countries = {
     capital: 'Jamestown',
     currency: ['SHP'],
     languages: ['en'],
+    partOf: 'GB',
   },
   SI: {
     name: 'Slovenia',
@@ -1941,9 +1942,9 @@ export const countries = {
     phone: [290],
     continent: 'AF',
     capital: 'Edinburgh of the Seven Seas',
-    currency: ['GBP'],
+    currency: ['SHP'],
     languages: ['en'],
-    partOf: 'GB',
+    partOf: 'SH',
   },
   TC: {
     name: 'Turks and Caicos Islands',
