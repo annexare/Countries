@@ -414,7 +414,7 @@ export const countries = {
     phone: [56],
     continent: 'SA',
     capital: 'Santiago',
-    currency: ['CLF', 'CLP'],
+    currency: ['CLP', 'CLF'],
     languages: ['es'],
   },
   CM: {
@@ -1895,7 +1895,7 @@ export const countries = {
     phone: [503],
     continent: 'NA',
     capital: 'San Salvador',
-    currency: ['SVC', 'USD'],
+    currency: ['USD', 'SVC'],
     languages: ['es'],
   },
   SX: {
@@ -2112,7 +2112,7 @@ export const countries = {
     phone: [598],
     continent: 'SA',
     capital: 'Montevideo',
-    currency: ['UYI', 'UYU'],
+    currency: ['UYU', 'UYI'],
     languages: ['es'],
   },
   UZ: {
