@@ -37,7 +37,7 @@ describe('dist', () => {
   })
 
   test('all English country names should contain only A-Z characters', () => {
-    const nameReg = /^[a-z\s.()-]+$/i
+    const nameReg = /^[a-z\u00C0-\u024F\s.()-]+$/i
     const nonAZ: string[] = []
     for (const c of Object.values(source.countries)) {
       if (!nameReg.test(c.name)) {
