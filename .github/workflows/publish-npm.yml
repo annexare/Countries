@@ -2,7 +2,7 @@ name: Publish to NPM
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 permissions:
   id-token: write
@@ -25,5 +25,5 @@ jobs:
         run: cp README.md LICENSE dist/
 
       - name: Publish to NPM
-        run: npm publish
+        run: npm publish --provenance --access public
         working-directory: ./dist

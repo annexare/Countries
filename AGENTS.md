@@ -9,6 +9,16 @@
 - Test: `bun run test` (runs all tests)
 - Single test: `cd packages/test-js && bun test <test-file.test.ts>` (Bun test runner)
 - CI: `bun run ci` (lint + build + test)
+- Version bump: `cd packages/scripts && bun run version <semver>` (updates package.json files + composer.json + lock file)
+
+## Release Flow
+
+1. Bump version: `cd packages/scripts && bun run version X.Y.Z`
+2. Rebuild dist: `bun run build`
+3. Verify: `bun run ci`
+4. Commit all changes: `chore(release): vX.Y.Z`
+5. Push: `git push`
+6. Create GitHub release: `gh release create vX.Y.Z` (this creates the git tag and triggers npm publish via `.github/workflows/publish-npm.yml`)
 
 ## Code Style
 
