@@ -10,7 +10,8 @@ export const countries = {
     currency: ['SHP'],
     languages: ['en'],
     partOf: 'SH',
-  },
+
+    nationality: 'of Ascension Island'  },
   AD: {
     name: 'Andorra',
     native: 'Andorra',
@@ -19,7 +20,8 @@ export const countries = {
     capital: 'Andorra la Vella',
     currency: ['EUR'],
     languages: ['ca'],
-  },
+
+    nationality: 'Andorran'  },
   AE: {
     name: 'United Arab Emirates',
     native: 'دولة الإمارات العربية المتحدة',
@@ -28,7 +30,8 @@ export const countries = {
     capital: 'Abu Dhabi',
     currency: ['AED'],
     languages: ['ar'],
-  },
+
+    nationality: 'Emirati'  },
   AF: {
     name: 'Afghanistan',
     native: 'افغانستان',
@@ -37,7 +40,8 @@ export const countries = {
     capital: 'Kabul',
     currency: ['AFN'],
     languages: ['ps', 'fa', 'uz', 'tk'],
-  },
+
+    nationality: 'Afghan'  },
   AG: {
     name: 'Antigua and Barbuda',
     native: 'Antigua and Barbuda',
@@ -46,7 +50,8 @@ export const countries = {
     capital: "Saint John's",
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Antigua and Barbuda'  },
   AI: {
     name: 'Anguilla',
     native: 'Anguilla',
@@ -55,7 +60,8 @@ export const countries = {
     capital: 'The Valley',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Anguilla'  },
   AL: {
     name: 'Albania',
     native: 'Shqipëria',
@@ -64,7 +70,8 @@ export const countries = {
     capital: 'Tirana',
     currency: ['ALL'],
     languages: ['sq'],
-  },
+
+    nationality: 'Albanian'  },
   AM: {
     name: 'Armenia',
     native: 'Հայաստան',
@@ -73,7 +80,8 @@ export const countries = {
     capital: 'Yerevan',
     currency: ['AMD'],
     languages: ['hy', 'ru'],
-  },
+
+    nationality: 'Armenian'  },
   AO: {
     name: 'Angola',
     native: 'Angola',
@@ -82,7 +90,8 @@ export const countries = {
     capital: 'Luanda',
     currency: ['AOA'],
     languages: ['pt'],
-  },
+
+    nationality: 'Angolan'  },
   AQ: {
     name: 'Antarctica',
     native: 'Antarctica',
@@ -91,7 +100,8 @@ export const countries = {
     capital: '',
     currency: [],
     languages: [],
-  },
+
+    nationality: 'Antarctic'  },
   AR: {
     name: 'Argentina',
     native: 'Argentina',
@@ -100,7 +110,8 @@ export const countries = {
     capital: 'Buenos Aires',
     currency: ['ARS'],
     languages: ['es', 'gn'],
-  },
+
+    nationality: 'Argentine'  },
   AS: {
     name: 'American Samoa',
     native: 'American Samoa',
@@ -109,7 +120,8 @@ export const countries = {
     capital: 'Pago Pago',
     currency: ['USD'],
     languages: ['en', 'sm'],
-  },
+
+    nationality: 'American Samoan'  },
   AT: {
     name: 'Austria',
     native: 'Österreich',
@@ -118,7 +130,8 @@ export const countries = {
     capital: 'Vienna',
     currency: ['EUR'],
     languages: ['de'],
-  },
+
+    nationality: 'Austrian'  },
   AU: {
     name: 'Australia',
     native: 'Australia',
@@ -127,7 +140,8 @@ export const countries = {
     capital: 'Canberra',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'Australian'  },
   AW: {
     name: 'Aruba',
     native: 'Aruba',
@@ -136,7 +150,8 @@ export const countries = {
     capital: 'Oranjestad',
     currency: ['AWG'],
     languages: ['nl', 'pa'],
-  },
+
+    nationality: 'Aruban'  },
   AX: {
     name: 'Aland',
     native: 'Åland',
@@ -146,7 +161,8 @@ export const countries = {
     currency: ['EUR'],
     languages: ['sv'],
     partOf: 'FI',
-  },
+
+    nationality: 'of the Åland Islands'  },
   AZ: {
     name: 'Azerbaijan',
     native: 'Azərbaycan',
@@ -156,7 +172,8 @@ export const countries = {
     capital: 'Baku',
     currency: ['AZN'],
     languages: ['az'],
-  },
+
+    nationality: 'Azerbaijani'  },
   BA: {
     name: 'Bosnia and Herzegovina',
     native: 'Bosna i Hercegovina',
@@ -165,7 +182,8 @@ export const countries = {
     capital: 'Sarajevo',
     currency: ['BAM'],
     languages: ['bs', 'hr', 'sr'],
-  },
+
+    nationality: 'Bosnian'  },
   BB: {
     name: 'Barbados',
     native: 'Barbados',
@@ -174,7 +192,8 @@ export const countries = {
     capital: 'Bridgetown',
     currency: ['BBD'],
     languages: ['en'],
-  },
+
+    nationality: 'Barbadian'  },
   BD: {
     name: 'Bangladesh',
     native: 'Bangladesh',
@@ -183,7 +202,8 @@ export const countries = {
     capital: 'Dhaka',
     currency: ['BDT'],
     languages: ['bn'],
-  },
+
+    nationality: 'Bangladeshi'  },
   BE: {
     name: 'Belgium',
     native: 'België',
@@ -192,7 +212,8 @@ export const countries = {
     capital: 'Brussels',
     currency: ['EUR'],
     languages: ['nl', 'fr', 'de'],
-  },
+
+    nationality: 'Belgian'  },
   BF: {
     name: 'Burkina Faso',
     native: 'Burkina Faso',
@@ -201,7 +222,8 @@ export const countries = {
     capital: 'Ouagadougou',
     currency: ['XOF'],
     languages: ['fr', 'ff'],
-  },
+
+    nationality: 'Burkinabe'  },
   BG: {
     name: 'Bulgaria',
     native: 'България',
@@ -210,7 +232,8 @@ export const countries = {
     capital: 'Sofia',
     currency: ['EUR'],
     languages: ['bg'],
-  },
+
+    nationality: 'Bulgarian'  },
   BH: {
     name: 'Bahrain',
     native: '‏البحرين',
@@ -219,7 +242,8 @@ export const countries = {
     capital: 'Manama',
     currency: ['BHD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Bahraini'  },
   BI: {
     name: 'Burundi',
     native: 'Burundi',
@@ -228,7 +252,8 @@ export const countries = {
     capital: 'Gitega',
     currency: ['BIF'],
     languages: ['fr', 'rn'],
-  },
+
+    nationality: 'Burundian'  },
   BJ: {
     name: 'Benin',
     native: 'Bénin',
@@ -237,7 +262,8 @@ export const countries = {
     capital: 'Porto-Novo',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Beninese'  },
   BL: {
     name: 'Saint Barthelemy',
     native: 'Saint-Barthélemy',
@@ -246,7 +272,8 @@ export const countries = {
     capital: 'Gustavia',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'of Saint Barthélemy'  },
   BM: {
     name: 'Bermuda',
     native: 'Bermuda',
@@ -255,7 +282,8 @@ export const countries = {
     capital: 'Hamilton',
     currency: ['BMD'],
     languages: ['en'],
-  },
+
+    nationality: 'Bermudian'  },
   BN: {
     name: 'Brunei',
     native: 'Negara Brunei Darussalam',
@@ -264,7 +292,8 @@ export const countries = {
     capital: 'Bandar Seri Begawan',
     currency: ['BND'],
     languages: ['ms'],
-  },
+
+    nationality: 'Bruneian'  },
   BO: {
     name: 'Bolivia',
     native: 'Bolivia',
@@ -273,7 +302,8 @@ export const countries = {
     capital: 'Sucre',
     currency: ['BOB', 'BOV'],
     languages: ['es', 'ay', 'qu'],
-  },
+
+    nationality: 'Bolivian'  },
   BQ: {
     name: 'Bonaire',
     native: 'Bonaire',
@@ -282,7 +312,8 @@ export const countries = {
     capital: 'Kralendijk',
     currency: ['USD'],
     languages: ['nl'],
-  },
+
+    nationality: 'of Bonaire'  },
   BR: {
     name: 'Brazil',
     native: 'Brasil',
@@ -291,7 +322,8 @@ export const countries = {
     capital: 'Brasília',
     currency: ['BRL'],
     languages: ['pt'],
-  },
+
+    nationality: 'Brazilian'  },
   BS: {
     name: 'Bahamas',
     native: 'Bahamas',
@@ -300,7 +332,8 @@ export const countries = {
     capital: 'Nassau',
     currency: ['BSD'],
     languages: ['en'],
-  },
+
+    nationality: 'Bahamian'  },
   BT: {
     name: 'Bhutan',
     native: 'ʼbrug-yul',
@@ -309,7 +342,8 @@ export const countries = {
     capital: 'Thimphu',
     currency: ['BTN', 'INR'],
     languages: ['dz'],
-  },
+
+    nationality: 'Bhutanese'  },
   BV: {
     name: 'Bouvet Island',
     native: 'Bouvetøya',
@@ -318,7 +352,8 @@ export const countries = {
     capital: '',
     currency: ['NOK'],
     languages: ['no', 'nb', 'nn'],
-  },
+
+    nationality: 'of Bouvet Island'  },
   BW: {
     name: 'Botswana',
     native: 'Botswana',
@@ -327,7 +362,8 @@ export const countries = {
     capital: 'Gaborone',
     currency: ['BWP'],
     languages: ['en', 'tn'],
-  },
+
+    nationality: 'Botswanan'  },
   BY: {
     name: 'Belarus',
     native: 'Беларусь',
@@ -336,7 +372,8 @@ export const countries = {
     capital: 'Minsk',
     currency: ['BYN'],
     languages: ['be', 'ru'],
-  },
+
+    nationality: 'Belarusian'  },
   BZ: {
     name: 'Belize',
     native: 'Belize',
@@ -345,7 +382,8 @@ export const countries = {
     capital: 'Belmopan',
     currency: ['BZD'],
     languages: ['en', 'es'],
-  },
+
+    nationality: 'Belizean'  },
   CA: {
     name: 'Canada',
     native: 'Canada',
@@ -354,7 +392,8 @@ export const countries = {
     capital: 'Ottawa',
     currency: ['CAD'],
     languages: ['en', 'fr'],
-  },
+
+    nationality: 'Canadian'  },
   CC: {
     name: 'Cocos (Keeling) Islands',
     native: 'Cocos (Keeling) Islands',
@@ -363,7 +402,8 @@ export const countries = {
     capital: 'West Island',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Cocos Islands'  },
   CD: {
     name: 'Democratic Republic of the Congo',
     native: 'République démocratique du Congo',
@@ -372,7 +412,8 @@ export const countries = {
     capital: 'Kinshasa',
     currency: ['CDF'],
     languages: ['fr', 'ln', 'kg', 'sw', 'lu'],
-  },
+
+    nationality: 'Congolese'  },
   CF: {
     name: 'Central African Republic',
     native: 'Ködörösêse tî Bêafrîka',
@@ -381,7 +422,8 @@ export const countries = {
     capital: 'Bangui',
     currency: ['XAF'],
     languages: ['fr', 'sg'],
-  },
+
+    nationality: 'of the Central African Republic'  },
   CG: {
     name: 'Republic of the Congo',
     native: 'République du Congo',
@@ -390,7 +432,8 @@ export const countries = {
     capital: 'Brazzaville',
     currency: ['XAF'],
     languages: ['fr', 'ln'],
-  },
+
+    nationality: 'Congolese'  },
   CH: {
     name: 'Switzerland',
     native: 'Schweiz',
@@ -399,7 +442,8 @@ export const countries = {
     capital: 'Bern',
     currency: ['CHF', 'CHE', 'CHW'],
     languages: ['de', 'fr', 'it'],
-  },
+
+    nationality: 'Swiss'  },
   CI: {
     name: 'Ivory Coast',
     native: "Côte d'Ivoire",
@@ -408,7 +452,8 @@ export const countries = {
     capital: 'Yamoussoukro',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Ivorian'  },
   CK: {
     name: 'Cook Islands',
     native: 'Cook Islands',
@@ -417,7 +462,8 @@ export const countries = {
     capital: 'Avarua',
     currency: ['NZD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the Cook Islands'  },
   CL: {
     name: 'Chile',
     native: 'Chile',
@@ -426,7 +472,8 @@ export const countries = {
     capital: 'Santiago',
     currency: ['CLP', 'CLF'],
     languages: ['es'],
-  },
+
+    nationality: 'Chilean'  },
   CM: {
     name: 'Cameroon',
     native: 'Cameroon',
@@ -435,7 +482,8 @@ export const countries = {
     capital: 'Yaoundé',
     currency: ['XAF'],
     languages: ['en', 'fr'],
-  },
+
+    nationality: 'Cameroonian'  },
   CN: {
     name: 'China',
     native: '中国',
@@ -444,7 +492,8 @@ export const countries = {
     capital: 'Beijing',
     currency: ['CNY'],
     languages: ['zh'],
-  },
+
+    nationality: 'Chinese'  },
   CO: {
     name: 'Colombia',
     native: 'Colombia',
@@ -453,7 +502,8 @@ export const countries = {
     capital: 'Bogotá',
     currency: ['COP'],
     languages: ['es'],
-  },
+
+    nationality: 'Colombian'  },
   CR: {
     name: 'Costa Rica',
     native: 'Costa Rica',
@@ -462,7 +512,8 @@ export const countries = {
     capital: 'San José',
     currency: ['CRC'],
     languages: ['es'],
-  },
+
+    nationality: 'Costa Rican'  },
   CU: {
     name: 'Cuba',
     native: 'Cuba',
@@ -471,7 +522,8 @@ export const countries = {
     capital: 'Havana',
     currency: ['CUP'],
     languages: ['es'],
-  },
+
+    nationality: 'Cuban'  },
   CV: {
     name: 'Cape Verde',
     native: 'Cabo Verde',
@@ -480,7 +532,8 @@ export const countries = {
     capital: 'Praia',
     currency: ['CVE'],
     languages: ['pt'],
-  },
+
+    nationality: 'Cape Verdean'  },
   CW: {
     name: 'Curacao',
     native: 'Curaçao',
@@ -489,7 +542,8 @@ export const countries = {
     capital: 'Willemstad',
     currency: ['ANG'],
     languages: ['nl', 'pa', 'en'],
-  },
+
+    nationality: 'of Curaçao'  },
   CX: {
     name: 'Christmas Island',
     native: 'Christmas Island',
@@ -498,7 +552,8 @@ export const countries = {
     capital: 'Flying Fish Cove',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Christmas Island'  },
   CY: {
     name: 'Cyprus',
     native: 'Κύπρος',
@@ -507,7 +562,8 @@ export const countries = {
     capital: 'Nicosia',
     currency: ['EUR'],
     languages: ['el', 'tr', 'hy'],
-  },
+
+    nationality: 'Cypriot'  },
   CZ: {
     name: 'Czech Republic',
     native: 'Česká republika',
@@ -516,7 +572,8 @@ export const countries = {
     capital: 'Prague',
     currency: ['CZK'],
     languages: ['cs'],
-  },
+
+    nationality: 'Czech'  },
   DE: {
     name: 'Germany',
     native: 'Deutschland',
@@ -525,7 +582,8 @@ export const countries = {
     capital: 'Berlin',
     currency: ['EUR'],
     languages: ['de'],
-  },
+
+    nationality: 'German'  },
   DJ: {
     name: 'Djibouti',
     native: 'Djibouti',
@@ -534,7 +592,8 @@ export const countries = {
     capital: 'Djibouti',
     currency: ['DJF'],
     languages: ['fr', 'ar'],
-  },
+
+    nationality: 'Djiboutian'  },
   DK: {
     name: 'Denmark',
     native: 'Danmark',
@@ -544,7 +603,8 @@ export const countries = {
     capital: 'Copenhagen',
     currency: ['DKK'],
     languages: ['da'],
-  },
+
+    nationality: 'Danish'  },
   DM: {
     name: 'Dominica',
     native: 'Dominica',
@@ -553,7 +613,8 @@ export const countries = {
     capital: 'Roseau',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'Dominican'  },
   DO: {
     name: 'Dominican Republic',
     native: 'República Dominicana',
@@ -562,7 +623,8 @@ export const countries = {
     capital: 'Santo Domingo',
     currency: ['DOP'],
     languages: ['es'],
-  },
+
+    nationality: 'Dominican'  },
   DZ: {
     name: 'Algeria',
     native: 'الجزائر',
@@ -571,7 +633,8 @@ export const countries = {
     capital: 'Algiers',
     currency: ['DZD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Algerian'  },
   EC: {
     name: 'Ecuador',
     native: 'Ecuador',
@@ -580,7 +643,8 @@ export const countries = {
     capital: 'Quito',
     currency: ['USD'],
     languages: ['es'],
-  },
+
+    nationality: 'Ecuadorian'  },
   EE: {
     name: 'Estonia',
     native: 'Eesti',
@@ -589,7 +653,8 @@ export const countries = {
     capital: 'Tallinn',
     currency: ['EUR'],
     languages: ['et'],
-  },
+
+    nationality: 'Estonian'  },
   EG: {
     name: 'Egypt',
     native: 'مصر‎',
@@ -599,7 +664,8 @@ export const countries = {
     capital: 'Cairo',
     currency: ['EGP'],
     languages: ['ar'],
-  },
+
+    nationality: 'Egyptian'  },
   EH: {
     name: 'Western Sahara',
     native: 'الصحراء الغربية',
@@ -608,7 +674,8 @@ export const countries = {
     capital: 'El Aaiún',
     currency: ['MAD', 'DZD', 'MRU'],
     languages: ['es'],
-  },
+
+    nationality: 'of Western Sahara'  },
   ER: {
     name: 'Eritrea',
     native: 'ኤርትራ',
@@ -617,7 +684,8 @@ export const countries = {
     capital: 'Asmara',
     currency: ['ERN'],
     languages: ['ti', 'ar', 'en'],
-  },
+
+    nationality: 'Eritrean'  },
   ES: {
     name: 'Spain',
     native: 'España',
@@ -626,7 +694,8 @@ export const countries = {
     capital: 'Madrid',
     currency: ['EUR'],
     languages: ['es', 'eu', 'ca', 'gl', 'oc'],
-  },
+
+    nationality: 'Spanish'  },
   ET: {
     name: 'Ethiopia',
     native: 'ኢትዮጵያ',
@@ -635,7 +704,8 @@ export const countries = {
     capital: 'Addis Ababa',
     currency: ['ETB'],
     languages: ['am'],
-  },
+
+    nationality: 'Ethiopian'  },
   FI: {
     name: 'Finland',
     native: 'Suomi',
@@ -644,7 +714,8 @@ export const countries = {
     capital: 'Helsinki',
     currency: ['EUR'],
     languages: ['fi', 'sv'],
-  },
+
+    nationality: 'Finnish'  },
   FJ: {
     name: 'Fiji',
     native: 'Fiji',
@@ -653,7 +724,8 @@ export const countries = {
     capital: 'Suva',
     currency: ['FJD'],
     languages: ['en', 'fj', 'hi', 'ur'],
-  },
+
+    nationality: 'Fijian'  },
   FK: {
     name: 'Falkland Islands',
     native: 'Falkland Islands',
@@ -662,7 +734,8 @@ export const countries = {
     capital: 'Stanley',
     currency: ['FKP'],
     languages: ['en'],
-  },
+
+    nationality: 'of the Falkland Islands'  },
   FM: {
     name: 'Micronesia',
     native: 'Micronesia',
@@ -671,7 +744,8 @@ export const countries = {
     capital: 'Palikir',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'Micronesian'  },
   FO: {
     name: 'Faroe Islands',
     native: 'Føroyar',
@@ -680,7 +754,8 @@ export const countries = {
     capital: 'Tórshavn',
     currency: ['DKK'],
     languages: ['fo'],
-  },
+
+    nationality: 'Faroese'  },
   FR: {
     name: 'France',
     native: 'France',
@@ -689,7 +764,8 @@ export const countries = {
     capital: 'Paris',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'French'  },
   GA: {
     name: 'Gabon',
     native: 'Gabon',
@@ -698,7 +774,8 @@ export const countries = {
     capital: 'Libreville',
     currency: ['XAF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Gabonese'  },
   GB: {
     name: 'United Kingdom',
     native: 'United Kingdom',
@@ -707,7 +784,8 @@ export const countries = {
     capital: 'London',
     currency: ['GBP'],
     languages: ['en'],
-  },
+
+    nationality: 'British'  },
   GD: {
     name: 'Grenada',
     native: 'Grenada',
@@ -716,7 +794,8 @@ export const countries = {
     capital: "St. George's",
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'Grenadian'  },
   GE: {
     name: 'Georgia',
     native: 'საქართველო',
@@ -726,7 +805,8 @@ export const countries = {
     capital: 'Tbilisi',
     currency: ['GEL'],
     languages: ['ka'],
-  },
+
+    nationality: 'Georgian'  },
   GF: {
     name: 'French Guiana',
     native: 'Guyane française',
@@ -735,7 +815,8 @@ export const countries = {
     capital: 'Cayenne',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'French Guiana'  },
   GG: {
     name: 'Guernsey',
     native: 'Guernsey',
@@ -744,7 +825,8 @@ export const countries = {
     capital: 'St. Peter Port',
     currency: ['GBP'],
     languages: ['en', 'fr'],
-  },
+
+    nationality: 'of Guernsey'  },
   GH: {
     name: 'Ghana',
     native: 'Ghana',
@@ -753,7 +835,8 @@ export const countries = {
     capital: 'Accra',
     currency: ['GHS'],
     languages: ['en'],
-  },
+
+    nationality: 'Ghanaian'  },
   GI: {
     name: 'Gibraltar',
     native: 'Gibraltar',
@@ -762,7 +845,8 @@ export const countries = {
     capital: 'Gibraltar',
     currency: ['GIP'],
     languages: ['en'],
-  },
+
+    nationality: 'Gibraltar'  },
   GL: {
     name: 'Greenland',
     native: 'Kalaallit Nunaat',
@@ -771,7 +855,8 @@ export const countries = {
     capital: 'Nuuk',
     currency: ['DKK'],
     languages: ['kl'],
-  },
+
+    nationality: 'Greenlandic'  },
   GM: {
     name: 'Gambia',
     native: 'Gambia',
@@ -780,7 +865,8 @@ export const countries = {
     capital: 'Banjul',
     currency: ['GMD'],
     languages: ['en'],
-  },
+
+    nationality: 'Gambian'  },
   GN: {
     name: 'Guinea',
     native: 'Guinée',
@@ -789,7 +875,8 @@ export const countries = {
     capital: 'Conakry',
     currency: ['GNF'],
     languages: ['fr', 'ff'],
-  },
+
+    nationality: 'Guinean'  },
   GP: {
     name: 'Guadeloupe',
     native: 'Guadeloupe',
@@ -798,7 +885,8 @@ export const countries = {
     capital: 'Basse-Terre',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'Guadeloupe'  },
   GQ: {
     name: 'Equatorial Guinea',
     native: 'Guinea Ecuatorial',
@@ -807,7 +895,8 @@ export const countries = {
     capital: 'Malabo',
     currency: ['XAF'],
     languages: ['es', 'fr'],
-  },
+
+    nationality: 'Equatorial Guinean'  },
   GR: {
     name: 'Greece',
     native: 'Ελλάδα',
@@ -816,7 +905,8 @@ export const countries = {
     capital: 'Athens',
     currency: ['EUR'],
     languages: ['el'],
-  },
+
+    nationality: 'Greek'  },
   GS: {
     name: 'South Georgia and the South Sandwich Islands',
     native: 'South Georgia',
@@ -825,7 +915,8 @@ export const countries = {
     capital: 'King Edward Point',
     currency: ['GBP'],
     languages: ['en'],
-  },
+
+    nationality: 'of South Georgia and the South Sandwich Islands'  },
   GT: {
     name: 'Guatemala',
     native: 'Guatemala',
@@ -834,7 +925,8 @@ export const countries = {
     capital: 'Guatemala City',
     currency: ['GTQ'],
     languages: ['es'],
-  },
+
+    nationality: 'Guatemalan'  },
   GU: {
     name: 'Guam',
     native: 'Guam',
@@ -843,7 +935,8 @@ export const countries = {
     capital: 'Hagåtña',
     currency: ['USD'],
     languages: ['en', 'ch', 'es'],
-  },
+
+    nationality: 'Guamanian'  },
   GW: {
     name: 'Guinea-Bissau',
     native: 'Guiné-Bissau',
@@ -852,7 +945,8 @@ export const countries = {
     capital: 'Bissau',
     currency: ['XOF'],
     languages: ['pt'],
-  },
+
+    nationality: 'Guinea-Bissau'  },
   GY: {
     name: 'Guyana',
     native: 'Guyana',
@@ -861,7 +955,8 @@ export const countries = {
     capital: 'Georgetown',
     currency: ['GYD'],
     languages: ['en'],
-  },
+
+    nationality: 'Guyanese'  },
   HK: {
     name: 'Hong Kong',
     native: '香港',
@@ -870,7 +965,8 @@ export const countries = {
     capital: 'City of Victoria',
     currency: ['HKD'],
     languages: ['zh', 'en'],
-  },
+
+    nationality: 'Hong Kong'  },
   HM: {
     name: 'Heard Island and McDonald Islands',
     native: 'Heard Island and McDonald Islands',
@@ -879,7 +975,8 @@ export const countries = {
     capital: '',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Heard Island and McDonald Islands'  },
   HN: {
     name: 'Honduras',
     native: 'Honduras',
@@ -888,7 +985,8 @@ export const countries = {
     capital: 'Tegucigalpa',
     currency: ['HNL'],
     languages: ['es'],
-  },
+
+    nationality: 'Honduran'  },
   HR: {
     name: 'Croatia',
     native: 'Hrvatska',
@@ -897,7 +995,8 @@ export const countries = {
     capital: 'Zagreb',
     currency: ['EUR'],
     languages: ['hr'],
-  },
+
+    nationality: 'Croatian'  },
   HT: {
     name: 'Haiti',
     native: 'Haïti',
@@ -906,7 +1005,8 @@ export const countries = {
     capital: 'Port-au-Prince',
     currency: ['HTG', 'USD'],
     languages: ['fr', 'ht'],
-  },
+
+    nationality: 'Haitian'  },
   HU: {
     name: 'Hungary',
     native: 'Magyarország',
@@ -915,7 +1015,8 @@ export const countries = {
     capital: 'Budapest',
     currency: ['HUF'],
     languages: ['hu'],
-  },
+
+    nationality: 'Hungarian'  },
   ID: {
     name: 'Indonesia',
     native: 'Indonesia',
@@ -924,7 +1025,8 @@ export const countries = {
     capital: 'Jakarta',
     currency: ['IDR'],
     languages: ['id'],
-  },
+
+    nationality: 'Indonesian'  },
   IE: {
     name: 'Ireland',
     native: 'Éire',
@@ -933,7 +1035,8 @@ export const countries = {
     capital: 'Dublin',
     currency: ['EUR'],
     languages: ['ga', 'en'],
-  },
+
+    nationality: 'Irish'  },
   IL: {
     name: 'Israel',
     native: 'יִשְׂרָאֵל',
@@ -942,7 +1045,8 @@ export const countries = {
     capital: 'Jerusalem',
     currency: ['ILS'],
     languages: ['he', 'ar'],
-  },
+
+    nationality: 'Israeli'  },
   IM: {
     name: 'Isle of Man',
     native: 'Isle of Man',
@@ -951,7 +1055,8 @@ export const countries = {
     capital: 'Douglas',
     currency: ['GBP'],
     languages: ['en', 'gv'],
-  },
+
+    nationality: 'Manx'  },
   IN: {
     name: 'India',
     native: 'भारत',
@@ -960,7 +1065,8 @@ export const countries = {
     capital: 'New Delhi',
     currency: ['INR'],
     languages: ['hi', 'en'],
-  },
+
+    nationality: 'Indian'  },
   IO: {
     name: 'British Indian Ocean Territory',
     native: 'British Indian Ocean Territory',
@@ -969,7 +1075,8 @@ export const countries = {
     capital: 'Diego Garcia',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the British Indian Ocean Territory'  },
   IQ: {
     name: 'Iraq',
     native: 'العراق',
@@ -978,7 +1085,8 @@ export const countries = {
     capital: 'Baghdad',
     currency: ['IQD'],
     languages: ['ar', 'ku'],
-  },
+
+    nationality: 'Iraqi'  },
   IR: {
     name: 'Iran',
     native: 'ایران',
@@ -987,7 +1095,8 @@ export const countries = {
     capital: 'Tehran',
     currency: ['IRR'],
     languages: ['fa'],
-  },
+
+    nationality: 'Iranian'  },
   IS: {
     name: 'Iceland',
     native: 'Ísland',
@@ -996,7 +1105,8 @@ export const countries = {
     capital: 'Reykjavik',
     currency: ['ISK'],
     languages: ['is'],
-  },
+
+    nationality: 'Icelandic'  },
   IT: {
     name: 'Italy',
     native: 'Italia',
@@ -1005,7 +1115,8 @@ export const countries = {
     capital: 'Rome',
     currency: ['EUR'],
     languages: ['it'],
-  },
+
+    nationality: 'Italian'  },
   JE: {
     name: 'Jersey',
     native: 'Jersey',
@@ -1014,7 +1125,8 @@ export const countries = {
     capital: 'Saint Helier',
     currency: ['GBP'],
     languages: ['en', 'fr'],
-  },
+
+    nationality: 'Jersey'  },
   JM: {
     name: 'Jamaica',
     native: 'Jamaica',
@@ -1023,7 +1135,8 @@ export const countries = {
     capital: 'Kingston',
     currency: ['JMD'],
     languages: ['en'],
-  },
+
+    nationality: 'Jamaican'  },
   JO: {
     name: 'Jordan',
     native: 'الأردن',
@@ -1032,7 +1145,8 @@ export const countries = {
     capital: 'Amman',
     currency: ['JOD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Jordanian'  },
   JP: {
     name: 'Japan',
     native: '日本',
@@ -1041,7 +1155,8 @@ export const countries = {
     capital: 'Tokyo',
     currency: ['JPY'],
     languages: ['ja'],
-  },
+
+    nationality: 'Japanese'  },
   KE: {
     name: 'Kenya',
     native: 'Kenya',
@@ -1050,7 +1165,8 @@ export const countries = {
     capital: 'Nairobi',
     currency: ['KES'],
     languages: ['en', 'sw'],
-  },
+
+    nationality: 'Kenyan'  },
   KG: {
     name: 'Kyrgyzstan',
     native: 'Кыргызстан',
@@ -1059,7 +1175,8 @@ export const countries = {
     capital: 'Bishkek',
     currency: ['KGS'],
     languages: ['ky', 'ru'],
-  },
+
+    nationality: 'Kyrgyz'  },
   KH: {
     name: 'Cambodia',
     native: 'កម្ពុជា',
@@ -1068,7 +1185,8 @@ export const countries = {
     capital: 'Phnom Penh',
     currency: ['KHR'],
     languages: ['km'],
-  },
+
+    nationality: 'Cambodian'  },
   KI: {
     name: 'Kiribati',
     native: 'Kiribati',
@@ -1077,7 +1195,8 @@ export const countries = {
     capital: 'South Tarawa',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'Kiribati'  },
   KM: {
     name: 'Comoros',
     native: 'Komori',
@@ -1086,7 +1205,8 @@ export const countries = {
     capital: 'Moroni',
     currency: ['KMF'],
     languages: ['ar', 'fr'],
-  },
+
+    nationality: 'Comorian'  },
   KN: {
     name: 'Saint Kitts and Nevis',
     native: 'Saint Kitts and Nevis',
@@ -1095,7 +1215,8 @@ export const countries = {
     capital: 'Basseterre',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Saint Kitts and Nevis'  },
   KP: {
     name: 'North Korea',
     native: '북한',
@@ -1104,7 +1225,8 @@ export const countries = {
     capital: 'Pyongyang',
     currency: ['KPW'],
     languages: ['ko'],
-  },
+
+    nationality: 'North Korean'  },
   KR: {
     name: 'South Korea',
     native: '대한민국',
@@ -1113,7 +1235,8 @@ export const countries = {
     capital: 'Seoul',
     currency: ['KRW'],
     languages: ['ko'],
-  },
+
+    nationality: 'South Korean'  },
   KW: {
     name: 'Kuwait',
     native: 'الكويت',
@@ -1122,7 +1245,8 @@ export const countries = {
     capital: 'Kuwait City',
     currency: ['KWD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Kuwaiti'  },
   KY: {
     name: 'Cayman Islands',
     native: 'Cayman Islands',
@@ -1131,7 +1255,8 @@ export const countries = {
     capital: 'George Town',
     currency: ['KYD'],
     languages: ['en'],
-  },
+
+    nationality: 'Caymanian'  },
   KZ: {
     name: 'Kazakhstan',
     native: 'Қазақстан',
@@ -1141,7 +1266,8 @@ export const countries = {
     capital: 'Astana',
     currency: ['KZT'],
     languages: ['kk', 'ru'],
-  },
+
+    nationality: 'Kazakh'  },
   LA: {
     name: 'Laos',
     native: 'ສປປລາວ',
@@ -1150,7 +1276,8 @@ export const countries = {
     capital: 'Vientiane',
     currency: ['LAK'],
     languages: ['lo'],
-  },
+
+    nationality: 'Lao'  },
   LB: {
     name: 'Lebanon',
     native: 'لبنان',
@@ -1159,7 +1286,8 @@ export const countries = {
     capital: 'Beirut',
     currency: ['LBP'],
     languages: ['ar', 'fr'],
-  },
+
+    nationality: 'Lebanese'  },
   LC: {
     name: 'Saint Lucia',
     native: 'Saint Lucia',
@@ -1168,7 +1296,8 @@ export const countries = {
     capital: 'Castries',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Saint Lucia'  },
   LI: {
     name: 'Liechtenstein',
     native: 'Liechtenstein',
@@ -1177,7 +1306,8 @@ export const countries = {
     capital: 'Vaduz',
     currency: ['CHF'],
     languages: ['de'],
-  },
+
+    nationality: 'Liechtenstein'  },
   LK: {
     name: 'Sri Lanka',
     native: 'śrī laṃkāva',
@@ -1186,7 +1316,8 @@ export const countries = {
     capital: 'Colombo',
     currency: ['LKR'],
     languages: ['si', 'ta'],
-  },
+
+    nationality: 'Sri Lankan'  },
   LR: {
     name: 'Liberia',
     native: 'Liberia',
@@ -1195,7 +1326,8 @@ export const countries = {
     capital: 'Monrovia',
     currency: ['LRD'],
     languages: ['en'],
-  },
+
+    nationality: 'Liberian'  },
   LS: {
     name: 'Lesotho',
     native: 'Lesotho',
@@ -1204,7 +1336,8 @@ export const countries = {
     capital: 'Maseru',
     currency: ['LSL', 'ZAR'],
     languages: ['en', 'st'],
-  },
+
+    nationality: 'Basotho'  },
   LT: {
     name: 'Lithuania',
     native: 'Lietuva',
@@ -1213,7 +1346,8 @@ export const countries = {
     capital: 'Vilnius',
     currency: ['EUR'],
     languages: ['lt'],
-  },
+
+    nationality: 'Lithuanian'  },
   LU: {
     name: 'Luxembourg',
     native: 'Luxembourg',
@@ -1222,7 +1356,8 @@ export const countries = {
     capital: 'Luxembourg',
     currency: ['EUR'],
     languages: ['fr', 'de', 'lb'],
-  },
+
+    nationality: 'Luxembourgish'  },
   LV: {
     name: 'Latvia',
     native: 'Latvija',
@@ -1231,7 +1366,8 @@ export const countries = {
     capital: 'Riga',
     currency: ['EUR'],
     languages: ['lv'],
-  },
+
+    nationality: 'Latvian'  },
   LY: {
     name: 'Libya',
     native: '‏ليبيا',
@@ -1240,7 +1376,8 @@ export const countries = {
     capital: 'Tripoli',
     currency: ['LYD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Libyan'  },
   MA: {
     name: 'Morocco',
     native: 'المغرب',
@@ -1249,7 +1386,8 @@ export const countries = {
     capital: 'Rabat',
     currency: ['MAD'],
     languages: ['ar'],
-  },
+
+    nationality: 'Moroccan'  },
   MC: {
     name: 'Monaco',
     native: 'Monaco',
@@ -1258,7 +1396,8 @@ export const countries = {
     capital: 'Monaco',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'Monegasque'  },
   MD: {
     name: 'Moldova',
     native: 'Moldova',
@@ -1267,7 +1406,8 @@ export const countries = {
     capital: 'Chișinău',
     currency: ['MDL'],
     languages: ['ro'],
-  },
+
+    nationality: 'Moldovan'  },
   ME: {
     name: 'Montenegro',
     native: 'Црна Гора',
@@ -1276,7 +1416,8 @@ export const countries = {
     capital: 'Podgorica',
     currency: ['EUR'],
     languages: ['sr', 'bs', 'sq', 'hr'],
-  },
+
+    nationality: 'Montenegrin'  },
   MF: {
     name: 'Saint Martin',
     native: 'Saint-Martin',
@@ -1285,7 +1426,8 @@ export const countries = {
     capital: 'Marigot',
     currency: ['EUR'],
     languages: ['en', 'fr', 'nl'],
-  },
+
+    nationality: 'of Saint Martin'  },
   MG: {
     name: 'Madagascar',
     native: 'Madagasikara',
@@ -1294,7 +1436,8 @@ export const countries = {
     capital: 'Antananarivo',
     currency: ['MGA'],
     languages: ['fr', 'mg'],
-  },
+
+    nationality: 'Malagasy'  },
   MH: {
     name: 'Marshall Islands',
     native: 'M̧ajeļ',
@@ -1303,7 +1446,8 @@ export const countries = {
     capital: 'Majuro',
     currency: ['USD'],
     languages: ['en', 'mh'],
-  },
+
+    nationality: 'Marshallese'  },
   MK: {
     name: 'North Macedonia',
     native: 'Северна Македонија',
@@ -1312,7 +1456,8 @@ export const countries = {
     capital: 'Skopje',
     currency: ['MKD'],
     languages: ['mk'],
-  },
+
+    nationality: 'Macedonian'  },
   ML: {
     name: 'Mali',
     native: 'Mali',
@@ -1321,7 +1466,8 @@ export const countries = {
     capital: 'Bamako',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Malian'  },
   MM: {
     name: 'Myanmar (Burma)',
     native: 'မြန်မာ',
@@ -1330,7 +1476,8 @@ export const countries = {
     capital: 'Naypyidaw',
     currency: ['MMK'],
     languages: ['my'],
-  },
+
+    nationality: 'Burmese'  },
   MN: {
     name: 'Mongolia',
     native: 'Монгол улс',
@@ -1339,7 +1486,8 @@ export const countries = {
     capital: 'Ulan Bator',
     currency: ['MNT'],
     languages: ['mn'],
-  },
+
+    nationality: 'Mongolian'  },
   MO: {
     name: 'Macao',
     native: '澳門',
@@ -1348,7 +1496,8 @@ export const countries = {
     capital: '',
     currency: ['MOP'],
     languages: ['zh', 'pt'],
-  },
+
+    nationality: 'Macanese'  },
   MP: {
     name: 'Northern Mariana Islands',
     native: 'Northern Mariana Islands',
@@ -1357,7 +1506,8 @@ export const countries = {
     capital: 'Saipan',
     currency: ['USD'],
     languages: ['en', 'ch'],
-  },
+
+    nationality: 'of the Northern Mariana Islands'  },
   MQ: {
     name: 'Martinique',
     native: 'Martinique',
@@ -1366,7 +1516,8 @@ export const countries = {
     capital: 'Fort-de-France',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'Martinican'  },
   MR: {
     name: 'Mauritania',
     native: 'موريتانيا',
@@ -1375,7 +1526,8 @@ export const countries = {
     capital: 'Nouakchott',
     currency: ['MRU'],
     languages: ['ar'],
-  },
+
+    nationality: 'Mauritanian'  },
   MS: {
     name: 'Montserrat',
     native: 'Montserrat',
@@ -1384,7 +1536,8 @@ export const countries = {
     capital: 'Plymouth',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'Montserratian'  },
   MT: {
     name: 'Malta',
     native: 'Malta',
@@ -1393,7 +1546,8 @@ export const countries = {
     capital: 'Valletta',
     currency: ['EUR'],
     languages: ['mt', 'en'],
-  },
+
+    nationality: 'Maltese'  },
   MU: {
     name: 'Mauritius',
     native: 'Maurice',
@@ -1402,7 +1556,8 @@ export const countries = {
     capital: 'Port Louis',
     currency: ['MUR'],
     languages: ['en'],
-  },
+
+    nationality: 'Mauritian'  },
   MV: {
     name: 'Maldives',
     native: 'Maldives',
@@ -1411,7 +1566,8 @@ export const countries = {
     capital: 'Malé',
     currency: ['MVR'],
     languages: ['dv'],
-  },
+
+    nationality: 'Maldivian'  },
   MW: {
     name: 'Malawi',
     native: 'Malawi',
@@ -1420,7 +1576,8 @@ export const countries = {
     capital: 'Lilongwe',
     currency: ['MWK'],
     languages: ['en', 'ny'],
-  },
+
+    nationality: 'Malawian'  },
   MX: {
     name: 'Mexico',
     native: 'México',
@@ -1429,7 +1586,8 @@ export const countries = {
     capital: 'Mexico City',
     currency: ['MXN'],
     languages: ['es'],
-  },
+
+    nationality: 'Mexican'  },
   MY: {
     name: 'Malaysia',
     native: 'Malaysia',
@@ -1438,7 +1596,8 @@ export const countries = {
     capital: 'Kuala Lumpur',
     currency: ['MYR'],
     languages: ['ms'],
-  },
+
+    nationality: 'Malaysian'  },
   MZ: {
     name: 'Mozambique',
     native: 'Moçambique',
@@ -1447,7 +1606,8 @@ export const countries = {
     capital: 'Maputo',
     currency: ['MZN'],
     languages: ['pt'],
-  },
+
+    nationality: 'Mozambican'  },
   NA: {
     name: 'Namibia',
     native: 'Namibia',
@@ -1456,7 +1616,8 @@ export const countries = {
     capital: 'Windhoek',
     currency: ['NAD', 'ZAR'],
     languages: ['en', 'af'],
-  },
+
+    nationality: 'Namibian'  },
   NC: {
     name: 'New Caledonia',
     native: 'Nouvelle-Calédonie',
@@ -1465,7 +1626,8 @@ export const countries = {
     capital: 'Nouméa',
     currency: ['XPF'],
     languages: ['fr'],
-  },
+
+    nationality: 'New Caledonian'  },
   NE: {
     name: 'Niger',
     native: 'Niger',
@@ -1474,7 +1636,8 @@ export const countries = {
     capital: 'Niamey',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Nigerien'  },
   NF: {
     name: 'Norfolk Island',
     native: 'Norfolk Island',
@@ -1483,7 +1646,8 @@ export const countries = {
     capital: 'Kingston',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'Norfolk Island'  },
   NG: {
     name: 'Nigeria',
     native: 'Nigeria',
@@ -1492,7 +1656,8 @@ export const countries = {
     capital: 'Abuja',
     currency: ['NGN'],
     languages: ['en'],
-  },
+
+    nationality: 'Nigerian'  },
   NI: {
     name: 'Nicaragua',
     native: 'Nicaragua',
@@ -1501,7 +1666,8 @@ export const countries = {
     capital: 'Managua',
     currency: ['NIO'],
     languages: ['es'],
-  },
+
+    nationality: 'Nicaraguan'  },
   NL: {
     name: 'Netherlands',
     native: 'Nederland',
@@ -1510,7 +1676,8 @@ export const countries = {
     capital: 'Amsterdam',
     currency: ['EUR'],
     languages: ['nl'],
-  },
+
+    nationality: 'Dutch'  },
   NO: {
     name: 'Norway',
     native: 'Norge',
@@ -1519,7 +1686,8 @@ export const countries = {
     capital: 'Oslo',
     currency: ['NOK'],
     languages: ['no', 'nb', 'nn'],
-  },
+
+    nationality: 'Norwegian'  },
   NP: {
     name: 'Nepal',
     native: 'नेपाल',
@@ -1528,7 +1696,8 @@ export const countries = {
     capital: 'Kathmandu',
     currency: ['NPR'],
     languages: ['ne'],
-  },
+
+    nationality: 'Nepalese'  },
   NR: {
     name: 'Nauru',
     native: 'Nauru',
@@ -1537,7 +1706,8 @@ export const countries = {
     capital: 'Yaren',
     currency: ['AUD'],
     languages: ['en', 'na'],
-  },
+
+    nationality: 'Nauruan'  },
   NU: {
     name: 'Niue',
     native: 'Niuē',
@@ -1546,7 +1716,8 @@ export const countries = {
     capital: 'Alofi',
     currency: ['NZD'],
     languages: ['en'],
-  },
+
+    nationality: 'Ni-Vanuatu'  },
   NZ: {
     name: 'New Zealand',
     native: 'New Zealand',
@@ -1555,7 +1726,8 @@ export const countries = {
     capital: 'Wellington',
     currency: ['NZD'],
     languages: ['en', 'mi'],
-  },
+
+    nationality: 'New Zealander'  },
   OM: {
     name: 'Oman',
     native: 'عمان',
@@ -1564,7 +1736,8 @@ export const countries = {
     capital: 'Muscat',
     currency: ['OMR'],
     languages: ['ar'],
-  },
+
+    nationality: 'Omani'  },
   PA: {
     name: 'Panama',
     native: 'Panamá',
@@ -1573,7 +1746,8 @@ export const countries = {
     capital: 'Panama City',
     currency: ['PAB', 'USD'],
     languages: ['es'],
-  },
+
+    nationality: 'Panamanian'  },
   PE: {
     name: 'Peru',
     native: 'Perú',
@@ -1582,7 +1756,8 @@ export const countries = {
     capital: 'Lima',
     currency: ['PEN'],
     languages: ['es'],
-  },
+
+    nationality: 'Peruvian'  },
   PF: {
     name: 'French Polynesia',
     native: 'Polynésie française',
@@ -1591,7 +1766,8 @@ export const countries = {
     capital: 'Papeetē',
     currency: ['XPF'],
     languages: ['fr'],
-  },
+
+    nationality: 'French Polynesian'  },
   PG: {
     name: 'Papua New Guinea',
     native: 'Papua Niugini',
@@ -1600,7 +1776,8 @@ export const countries = {
     capital: 'Port Moresby',
     currency: ['PGK'],
     languages: ['en'],
-  },
+
+    nationality: 'Papua New Guinean'  },
   PH: {
     name: 'Philippines',
     native: 'Pilipinas',
@@ -1609,7 +1786,8 @@ export const countries = {
     capital: 'Manila',
     currency: ['PHP'],
     languages: ['en', 'tl'],
-  },
+
+    nationality: 'Filipino'  },
   PK: {
     name: 'Pakistan',
     native: 'Pakistan',
@@ -1618,7 +1796,8 @@ export const countries = {
     capital: 'Islamabad',
     currency: ['PKR'],
     languages: ['en', 'ur'],
-  },
+
+    nationality: 'Pakistani'  },
   PL: {
     name: 'Poland',
     native: 'Polska',
@@ -1627,7 +1806,8 @@ export const countries = {
     capital: 'Warsaw',
     currency: ['PLN'],
     languages: ['pl'],
-  },
+
+    nationality: 'Polish'  },
   PM: {
     name: 'Saint Pierre and Miquelon',
     native: 'Saint-Pierre-et-Miquelon',
@@ -1636,7 +1816,8 @@ export const countries = {
     capital: 'Saint-Pierre',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'of Saint Pierre and Miquelon'  },
   PN: {
     name: 'Pitcairn Islands',
     native: 'Pitcairn Islands',
@@ -1645,7 +1826,8 @@ export const countries = {
     capital: 'Adamstown',
     currency: ['NZD'],
     languages: ['en'],
-  },
+
+    nationality: 'Pitcairn'  },
   PR: {
     name: 'Puerto Rico',
     native: 'Puerto Rico',
@@ -1654,7 +1836,8 @@ export const countries = {
     capital: 'San Juan',
     currency: ['USD'],
     languages: ['es', 'en'],
-  },
+
+    nationality: 'Puerto Rican'  },
   PS: {
     name: 'Palestine',
     native: 'فلسطين',
@@ -1663,7 +1846,8 @@ export const countries = {
     capital: 'Ramallah',
     currency: ['ILS'],
     languages: ['ar'],
-  },
+
+    nationality: 'Palestinian'  },
   PT: {
     name: 'Portugal',
     native: 'Portugal',
@@ -1672,7 +1856,8 @@ export const countries = {
     capital: 'Lisbon',
     currency: ['EUR'],
     languages: ['pt'],
-  },
+
+    nationality: 'Portuguese'  },
   PW: {
     name: 'Palau',
     native: 'Palau',
@@ -1681,7 +1866,8 @@ export const countries = {
     capital: 'Ngerulmud',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'Palauan'  },
   PY: {
     name: 'Paraguay',
     native: 'Paraguay',
@@ -1690,7 +1876,8 @@ export const countries = {
     capital: 'Asunción',
     currency: ['PYG'],
     languages: ['es', 'gn'],
-  },
+
+    nationality: 'Paraguayan'  },
   QA: {
     name: 'Qatar',
     native: 'قطر',
@@ -1699,7 +1886,8 @@ export const countries = {
     capital: 'Doha',
     currency: ['QAR'],
     languages: ['ar'],
-  },
+
+    nationality: 'Qatari'  },
   RE: {
     name: 'Reunion',
     native: 'La Réunion',
@@ -1708,7 +1896,8 @@ export const countries = {
     capital: 'Saint-Denis',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'Réunionese'  },
   RO: {
     name: 'Romania',
     native: 'România',
@@ -1717,7 +1906,8 @@ export const countries = {
     capital: 'Bucharest',
     currency: ['RON'],
     languages: ['ro'],
-  },
+
+    nationality: 'Romanian'  },
   RS: {
     name: 'Serbia',
     native: 'Србија',
@@ -1726,7 +1916,8 @@ export const countries = {
     capital: 'Belgrade',
     currency: ['RSD'],
     languages: ['sr'],
-  },
+
+    nationality: 'Serbian'  },
   RU: {
     name: 'Russia',
     native: 'Россия',
@@ -1736,7 +1927,8 @@ export const countries = {
     capital: 'Moscow',
     currency: ['RUB'],
     languages: ['ru'],
-  },
+
+    nationality: 'Russian'  },
   RW: {
     name: 'Rwanda',
     native: 'Rwanda',
@@ -1745,7 +1937,8 @@ export const countries = {
     capital: 'Kigali',
     currency: ['RWF'],
     languages: ['rw', 'en', 'fr'],
-  },
+
+    nationality: 'Rwandan'  },
   SA: {
     name: 'Saudi Arabia',
     native: 'المملكة العربية السعودية',
@@ -1754,7 +1947,8 @@ export const countries = {
     capital: 'Riyadh',
     currency: ['SAR'],
     languages: ['ar'],
-  },
+
+    nationality: 'Saudi'  },
   SB: {
     name: 'Solomon Islands',
     native: 'Solomon Islands',
@@ -1763,7 +1957,8 @@ export const countries = {
     capital: 'Honiara',
     currency: ['SBD'],
     languages: ['en'],
-  },
+
+    nationality: 'Solomon Islander'  },
   SC: {
     name: 'Seychelles',
     native: 'Seychelles',
@@ -1772,7 +1967,8 @@ export const countries = {
     capital: 'Victoria',
     currency: ['SCR'],
     languages: ['fr', 'en'],
-  },
+
+    nationality: 'Seychellois'  },
   SD: {
     name: 'Sudan',
     native: 'السودان',
@@ -1781,7 +1977,8 @@ export const countries = {
     capital: 'Khartoum',
     currency: ['SDG'],
     languages: ['ar', 'en'],
-  },
+
+    nationality: 'Sudanese'  },
   SE: {
     name: 'Sweden',
     native: 'Sverige',
@@ -1790,7 +1987,8 @@ export const countries = {
     capital: 'Stockholm',
     currency: ['SEK'],
     languages: ['sv'],
-  },
+
+    nationality: 'Swedish'  },
   SG: {
     name: 'Singapore',
     native: 'Singapore',
@@ -1799,7 +1997,8 @@ export const countries = {
     capital: 'Singapore',
     currency: ['SGD'],
     languages: ['en', 'ms', 'ta', 'zh'],
-  },
+
+    nationality: 'Singaporean'  },
   SH: {
     name: 'Saint Helena',
     native: 'Saint Helena',
@@ -1809,7 +2008,8 @@ export const countries = {
     currency: ['SHP'],
     languages: ['en'],
     partOf: 'GB',
-  },
+
+    nationality: 'of Saint Helena'  },
   SI: {
     name: 'Slovenia',
     native: 'Slovenija',
@@ -1818,7 +2018,8 @@ export const countries = {
     capital: 'Ljubljana',
     currency: ['EUR'],
     languages: ['sl'],
-  },
+
+    nationality: 'Slovenian'  },
   SJ: {
     name: 'Svalbard and Jan Mayen',
     native: 'Svalbard og Jan Mayen',
@@ -1827,7 +2028,8 @@ export const countries = {
     capital: 'Longyearbyen',
     currency: ['NOK'],
     languages: ['no'],
-  },
+
+    nationality: 'Svalbard'  },
   SK: {
     name: 'Slovakia',
     native: 'Slovensko',
@@ -1836,7 +2038,8 @@ export const countries = {
     capital: 'Bratislava',
     currency: ['EUR'],
     languages: ['sk'],
-  },
+
+    nationality: 'Slovak'  },
   SL: {
     name: 'Sierra Leone',
     native: 'Sierra Leone',
@@ -1845,7 +2048,8 @@ export const countries = {
     capital: 'Freetown',
     currency: ['SLL'],
     languages: ['en'],
-  },
+
+    nationality: 'Sierra Leonean'  },
   SM: {
     name: 'San Marino',
     native: 'San Marino',
@@ -1854,7 +2058,8 @@ export const countries = {
     capital: 'City of San Marino',
     currency: ['EUR'],
     languages: ['it'],
-  },
+
+    nationality: 'Sammarinese'  },
   SN: {
     name: 'Senegal',
     native: 'Sénégal',
@@ -1863,7 +2068,8 @@ export const countries = {
     capital: 'Dakar',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Senegalese'  },
   SO: {
     name: 'Somalia',
     native: 'Soomaaliya',
@@ -1872,7 +2078,8 @@ export const countries = {
     capital: 'Mogadishu',
     currency: ['SOS'],
     languages: ['so', 'ar'],
-  },
+
+    nationality: 'Somali'  },
   SR: {
     name: 'Suriname',
     native: 'Suriname',
@@ -1881,7 +2088,8 @@ export const countries = {
     capital: 'Paramaribo',
     currency: ['SRD'],
     languages: ['nl'],
-  },
+
+    nationality: 'Surinamese'  },
   SS: {
     name: 'South Sudan',
     native: 'South Sudan',
@@ -1890,7 +2098,8 @@ export const countries = {
     capital: 'Juba',
     currency: ['SSP'],
     languages: ['en'],
-  },
+
+    nationality: 'South Sudanese'  },
   ST: {
     name: 'Sao Tome and Principe',
     native: 'São Tomé e Príncipe',
@@ -1899,7 +2108,8 @@ export const countries = {
     capital: 'São Tomé',
     currency: ['STN'],
     languages: ['pt'],
-  },
+
+    nationality: 'São Toméan'  },
   SV: {
     name: 'El Salvador',
     native: 'El Salvador',
@@ -1908,7 +2118,8 @@ export const countries = {
     capital: 'San Salvador',
     currency: ['USD', 'SVC'],
     languages: ['es'],
-  },
+
+    nationality: 'Salvadoran'  },
   SX: {
     name: 'Sint Maarten',
     native: 'Sint Maarten',
@@ -1917,7 +2128,8 @@ export const countries = {
     capital: 'Philipsburg',
     currency: ['ANG'],
     languages: ['nl', 'en'],
-  },
+
+    nationality: 'Sint Maarten'  },
   SY: {
     name: 'Syria',
     native: 'سوريا',
@@ -1926,7 +2138,8 @@ export const countries = {
     capital: 'Damascus',
     currency: ['SYP'],
     languages: ['ar'],
-  },
+
+    nationality: 'Syrian'  },
   SZ: {
     name: 'Eswatini',
     native: 'Eswatini',
@@ -1935,7 +2148,8 @@ export const countries = {
     capital: 'Lobamba',
     currency: ['SZL'],
     languages: ['en', 'ss'],
-  },
+
+    nationality: 'Swazi'  },
   TA: {
     name: 'Tristan da Cunha',
     native: 'Tristan da Cunha',
@@ -1954,7 +2168,8 @@ export const countries = {
     capital: 'Cockburn Town',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the Turks and Caicos Islands'  },
   TD: {
     name: 'Chad',
     native: 'Tchad',
@@ -1963,7 +2178,8 @@ export const countries = {
     capital: "N'Djamena",
     currency: ['XAF'],
     languages: ['fr', 'ar'],
-  },
+
+    nationality: 'Chadian'  },
   TF: {
     name: 'French Southern Territories',
     native: 'Territoire des Terres australes et antarctiques fr',
@@ -1972,7 +2188,8 @@ export const countries = {
     capital: 'Port-aux-Français',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'of the French Southern Territories'  },
   TG: {
     name: 'Togo',
     native: 'Togo',
@@ -1981,7 +2198,8 @@ export const countries = {
     capital: 'Lomé',
     currency: ['XOF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Togolese'  },
   TH: {
     name: 'Thailand',
     native: 'ประเทศไทย',
@@ -1990,7 +2208,8 @@ export const countries = {
     capital: 'Bangkok',
     currency: ['THB'],
     languages: ['th'],
-  },
+
+    nationality: 'Thai'  },
   TJ: {
     name: 'Tajikistan',
     native: 'Тоҷикистон',
@@ -1999,7 +2218,8 @@ export const countries = {
     capital: 'Dushanbe',
     currency: ['TJS'],
     languages: ['tg', 'ru'],
-  },
+
+    nationality: 'Tajik'  },
   TK: {
     name: 'Tokelau',
     native: 'Tokelau',
@@ -2008,7 +2228,8 @@ export const countries = {
     capital: 'Fakaofo',
     currency: ['NZD'],
     languages: ['en'],
-  },
+
+    nationality: 'Tokelauan'  },
   TL: {
     name: 'East Timor',
     native: 'Timor-Leste',
@@ -2017,7 +2238,8 @@ export const countries = {
     capital: 'Dili',
     currency: ['USD'],
     languages: ['pt'],
-  },
+
+    nationality: 'Timorese'  },
   TM: {
     name: 'Turkmenistan',
     native: 'Türkmenistan',
@@ -2026,7 +2248,8 @@ export const countries = {
     capital: 'Ashgabat',
     currency: ['TMT'],
     languages: ['tk', 'ru'],
-  },
+
+    nationality: 'Turkmen'  },
   TN: {
     name: 'Tunisia',
     native: 'تونس',
@@ -2035,7 +2258,8 @@ export const countries = {
     capital: 'Tunis',
     currency: ['TND'],
     languages: ['ar'],
-  },
+
+    nationality: 'Tunisian'  },
   TO: {
     name: 'Tonga',
     native: 'Tonga',
@@ -2044,7 +2268,8 @@ export const countries = {
     capital: "Nuku'alofa",
     currency: ['TOP'],
     languages: ['en', 'to'],
-  },
+
+    nationality: 'Tongan'  },
   TR: {
     name: 'Türkiye',
     native: 'Türkiye',
@@ -2054,7 +2279,8 @@ export const countries = {
     capital: 'Ankara',
     currency: ['TRY'],
     languages: ['tr'],
-  },
+
+    nationality: 'Turkish'  },
   TT: {
     name: 'Trinidad and Tobago',
     native: 'Trinidad and Tobago',
@@ -2063,7 +2289,8 @@ export const countries = {
     capital: 'Port of Spain',
     currency: ['TTD'],
     languages: ['en'],
-  },
+
+    nationality: 'Trinidadian'  },
   TV: {
     name: 'Tuvalu',
     native: 'Tuvalu',
@@ -2072,7 +2299,8 @@ export const countries = {
     capital: 'Funafuti',
     currency: ['AUD'],
     languages: ['en'],
-  },
+
+    nationality: 'Tuvaluan'  },
   TW: {
     name: 'Taiwan',
     native: '臺灣',
@@ -2081,7 +2309,8 @@ export const countries = {
     capital: 'Taipei',
     currency: ['TWD'],
     languages: ['zh'],
-  },
+
+    nationality: 'Taiwanese'  },
   TZ: {
     name: 'Tanzania',
     native: 'Tanzania',
@@ -2090,7 +2319,8 @@ export const countries = {
     capital: 'Dodoma',
     currency: ['TZS'],
     languages: ['sw', 'en'],
-  },
+
+    nationality: 'Tanzanian'  },
   UA: {
     name: 'Ukraine',
     native: 'Україна',
@@ -2099,7 +2329,8 @@ export const countries = {
     capital: 'Kyiv',
     currency: ['UAH'],
     languages: ['uk'],
-  },
+
+    nationality: 'Ukrainian'  },
   UG: {
     name: 'Uganda',
     native: 'Uganda',
@@ -2108,7 +2339,8 @@ export const countries = {
     capital: 'Kampala',
     currency: ['UGX'],
     languages: ['en', 'sw'],
-  },
+
+    nationality: 'Ugandan'  },
   UM: {
     name: 'U.S. Minor Outlying Islands',
     native: 'United States Minor Outlying Islands',
@@ -2117,7 +2349,8 @@ export const countries = {
     capital: '',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the United States Minor Outlying Islands'  },
   US: {
     name: 'United States',
     native: 'United States',
@@ -2126,7 +2359,8 @@ export const countries = {
     capital: 'Washington D.C.',
     currency: ['USD', 'USN', 'USS'],
     languages: ['en'],
-  },
+
+    nationality: 'American'  },
   UY: {
     name: 'Uruguay',
     native: 'Uruguay',
@@ -2135,7 +2369,8 @@ export const countries = {
     capital: 'Montevideo',
     currency: ['UYU', 'UYI'],
     languages: ['es'],
-  },
+
+    nationality: 'Uruguayan'  },
   UZ: {
     name: 'Uzbekistan',
     native: "O'zbekiston",
@@ -2144,7 +2379,8 @@ export const countries = {
     capital: 'Tashkent',
     currency: ['UZS'],
     languages: ['uz', 'ru'],
-  },
+
+    nationality: 'Uzbek'  },
   VA: {
     name: 'Vatican City',
     native: 'Vaticano',
@@ -2153,7 +2389,8 @@ export const countries = {
     capital: 'Vatican City',
     currency: ['EUR'],
     languages: ['it', 'la'],
-  },
+
+    nationality: 'Vatican'  },
   VC: {
     name: 'Saint Vincent and the Grenadines',
     native: 'Saint Vincent and the Grenadines',
@@ -2162,7 +2399,8 @@ export const countries = {
     capital: 'Kingstown',
     currency: ['XCD'],
     languages: ['en'],
-  },
+
+    nationality: 'of Saint Vincent and the Grenadines'  },
   VE: {
     name: 'Venezuela',
     native: 'Venezuela',
@@ -2171,7 +2409,8 @@ export const countries = {
     capital: 'Caracas',
     currency: ['VES'],
     languages: ['es'],
-  },
+
+    nationality: 'Venezuelan'  },
   VG: {
     name: 'British Virgin Islands',
     native: 'British Virgin Islands',
@@ -2180,7 +2419,8 @@ export const countries = {
     capital: 'Road Town',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the British Virgin Islands'  },
   VI: {
     name: 'U.S. Virgin Islands',
     native: 'United States Virgin Islands',
@@ -2189,7 +2429,8 @@ export const countries = {
     capital: 'Charlotte Amalie',
     currency: ['USD'],
     languages: ['en'],
-  },
+
+    nationality: 'of the US Virgin Islands'  },
   VN: {
     name: 'Vietnam',
     native: 'Việt Nam',
@@ -2198,7 +2439,8 @@ export const countries = {
     capital: 'Hanoi',
     currency: ['VND'],
     languages: ['vi'],
-  },
+
+    nationality: 'Vietnamese'  },
   VU: {
     name: 'Vanuatu',
     native: 'Vanuatu',
@@ -2207,7 +2449,8 @@ export const countries = {
     capital: 'Port Vila',
     currency: ['VUV'],
     languages: ['bi', 'en', 'fr'],
-  },
+
+    nationality: 'Vanuatu'  },
   WF: {
     name: 'Wallis and Futuna',
     native: 'Wallis et Futuna',
@@ -2216,7 +2459,8 @@ export const countries = {
     capital: 'Mata-Utu',
     currency: ['XPF'],
     languages: ['fr'],
-  },
+
+    nationality: 'Wallis and Futuna'  },
   WS: {
     name: 'Samoa',
     native: 'Samoa',
@@ -2225,7 +2469,8 @@ export const countries = {
     capital: 'Apia',
     currency: ['WST'],
     languages: ['sm', 'en'],
-  },
+
+    nationality: 'Samoan'  },
   /**
    * The code XK is being used by the European Commission the IMF, and SWIFT, the CLDR,
    * and other organizations as a temporary country code for Kosovo.
@@ -2239,7 +2484,8 @@ export const countries = {
     currency: ['EUR'],
     languages: ['sq', 'sr'],
     userAssigned: true,
-  },
+
+    nationality: 'Kosovar'  },
   YE: {
     name: 'Yemen',
     native: 'اليَمَن',
@@ -2248,7 +2494,8 @@ export const countries = {
     capital: "Sana'a",
     currency: ['YER'],
     languages: ['ar'],
-  },
+
+    nationality: 'Yemeni'  },
   YT: {
     name: 'Mayotte',
     native: 'Mayotte',
@@ -2257,7 +2504,8 @@ export const countries = {
     capital: 'Mamoudzou',
     currency: ['EUR'],
     languages: ['fr'],
-  },
+
+    nationality: 'Mayotte'  },
   ZA: {
     name: 'South Africa',
     native: 'South Africa',
@@ -2266,7 +2514,8 @@ export const countries = {
     capital: 'Pretoria',
     currency: ['ZAR'],
     languages: ['af', 'en', 'nr', 'st', 'ss', 'tn', 'ts', 've', 'xh', 'zu'],
-  },
+
+    nationality: 'South African'  },
   ZM: {
     name: 'Zambia',
     native: 'Zambia',
@@ -2275,7 +2524,8 @@ export const countries = {
     capital: 'Lusaka',
     currency: ['ZMW'],
     languages: ['en'],
-  },
+
+    nationality: 'Zambian'  },
   ZW: {
     name: 'Zimbabwe',
     native: 'Zimbabwe',
@@ -2284,5 +2534,6 @@ export const countries = {
     capital: 'Harare',
     currency: ['USD', 'ZAR', 'BWP', 'GBP', 'AUD', 'CNY', 'INR', 'JPY'],
     languages: ['en', 'sn', 'nd'],
-  },
+
+    nationality: 'Zimbabwean'  },
 } as const satisfies Record<string, ICountry>
