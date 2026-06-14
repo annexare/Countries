@@ -7,10 +7,10 @@
     ],
     "catalogs": {
       "default": {
-        "@biomejs/biome": "2.4.5",
-        "@types/bun": "1.3.10",
-        "turbo": "2.8.13",
-        "typescript": "5.9.3"
+        "@biomejs/biome": "2.5.0",
+        "@types/bun": "1.3.14",
+        "turbo": "2.9.18",
+        "typescript": "6.0.3"
       }
     }
   },
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "lefthook": "2.1.2",
+    "lefthook": "2.1.9",
     "turbo": "catalog:default",
     "typescript": "catalog:default"
   },

@@ -56,7 +56,7 @@ function sqlKeys(fields: IDataField[]) {
 }
 
 function sqlValues(table: string, fields: IDataField[], values: (string | number)[][]): string {
-  if (!values || !values.length) {
+  if (!values?.length) {
     return ''
   }
 
