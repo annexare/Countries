@@ -3,15 +3,26 @@ import { getEmojiFlag } from 'countries/index.ts'
 import type {
   TCountryCode,
   TCountryToString,
+  TCurrencyCode,
+  TCurrencyToString,
   TLanguageCode,
   TLanguageToString,
 } from 'countries/types.ts'
-import { ALL, CONTINENTS, COUNTRIES, LANGUAGES, MINIMAL_DIR } from 'scripts/constants.ts'
+import {
+  ALL,
+  CONTINENTS,
+  COUNTRIES,
+  CURRENCIES,
+  LANGUAGES,
+  MINIMAL_DIR,
+} from 'scripts/constants.ts'
 import {
   continents,
   countries,
   countries2to3,
   countries3to2,
+  currencies,
+  currenciesInUse,
   languages,
   languagesInUse,
 } from 'scripts/data.ts'
@@ -26,6 +37,8 @@ export const minifyJsonData = (): void => {
   saveJsonFile(COUNTRIES, countries)
   saveJsonFile(LANGUAGES, languagesInUse)
   saveJsonFile(`${LANGUAGES}${ALL}`, languages)
+  saveJsonFile(CURRENCIES, currenciesInUse)
+  saveJsonFile(`${CURRENCIES}${ALL}`, currencies)
 
   console.log(chalk.bold('\nGenerating minimal data JSON files:\n'))
 
@@ -36,11 +49,15 @@ export const minifyJsonData = (): void => {
   // generateMinimalDataTypings(`${COUNTRIES}.3to2`, `${COUNTRIES}3to2`, 'TStringToCountry')
 
   const countryCodes = Object.keys(countries) as TCountryCode[]
+  const currencyCodes = Object.keys(currenciesInUse) as TCurrencyCode[]
   const languageCodes = Object.keys(languagesInUse) as TLanguageCode[]
 
   const countriesEmoji = {} as TCountryToString
   const countriesEn = {} as TCountryToString
   const countriesNative = {} as TCountryToString
+
+  const currenciesSymbol = {} as TCurrencyToString
+  const currenciesNumeric = {} as TCurrencyToString
 
   const languagesEn = {} as TLanguageToString
   const languagesNative = {} as TLanguageToString
@@ -54,6 +71,11 @@ export const minifyJsonData = (): void => {
   for (const lang of languageCodes) {
     languagesEn[lang] = languages[lang].name
     languagesNative[lang] = languages[lang].native
+  }
+
+  for (const code of currencyCodes) {
+    currenciesSymbol[code] = currencies[code].symbol
+    currenciesNumeric[code] = currencies[code].numeric
   }
 
   saveJsonFile(`${MINIMAL_DIR}${COUNTRIES}.emoji`, countriesEmoji)
@@ -70,4 +92,7 @@ export const minifyJsonData = (): void => {
 
   saveJsonFile(`${MINIMAL_DIR}${LANGUAGES}.native`, languagesNative)
   // generateMinimalDataTypings(`${LANGUAGES}.native`, `${LANGUAGES}Native`, 'TLanguageToString')
+
+  saveJsonFile(`${MINIMAL_DIR}${CURRENCIES}.symbol`, currenciesSymbol)
+  saveJsonFile(`${MINIMAL_DIR}${CURRENCIES}.numeric`, currenciesNumeric)
 }

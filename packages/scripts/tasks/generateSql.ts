@@ -1,11 +1,14 @@
 import chalk from 'chalk'
 import { continents } from 'countries/data/continents.ts'
 import { countries } from 'countries/data/countries.ts'
+import { currencies } from 'countries/data/currencies.ts'
 import type {
   ICountry,
+  ICurrency,
   ILanguage,
   TContinentCode,
   TCountryCode,
+  TCurrencyCode,
   TLanguageCode,
 } from 'countries/types.ts'
 
@@ -100,6 +103,22 @@ function getCountryDataValues(data: ICountry, countryCode: TCountryCode) {
 function getLanguageDataValues(data: ILanguage, langCode: TLanguageCode) {
   const { name, native, rtl } = data
   const values: [TLanguageCode, string, string, 0 | 1] = [langCode, name, native, rtl ? 1 : 0]
+
+  return values
+}
+
+function getCurrencyDataValues(data: ICurrency, code: TCurrencyCode) {
+  const { name, native, symbol, symbolNative, numeric, decimals, withdrawn } = data
+  const values: [TCurrencyCode, string, string, string, string, string, number, 0 | 1] = [
+    code,
+    name,
+    native,
+    symbol,
+    symbolNative,
+    numeric,
+    decimals,
+    withdrawn ? 1 : 0,
+  ]
 
   return values
 }
@@ -207,6 +226,58 @@ export const generateSql = (): void => {
     }
   }
 
+  /**
+   * Currencies
+   */
+
+  const currencyValues = Object.values(currencies)
+  const maxCurrencyNameLength = Math.max(...currencyValues.map(({ name }) => name.length))
+  const maxNativeLength = Math.max(...currencyValues.map(({ native }) => native.length))
+  const maxSymbolLength = Math.max(...currencyValues.map(({ symbol }) => symbol.length))
+  const maxSymbolNativeLength = Math.max(
+    ...currencyValues.map(({ symbolNative }) => symbolNative.length)
+  )
+  const currencyFields: IDataField[] = [
+    {
+      name: 'code',
+      type: "VARCHAR(3)  NOT NULL DEFAULT ''",
+      unique: true,
+    },
+    {
+      name: 'name',
+      type: `VARCHAR(${maxCurrencyNameLength}) NOT NULL DEFAULT ''`,
+    },
+    {
+      name: 'native',
+      type: `VARCHAR(${maxNativeLength}) NOT NULL DEFAULT ''`,
+    },
+    {
+      name: 'symbol',
+      type: `VARCHAR(${maxSymbolLength}) NOT NULL DEFAULT ''`,
+    },
+    {
+      name: 'symbolNative',
+      type: `VARCHAR(${maxSymbolNativeLength}) NOT NULL DEFAULT ''`,
+    },
+    {
+      name: 'numeric',
+      type: "CHAR(3) NOT NULL DEFAULT ''",
+      key: true,
+    },
+    {
+      // Not TINYINT(1): many MySQL drivers map TINYINT(1) to boolean, mangling values 2-4.
+      name: 'decimals',
+      type: 'TINYINT UNSIGNED NOT NULL DEFAULT 0',
+    },
+    {
+      name: 'withdrawn',
+      type: 'TINYINT(1) NOT NULL DEFAULT 0',
+    },
+  ]
+  const currencyList: (string | number)[][] = (Object.keys(currencies) as TCurrencyCode[]).map(
+    (code) => getCurrencyDataValues(currencies[code], code)
+  )
+
   const sql =
     '' +
     // Continents
@@ -221,6 +292,13 @@ export const generateSql = (): void => {
     LF +
     LF +
     sqlValues('languages', languageFields, languageList) +
+    LF +
+    LF +
+    // Currencies
+    sqlHeader('currencies', currencyFields) +
+    LF +
+    LF +
+    sqlValues('currencies', currencyFields, currencyList) +
     LF +
     LF +
     // Countries

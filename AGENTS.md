@@ -20,6 +20,11 @@
 5. Push: `git push`
 6. Create GitHub release: `gh release create vX.Y.Z` (this creates the git tag and triggers npm publish via `.github/workflows/publish-npm.yml`)
 
+## Pull Requests
+
+- **Do not commit generated `dist/` in PRs.** The build output (`*.min.json`, `cjs/`, `mjs/`, `*.iife.js`, `*.d.ts`, `data.sql`, `*.csv`) is rebuilt and committed only during the Release Flow. Run `bun run build` / `bun run ci` to verify a change builds, but exclude generated `dist/` files from PR commits — committing them wastes review time and causes merge conflicts.
+- Exceptions: `dist/package.json` and `dist/index.php` are hand-maintained (not build output), so edit and commit them with the change.
+
 ## Code Style
 
 - Use Biome for linting and formatting: 100 char width, single quotes, no semicolons, 2 spaces, trailing commas (ES5)

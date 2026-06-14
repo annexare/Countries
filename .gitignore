@@ -16,3 +16,6 @@ node_modules
 # Copied during build
 dist/README*
 dist/LICENSE*
+
+# TypeScript incremental build info (from check-types / composite builds)
+*.tsbuildinfo

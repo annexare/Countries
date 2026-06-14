@@ -1,5 +1,6 @@
 export const CONTINENTS = 'continents'
 export const COUNTRIES = 'countries'
+export const CURRENCIES = 'currencies'
 export const LANGUAGES = 'languages'
 
 export const ALL = '.all'

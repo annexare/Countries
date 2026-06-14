@@ -1,14 +1,11 @@
 import path from 'path'
-import { defineConfig } from 'tsup'
+import { defineConfig, type Options } from 'tsup'
 import pkg from './package.json' with { type: 'json' }
 
-export default defineConfig({
+const shared: Options = {
   banner: () => ({ js: `/*! countries-list v${pkg.version} by Annexare | MIT */` }),
   clean: false,
   dts: false,
-  entry: ['src/index.ts'],
-  format: ['cjs', 'esm', 'iife'],
-  globalName: 'Countries',
   minify: true,
   esbuildOptions(options, { format }) {
     if (format === 'iife' || format === 'cjs') {
@@ -20,10 +17,25 @@ export default defineConfig({
     }
   },
   outExtension: ({ format }) => ({
-    // js: `${format === 'iife' ? '.iife' : ''}.min.${format === 'esm' ? 'mjs' : 'js'}`,
     js: `${format === 'iife' ? '.iife' : ''}.js`,
   }),
   sourcemap: false,
   splitting: false,
   target: 'esnext',
-})
+}
+
+export default defineConfig([
+  {
+    ...shared,
+    entry: ['src/index.ts'],
+    format: ['cjs', 'esm', 'iife'],
+    globalName: 'Countries',
+  },
+  // Opt-in `countries-list/currencies` subpath — ESM/CJS only, kept out of the main
+  // bundle and the IIFE global so the default bundle size is unaffected.
+  {
+    ...shared,
+    entry: ['src/currencies.ts'],
+    format: ['cjs', 'esm'],
+  },
+])

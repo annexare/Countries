@@ -1,7 +1,13 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import chalk from 'chalk'
-import type { TCountries, TLanguageCode, TLanguages } from 'countries/types.ts'
+import type {
+  TCountries,
+  TCurrencies,
+  TCurrencyCode,
+  TLanguageCode,
+  TLanguages,
+} from 'countries/types.ts'
 import prettyBytes from 'pretty-bytes'
 import type { ICountryCsv } from 'scripts/types.ts'
 
@@ -63,6 +69,38 @@ export const getLanguagesInUse = (
   console.log('Unused languages:', notInUseList.length, `(${notInUseList.join(', ')})`)
 
   return languagesInUse
+}
+
+export const getCurrenciesInUse = (
+  countries: TCountries,
+  currencies: TCurrencies
+): Partial<TCurrencies> => {
+  const inUseList: TCurrencyCode[] = []
+
+  Object.values(countries).forEach((c) => {
+    c.currency?.forEach((code) => {
+      const currency = code as TCurrencyCode
+      if (!inUseList.includes(currency)) {
+        inUseList.push(currency)
+      }
+    })
+  })
+  inUseList.sort()
+
+  console.log('Currencies in use:', inUseList.length, `(${inUseList.join(', ')})\n`)
+
+  const currenciesInUse: Partial<TCurrencies> = {}
+  inUseList.forEach((code) => {
+    const currency = currencies[code]
+    if (!currency) {
+      throw new Error(
+        `Currency "${code}" is referenced by country data but missing from currencies`
+      )
+    }
+    currenciesInUse[code] = { ...currency }
+  })
+
+  return currenciesInUse
 }
 
 export const getStringFromArray = (arr: string[]): string => {
