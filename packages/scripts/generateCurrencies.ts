@@ -55,6 +55,14 @@ const WITHDRAWN: Record<string, ICurrency> = {
   },
 }
 
+/**
+ * Symbol corrections where CLDR's English narrow symbol differs from the official
+ * abbreviation (CLDR can add a trailing period for newly-assigned codes).
+ */
+const SYMBOL_OVERRIDES: Record<string, string> = {
+  XCG: 'Cg', // Central Bank of Curaçao & Sint Maarten; CLDR returns 'Cg.'
+}
+
 const tag = (block: string, name: string): string => {
   // Opening tag must end with `>` or a space+attributes, so `<Ccy>` is not matched by `<CcyNm>`.
   const match = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`))
@@ -168,7 +176,7 @@ const main = async (): Promise<void> => {
     result[code] = {
       name: nameOf(code, entry.sixName),
       native: nativeOf(code, homeLocale(code), entry.sixName),
-      symbol: symbolOf(code, 'en'),
+      symbol: SYMBOL_OVERRIDES[code] ?? symbolOf(code, 'en'),
       symbolNative: symbolOf(code, homeLocale(code)),
       numeric: entry.numeric,
       decimals: entry.decimals,
