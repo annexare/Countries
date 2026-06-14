@@ -17,7 +17,7 @@
   "scripts": {
     "build": "turbo run build",
     "bump": "bun update -i -r",
-    "check-types": "tsc --noEmit",
+    "check-types": "tsc -p packages/countries/tsconfig.json --noEmit",
     "ci": "turbo run lint build test",
     "format": "biome format --write .",
     "lint": "biome check .",

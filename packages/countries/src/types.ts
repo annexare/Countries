@@ -1,9 +1,11 @@
 import type { continents } from './data/continents.ts'
 import type { countries } from './data/countries.ts'
+import type { currencies } from './data/currencies.ts'
 import type { languages } from './data/languages.ts'
 
 export type TContinentCode = keyof typeof continents
 export type TCountryCode = keyof typeof countries
+export type TCurrencyCode = keyof typeof currencies
 export type TLanguageCode = keyof typeof languages
 
 export interface ICountry {
@@ -22,7 +24,7 @@ export interface ICountry {
   /**
    * Currency alpha-3 codes.
    */
-  currency: string[]
+  currency: TCurrencyCode[]
   /**
    * List of Country's spoken Languages (alpha-2 codes).
    */
@@ -68,14 +70,53 @@ export interface ILanguage {
   rtl?: number
 }
 
+export interface ICurrency {
+  /**
+   * Currency name in English.
+   */
+  name: string
+  /**
+   * Currency name in the native language (Unicode CLDR, home locale).
+   */
+  native: string
+  /**
+   * Symbol for UI, from Unicode CLDR (narrow form).
+   * Falls back to the ISO code where no distinct Latin symbol exists (e.g. 'CHF', 'KWD').
+   */
+  symbol: string
+  /**
+   * Symbol as used in the currency's home locale, from Unicode CLDR.
+   */
+  symbolNative: string
+  /**
+   * ISO 4217 three-digit numeric code, zero-padded (e.g. '980', '008').
+   */
+  numeric: string
+  /**
+   * Minor unit: number of decimal places (ISO 4217). 0 when there is no minor unit.
+   */
+  decimals: number
+  /**
+   * Set when the code is withdrawn from the current ISO 4217 list but still
+   * referenced by country data (e.g. ANG, SLL, USS).
+   */
+  withdrawn?: boolean
+}
+
 export interface ICountryData extends ICountry {
   iso2: TCountryCode
   iso3: string
+}
+
+export interface ICurrencyData extends ICurrency {
+  code: TCurrencyCode
 }
 
 export type TContinents = Record<TContinentCode, string>
 export type TCountries = Record<TCountryCode, ICountry>
 export type TCountryToString = Record<TCountryCode, string>
 export type TStringToCountry = Record<string, TCountryCode>
+export type TCurrencies = Record<TCurrencyCode, ICurrency>
+export type TCurrencyToString = Record<TCurrencyCode, string>
 export type TLanguages = Record<TLanguageCode, ILanguage>
 export type TLanguageToString = Record<TLanguageCode, string>

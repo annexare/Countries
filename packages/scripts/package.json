@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "bun run index.ts",
+    "generate:currencies": "bun run generateCurrencies.ts",
     "version": "bun run version.ts"
   }
 }

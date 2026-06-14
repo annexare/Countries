@@ -7,7 +7,7 @@
 [![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg 'CI: PHP')](https://github.com/annexare/Countries/actions)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
-Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital and **ISO 4217** currency codes, native name, calling codes.
+Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital, **ISO 4217** currencies (with symbols & numeric codes), native name, calling codes.
 Lists are available in JSON, CSV and SQL formats.
 Also, contains separate JSON files with additional country **Emoji** flags data.
 
@@ -66,6 +66,25 @@ Built files are in the `dist` directory of this repository, and `packages/countr
 - ESM `mjs/index.js`
 - IIFE `index.iife.js`
 
+## Currencies (ISO 4217)
+
+Full **ISO 4217** currency data — English and native **name**, UI **symbol**, native symbol, 3-digit **numeric** code and minor-unit **decimals** — is an **opt-in** import via the `countries-list/currencies` subpath, so it does not affect the main bundle size:
+
+```ts
+import type { ICurrency, ICurrencyData, TCurrencyCode } from 'countries-list'
+import { currencies, getCurrency, getCurrencyByNumeric } from 'countries-list/currencies'
+
+// Minimal maps (code -> value)
+import currencySymbols from 'countries-list/minimal/currencies.symbol.min.json'
+import currencyNumbers from 'countries-list/minimal/currencies.numeric.min.json'
+
+currencies.UAH // { name: 'Ukrainian Hryvnia', native: 'українська гривня', symbol: '₴', symbolNative: '₴', numeric: '980', decimals: 2 }
+getCurrency('JPY') // ICurrencyData: { code: 'JPY', name: 'Japanese Yen', symbol: '¥', decimals: 0, ... }
+getCurrencyByNumeric('840') // ICurrencyData for USD — numeric lookup, e.g. for banking
+```
+
+The dataset covers the complete active ISO 4217 list plus a few withdrawn codes still referenced by country data (e.g. `ANG`, flagged with `withdrawn: true`). `symbol` falls back to the ISO code where a currency has no distinct Latin glyph (e.g. `CHF`, `KWD`); the local glyph is then in `symbolNative`. Symbols come from Unicode CLDR (ISO 4217 itself defines no symbols).
+
 ## Data structure examples
 
 ```ts
@@ -106,6 +125,19 @@ const languages = {
   },
   // ...
 }
+
+const currencies = {
+  // ...
+  UAH: {
+    name: 'Ukrainian Hryvnia',
+    native: 'українська гривня',
+    symbol: '₴',
+    symbolNative: '₴',
+    numeric: '980',
+    decimals: 2,
+  },
+  // ...
+}
 ```
 
 ## Contributing to this repository
@@ -115,6 +147,8 @@ Everything is generated from strongly typed files in `packages/countries/src`, i
 Everything in `dist` is generated,
 so please make data related changes **ONLY** to files from `packages/countries`, commit them.
 Use `bun run build` (or `turbo build`, `turbo test`) command to build/test generated files.
+
+The `currencies` dataset (`packages/countries/src/data/currencies.ts`) is generated from the official ISO 4217 list and Unicode CLDR via `packages/scripts/generateCurrencies.ts`. Refresh it with `cd packages/scripts && bun run generate:currencies` (requires network) when ISO 4217 publishes an update, rather than editing the data by hand.
 
 ## Credits
 

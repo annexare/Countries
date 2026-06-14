@@ -80,3 +80,26 @@ function languagesAll(): array
 {
   return load('languages.all.min.json');
 }
+
+/**
+ * Currencies in use only, key-value object (key is ISO 4217 alpha-3 code).
+ *
+ * @return array
+ * @throws JsonException
+ */
+function currencies(): array
+{
+  return load('currencies.min.json');
+}
+
+/**
+ * Currencies, key-value object (key is ISO 4217 alpha-3 code).
+ * A complete ISO 4217 list including codes not used by Countries list.
+ *
+ * @return array
+ * @throws JsonException
+ */
+function currenciesAll(): array
+{
+  return load('currencies.all.min.json');
+}
