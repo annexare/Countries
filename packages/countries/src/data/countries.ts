@@ -510,7 +510,7 @@ export const countries = {
   },
   CZ: {
     name: 'Czechia',
-    native: 'Česká republika',
+    native: 'Česko',
     phone: [420],
     continent: 'EU',
     capital: 'Prague',
