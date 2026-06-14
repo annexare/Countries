@@ -19,9 +19,9 @@ on:
       - 'turbo.json'
       - 'biome.json'
       - 'tsconfig.json'
-      - '!.editorconfig'
-      - '!**LICENSE*'
-      - '!**README*'
+      - '!**/.editorconfig'
+      - '!**/LICENSE*'
+      - '!**/README*'
 
 jobs:
   build-test:
