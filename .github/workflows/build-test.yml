@@ -8,8 +8,17 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/nodejs.yml'
-      - 'packages/countries/src/**'
+      - '.github/workflows/build-test.yml'
+      - 'packages/countries/**'
+      - 'packages/scripts/**'
+      - 'packages/test-js/**'
+      - 'packages/tsconfig/**'
+      - 'package.json'
+      - 'bun.lock'
+      - 'bunfig.toml'
+      - 'turbo.json'
+      - 'biome.json'
+      - 'tsconfig.json'
       - '!.editorconfig'
       - '!**LICENSE*'
       - '!**README*'
