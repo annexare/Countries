@@ -104,7 +104,7 @@ export const getCurrenciesInUse = (
 }
 
 export const getStringFromArray = (arr: string[]): string => {
-  if (!arr || !arr.length) {
+  if (!arr.length) {
     return ''
   }
 

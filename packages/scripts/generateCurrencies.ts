@@ -6,7 +6,7 @@
  * - Currency name, symbol and native symbol come from Unicode CLDR via the runtime `Intl` APIs.
  *
  * This is a manual, network-dependent refresh tool (like `version.ts`); it is NOT part of
- * `turbo build`. Re-run it when ISO 4217 publishes an update, then review and commit the diff:
+ * `bun run build`. Re-run it when ISO 4217 publishes an update, then review and commit the diff:
  *   cd packages/scripts && bun run generate:currencies
  */
 import { countries } from 'countries/data/countries.ts'

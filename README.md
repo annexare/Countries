@@ -14,7 +14,7 @@ Also, contains separate JSON files with additional country **Emoji** flags data.
 ## Version 3.0: Breaking changes
 
 Version 3 comes with some data structure changes.
-It was completely reworked under the hood with **TypeScript**, **ESM** exports and **Turborepo** file structure.
+It was completely reworked under the hood with **TypeScript**, **ESM** exports and a **Bun workspaces** monorepo structure.
 
 Everything is strongly typed so you can easily use data with auto-complete in your IDE.
 
@@ -146,7 +146,7 @@ Everything is generated from strongly typed files in `packages/countries/src`, i
 
 Everything in `dist` is generated,
 so please make data related changes **ONLY** to files from `packages/countries`, commit them.
-Use `bun run build` (or `turbo build`, `turbo test`) command to build/test generated files.
+Use `bun run build` / `bun run test` to build/test generated files.
 
 The `currencies` dataset (`packages/countries/src/data/currencies.ts`) is generated from the official ISO 4217 list and Unicode CLDR via `packages/scripts/generateCurrencies.ts`. Refresh it with `cd packages/scripts && bun run generate:currencies` (requires network) when ISO 4217 publishes an update, rather than editing the data by hand.
 
