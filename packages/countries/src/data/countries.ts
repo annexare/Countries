@@ -487,7 +487,7 @@ export const countries = {
     phone: [5999],
     continent: 'NA',
     capital: 'Willemstad',
-    currency: ['ANG'],
+    currency: ['XCG'],
     languages: ['nl', 'pa', 'en'],
   },
   CX: {
@@ -1843,7 +1843,7 @@ export const countries = {
     phone: [232],
     continent: 'AF',
     capital: 'Freetown',
-    currency: ['SLL'],
+    currency: ['SLE'],
     languages: ['en'],
   },
   SM: {
@@ -1915,7 +1915,7 @@ export const countries = {
     phone: [1721],
     continent: 'NA',
     capital: 'Philipsburg',
-    currency: ['ANG'],
+    currency: ['XCG'],
     languages: ['nl', 'en'],
   },
   SY: {
@@ -2124,7 +2124,7 @@ export const countries = {
     phone: [1],
     continent: 'NA',
     capital: 'Washington D.C.',
-    currency: ['USD', 'USN', 'USS'],
+    currency: ['USD', 'USN'],
     languages: ['en'],
   },
   UY: {
