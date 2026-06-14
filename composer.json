@@ -37,17 +37,7 @@
     "files": ["dist/index.php"]
   },
   "archive": {
-    "exclude": [
-      ".npmignore",
-      "*.js",
-      "*.map",
-      "*.mjs",
-      "*.ts",
-      "/.*",
-      "/packages",
-      "package*.json",
-      "turbo.json"
-    ]
+    "exclude": [".npmignore", "*.js", "*.map", "*.mjs", "*.ts", "/.*", "/packages", "package*.json"]
   },
   "homepage": "http://annexare.github.io/Countries/"
 }

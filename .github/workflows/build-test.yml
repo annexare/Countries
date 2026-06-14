@@ -16,7 +16,6 @@ on:
       - 'package.json'
       - 'bun.lock'
       - 'bunfig.toml'
-      - 'turbo.json'
       - 'biome.json'
       - 'tsconfig.json'
       - '!**/.editorconfig'

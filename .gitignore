@@ -6,7 +6,6 @@
 
 coverage
 .phpunit.cache
-.turbo
 
 composer.phar
 

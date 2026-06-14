@@ -2,7 +2,7 @@
 
 ## Commands
 
-- Build: `bun run build` (builds all packages via turbo)
+- Build: `bun run build` (builds all workspace packages)
 - Lint: `bun run lint` (runs biome check)
 - Lint fix: `bun run lint:fix` (runs biome check --write)
 - Format: `bun run format` (runs biome format --write)
