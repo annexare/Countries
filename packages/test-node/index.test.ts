@@ -1,73 +1,55 @@
 // biome-ignore-all lint/performance/noDynamicNamespaceImportAccess: test file
 
-import { describe, expect, test } from 'bun:test'
-import fs from 'node:fs'
-import path from 'node:path'
+// Validates the published bundles under the real Node.js runtime (CommonJS + ESM
+// loaders), which the Bun-run test-js suite does not exercise. Imports only built
+// dist artifacts — never the TS source — so it mirrors what a Node consumer resolves.
 
-import * as mjs from '../../dist/mjs/index.js'
-import * as source from '../countries/src/index.ts'
+import assert from 'node:assert/strict'
+import { createRequire } from 'node:module'
+import { describe, test } from 'node:test'
 
-const distDir = path.resolve(import.meta.dir, '../../dist')
+const require = createRequire(import.meta.url)
 
-const exportDataList: Partial<keyof typeof source>[] = ['continents', 'countries', 'languages']
-const exportFnList: Partial<keyof typeof source>[] = ['getEmojiFlag']
+const expectedFns = ['getCountryCode', 'getCountryData', 'getCountryDataList', 'getEmojiFlag']
+const expectedData = ['continents', 'countries', 'languages']
 
-function evalIIFE(name = 'Countries') {
-  const script = fs.readFileSync(path.join(distDir, 'index.iife.js'), { encoding: 'utf-8' })
-  // biome-ignore lint/security/noGlobalEval: -
-  eval(`this.${name} = (function () { ${script}\nreturn ${name}})()`)
-}
+describe('dist under Node.js', () => {
+  test('CJS main bundle loads via require()', () => {
+    const cjs = require('../../dist/cjs/index.js')
 
-describe('dist', () => {
-  test('has proper CJS ES6 export', () => {
-    expect(typeof mjs).toBe('object')
-
-    for (const prop of exportFnList) {
-      expect(Object.hasOwn(mjs, prop)).toBe(true)
+    for (const fn of expectedFns) {
+      assert.equal(typeof cjs[fn], 'function', `missing function: ${fn}`)
     }
-
-    for (const prop of exportDataList) {
-      expect(Object.hasOwn(mjs, prop)).toBe(true)
-
-      const cjsKeys = Object.keys(mjs[prop])
-      const srcKeys = Object.keys(source[prop])
-      expect(cjsKeys).toEqual(srcKeys)
+    for (const key of expectedData) {
+      assert.equal(typeof cjs[key], 'object', `missing data: ${key}`)
     }
+    assert.equal(cjs.getEmojiFlag('UA'), '🇺🇦')
   })
 
-  test('all English country names should contain only A-Z characters', () => {
-    const nameReg = /^[a-z\s.()-]+$/i
-    const nonAZ: string[] = []
-    for (const c of Object.values(source.countries)) {
-      if (!nameReg.test(c.name)) {
-        nonAZ.push(c.name)
-      }
-    }
+  test('ESM main bundle loads via import()', async () => {
+    const mjs = await import('../../dist/mjs/index.js')
 
-    // It helps see incorrect names right away in logs
-    expect(nonAZ).toEqual([])
+    for (const fn of expectedFns) {
+      assert.equal(typeof mjs[fn], 'function', `missing function: ${fn}`)
+    }
+    for (const key of expectedData) {
+      assert.equal(typeof mjs[key], 'object', `missing data: ${key}`)
+    }
+    assert.equal(mjs.getEmojiFlag('UA'), '🇺🇦')
   })
 
-  test('loads ES6 <script> properly', () => {
-    const context: { Countries?: typeof source } = {}
-    evalIIFE.call(context)
+  test('CJS currencies subpath loads via require()', () => {
+    const cjs = require('../../dist/cjs/currencies.js')
 
-    const contextCountries = context.Countries
+    assert.equal(typeof cjs.getCurrency, 'function')
+    assert.equal(typeof cjs.getCurrencyByNumeric, 'function')
+    assert.equal(cjs.getCurrency('UAH').numeric, '980')
+  })
 
-    expect(contextCountries).toBeTruthy()
-    expect(contextCountries).toBeObject()
+  test('ESM currencies subpath loads via import()', async () => {
+    const mjs = await import('../../dist/mjs/currencies.js')
 
-    for (const prop of exportFnList) {
-      expect(contextCountries).toHaveProperty(prop)
-    }
-
-    for (const prop of exportDataList) {
-      expect(contextCountries).toHaveProperty(prop)
-
-      // biome-ignore lint/style/noNonNullAssertion: -
-      const windowProps = Object.keys(contextCountries![prop]) as string[]
-      const dataProps = Object.keys(source[prop]) as string[]
-      expect(windowProps).toEqual(dataProps)
-    }
+    assert.equal(typeof mjs.getCurrency, 'function')
+    assert.equal(mjs.getCurrencyByNumeric('840')?.code, 'USD')
   })
 })
