@@ -2282,7 +2282,7 @@ export const countries = {
     phone: [263],
     continent: 'AF',
     capital: 'Harare',
-    currency: ['USD', 'ZAR', 'BWP', 'GBP', 'AUD', 'CNY', 'INR', 'JPY'],
+    currency: ['ZWG', 'USD', 'ZAR', 'BWP', 'GBP', 'AUD', 'CNY', 'INR', 'JPY'],
     languages: ['en', 'sn', 'nd'],
   },
 } as const satisfies Record<string, ICountry>
