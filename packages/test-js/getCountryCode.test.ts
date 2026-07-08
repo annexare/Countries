@@ -23,3 +23,14 @@ test('getCountryCode()', () => {
   expect(getCountryCode('Myanmar (Burma)')).toBe('MM')
   expect(getCountryCode('Cocos (Keeling) Islands')).toBe('CC')
 })
+
+test('getCountryCode() resolves ISO short names', () => {
+  expect(getCountryCode('Czechia')).toBe('CZ')
+  expect(getCountryCode('Česko')).toBe('CZ')
+  expect(getCountryCode('Cabo Verde')).toBe('CV')
+
+  // Previous long-form names are no longer resolvable
+  expect(getCountryCode('Czech Republic')).toBe(false)
+  expect(getCountryCode('Česká republika')).toBe(false)
+  expect(getCountryCode('Cape Verde')).toBe(false)
+})
