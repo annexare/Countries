@@ -7,7 +7,7 @@
     ],
     "catalogs": {
       "default": {
-        "@biomejs/biome": "2.5.0",
+        "@biomejs/biome": "2.5.3",
         "@types/bun": "1.3.14",
         "typescript": "6.0.3"
       }
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "lefthook": "2.1.9",
+    "lefthook": "2.1.10",
     "typescript": "catalog:default"
   },
   "trustedDependencies": [
