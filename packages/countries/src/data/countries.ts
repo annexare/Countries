@@ -473,7 +473,7 @@ export const countries = {
     languages: ['es'],
   },
   CV: {
-    name: 'Cape Verde',
+    name: 'Cabo Verde',
     native: 'Cabo Verde',
     phone: [238],
     continent: 'AF',
@@ -509,8 +509,8 @@ export const countries = {
     languages: ['el', 'tr', 'hy'],
   },
   CZ: {
-    name: 'Czech Republic',
-    native: 'Česká republika',
+    name: 'Czechia',
+    native: 'Česko',
     phone: [420],
     continent: 'EU',
     capital: 'Prague',
