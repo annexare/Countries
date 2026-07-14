@@ -2168,7 +2168,7 @@ export const countries = {
   US: {
     name: 'United States',
     native: 'United States',
-    alias: ['USA', 'America', 'United States of America'],
+    alias: ['US', 'USA', 'America', 'United States of America'],
     phone: [1],
     continent: 'NA',
     capital: 'Washington D.C.',
