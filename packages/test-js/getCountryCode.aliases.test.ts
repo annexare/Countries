@@ -19,6 +19,16 @@ test('getCountryCode() resolves alternative and former names', () => {
   expect(getCountryCode('Ceylon')).toBe('LK')
 })
 
+test('getCountryCode() resolves colonial-era names and spelling variants', () => {
+  expect(getCountryCode('Rhodesia')).toBe('ZW')
+  expect(getCountryCode('Abyssinia')).toBe('ET')
+  expect(getCountryCode('Gold Coast')).toBe('GH')
+  expect(getCountryCode('Formosa')).toBe('TW')
+  expect(getCountryCode('Byelorussia')).toBe('BY')
+  expect(getCountryCode('Rumania')).toBe('RO')
+  expect(getCountryCode("Cote d'Ivoire")).toBe('CI') // diacritic-free form of the native name
+})
+
 test('getCountryCode() alias matching is case-insensitive and trims', () => {
   expect(getCountryCode('  czech republic ')).toBe('CZ')
   expect(getCountryCode('BURMA')).toBe('MM')
