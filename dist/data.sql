@@ -498,7 +498,7 @@ INSERT INTO `countries` (`code`, `name`, `native`, `phone`, `continent`, `capita
   ('MH', 'Marshall Islands', 'M̧ajeļ', '692', 'OC', 'Majuro', 'USD', 'en,mh'),
   ('MK', 'North Macedonia', 'Северна Македонија', '389', 'EU', 'Skopje', 'MKD', 'mk'),
   ('ML', 'Mali', 'Mali', '223', 'AF', 'Bamako', 'XOF', 'fr'),
-  ('MM', 'Myanmar (Burma)', 'မြန်မာ', '95', 'AS', 'Naypyidaw', 'MMK', 'my'),
+  ('MM', 'Myanmar', 'မြန်မာ', '95', 'AS', 'Naypyidaw', 'MMK', 'my'),
   ('MN', 'Mongolia', 'Монгол улс', '976', 'AS', 'Ulan Bator', 'MNT', 'mn'),
   ('MO', 'Macao', '澳門', '853', 'AS', '', 'MOP', 'zh,pt'),
   ('MP', 'Northern Mariana Islands', 'Northern Mariana Islands', '1670', 'OC', 'Saipan', 'USD', 'en,ch'),
