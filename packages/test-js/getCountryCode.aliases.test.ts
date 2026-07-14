@@ -13,10 +13,21 @@ test('getCountryCode() resolves alternative and former names', () => {
   expect(getCountryCode('Myanmar (Burma)')).toBe('MM') // previously the name; kept resolvable
   expect(getCountryCode('Zaire')).toBe('CD')
   expect(getCountryCode('UK')).toBe('GB')
+  expect(getCountryCode('US')).toBe('US')
   expect(getCountryCode('America')).toBe('US')
   expect(getCountryCode('Holland')).toBe('NL')
   expect(getCountryCode('Persia')).toBe('IR')
   expect(getCountryCode('Ceylon')).toBe('LK')
+})
+
+test('getCountryCode() resolves colonial-era names and spelling variants', () => {
+  expect(getCountryCode('Rhodesia')).toBe('ZW')
+  expect(getCountryCode('Abyssinia')).toBe('ET')
+  expect(getCountryCode('Gold Coast')).toBe('GH')
+  expect(getCountryCode('Formosa')).toBe('TW')
+  expect(getCountryCode('Byelorussia')).toBe('BY')
+  expect(getCountryCode('Rumania')).toBe('RO')
+  expect(getCountryCode("Cote d'Ivoire")).toBe('CI') // diacritic-free form of the native name
 })
 
 test('getCountryCode() alias matching is case-insensitive and trims', () => {

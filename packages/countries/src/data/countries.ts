@@ -179,6 +179,7 @@ export const countries = {
   BD: {
     name: 'Bangladesh',
     native: 'Bangladesh',
+    alias: ['East Pakistan'],
     phone: [880],
     continent: 'AS',
     capital: 'Dhaka',
@@ -197,6 +198,7 @@ export const countries = {
   BF: {
     name: 'Burkina Faso',
     native: 'Burkina Faso',
+    alias: ['Upper Volta'],
     phone: [226],
     continent: 'AF',
     capital: 'Ouagadougou',
@@ -215,6 +217,7 @@ export const countries = {
   BH: {
     name: 'Bahrain',
     native: '‏البحرين',
+    alias: ['Bahrein'],
     phone: [973],
     continent: 'AS',
     capital: 'Manama',
@@ -233,6 +236,7 @@ export const countries = {
   BJ: {
     name: 'Benin',
     native: 'Bénin',
+    alias: ['Dahomey'],
     phone: [229],
     continent: 'AF',
     capital: 'Porto-Novo',
@@ -323,6 +327,7 @@ export const countries = {
   BW: {
     name: 'Botswana',
     native: 'Botswana',
+    alias: ['Bechuanaland'],
     phone: [267],
     continent: 'AF',
     capital: 'Gaborone',
@@ -332,6 +337,7 @@ export const countries = {
   BY: {
     name: 'Belarus',
     native: 'Беларусь',
+    alias: ['Byelorussia', 'Belorussia'],
     phone: [375],
     continent: 'EU',
     capital: 'Minsk',
@@ -341,6 +347,7 @@ export const countries = {
   BZ: {
     name: 'Belize',
     native: 'Belize',
+    alias: ['British Honduras'],
     phone: [501],
     continent: 'NA',
     capital: 'Belmopan',
@@ -378,6 +385,7 @@ export const countries = {
   CF: {
     name: 'Central African Republic',
     native: 'Ködörösêse tî Bêafrîka',
+    alias: ['Ubangi-Shari'],
     phone: [236],
     continent: 'AF',
     capital: 'Bangui',
@@ -406,6 +414,7 @@ export const countries = {
   CI: {
     name: 'Ivory Coast',
     native: "Côte d'Ivoire",
+    alias: ["Cote d'Ivoire"],
     phone: [225],
     continent: 'AF',
     capital: 'Yamoussoukro',
@@ -608,6 +617,7 @@ export const countries = {
   EH: {
     name: 'Western Sahara',
     native: 'الصحراء الغربية',
+    alias: ['Spanish Sahara'],
     phone: [212],
     continent: 'AF',
     capital: 'El Aaiún',
@@ -635,6 +645,7 @@ export const countries = {
   ET: {
     name: 'Ethiopia',
     native: 'ኢትዮጵያ',
+    alias: ['Abyssinia'],
     phone: [251],
     continent: 'AF',
     capital: 'Addis Ababa',
@@ -754,6 +765,7 @@ export const countries = {
   GH: {
     name: 'Ghana',
     native: 'Ghana',
+    alias: ['Gold Coast'],
     phone: [233],
     continent: 'AF',
     capital: 'Accra',
@@ -853,6 +865,7 @@ export const countries = {
   GW: {
     name: 'Guinea-Bissau',
     native: 'Guiné-Bissau',
+    alias: ['Portuguese Guinea'],
     phone: [245],
     continent: 'AF',
     capital: 'Bissau',
@@ -925,6 +938,7 @@ export const countries = {
   ID: {
     name: 'Indonesia',
     native: 'Indonesia',
+    alias: ['Dutch East Indies'],
     phone: [62],
     continent: 'AS',
     capital: 'Jakarta',
@@ -1061,6 +1075,7 @@ export const countries = {
   KG: {
     name: 'Kyrgyzstan',
     native: 'Кыргызстан',
+    alias: ['Kirghizia', 'Kyrgyz Republic'],
     phone: [996],
     continent: 'AS',
     capital: 'Bishkek',
@@ -1080,6 +1095,7 @@ export const countries = {
   KI: {
     name: 'Kiribati',
     native: 'Kiribati',
+    alias: ['Gilbert Islands'],
     phone: [686],
     continent: 'OC',
     capital: 'South Tarawa',
@@ -1211,6 +1227,7 @@ export const countries = {
   LS: {
     name: 'Lesotho',
     native: 'Lesotho',
+    alias: ['Basutoland'],
     phone: [266],
     continent: 'AF',
     capital: 'Maseru',
@@ -1274,6 +1291,7 @@ export const countries = {
   MD: {
     name: 'Moldova',
     native: 'Moldova',
+    alias: ['Moldavia'],
     phone: [373],
     continent: 'EU',
     capital: 'Chișinău',
@@ -1329,6 +1347,7 @@ export const countries = {
   ML: {
     name: 'Mali',
     native: 'Mali',
+    alias: ['French Sudan'],
     phone: [223],
     continent: 'AF',
     capital: 'Bamako',
@@ -1357,6 +1376,7 @@ export const countries = {
   MO: {
     name: 'Macao',
     native: '澳門',
+    alias: ['Macau'],
     phone: [853],
     continent: 'AS',
     capital: '',
@@ -1429,6 +1449,7 @@ export const countries = {
   MW: {
     name: 'Malawi',
     native: 'Malawi',
+    alias: ['Nyasaland'],
     phone: [265],
     continent: 'AF',
     capital: 'Lilongwe',
@@ -1465,6 +1486,7 @@ export const countries = {
   NA: {
     name: 'Namibia',
     native: 'Namibia',
+    alias: ['South West Africa'],
     phone: [264],
     continent: 'AF',
     capital: 'Windhoek',
@@ -1727,6 +1749,7 @@ export const countries = {
   RO: {
     name: 'Romania',
     native: 'România',
+    alias: ['Rumania', 'Roumania'],
     phone: [40],
     continent: 'EU',
     capital: 'Bucharest',
@@ -2040,6 +2063,7 @@ export const countries = {
   TM: {
     name: 'Turkmenistan',
     native: 'Türkmenistan',
+    alias: ['Turkmenia'],
     phone: [993],
     continent: 'AS',
     capital: 'Ashgabat',
@@ -2067,7 +2091,7 @@ export const countries = {
   TR: {
     name: 'Türkiye',
     native: 'Türkiye',
-    alias: ['Turkey'],
+    alias: ['Turkey', 'Turkiye'],
     phone: [90],
     continent: 'AS',
     continents: ['AS', 'EU'],
@@ -2087,6 +2111,7 @@ export const countries = {
   TV: {
     name: 'Tuvalu',
     native: 'Tuvalu',
+    alias: ['Ellice Islands'],
     phone: [688],
     continent: 'OC',
     capital: 'Funafuti',
@@ -2096,6 +2121,7 @@ export const countries = {
   TW: {
     name: 'Taiwan',
     native: '臺灣',
+    alias: ['Formosa'],
     phone: [886],
     continent: 'AS',
     capital: 'Taipei',
@@ -2105,6 +2131,7 @@ export const countries = {
   TZ: {
     name: 'Tanzania',
     native: 'Tanzania',
+    alias: ['Tanganyika'],
     phone: [255],
     continent: 'AF',
     capital: 'Dodoma',
@@ -2141,7 +2168,7 @@ export const countries = {
   US: {
     name: 'United States',
     native: 'United States',
-    alias: ['USA', 'America', 'United States of America'],
+    alias: ['US', 'USA', 'America', 'United States of America'],
     phone: [1],
     continent: 'NA',
     capital: 'Washington D.C.',
@@ -2225,6 +2252,7 @@ export const countries = {
   VU: {
     name: 'Vanuatu',
     native: 'Vanuatu',
+    alias: ['New Hebrides'],
     phone: [678],
     continent: 'OC',
     capital: 'Port Vila',
@@ -2293,6 +2321,7 @@ export const countries = {
   ZM: {
     name: 'Zambia',
     native: 'Zambia',
+    alias: ['Northern Rhodesia'],
     phone: [260],
     continent: 'AF',
     capital: 'Lusaka',
@@ -2302,6 +2331,7 @@ export const countries = {
   ZW: {
     name: 'Zimbabwe',
     native: 'Zimbabwe',
+    alias: ['Rhodesia', 'Southern Rhodesia'],
     phone: [263],
     continent: 'AF',
     capital: 'Harare',
