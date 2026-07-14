@@ -14,7 +14,9 @@ export const getCountryCode = (countryName: string): TCountryCode | false => {
   const nameRegex = new RegExp(`^${name}$`, 'i')
 
   return (
-    countryDataList.find(({ name, native }) => nameRegex.test(name) || nameRegex.test(native))
-      ?.iso2 || false
+    countryDataList.find(
+      ({ name, native, alias }) =>
+        nameRegex.test(name) || nameRegex.test(native) || !!alias?.some((a) => nameRegex.test(a))
+    )?.iso2 || false
   )
 }
