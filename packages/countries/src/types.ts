@@ -10,6 +10,11 @@ export type TLanguageCode = keyof typeof languages
 
 export interface ICountry {
   /**
+   * Alternative and former names (previous ISO short names, common short forms),
+   * matched by `getCountryCode` for backward-compatible reverse lookup.
+   */
+  alias?: string[]
+  /**
    * Capital in English.
    */
   capital: string

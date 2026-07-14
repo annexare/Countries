@@ -23,6 +23,7 @@ export const countries = {
   AE: {
     name: 'United Arab Emirates',
     native: 'دولة الإمارات العربية المتحدة',
+    alias: ['UAE', 'Emirates'],
     phone: [971],
     continent: 'AS',
     capital: 'Abu Dhabi',
@@ -367,6 +368,7 @@ export const countries = {
   CD: {
     name: 'Democratic Republic of the Congo',
     native: 'République démocratique du Congo',
+    alias: ['Zaire', 'Congo-Kinshasa', 'DR Congo', 'DRC'],
     phone: [243],
     continent: 'AF',
     capital: 'Kinshasa',
@@ -385,6 +387,7 @@ export const countries = {
   CG: {
     name: 'Republic of the Congo',
     native: 'République du Congo',
+    alias: ['Congo-Brazzaville'],
     phone: [242],
     continent: 'AF',
     capital: 'Brazzaville',
@@ -475,6 +478,7 @@ export const countries = {
   CV: {
     name: 'Cabo Verde',
     native: 'Cabo Verde',
+    alias: ['Cape Verde'],
     phone: [238],
     continent: 'AF',
     capital: 'Praia',
@@ -511,6 +515,7 @@ export const countries = {
   CZ: {
     name: 'Czechia',
     native: 'Česko',
+    alias: ['Czech Republic', 'Česká republika'],
     phone: [420],
     continent: 'EU',
     capital: 'Prague',
@@ -702,6 +707,7 @@ export const countries = {
   GB: {
     name: 'United Kingdom',
     native: 'United Kingdom',
+    alias: ['UK', 'Britain', 'Great Britain'],
     phone: [44],
     continent: 'EU',
     capital: 'London',
@@ -982,6 +988,7 @@ export const countries = {
   IR: {
     name: 'Iran',
     native: 'ایران',
+    alias: ['Persia'],
     phone: [98],
     continent: 'AS',
     capital: 'Tehran',
@@ -1063,6 +1070,7 @@ export const countries = {
   KH: {
     name: 'Cambodia',
     native: 'កម្ពុជា',
+    alias: ['Kampuchea'],
     phone: [855],
     continent: 'AS',
     capital: 'Phnom Penh',
@@ -1099,6 +1107,7 @@ export const countries = {
   KP: {
     name: 'North Korea',
     native: '북한',
+    alias: ['DPRK'],
     phone: [850],
     continent: 'AS',
     capital: 'Pyongyang',
@@ -1108,6 +1117,7 @@ export const countries = {
   KR: {
     name: 'South Korea',
     native: '대한민국',
+    alias: ['Republic of Korea'],
     phone: [82],
     continent: 'AS',
     capital: 'Seoul',
@@ -1145,6 +1155,7 @@ export const countries = {
   LA: {
     name: 'Laos',
     native: 'ສປປລາວ',
+    alias: ['Lao PDR'],
     phone: [856],
     continent: 'AS',
     capital: 'Vientiane',
@@ -1181,6 +1192,7 @@ export const countries = {
   LK: {
     name: 'Sri Lanka',
     native: 'śrī laṃkāva',
+    alias: ['Ceylon'],
     phone: [94],
     continent: 'AS',
     capital: 'Colombo',
@@ -1307,6 +1319,7 @@ export const countries = {
   MK: {
     name: 'North Macedonia',
     native: 'Северна Македонија',
+    alias: ['Macedonia', 'FYROM'],
     phone: [389],
     continent: 'EU',
     capital: 'Skopje',
@@ -1323,8 +1336,9 @@ export const countries = {
     languages: ['fr'],
   },
   MM: {
-    name: 'Myanmar (Burma)',
+    name: 'Myanmar',
     native: 'မြန်မာ',
+    alias: ['Burma', 'Myanmar (Burma)'],
     phone: [95],
     continent: 'AS',
     capital: 'Naypyidaw',
@@ -1505,6 +1519,7 @@ export const countries = {
   NL: {
     name: 'Netherlands',
     native: 'Nederland',
+    alias: ['Holland'],
     phone: [31],
     continent: 'EU',
     capital: 'Amsterdam',
@@ -1730,6 +1745,7 @@ export const countries = {
   RU: {
     name: 'Russia',
     native: 'Россия',
+    alias: ['Russian Federation'],
     phone: [7],
     continent: 'AS',
     continents: ['AS', 'EU'],
@@ -1921,6 +1937,7 @@ export const countries = {
   SY: {
     name: 'Syria',
     native: 'سوريا',
+    alias: ['Syrian Arab Republic'],
     phone: [963],
     continent: 'AS',
     capital: 'Damascus',
@@ -1930,6 +1947,7 @@ export const countries = {
   SZ: {
     name: 'Eswatini',
     native: 'Eswatini',
+    alias: ['Swaziland'],
     phone: [268],
     continent: 'AF',
     capital: 'Lobamba',
@@ -1985,6 +2003,7 @@ export const countries = {
   TH: {
     name: 'Thailand',
     native: 'ประเทศไทย',
+    alias: ['Siam'],
     phone: [66],
     continent: 'AS',
     capital: 'Bangkok',
@@ -2048,6 +2067,7 @@ export const countries = {
   TR: {
     name: 'Türkiye',
     native: 'Türkiye',
+    alias: ['Turkey'],
     phone: [90],
     continent: 'AS',
     continents: ['AS', 'EU'],
@@ -2121,6 +2141,7 @@ export const countries = {
   US: {
     name: 'United States',
     native: 'United States',
+    alias: ['USA', 'America', 'United States of America'],
     phone: [1],
     continent: 'NA',
     capital: 'Washington D.C.',
@@ -2148,6 +2169,7 @@ export const countries = {
   VA: {
     name: 'Vatican City',
     native: 'Vaticano',
+    alias: ['Holy See', 'Vatican'],
     phone: [379],
     continent: 'EU',
     capital: 'Vatican City',
@@ -2193,6 +2215,7 @@ export const countries = {
   VN: {
     name: 'Vietnam',
     native: 'Việt Nam',
+    alias: ['Viet Nam'],
     phone: [84],
     continent: 'AS',
     capital: 'Hanoi',

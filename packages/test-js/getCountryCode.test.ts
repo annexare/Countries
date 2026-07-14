@@ -20,7 +20,7 @@ test('getCountryCode()', () => {
   expect(getCountryCode('澳門')).toBe('MO')
 
   // Special symbols
-  expect(getCountryCode('Myanmar (Burma)')).toBe('MM')
+  expect(getCountryCode('Myanmar')).toBe('MM')
   expect(getCountryCode('Cocos (Keeling) Islands')).toBe('CC')
 })
 
@@ -29,8 +29,8 @@ test('getCountryCode() resolves ISO short names', () => {
   expect(getCountryCode('Česko')).toBe('CZ')
   expect(getCountryCode('Cabo Verde')).toBe('CV')
 
-  // Previous long-form names are no longer resolvable
-  expect(getCountryCode('Czech Republic')).toBe(false)
-  expect(getCountryCode('Česká republika')).toBe(false)
-  expect(getCountryCode('Cape Verde')).toBe(false)
+  // Previous long-form names now resolve via aliases
+  expect(getCountryCode('Czech Republic')).toBe('CZ')
+  expect(getCountryCode('Česká republika')).toBe('CZ')
+  expect(getCountryCode('Cape Verde')).toBe('CV')
 })
