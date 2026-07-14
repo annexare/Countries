@@ -4,7 +4,8 @@
     "lib": ["DOM", "ESNext"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node", "bun"]
   },
   "include": [".", "../countries/src"],
   "exclude": ["node_modules"]

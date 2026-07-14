@@ -1,6 +1,6 @@
 {
   "name": "countries-workspace",
-  "version": "3.2.0",
+  "version": "3.4.0",
   "workspaces": {
     "packages": [
       "packages/*"
@@ -9,14 +9,14 @@
       "default": {
         "@biomejs/biome": "2.5.3",
         "@types/bun": "1.3.14",
-        "typescript": "6.0.3"
+        "typescript": "7.0.2"
       }
     }
   },
   "scripts": {
     "build": "bun run --filter scripts build && bun run --filter countries build",
     "bump": "bun update -i -r",
-    "check-types": "tsc -p packages/countries/tsconfig.json --noEmit",
+    "check-types": "tsc --noEmit -p packages/countries/tsconfig.json && tsc --noEmit -p packages/scripts/tsconfig.json && tsc --noEmit -p packages/test-js/tsconfig.json",
     "ci": "bun run lint && bun run check-types && bun run test",
     "format": "biome format --write .",
     "lint": "biome check .",
@@ -35,5 +35,5 @@
     "esbuild",
     "lefthook"
   ],
-  "packageManager": "bun@1.3.3"
+  "packageManager": "bun@1.3.14"
 }

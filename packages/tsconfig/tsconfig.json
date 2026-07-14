@@ -4,14 +4,12 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "lib": ["ESNext", "DOM"],
     "module": "NodeNext",
     "moduleResolution": "nodenext",
-    "outDir": "../../dist",
     "paths": {
       "countries/*": ["../countries/src/*"],
       "scripts/*": ["../scripts/*"]

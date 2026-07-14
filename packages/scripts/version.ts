@@ -6,6 +6,7 @@ import compare from 'semver-compare'
 
 import distComposer from '../../composer.json' with { type: 'json' }
 import distPkg from '../../dist/package.json' with { type: 'json' }
+import rootPkg from '../../package.json' with { type: 'json' }
 import pkg from '../countries/package.json' with { type: 'json' }
 
 const [, , version]: string[] = process.argv
@@ -39,6 +40,11 @@ saveJsonFile('../../dist/package.json', {
 
 saveJsonFile('../countries/package.json', {
   ...pkg,
+  version,
+})
+
+saveJsonFile('../../package.json', {
+  ...rootPkg,
   version,
 })
 
