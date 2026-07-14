@@ -1,7 +1,6 @@
 {
   "extends": "tsconfig/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "noEmit": true,
     "paths": {
       "countries/*": ["../countries/src/*"],
