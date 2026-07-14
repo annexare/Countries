@@ -1338,7 +1338,7 @@ export const countries = {
   MM: {
     name: 'Myanmar',
     native: 'မြန်မာ',
-    alias: ['Burma'],
+    alias: ['Burma', 'Myanmar (Burma)'],
     phone: [95],
     continent: 'AS',
     capital: 'Naypyidaw',
