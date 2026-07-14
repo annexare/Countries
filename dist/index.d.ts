@@ -5,6 +5,11 @@ export type TLanguageCode = 'aa' | 'ab' | 'af' | 'ak' | 'am' | 'an' | 'ar' | 'as
 
 export interface ICountry {
   /**
+   * Alternative and former names (previous ISO short names, common short forms),
+   * matched by `getCountryCode` for backward-compatible reverse lookup.
+   */
+  alias?: string[]
+  /**
    * Capital in English.
    */
   capital: string

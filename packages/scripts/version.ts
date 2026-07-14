@@ -52,4 +52,9 @@ saveJsonFile('../../package.json', {
 execSync('cd ../.. && bun i')
 console.log('Updated', chalk.blue('lock'), 'file')
 
+// Normalize formatting: JSON.stringify above differs from Biome's (e.g. array wrapping),
+// which would otherwise fail `bun run lint`.
+execSync('cd ../.. && bun run format')
+console.log('Formatted with', chalk.blue('Biome'))
+
 console.log(chalk.green('\nDone.'))
