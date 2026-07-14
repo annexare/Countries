@@ -2,6 +2,7 @@
   "extends": "tsconfig/tsconfig.json",
   "compilerOptions": {
     "noEmit": true,
+    "types": ["node", "bun"],
     "paths": {
       "countries/*": ["../countries/src/*"],
       "scripts/*": ["./*"]

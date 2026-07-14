@@ -19,8 +19,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ESNext",
-    "types": ["node", "bun"]
+    "target": "ESNext"
   },
   "ts-node": {
     "transpileOnly": true
