@@ -10,8 +10,8 @@
   "devDependencies": {
     "@types/bun": "catalog:default",
     "@types/semver-compare": "1.0.3",
-    "chalk": "5.6.2",
-    "pretty-bytes": "7.1.0",
+    "chalk": "6.0.0",
+    "pretty-bytes": "7.1.1",
     "semver-compare": "1.0.0",
     "tsconfig": "workspace:*"
   },
