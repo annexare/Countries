@@ -1567,8 +1567,9 @@ export const countries = {
     languages: ['ne'],
   },
   NR: {
-    name: 'Nauru',
-    native: 'Nauru',
+    name: 'Naoero',
+    native: 'Naoero',
+    alias: ['Nauru'],
     phone: [674],
     continent: 'OC',
     capital: 'Yaren',
