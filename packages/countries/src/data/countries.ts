@@ -280,13 +280,13 @@ export const countries = {
     languages: ['es', 'ay', 'qu'],
   },
   BQ: {
-    name: 'Bonaire',
-    native: 'Bonaire',
-    phone: [5997],
+    name: 'Bonaire, Sint Eustatius and Saba',
+    native: 'Bonaire, Sint Eustatius and Saba',
+    phone: [5993, 5994, 5997],
     continent: 'NA',
-    capital: 'Kralendijk',
+    capital: '',
     currency: ['USD'],
-    languages: ['nl'],
+    languages: ['nl', 'pa', 'en'],
   },
   BR: {
     name: 'Brazil',
