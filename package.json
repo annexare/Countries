@@ -27,7 +27,7 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "lefthook": "2.1.10",
+    "lefthook": "2.1.12",
     "typescript": "catalog:default"
   },
   "trustedDependencies": [
