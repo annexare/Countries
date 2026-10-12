@@ -11,6 +11,7 @@ test('getCountryCode() resolves alternative and former names', () => {
   expect(getCountryCode('Macedonia')).toBe('MK')
   expect(getCountryCode('Burma')).toBe('MM')
   expect(getCountryCode('Myanmar (Burma)')).toBe('MM') // previously the name; kept resolvable
+  expect(getCountryCode('Bonaire')).toBe('BQ') // previously the name; kept resolvable
   expect(getCountryCode('Zaire')).toBe('CD')
   expect(getCountryCode('UK')).toBe('GB')
   expect(getCountryCode('US')).toBe('US')
