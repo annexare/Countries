@@ -282,6 +282,7 @@ export const countries = {
   BQ: {
     name: 'Bonaire, Sint Eustatius and Saba',
     native: 'Bonaire, Sint Eustatius and Saba',
+    alias: ['Bonaire'],
     phone: [5993, 5994, 5997],
     continent: 'NA',
     capital: '',
