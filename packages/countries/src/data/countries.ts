@@ -136,7 +136,7 @@ export const countries = {
     continent: 'NA',
     capital: 'Oranjestad',
     currency: ['AWG'],
-    languages: ['nl', 'pa'],
+    languages: ['nl'],
   },
   AX: {
     name: 'Aland',
@@ -501,7 +501,7 @@ export const countries = {
     continent: 'NA',
     capital: 'Willemstad',
     currency: ['XCG'],
-    languages: ['nl', 'pa', 'en'],
+    languages: ['nl', 'en'],
   },
   CX: {
     name: 'Christmas Island',
