@@ -3,8 +3,7 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "catalog:default",
-    "tsconfig": "workspace:*",
-    "typescript": "catalog:default"
+    "tsconfig": "workspace:*"
   },
   "scripts": {
     "test": "bun test"

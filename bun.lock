@@ -8,7 +8,6 @@
         "@biomejs/biome": "catalog:default",
         "@types/bun": "catalog:default",
         "lefthook": "2.2.2",
-        "typescript": "catalog:default",
       },
     },
     "packages/countries": {
@@ -37,7 +36,6 @@
       "devDependencies": {
         "@types/bun": "catalog:default",
         "tsconfig": "workspace:*",
-        "typescript": "catalog:default",
       },
     },
     "packages/test-node": {
