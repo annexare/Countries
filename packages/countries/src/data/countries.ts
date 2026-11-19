@@ -464,7 +464,7 @@ export const countries = {
     phone: [57],
     continent: 'SA',
     capital: 'Bogotá',
-    currency: ['COP'],
+    currency: ['COP', 'COU'],
     languages: ['es'],
   },
   CR: {
@@ -1463,7 +1463,7 @@ export const countries = {
     phone: [52],
     continent: 'NA',
     capital: 'Mexico City',
-    currency: ['MXN'],
+    currency: ['MXN', 'MXV'],
     languages: ['es'],
   },
   MY: {
@@ -2183,7 +2183,7 @@ export const countries = {
     phone: [598],
     continent: 'SA',
     capital: 'Montevideo',
-    currency: ['UYU', 'UYI'],
+    currency: ['UYU', 'UYI', 'UYW'],
     languages: ['es'],
   },
   UZ: {
@@ -2220,7 +2220,7 @@ export const countries = {
     phone: [58],
     continent: 'SA',
     capital: 'Caracas',
-    currency: ['VES'],
+    currency: ['VES', 'VED'],
     languages: ['es'],
   },
   VG: {
