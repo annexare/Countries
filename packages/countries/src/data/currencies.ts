@@ -1341,7 +1341,7 @@ export const currencies = {
     decimals: 2,
   },
   XCG: {
-    name: 'Caribbean guilder',
+    name: 'Caribbean Guilder',
     native: 'Caribische gulden',
     symbol: 'Cg',
     symbolNative: 'Cg',

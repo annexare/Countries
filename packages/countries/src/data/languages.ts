@@ -222,7 +222,7 @@ export const languages = {
   },
   ha: {
     name: 'Hausa',
-    native: 'هَوُسَ',
+    native: 'Hausa',
   },
   he: {
     name: 'Hebrew',
@@ -536,7 +536,7 @@ export const languages = {
     native: 'Runa Simi',
   },
   rm: {
-    name: 'Raeto Romance',
+    name: 'Romansh',
     native: 'Rumantsch',
   },
   rn: {
@@ -552,8 +552,8 @@ export const languages = {
     native: 'Русский',
   },
   rw: {
-    name: 'Rwandi',
-    native: 'Kinyarwandi',
+    name: 'Kinyarwanda',
+    native: 'Ikinyarwanda',
   },
   sa: {
     name: 'Sanskrit',
@@ -565,7 +565,7 @@ export const languages = {
   },
   sd: {
     name: 'Sindhi',
-    native: 'सिनधि',
+    native: 'سنڌي',
     rtl: 1,
   },
   se: {
@@ -601,7 +601,7 @@ export const languages = {
     native: 'chiShona',
   },
   so: {
-    name: 'Somalia',
+    name: 'Somali',
     native: 'Soomaaliga',
   },
   sq: {
