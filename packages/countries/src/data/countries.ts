@@ -823,7 +823,7 @@ export const countries = {
     native: 'Guinea Ecuatorial',
     phone: [240],
     continent: 'AF',
-    capital: 'Malabo',
+    capital: 'Ciudad de la Paz',
     currency: ['XAF'],
     languages: ['es', 'fr'],
   },
