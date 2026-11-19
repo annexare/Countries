@@ -1370,7 +1370,7 @@ export const countries = {
     native: 'Монгол улс',
     phone: [976],
     continent: 'AS',
-    capital: 'Ulan Bator',
+    capital: 'Ulaanbaatar',
     currency: ['MNT'],
     languages: ['mn'],
   },
