@@ -5,8 +5,10 @@
 // dist artifacts — never the TS source — so it mirrors what a Node consumer resolves.
 
 import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { describe, test } from 'node:test'
+import { runInNewContext } from 'node:vm'
 
 const require = createRequire(import.meta.url)
 
@@ -36,6 +38,30 @@ describe('dist under Node.js', () => {
       assert.equal(typeof mjs[key], 'object', `missing data: ${key}`)
     }
     assert.equal(mjs.getEmojiFlag('UA'), '🇺🇦')
+  })
+
+  test('CJS main bundle exposes named exports to import()', async () => {
+    const cjs = await import('../../dist/cjs/index.js')
+
+    for (const fn of expectedFns) {
+      assert.equal(typeof cjs[fn], 'function', `missing named export: ${fn}`)
+    }
+    for (const key of expectedData) {
+      assert.equal(typeof cjs[key], 'object', `missing named export: ${key}`)
+    }
+  })
+
+  test('IIFE bundle defines the Countries global', () => {
+    const context: { Countries?: Record<string, unknown> } = {}
+    const code = readFileSync(new URL('../../dist/index.iife.js', import.meta.url), 'utf8')
+    runInNewContext(code, context)
+
+    for (const fn of expectedFns) {
+      assert.equal(typeof context.Countries?.[fn], 'function', `missing function: ${fn}`)
+    }
+    for (const key of expectedData) {
+      assert.equal(typeof context.Countries?.[key], 'object', `missing data: ${key}`)
+    }
   })
 
   test('CJS currencies subpath loads via require()', () => {

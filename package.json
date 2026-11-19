@@ -8,13 +8,12 @@
     "catalogs": {
       "default": {
         "@biomejs/biome": "2.6.8",
-        "@types/bun": "1.4.4",
-        "typescript": "7.0.2"
+        "@types/bun": "1.4.4"
       }
     }
   },
   "scripts": {
-    "build": "bun run --filter scripts build && bun run --filter countries build",
+    "build": "bun run --filter scripts build",
     "bump": "bun update -i -r",
     "check-types": "bun check --no-script -p packages/countries && bun check --no-script -p packages/scripts && bun check --no-script -p packages/test-js",
     "ci": "bun run lint && bun run check-types && bun run test",
@@ -31,7 +30,6 @@
   },
   "trustedDependencies": [
     "@biomejs/biome",
-    "esbuild",
     "lefthook"
   ],
   "packageManager": "bun@1.4.4"
