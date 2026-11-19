@@ -25,22 +25,28 @@ const bundle = async (entry: string, format: 'cjs' | 'esm'): Promise<string> => 
   return (await outputs[0].text()).trim()
 }
 
+const saveBundle = (fileName: string, code: string): void => {
+  if (!saveTextFile(fileName, code)) {
+    throw new Error(`Could not save bundle: "${fileName}"`)
+  }
+}
+
 export const buildBundles = async (): Promise<void> => {
   console.log(chalk.bold('\nBuilding bundles:\n'))
 
   for (const [entry, entryExports] of Object.entries(ENTRIES)) {
     const esm = await bundle(entry, 'esm')
-    saveTextFile(`mjs/${entry}.js`, `${BANNER}\n${esm}`)
+    saveBundle(`mjs/${entry}.js`, `${BANNER}\n${esm}`)
 
     const cjs = await bundle(entry, 'cjs')
     // Never executed: it lets Node detect the named exports when this file is imported from ESM.
     const namedExportsHint = `0&&(module.exports={${Object.keys(entryExports).join(',')}});`
-    saveTextFile(`cjs/${entry}.js`, `${BANNER}\n${USE_STRICT}${cjs}\n${namedExportsHint}`)
+    saveBundle(`cjs/${entry}.js`, `${BANNER}\n${USE_STRICT}${cjs}\n${namedExportsHint}`)
 
     if (entry === 'index') {
       // Bun cannot name an IIFE global, so the CommonJS bundle is wrapped to expose its exports.
       const iife = `var ${GLOBAL_NAME}=(()=>{var module={exports:{}};${cjs}\nreturn module.exports})();`
-      saveTextFile('index.iife.js', `${BANNER}\n${USE_STRICT}${iife}`)
+      saveBundle('index.iife.js', `${BANNER}\n${USE_STRICT}${iife}`)
     }
   }
 }
