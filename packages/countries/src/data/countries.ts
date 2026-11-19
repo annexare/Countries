@@ -623,7 +623,7 @@ export const countries = {
     continent: 'AF',
     capital: 'El Aaiún',
     currency: ['MAD', 'DZD', 'MRU'],
-    languages: ['es'],
+    languages: ['ar', 'es'],
   },
   ER: {
     name: 'Eritrea',
