@@ -223,7 +223,6 @@ export const languages = {
   ha: {
     name: 'Hausa',
     native: 'هَوُسَ',
-    rtl: 1,
   },
   he: {
     name: 'Hebrew',
@@ -354,7 +353,6 @@ export const languages = {
   ku: {
     name: 'Kurdish',
     native: 'Kurdî / كوردی',
-    rtl: 1,
   },
   kv: {
     name: 'Komi',
@@ -568,6 +566,7 @@ export const languages = {
   sd: {
     name: 'Sindhi',
     native: 'सिनधि',
+    rtl: 1,
   },
   se: {
     name: 'Northern Sami',
@@ -692,6 +691,7 @@ export const languages = {
   ug: {
     name: 'Uyghur',
     native: 'Uyƣurqə / ئۇيغۇرچە',
+    rtl: 1,
   },
   uk: {
     name: 'Ukrainian',
