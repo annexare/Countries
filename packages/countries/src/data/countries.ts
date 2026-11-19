@@ -2054,10 +2054,11 @@ export const countries = {
     languages: ['en'],
   },
   TL: {
-    name: 'East Timor',
+    name: 'Timor-Leste',
     native: 'Timor-Leste',
+    alias: ['East Timor'],
     phone: [670],
-    continent: 'OC',
+    continent: 'AS',
     capital: 'Dili',
     currency: ['USD'],
     languages: ['pt'],
