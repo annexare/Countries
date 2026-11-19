@@ -13,13 +13,8 @@
     "email": "d@klmn.me",
     "url": "https://github.com/dmythro"
   },
-  "scripts": {
-    "build": "tsup"
-  },
   "devDependencies": {
-    "tsconfig": "workspace:*",
-    "tsup": "9.0.0",
-    "typescript": "catalog:default"
+    "tsconfig": "workspace:*"
   },
   "license": "MIT"
 }
