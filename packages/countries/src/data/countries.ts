@@ -2009,7 +2009,7 @@ export const countries = {
   },
   TF: {
     name: 'French Southern Territories',
-    native: 'Territoire des Terres australes et antarctiques fr',
+    native: 'Territoire des Terres australes et antarctiques françaises',
     phone: [262],
     continent: 'AN',
     capital: 'Port-aux-Français',
