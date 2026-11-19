@@ -222,7 +222,7 @@ export const languages = {
   },
   ha: {
     name: 'Hausa',
-    native: 'هَوُسَ',
+    native: 'Hausa',
   },
   he: {
     name: 'Hebrew',

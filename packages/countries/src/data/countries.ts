@@ -838,7 +838,8 @@ export const countries = {
   },
   GS: {
     name: 'South Georgia and the South Sandwich Islands',
-    native: 'South Georgia',
+    native: 'South Georgia and the South Sandwich Islands',
+    alias: ['South Georgia'],
     phone: [500],
     continent: 'AN',
     capital: 'King Edward Point',
