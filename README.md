@@ -1,10 +1,10 @@
 # Countries, Languages & Continents data
 
 [![Monthly Downloads](https://img.shields.io/npm/dm/countries-list.svg)](https://www.npmjs.com/package/countries-list)
-[![NPM](https://img.shields.io/npm/v/countries-list.svg 'NPM package version')](https://www.npmjs.com/package/countries-list)
-[![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg 'Packagist version')](https://packagist.org/packages/annexare/countries-list)
-[![CI: JS](https://github.com/annexare/Countries/workflows/Countries%20JS/badge.svg 'CI: JS')](https://github.com/annexare/Countries/actions)
-[![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg 'CI: PHP')](https://github.com/annexare/Countries/actions)
+[![NPM](https://img.shields.io/npm/v/countries-list.svg "NPM package version")](https://www.npmjs.com/package/countries-list)
+[![Packagist](https://img.shields.io/packagist/v/annexare/countries-list.svg "Packagist version")](https://packagist.org/packages/annexare/countries-list)
+[![CI: JS](https://github.com/annexare/Countries/workflows/Countries%20JS/badge.svg "CI: JS")](https://github.com/annexare/Countries/actions)
+[![CI: PHP](https://github.com/annexare/Countries/workflows/Countries%20PHP/badge.svg "CI: PHP")](https://github.com/annexare/Countries/actions)
 [![Twitter](https://img.shields.io/twitter/follow/annexare.svg?label=follow+@annexare)](https://twitter.com/annexare)
 
 Continents & countries: **ISO 3166-1 alpha-2** code (with **alpha-2** to **alpha-3** set), name, **ISO 639-1** languages, capital, **ISO 4217** currencies (with symbols & numeric codes), native name, calling codes.
