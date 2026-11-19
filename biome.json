@@ -34,6 +34,16 @@
       "arrowParentheses": "always"
     }
   },
+  "markdown": {
+    "parser": {
+      "frontmatter": true
+    }
+  },
+  "yaml": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {

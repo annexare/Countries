@@ -7,8 +7,8 @@
     ],
     "catalogs": {
       "default": {
-        "@biomejs/biome": "2.5.3",
-        "@types/bun": "1.3.14",
+        "@biomejs/biome": "2.6.8",
+        "@types/bun": "1.4.4",
         "typescript": "7.0.2"
       }
     }
@@ -16,7 +16,7 @@
   "scripts": {
     "build": "bun run --filter scripts build && bun run --filter countries build",
     "bump": "bun update -i -r",
-    "check-types": "tsc --noEmit -p packages/countries/tsconfig.json && tsc --noEmit -p packages/scripts/tsconfig.json && tsc --noEmit -p packages/test-js/tsconfig.json",
+    "check-types": "bun check --no-script -p packages/countries && bun check --no-script -p packages/scripts && bun check --no-script -p packages/test-js",
     "ci": "bun run lint && bun run check-types && bun run test",
     "format": "biome format --write .",
     "lint": "biome check .",
@@ -27,13 +27,12 @@
   "devDependencies": {
     "@biomejs/biome": "catalog:default",
     "@types/bun": "catalog:default",
-    "lefthook": "2.1.10",
-    "typescript": "catalog:default"
+    "lefthook": "2.2.2"
   },
   "trustedDependencies": [
     "@biomejs/biome",
     "esbuild",
     "lefthook"
   ],
-  "packageManager": "bun@1.3.14"
+  "packageManager": "bun@1.4.4"
 }
