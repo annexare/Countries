@@ -49,6 +49,21 @@ describe('dist', () => {
     expect(nonAZ).toEqual([])
   })
 
+  test('native names should not mix Latin, Cyrillic, or Greek letters in one word', () => {
+    const scripts = [/\p{Script=Latin}/u, /\p{Script=Cyrillic}/u, /\p{Script=Greek}/u]
+    const names = [
+      ...Object.values(source.countries).map((c) => c.native),
+      ...Object.values(source.languages).map((l) => l.native),
+    ]
+    const mixed = names.filter((name) =>
+      (name.match(/[\p{L}\p{M}]+/gu) ?? []).some(
+        (word) => scripts.filter((script) => script.test(word)).length > 1
+      )
+    )
+
+    expect(mixed).toEqual([])
+  })
+
   test('loads ES6 <script> properly', () => {
     const context: { Countries?: typeof source } = {}
     evalIIFE.call(context)

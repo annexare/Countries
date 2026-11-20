@@ -116,7 +116,7 @@ export const languages = {
   },
   cv: {
     name: 'Chuvash',
-    native: 'Чăваш',
+    native: 'Чӑваш',
   },
   cy: {
     name: 'Welsh',
